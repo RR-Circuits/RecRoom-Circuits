@@ -196,7 +196,7 @@ const request = https.get("https://raw.githubusercontent.com/tyleo-rec/CircuitsV
     response.pipe(file);
 
     file.on("finish", () => {
-        file.close
+        file.close()
         RestOfUpdate()
     })
 })
