@@ -1,0 +1,33 @@
+# Releases
+
+After Version 2.28, Circuits began releasing incrementally with Rec Room. Changes are included within the Rec Room release notes.
+
+Previous verions are catalogued here:
+- [Version 2.28](2_28)
+- [Version 2.27](2_27)
+- [Version 2.26](2_26)
+- [Version 2.25](2_25)
+- [Version 2.24](2_24)
+- [Version 2.23](2_23)
+- [Version 2.22](2_22)
+- [Version 2.21](2_21)
+- [Version 2.20](2_20)
+- [Version 2.19](2_19)
+- [Version 2.18](2_18)
+- [Version 2.17](2_17)
+- [Version 2.16](2_16)
+- [Version 2.15](2_15)
+- [Version 2.14](2_14)
+- [Version 2.13](2_13)
+- [Version 2.12](2_12)
+- [Version 2.11](2_11)
+- [Version 2.10](2_10)
+- [Version 2.09](2_09)
+- [Version 2.08](2_08)
+- [Version 2.07](2_07)
+- [Version 2.06](2_06)
+- [Version 2.05](2_05)
+- [Version 2.04](2_04)
+- [Version 2.03](2_03)
+- [Version 2.02](2_02)
+- [Version 2.01](2_01)

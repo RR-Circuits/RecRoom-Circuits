@@ -1,0 +1,11 @@
+{
+  "name": "circuitsdata",
+  "version": "1.0.0",
+  "description": "Data for the docs page.",
+  "main": "Update-JSON.js",
+  "scripts": {
+    "test": "node Update-JSON.js"
+  },
+  "author": "Funn Punn, PeteBrick",
+  "license": "ISC"
+}
