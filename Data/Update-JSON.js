@@ -1,10 +1,15 @@
 const fs = require("fs")
 const { exit } = require("process")
-const { isatty } = require("tty")
-const oldJSON_raw = fs.readFileSync("Chip/misc/circuitsv2.json")
-const OldJSON = JSON.parse(oldJSON_raw)["Nodes"]
-const OldJSON_Clone = JSON.parse(oldJSON_raw)["Nodes"]
-const entries = Object.entries(OldJSON_Clone)
+const https = require('follow-redirects').https
+
+const DownloadFile = "Generated/Chips_OLD.json"
+
+const sleep = s => new Promise(r => setTimeout(r, s*1000));
+
+var oldJSON_raw
+var OldJSON
+var OldJSON_Clone
+var entries
 //init
 var PortTypes = {
     "exec": {
@@ -118,7 +123,7 @@ function TranslateChipData(){
                 if(port["ReadonlyType"].includes("List<")) {
                     port["ReadonlyType"] = port["ReadonlyType"].replace("List<", "").replace(">", "")
                     IsList = true
-                } else IsList = false; console.log(port["ReadonlyType"]);
+                } else IsList = false;
                 if(TempPortAssign[port["ReadonlyType"]] !== undefined) {
                     if(typeof(TempPortAssign[port["ReadonlyType"]]) == "string") {
                         IsUnion = false
@@ -167,17 +172,34 @@ function TranslateChipData(){
         thischip["Functions"] = chipd["NodeDescs"]
     }
 }
+function RestOfUpdate(){
+    oldJSON_raw = fs.readFileSync(DownloadFile, "utf-8")
+    OldJSON = JSON.parse(oldJSON_raw)["Nodes"]
+    OldJSON_Clone = JSON.parse(oldJSON_raw)["Nodes"]
+    entries = Object.entries(OldJSON_Clone)
+    
+    console.log("[2/3] Updating ports.json...")
+    RetrievePorts();
+    fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
 
-console.log("[1/3] Updating ports.json...")
-RetrievePorts();
-fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
+    console.log("[3/3] Translating chips...")
+    TranslateChipData();
+    fs.writeFileSync("Generated/chips.json", JSON.stringify(NewChips, null, 4))
 
-console.log("[2/3] Updating chips.json...")
-TranslateChipData();
-fs.writeFileSync("Generated/chips.json", JSON.stringify(NewChips, null, 4))
-console.log("[3/3] Validating...")
-console.log("Finished!")
-exit(0)
+    console.log("Finished!")
+    exit(0)
+}
+
+console.log("[1/3] Downloading chips...")
+const file = fs.createWriteStream("Generated/Chips_OLD.json");
+const request = https.get("https://raw.githubusercontent.com/tyleo-rec/CircuitsV2Resources/master/misc/circuitsv2.json", function(response) {
+    response.pipe(file);
+
+    file.on("finish", () => {
+        file.close
+        RestOfUpdate()
+    })
+})
 /*
 {
     NodeDescs: [

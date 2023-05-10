@@ -7,5 +7,8 @@
     "test": "node Update-JSON.js"
   },
   "author": "Funn Punn, PeteBrick",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "follow-redirects": "^1.15.2"
+  }
 }
