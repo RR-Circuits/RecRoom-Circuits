@@ -178,19 +178,22 @@ function RestOfUpdate(){
     OldJSON_Clone = JSON.parse(oldJSON_raw)["Nodes"]
     entries = Object.entries(OldJSON_Clone)
     
-    console.log("[2/3] Updating ports.json...")
+    console.log("[2/4] Updating ports.json...")
     RetrievePorts();
     fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
 
-    console.log("[3/3] Translating chips...")
+    console.log("[3/4] Translating chips...")
     TranslateChipData();
     fs.writeFileSync("Generated/chips.json", JSON.stringify(NewChips, null, 4))
+
+    console.log("[4/4] Generating info.txt...")
+    fs.writeFileSync("Generated/info.txt", "Generated on " + new Date(Date.now()).toDateString())
 
     console.log("Finished!")
     exit(0)
 }
 
-console.log("[1/3] Downloading chips...")
+console.log("[1/4] Downloading chips...")
 const file = fs.createWriteStream("Generated/Chips_OLD.json");
 const request = https.get("https://raw.githubusercontent.com/tyleo-rec/CircuitsV2Resources/master/misc/circuitsv2.json", function(response) {
     response.pipe(file);
