@@ -130,7 +130,7 @@ function PrepareFiles() {
                 var newstr = ""
                 if(prt["IsUnion"] === true) {
                     var joined = prt["DataType"].join(" , ")
-                    newstr = "any (".concat(joined, ")")
+                    newstr = "Union(".concat(joined, ")")
                 } else {
                     newstr = prt["DataType"]
                 }
@@ -145,7 +145,7 @@ function PrepareFiles() {
                 var newstr = ""
                 if(prt["IsUnion"] === true) {
                     var joined = prt["DataType"].join(" , ")
-                    newstr = "any (".concat(joined, ")")
+                    newstr = "Union(".concat(joined, ")")
                 } else {
                     newstr = prt["DataType"]
                 }
