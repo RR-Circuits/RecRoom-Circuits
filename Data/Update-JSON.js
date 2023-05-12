@@ -1,4 +1,5 @@
 const fs = require("fs")
+const { join } = require("path")
 const { exit } = require("process")
 const { stringify } = require("querystring")
 const https = require('follow-redirects').https
@@ -9,14 +10,18 @@ const DeprMsg = `:::caution
 This chip has been deprecated. Please use to a different chip.
 
 :::`
-const TotalSteps = 6
+
+const TotalSteps = 5
 var CurrentStep = 0
+var Currentindex = 1
 
 function AddStep(prnt) {
     CurrentStep++
     console.log("[".concat(CurrentStep, "/", TotalSteps, "] ", prnt))
 }
-
+function BoolToYesNo(bl) {
+    if(bl) return "Yes."; else return "No.";
+}
 const DownloadFile = "Generated/Chips_OLD.json"
 
 const sleep = s => new Promise(r => setTimeout(r, s*1000));
@@ -25,7 +30,7 @@ var oldJSON_raw
 var OldJSON
 var OldJSON_Clone
 var entries
-//init
+
 var PortTypes = {
     "exec": {
         "HasDefaultValue": false,
@@ -63,6 +68,7 @@ var PortTypes = {
         "Color": "#F5C51F",
     }
 }
+
 var NewChips = {}
 const template = {
     "HasDefaultValue": false,
@@ -109,50 +115,73 @@ function RetrievePorts(){
 }
 
 function PrepareFiles() {
-    const entries = Object.entries(NewChips)
+    const chps_rw = fs.readFileSync("Generated/chips.json", "utf-8")
+    const chps = JSON.parse(chps_rw)
+    const entries = Object.entries(chps)
     for(const [uuid, contents] of entries){
 
         var NewChipFile = ChipTemplate
         var InputsStr = "| Port Name | Port Type |\n|-----------|-----------|"
         var OutputsStr = "| Port Name | Port Type |\n|-----------|-----------|"
         
-        try {for(const prt of contents["Functions"][0]["Inputs"]) {
-            var prtstr = ""
-            if(prt["IsUnion"]) {
-                var joined = prt["DataType"].join(" | ")
-                var newstr = "Any (" + joined + ")"
-                
-                prtstr = "| ._name | ._type |".replace("._name", prt["Name"]).replace("._type", prt[newstr])
-            } else {
-                prtstr = "| ._name | ._type |".replace("._name", prt["Name"]).replace("._type", prt["DataType"])
+        try {for(const func of contents["Functions"]) {
+            for(const prt of func["Inputs"]) {
+                var prtstr = "| ._name | ._type |"
+                var newstr = ""
+                if(prt["IsUnion"] === true) {
+                    var joined = prt["DataType"].join(" , ")
+                    newstr = "any (".concat(joined, ")")
+                } else {
+                    newstr = prt["DataType"]
+                }
+                if (prt["IsList"]) {
+                    newstr = "List[".concat(newstr, "]")
+                }
+                InputsStr = InputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr))
             }
-            InputsStr = InputsStr.concat("\n", prtstr)
-        }} catch (error) {
-            console.log(contents["ChipName"])
-        }
-        try {for(const prt of contents["Functions"][0]["Outputs"]) {
-            var prtstr = ""
-            if(prt["IsUnion"]) {
-                var joined = prt["DataType"].join(" | ")
-                var newstr = "Any (" + joined + ")"
-                
-                prtstr = "| ._name | ._type |".replace("._name", prt["Name"]).replace("._type", prt[newstr])
-            } else {
-                prtstr = "| ._name | ._type |".replace("._name", prt["Name"]).replace("._type", prt["DataType"])
+
+            for(const prt of func["Outputs"]) {
+                var prtstr = "| ._name | ._type |"
+                var newstr = ""
+                if(prt["IsUnion"] === true) {
+                    var joined = prt["DataType"].join(" , ")
+                    newstr = "any (".concat(joined, ")")
+                } else {
+                    newstr = prt["DataType"]
+                }
+                if (prt["IsList"]) {
+                    newstr = "List[".concat(newstr, "]")
+                }
+                OutputsStr = OutputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr))
             }
-            OutputsStr = OutputsStr.concat("\n", prtstr)
         }} catch (error) {
-            console.log(contents["ChipName"])
+            console.log(error)
         }
         
-        NewChipFile = NewChipFile.replace("._chipname", contents["ChipName"])
-        .replace("._chipdesc", contents["Description"])
-        .replace("._istroll", contents["TrollingRisk"])
-        .replace("._isbeta", contents["IsBeta"])
+        NewChipFile = NewChipFile.replace("._chipname", contents["ChipName"].replace("<", "[").replace(">", "]"))
+        .replace("._istroll", BoolToYesNo(contents["TrollingRisk"]))
+        .replace("._isbeta", BoolToYesNo(contents["IsBeta"]))
+        .replace("._uuid", "`" + uuid + "`")
         .replace("._inputs", InputsStr)
-        .replace("._outputs", OutputsStr);
+        .replace("._outputs", OutputsStr)
+        .replace("._sidebarpos", Currentindex);
 
-        fs.writeFileSync(__dirname + '/../Website/circuits/docs/documentation/chips/'+uuid+".md", NewChipFile)
+        switch (contents["DeprecationStage"]) {
+            case "Deprecated":
+                NewChipFile = NewChipFile.replace("._depr", DeprMsg)
+                break;
+        
+            default:
+                NewChipFile = NewChipFile.replace("._depr", "")
+                break;
+        }
+        if(contents["Description"] !== "") {
+            NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "[").replace(">", "]"))
+        } else NewChipFile = NewChipFile.replace("._chipdesc", "*no description*")
+        
+        fs.writeFileSync(__dirname + "/../Website/circuits/docs/documentation/chips/".concat(uuid, ".md"), NewChipFile)
+
+        Currentindex++
     }
 }
 
@@ -254,9 +283,6 @@ function RestOfUpdate(){
 
     AddStep("Preparing page files...")
     PrepareFiles();
-
-    AddStep("Testing file...")
-    
 
     console.log("Finished!")
     exit(0)

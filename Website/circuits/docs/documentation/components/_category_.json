@@ -2,6 +2,7 @@
   "label": "Components",
   "position": 2,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "A list of rec room components."
   }
 }
