@@ -1,6 +1,21 @@
 const fs = require("fs")
 const { exit } = require("process")
+const { stringify } = require("querystring")
 const https = require('follow-redirects').https
+
+const ChipTemplate = fs.readFileSync("templates/chip.md", "utf-8")
+const DeprMsg = `:::caution
+
+This chip has been deprecated. Please use to a different chip.
+
+:::`
+const TotalSteps = 6
+var CurrentStep = 0
+
+function AddStep(prnt) {
+    CurrentStep++
+    console.log("[".concat(CurrentStep, "/", TotalSteps, "] ", prnt))
+}
 
 const DownloadFile = "Generated/Chips_OLD.json"
 
@@ -93,6 +108,53 @@ function RetrievePorts(){
     }
 }
 
+function PrepareFiles() {
+    const entries = Object.entries(NewChips)
+    for(const [uuid, contents] of entries){
+
+        var NewChipFile = ChipTemplate
+        var InputsStr = "| Port Name | Port Type |\n|-----------|-----------|"
+        var OutputsStr = "| Port Name | Port Type |\n|-----------|-----------|"
+        
+        try {for(const prt of contents["Functions"][0]["Inputs"]) {
+            var prtstr = ""
+            if(prt["IsUnion"]) {
+                var joined = prt["DataType"].join(" | ")
+                var newstr = "Any (" + joined + ")"
+                
+                prtstr = "| ._name | ._type |".replace("._name", prt["Name"]).replace("._type", prt[newstr])
+            } else {
+                prtstr = "| ._name | ._type |".replace("._name", prt["Name"]).replace("._type", prt["DataType"])
+            }
+            InputsStr = InputsStr.concat("\n", prtstr)
+        }} catch (error) {
+            console.log(contents["ChipName"])
+        }
+        try {for(const prt of contents["Functions"][0]["Outputs"]) {
+            var prtstr = ""
+            if(prt["IsUnion"]) {
+                var joined = prt["DataType"].join(" | ")
+                var newstr = "Any (" + joined + ")"
+                
+                prtstr = "| ._name | ._type |".replace("._name", prt["Name"]).replace("._type", prt[newstr])
+            } else {
+                prtstr = "| ._name | ._type |".replace("._name", prt["Name"]).replace("._type", prt["DataType"])
+            }
+            OutputsStr = OutputsStr.concat("\n", prtstr)
+        }} catch (error) {
+            console.log(contents["ChipName"])
+        }
+        
+        NewChipFile = NewChipFile.replace("._chipname", contents["ChipName"])
+        .replace("._chipdesc", contents["Description"])
+        .replace("._istroll", contents["TrollingRisk"])
+        .replace("._isbeta", contents["IsBeta"])
+        .replace("._inputs", InputsStr)
+        .replace("._outputs", OutputsStr);
+
+        fs.writeFileSync(__dirname + '/../Website/circuits/docs/documentation/chips/'+uuid+".md", NewChipFile)
+    }
+}
 
 function TranslateChipData(){
     for(const [uuid, chipd] of entries) {
@@ -100,6 +162,7 @@ function TranslateChipData(){
         const thischip = NewChips[uuid] = {
             ChipName: chipd["ReadonlyChipName"],
             PaletteName: chipd["ReadonlyPaletteName"],
+            Description: chipd["Description"],
             //custom here
             Model: "Default",
             //
@@ -178,22 +241,27 @@ function RestOfUpdate(){
     OldJSON_Clone = JSON.parse(oldJSON_raw)["Nodes"]
     entries = Object.entries(OldJSON_Clone)
     
-    console.log("[2/4] Updating ports.json...")
+    AddStep("Updating ports.json...")
     RetrievePorts();
     fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
 
-    console.log("[3/4] Translating chips...")
+    AddStep("Translating chips...")
     TranslateChipData();
     fs.writeFileSync("Generated/chips.json", JSON.stringify(NewChips, null, 4))
 
-    console.log("[4/4] Generating info.txt...")
+    AddStep("Generating info.txt...")
     fs.writeFileSync("Generated/info.txt", "Generated on " + new Date(Date.now()).toDateString())
+
+    AddStep("Preparing page files...")
+    PrepareFiles();
+
+    AddStep("Testing file...")
+    
 
     console.log("Finished!")
     exit(0)
 }
-
-console.log("[1/4] Downloading chips...")
+AddStep("Downloading chips...")
 const file = fs.createWriteStream("Generated/Chips_OLD.json");
 const request = https.get("https://raw.githubusercontent.com/tyleo-rec/CircuitsV2Resources/master/misc/circuitsv2.json", function(response) {
     response.pipe(file);
