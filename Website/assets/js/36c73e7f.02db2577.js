@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcircuits=self.webpackChunkcircuits||[]).push([[41593],{72570:t=>{t.exports=JSON.parse('{"title":"Documentation","slug":"/category/documentation","permalink":"/docs/category/documentation","navigation":{"next":{"title":"Chips","permalink":"/docs/category/chips"}}}')}}]);
