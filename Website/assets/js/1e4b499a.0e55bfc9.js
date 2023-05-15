@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcircuits=self.webpackChunkcircuits||[]).push([[17141],{90739:s=>{s.exports=JSON.parse('{"label":"facebook","permalink":"/Circuits/Website/blog/tags/facebook","allTagsPath":"/Circuits/Website/blog/tags","count":1}')}}]);

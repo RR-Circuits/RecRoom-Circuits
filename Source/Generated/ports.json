@@ -1,0 +1,277 @@
+{
+    "exec": {
+        "HasDefaultValue": false,
+        "Model": "Exec",
+        "Color": "#F55C1A"
+    },
+    "string": {
+        "HasDefaultValue": true,
+        "Model": "Data",
+        "Color": "#784283"
+    },
+    "int": {
+        "HasDefaultValue": true,
+        "Model": "Data",
+        "Color": "#106522"
+    },
+    "float": {
+        "HasDefaultValue": true,
+        "Model": "Data",
+        "Color": "#186BDD"
+    },
+    "bool": {
+        "HasDefaultValue": true,
+        "Model": "Data",
+        "Color": "#EA2E50"
+    },
+    "color": {
+        "HasDefaultValue": true,
+        "Model": "Data",
+        "Color": "#004FB9"
+    },
+    "player": {
+        "HasDefaultValue": true,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "consumable": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "vector3": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "rec room object": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "ai": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "combatant": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "patrol point": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "audio": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "quaternion": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "audio player": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "room key": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "background objects": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "beacon": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "any": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "button": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "collision data": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "destination room": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "costume": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "die": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "hud element": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "room door": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "emitter": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "explosion emitter": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "fog": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "ground vehicle": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "gun handle": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "interaction volume": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "invisible collision": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "laser pointer": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "light": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "piston": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "seat": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "player world ui": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "trigger handle": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "projectile launcher": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "skydome": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "rotator": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "sfx": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "player spawn point v2": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "studio object": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "sun": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "sun direction": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "text screen": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "text": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "toggle button": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "motion trail": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "trigger volume": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "vector component": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "welcome mat": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    }
+}
