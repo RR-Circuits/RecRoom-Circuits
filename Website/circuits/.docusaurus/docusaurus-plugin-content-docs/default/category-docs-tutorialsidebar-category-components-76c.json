@@ -1,0 +1,15 @@
+{
+  "title": "Components",
+  "slug": "/category/components",
+  "permalink": "/docs/category/components",
+  "navigation": {
+    "previous": {
+      "title": "._chipname",
+      "permalink": "/docs/documentation/chips/TEMPLATE"
+    },
+    "next": {
+      "title": "translate-your-site",
+      "permalink": "/docs/documentation/components/translate-your-site"
+    }
+  }
+}

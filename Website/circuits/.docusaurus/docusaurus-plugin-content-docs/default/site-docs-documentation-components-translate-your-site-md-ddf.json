@@ -1,0 +1,26 @@
+{
+  "unversionedId": "documentation/components/translate-your-site",
+  "id": "documentation/components/translate-your-site",
+  "title": "translate-your-site",
+  "description": "",
+  "source": "@site/docs/documentation/components/translate-your-site.md",
+  "sourceDirName": "documentation/components",
+  "slug": "/documentation/components/translate-your-site",
+  "permalink": "/docs/documentation/components/translate-your-site",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/components/translate-your-site.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar-position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Components",
+    "permalink": "/docs/category/components"
+  },
+  "next": {
+    "title": "Guides",
+    "permalink": "/docs/category/guides"
+  }
+}

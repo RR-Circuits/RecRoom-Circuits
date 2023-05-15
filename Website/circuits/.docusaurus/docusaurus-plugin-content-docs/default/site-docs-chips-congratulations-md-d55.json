@@ -1,0 +1,27 @@
+{
+  "unversionedId": "chips/congratulations",
+  "id": "chips/congratulations",
+  "title": "._chipname",
+  "description": "._chipdesc",
+  "source": "@site/docs/chips/congratulations.md",
+  "sourceDirName": "chips",
+  "slug": "/chips/congratulations",
+  "permalink": "/docs/chips/congratulations",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/chips/congratulations.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorial - Basics",
+    "permalink": "/docs/category/tutorial---basics"
+  },
+  "next": {
+    "title": "Tutorial - Extras",
+    "permalink": "/docs/category/tutorial---extras"
+  }
+}

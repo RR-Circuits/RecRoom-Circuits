@@ -1,0 +1,35 @@
+{
+  "unversionedId": "chips/TEMPLATE",
+  "id": "chips/TEMPLATE",
+  "title": "._chipname",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/chips/TEMPLATE.md",
+  "sourceDirName": "chips",
+  "slug": "/chips/TEMPLATE",
+  "permalink": "/docs/chips/TEMPLATE",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/chips/TEMPLATE.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chips",
+    "permalink": "/docs/category/chips"
+  },
+  "next": {
+    "title": "Components",
+    "permalink": "/docs/category/components"
+  }
+}

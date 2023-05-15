@@ -1,0 +1,63 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "documentation/chips/TEMPLATE",
+          "docs": [
+            {
+              "id": "documentation/chips/TEMPLATE",
+              "path": "/docs/documentation/chips/TEMPLATE",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "documentation/components/translate-your-site",
+              "path": "/docs/documentation/components/translate-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/military",
+              "path": "/docs/guides/military",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/documentation",
+              "path": "/docs/category/documentation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/chips",
+              "path": "/docs/category/chips",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/components",
+              "path": "/docs/category/components",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/guides",
+              "path": "/docs/category/guides",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/category/documentation",
+                "label": "Documentation"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "label": "hola",
+  "permalink": "/docs/tags/hola",
+  "allTagsPath": "/docs/tags",
+  "count": 1,
+  "items": [
+    {
+      "id": "chips/TEMPLATE",
+      "title": "._chipname",
+      "description": "._chipdesc",
+      "permalink": "/docs/chips/TEMPLATE"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Chips",
+  "description": "5 minutes to learn the most important Docusaurus concepts.",
+  "slug": "/category/chips",
+  "permalink": "/docs/category/chips",
+  "navigation": {
+    "previous": {
+      "title": "Documentation",
+      "permalink": "/docs/category/documentation"
+    },
+    "next": {
+      "title": "._chipname",
+      "permalink": "/docs/documentation/chips/TEMPLATE"
+    }
+  }
+}

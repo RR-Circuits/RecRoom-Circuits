@@ -1,0 +1,11 @@
+{
+  "title": "Documentation",
+  "slug": "/category/documentation",
+  "permalink": "/docs/category/documentation",
+  "navigation": {
+    "next": {
+      "title": "Chips",
+      "permalink": "/docs/category/chips"
+    }
+  }
+}
