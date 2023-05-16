@@ -1,5 +1,5 @@
 ---
-sidebar_position: 151
+sidebar_position: 152
 tags: [._tags]
 ---
 
@@ -15,13 +15,13 @@ tags: [._tags]
 
 | Input Name | Input Type |
 |-----------|-----------|
-|  | exec |
+| *No name.* | exec |
 | Target | explosion emitter |
 | Damage | int |
 
 | Output Name | Output Type |
 |-----------|-----------|
-|  | exec |
+| *No name.* | exec |
 
 ## Properties:
 
@@ -31,5 +31,8 @@ tags: [._tags]
 | Is Beta? | No. |
 | Chip UUID | `748f210d-f9e2-4dca-a29a-8eacf99daff7` |
 
-## Info:
-._extrainfo
+## Uses
+
+## Issues
+
+## Tips

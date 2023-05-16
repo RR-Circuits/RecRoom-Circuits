@@ -29,5 +29,8 @@ tags: [._tags]
 | Is Beta? | No. |
 | Chip UUID | `f4cbc476-bc98-4cbf-bf47-de4baedddf79` |
 
-## Info:
-._extrainfo
+## Uses
+
+## Issues
+
+## Tips

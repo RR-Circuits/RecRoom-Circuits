@@ -1,5 +1,5 @@
 ---
-sidebar_position: 263
+sidebar_position: 266
 tags: [._tags]
 ---
 
@@ -23,7 +23,7 @@ tags: [._tags]
 
 | Output Name | Output Type |
 |-----------|-----------|
-|  | exec |
+| *No name.* | exec |
 
 ## Properties:
 
@@ -33,5 +33,8 @@ tags: [._tags]
 | Is Beta? | No. |
 | Chip UUID | `1b5eca75-0e7e-4aff-8adc-c5e043cac29e` |
 
-## Info:
-._extrainfo
+## Uses
+
+## Issues
+
+## Tips

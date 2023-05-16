@@ -200,7 +200,7 @@ function PrepareFiles() {
             NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "[").replace(">", "]"))
         } else NewChipFile = NewChipFile.replace("._chipdesc", "*No description.*")
 
-        fs.writeFileSync(__dirname + '/../WebSRC/circuits/docs/'.concat(uuid, ".md"), NewChipFile);
+        fs.writeFileSync(__dirname + '/../WebSRC/circuits/docs/documentation/chips/'.concat(uuid, ".md"), NewChipFile);
 
         Currentindex++
     }

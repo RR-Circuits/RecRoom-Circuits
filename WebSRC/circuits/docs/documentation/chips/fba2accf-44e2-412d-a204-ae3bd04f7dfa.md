@@ -1,5 +1,5 @@
 ---
-sidebar_position: 633
+sidebar_position: 642
 tags: [._tags]
 ---
 
@@ -15,13 +15,13 @@ tags: [._tags]
 
 | Input Name | Input Type |
 |-----------|-----------|
-|  | exec |
-|  | vector3 |
+| *No name.* | exec |
+| *No name.* | vector3 |
 
 | Output Name | Output Type |
 |-----------|-----------|
-|  | exec |
-|  | vector3 |
+| *No name.* | exec |
+| *No name.* | vector3 |
 
 ## Properties:
 
@@ -31,5 +31,8 @@ tags: [._tags]
 | Is Beta? | No. |
 | Chip UUID | `fba2accf-44e2-412d-a204-ae3bd04f7dfa` |
 
-## Info:
-._extrainfo
+## Uses
+
+## Issues
+
+## Tips
