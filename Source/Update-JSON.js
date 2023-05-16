@@ -5,6 +5,7 @@ const { stringify } = require("querystring")
 const https = require('follow-redirects').https
 
 const ChipTemplate = fs.readFileSync("templates/chip.md", "utf-8")
+const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.md", "utf-8")
 const DeprMsg = `:::caution
 
 This chip has been deprecated. Please use to a different chip.
@@ -76,6 +77,12 @@ const template = {
     "Color": "#F5C51F",
 }
 
+function FindFileContent(pathtofind, searchfor) {
+    const dirr = fs.readdirSync(pathtofind);
+    const thiscontents = fs.readFileSync(__dirname + "/../ExtraInfo/".concat(dirr.find(element => element.includes(searchfor))))
+    return thiscontents;
+}
+
 function RetrievePorts(){
     for(const chip of Object.values(OldJSON)){
         for(const nodedesc of chip["NodeDescs"]){
@@ -120,6 +127,12 @@ function PrepareFiles() {
     const entries = Object.entries(chps)
     for(const [uuid, contents] of entries){
 
+        try {
+            fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"], "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
+        } catch (error) {
+            
+        }
+
         var NewChipFile = ChipTemplate
         var InputsStr = "| Input Name | Input Type |\n|-----------|-----------|"
         var OutputsStr = "| Output Name | Output Type |\n|-----------|-----------|"
@@ -138,7 +151,7 @@ function PrepareFiles() {
                     newstr = "List[".concat(newstr, "]")
                 }
                 if (prt["Name"] == "") {
-                    prt["Name"] = "Test123"
+                    prt["Name"] = "*No name.*"
                 }
                 InputsStr = InputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr))
             }
@@ -151,12 +164,12 @@ function PrepareFiles() {
                     newstr = "Union(".concat(joined, ")")
                 } else {
                     newstr = prt["DataType"]
-                }
+                } 
                 if (prt["IsList"]) {
                     newstr = "List[".concat(newstr, "]")
                 }
                 if (prt["Name"] == "") {
-                    prt["Name"] = "Test123"
+                    prt["Name"] = "*No name.*"
                 }
                 OutputsStr = OutputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr))
             }
@@ -171,7 +184,8 @@ function PrepareFiles() {
         .replace("._uuid", "`" + uuid + "`")
         .replace("._inputs", InputsStr)
         .replace("._outputs", OutputsStr)
-        .replace("._sidebarpos", Currentindex);
+        .replace("._sidebarpos", Currentindex)
+        .replace("._extrainfo", FindFileContent(__dirname + "/../ExtraInfo", uuid))
 
         switch (contents["DeprecationStage"]) {
             case "Deprecated":
@@ -185,6 +199,9 @@ function PrepareFiles() {
         if(contents["Description"] !== "") {
             NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "[").replace(">", "]"))
         } else NewChipFile = NewChipFile.replace("._chipdesc", "*No description.*")
+
+        fs.writeFileSync(__dirname + '/../WebSRC/circuits/docs/'.concat(uuid, ".md"), NewChipFile);
+
         Currentindex++
     }
 }

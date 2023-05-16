@@ -2051,7 +2051,7 @@
         "PaletteName": "Background Objects Constant",
         "Description": "Defines values for the room's background objects.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -3064,7 +3064,7 @@
         "PaletteName": "Clamp",
         "Description": "Clamps a value between a minimum value and maximum value. If the minimum is greater than the maximum, the minimum value will always be returned no matter the input.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -5885,6 +5885,38 @@
             }
         ]
     },
+    "36cd4562-2c1f-43e3-ba90-56daa0cb7339": {
+        "ChipName": "Explosion Emitter Get Firing Player",
+        "PaletteName": "Explosion Emitter Get Firing Player",
+        "Description": "Returns the player set by the Explosion Emitter Set Firing Player chip.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Explosion Emitter Get Firing Player",
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "Description": "",
+                        "DataType": "explosion emitter",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Player",
+                        "Description": "",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "eff7cfca-dcee-4ea1-887f-e4c60f3c8269": {
         "ChipName": "Explosion Emitter Get Explosion Radius",
         "PaletteName": "Explosion Emitter Get Explosion Radius",
@@ -5993,6 +6025,52 @@
                         "Name": "Damage",
                         "Description": "",
                         "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "Description": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "d39b968d-bdab-4548-aaa7-745e3155789e": {
+        "ChipName": "Explosion Emitter Set Firing Player",
+        "PaletteName": "Explosion Emitter Set Firing Player",
+        "Description": "Sets the firing player of the target Explosion Emitter. If none is set, the component will use the authority player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Explosion Emitter Set Firing Player",
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "Description": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "Description": "",
+                        "DataType": "explosion emitter",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "Description": "",
+                        "DataType": "player",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -6170,7 +6248,7 @@
         "PaletteName": "Fog Constant",
         "Description": "Defines settings for room fog.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -6194,7 +6272,7 @@
         "PaletteName": "Room Fog Modify",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -6406,6 +6484,38 @@
                         "DataType": "player",
                         "IsUnion": false,
                         "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
+    "0922120c-c5b8-4109-8001-61b3131072a4": {
+        "ChipName": "Get Angular Velocity",
+        "PaletteName": "Get Angular Velocity",
+        "Description": "Returns the angular velocity in degrees per second of a Rec Room Object.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Get Angular Velocity",
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "Description": "",
+                        "DataType": "rec room object",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Angular Velocity",
+                        "Description": "",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
                     }
                 ]
             }
@@ -10492,6 +10602,38 @@
             }
         ]
     },
+    "4cdfcf23-e5dc-4b81-a500-189dba609d0f": {
+        "ChipName": "Interaction Volume Get Normalized Hold Progress",
+        "PaletteName": "Interaction Volume Get Normalized Hold Progress",
+        "Description": "Gets normalized hold progress for Interaction Volume V2",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Interaction Volume Get Normalized Hold Progress",
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "Description": "",
+                        "DataType": "interaction volume",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Normalized Hold Progress",
+                        "Description": "",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "380d8467-bdfa-4724-a62c-1955831f994a": {
         "ChipName": "Interaction Volume Set Interaction Prompt",
         "PaletteName": "Interaction Volume Set Interaction Prompt",
@@ -10568,6 +10710,52 @@
                         "Name": "Locked",
                         "Description": "",
                         "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "Description": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "714654bc-7266-4088-8efe-287bdca164fd": {
+        "ChipName": "Interaction Volume Set Normalized Hold Progress",
+        "PaletteName": "Interaction Volume Set Normalized Hold Progress",
+        "Description": "Sets normalized hold progress for Interaction Volume V2",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Interaction Volume Set Normalized Hold Progress",
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "Description": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "Description": "",
+                        "DataType": "interaction volume",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Normalized Hold Progress",
+                        "Description": "",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -12597,7 +12785,7 @@
         "PaletteName": "List Copy",
         "Description": "Returns a shallow clone of the given list.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -14340,6 +14528,66 @@
             }
         ]
     },
+    "5df93bc7-4bb7-44c6-b260-d7b2836436c8": {
+        "ChipName": "Overlap Box",
+        "PaletteName": "Overlap Box",
+        "Description": "Get information about all the objects/players within a box defined by its center, extents, and orientation. (position, distance, direction, etc.)",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Overlap Box",
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "Description": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Center",
+                        "Description": "",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Extents",
+                        "Description": "",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Orientation",
+                        "Description": "",
+                        "DataType": "quaternion",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "Description": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Collisions",
+                        "Description": "",
+                        "DataType": "collision data",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
     "23ce1dae-7585-43af-92c1-9a72fa5d0101": {
         "ChipName": "Overlap Sphere",
         "PaletteName": "Overlap Sphere",
@@ -15524,7 +15772,7 @@
         "PaletteName": "Player Get Room Index",
         "Description": "Returns the unique index of this player in the room, bounded by the room capacity.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -15925,7 +16173,7 @@
         "PaletteName": "Player Is In Party",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -17147,6 +17395,38 @@
             }
         ]
     },
+    "9bc9def7-d7c3-4248-ba1c-35116f013768": {
+        "ChipName": "Projectile Launcher Get Firing Player",
+        "PaletteName": "Projectile Launcher Get Firing Player",
+        "Description": "Returns the player set by the Projectile Launcher Set Firing Player chip.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Projectile Launcher Get Firing Player",
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "Description": "",
+                        "DataType": "projectile launcher",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Player",
+                        "Description": "",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "ed1f109d-bc85-4e4b-8f15-d33363aed7dd": {
         "ChipName": "Projectile Launcher Get Hand Damage",
         "PaletteName": "Projectile Launcher Get Hand Damage",
@@ -17236,6 +17516,38 @@
                         "Name": "Lifetime",
                         "Description": "",
                         "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "630823d4-c27f-493e-81a3-ae482448403d": {
+        "ChipName": "Projectile Launcher Get Rec Room Object Damage",
+        "PaletteName": "Projectile Launcher Get Rec Room Object Damage",
+        "Description": "Returns the damage value that projectiles from the target launcher will do when hitting Rec Room Objects.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Projectile Launcher Get Rec Room Object Damage",
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "Description": "",
+                        "DataType": "projectile launcher",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Damage",
+                        "Description": "",
+                        "DataType": "int",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -17434,7 +17746,7 @@
     "ebff1459-5eb7-456c-a753-f8267d45f79d": {
         "ChipName": "Projectile Launcher Set Firing Player",
         "PaletteName": "Projectile Launcher Set Firing Player",
-        "Description": "",
+        "Description": "Sets the firing player of the target Projectile Launcher. If none is set, the component will use the authority player.",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -17599,6 +17911,52 @@
                         "Name": "Lifetime",
                         "Description": "",
                         "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "Description": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "1fcd6f83-b403-426d-8ded-7064e8790b2d": {
+        "ChipName": "Projectile Launcher Set Rec Room Object Damage",
+        "PaletteName": "Projectile Launcher Set Rec Room Object Damage",
+        "Description": "Sets the damage value that projectiles from the target launcher will do when hitting Rec Room Objects.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "DeprecationStage": "Active",
+        "Functions": [
+            {
+                "Name": "Projectile Launcher Set Rec Room Object Damage",
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "Description": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "Description": "",
+                        "DataType": "projectile launcher",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Damage",
+                        "Description": "",
+                        "DataType": "int",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -19155,7 +19513,7 @@
         "PaletteName": "Room Background Objects Modify",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -19208,7 +19566,7 @@
         "PaletteName": "Room Background Objects Reset",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -19247,7 +19605,7 @@
         "PaletteName": "Room Fog Reset",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -19310,7 +19668,7 @@
         "PaletteName": "Room Index Get Player",
         "Description": "Returns the player in the room with this unique index, bounded by the room capacity.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -19395,7 +19753,7 @@
         "PaletteName": "Room Skydome Modify",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -19448,7 +19806,7 @@
         "PaletteName": "Room Skydome Reset",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -19487,7 +19845,7 @@
         "PaletteName": "Room Sun Reset",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -22030,7 +22388,7 @@
         "PaletteName": "Skydome Constant",
         "Description": "Defines values for the room skydome.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -24158,7 +24516,7 @@
         "PaletteName": "Sun Constant",
         "Description": "Defines values for the room's sun.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [
@@ -24182,7 +24540,7 @@
         "PaletteName": "Room Sun Modify",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "DeprecationStage": "Active",
         "Functions": [

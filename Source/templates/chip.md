@@ -25,5 +25,4 @@ tags: [._tags]
 | Is Beta? | ._isbeta |
 | Chip UUID | ._uuid |
 
-## Info:
 ._extrainfo
