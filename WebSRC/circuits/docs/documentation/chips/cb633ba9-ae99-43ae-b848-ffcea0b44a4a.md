@@ -6,23 +6,25 @@ tags: [._tags]
 # Unequip From Player
 
 
-### *no description*
+### *No description.*
 
 | ![](https://images-ext-2.discordapp.net/external/MPmIaQzlEPmgGWlgi-WxBBXt0Bjv_zWPkg1y1f_sy3s/https/www.recroomcircuits.com/image/circuit/absolute-value?width=206&height=108) |
 |-----|
 
-## Inputs:
-| Port Name | Port Type |
+## Ports:
+
+| Input Name | Input Type |
 |-----------|-----------|
 |  | exec |
 | Player | player |
 | Object | rec room object |
 
-## Outputs:
-| Port Name | Port Type |
+| Output Name | Output Type |
 |-----------|-----------|
 |  | exec |
-| Success | bool | 
+| Success | bool |
+
+## Properties:
 
 | Property  | Value |
 |-------------------|-----------|

@@ -121,13 +121,13 @@ function PrepareFiles() {
     for(const [uuid, contents] of entries){
 
         var NewChipFile = ChipTemplate
-        var InputsStr = "| Port Name | Port Type |\n|-----------|-----------|"
-        var OutputsStr = "| Port Name | Port Type |\n|-----------|-----------|"
+        var InputsStr = "| Input Name | Input Type |\n|-----------|-----------|"
+        var OutputsStr = "| Output Name | Output Type |\n|-----------|-----------|"
         
         try {for(const func of contents["Functions"]) {
             for(const prt of func["Inputs"]) {
-                var prtstr = "| ._name | ._type |"
-                var newstr = ""
+                let prtstr = "| ._name | ._type |"
+                let newstr = ""
                 if(prt["IsUnion"] === true) {
                     var joined = prt["DataType"].join(" , ")
                     newstr = "Union(".concat(joined, ")")
@@ -136,13 +136,16 @@ function PrepareFiles() {
                 }
                 if (prt["IsList"]) {
                     newstr = "List[".concat(newstr, "]")
+                }
+                if (prt["Name"] == "") {
+                    prt["Name"] = "Test123"
                 }
                 InputsStr = InputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr))
             }
 
             for(const prt of func["Outputs"]) {
-                var prtstr = "| ._name | ._type |"
-                var newstr = ""
+                let prtstr = "| ._name | ._type |"
+                let newstr = ""
                 if(prt["IsUnion"] === true) {
                     var joined = prt["DataType"].join(" , ")
                     newstr = "Union(".concat(joined, ")")
@@ -151,6 +154,9 @@ function PrepareFiles() {
                 }
                 if (prt["IsList"]) {
                     newstr = "List[".concat(newstr, "]")
+                }
+                if (prt["Name"] == "") {
+                    prt["Name"] = "Test123"
                 }
                 OutputsStr = OutputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr))
             }
@@ -158,7 +164,8 @@ function PrepareFiles() {
             console.log(error)
         }
         
-        NewChipFile = NewChipFile.replace("._chipname", contents["ChipName"].replace("<", "[").replace(">", "]"))
+        NewChipFile = NewChipFile
+        .replace("._chipname", contents["ChipName"].replace("<", "[").replace(">", "]"))
         .replace("._istroll", BoolToYesNo(contents["TrollingRisk"]))
         .replace("._isbeta", BoolToYesNo(contents["IsBeta"]))
         .replace("._uuid", "`" + uuid + "`")
@@ -177,10 +184,7 @@ function PrepareFiles() {
         }
         if(contents["Description"] !== "") {
             NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "[").replace(">", "]"))
-        } else NewChipFile = NewChipFile.replace("._chipdesc", "*no description*")
-        
-        fs.writeFileSync(__dirname + "/../WebSRC/circuits/docs/documentation/chips/".concat(uuid, ".md"), NewChipFile)
-
+        } else NewChipFile = NewChipFile.replace("._chipdesc", "*No description.*")
         Currentindex++
     }
 }

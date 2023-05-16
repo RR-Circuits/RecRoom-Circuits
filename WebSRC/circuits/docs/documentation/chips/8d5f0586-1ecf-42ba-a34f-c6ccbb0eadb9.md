@@ -11,17 +11,19 @@ tags: [._tags]
 | ![](https://images-ext-2.discordapp.net/external/MPmIaQzlEPmgGWlgi-WxBBXt0Bjv_zWPkg1y1f_sy3s/https/www.recroomcircuits.com/image/circuit/absolute-value?width=206&height=108) |
 |-----|
 
-## Inputs:
-| Port Name | Port Type |
+## Ports:
+
+| Input Name | Input Type |
 |-----------|-----------|
 | Start | Union(quaternion , vector3) |
 | End | Union(quaternion , vector3) |
 | Progress | float |
 
-## Outputs:
-| Port Name | Port Type |
+| Output Name | Output Type |
 |-----------|-----------|
-| Result | Union(quaternion , vector3) | 
+| Result | Union(quaternion , vector3) |
+
+## Properties:
 
 | Property  | Value |
 |-------------------|-----------|

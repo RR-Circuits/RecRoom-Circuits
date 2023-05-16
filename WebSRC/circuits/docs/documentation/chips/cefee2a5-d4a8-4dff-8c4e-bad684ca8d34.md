@@ -11,19 +11,21 @@ tags: [._tags]
 | ![](https://images-ext-2.discordapp.net/external/MPmIaQzlEPmgGWlgi-WxBBXt0Bjv_zWPkg1y1f_sy3s/https/www.recroomcircuits.com/image/circuit/absolute-value?width=206&height=108) |
 |-----|
 
-## Inputs:
-| Port Name | Port Type |
+## Ports:
+
+| Input Name | Input Type |
 |-----------|-----------|
 | Run | exec |
 | Delay (s) | float |
 | Cancel | exec |
 
-## Outputs:
-| Port Name | Port Type |
+| Output Name | Output Type |
 |-----------|-----------|
 | Run | exec |
 | After Delay | exec |
-| Cancel | exec | 
+| Cancel | exec |
+
+## Properties:
 
 | Property  | Value |
 |-------------------|-----------|
