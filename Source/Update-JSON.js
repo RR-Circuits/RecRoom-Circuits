@@ -128,7 +128,7 @@ function PrepareFiles() {
     for(const [uuid, contents] of entries){
 
         try {
-            fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"], "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
+            fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
         } catch (error) {
             
         }
