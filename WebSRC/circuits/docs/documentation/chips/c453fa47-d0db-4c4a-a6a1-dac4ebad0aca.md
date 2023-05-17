@@ -1,5 +1,5 @@
 ---
-sidebar_position: 185
+sidebar_position: 188
 tags: [._tags]
 ---
 
@@ -33,5 +33,8 @@ This chip has been deprecated. Please use to a different chip.
 | Is Beta? | No. |
 | Chip UUID | `c453fa47-d0db-4c4a-a6a1-dac4ebad0aca` |
 
-## Info:
-._extrainfo
+## Uses
+
+## Issues
+
+## Tips

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 425
+sidebar_position: 431
 tags: [._tags]
 ---
 
@@ -15,13 +15,13 @@ tags: [._tags]
 
 | Input Name | Input Type |
 |-----------|-----------|
-|  | exec |
+| *No name.* | exec |
 | Player | player |
 | Object | rec room object |
 
 | Output Name | Output Type |
 |-----------|-----------|
-|  | exec |
+| *No name.* | exec |
 | Success | bool |
 
 ## Properties:
@@ -32,5 +32,8 @@ tags: [._tags]
 | Is Beta? | No. |
 | Chip UUID | `cb633ba9-ae99-43ae-b848-ffcea0b44a4a` |
 
-## Info:
-._extrainfo
+## Uses
+
+## Issues
+
+## Tips

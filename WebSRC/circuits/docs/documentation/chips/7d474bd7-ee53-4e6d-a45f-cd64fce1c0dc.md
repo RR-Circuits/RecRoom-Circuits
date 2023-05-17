@@ -1,5 +1,5 @@
 ---
-sidebar_position: 313
+sidebar_position: 318
 tags: [._tags]
 ---
 
@@ -29,5 +29,8 @@ tags: [._tags]
 | Is Beta? | No. |
 | Chip UUID | `7d474bd7-ee53-4e6d-a45f-cd64fce1c0dc` |
 
-## Info:
-._extrainfo
+## Uses
+
+## Issues
+
+## Tips

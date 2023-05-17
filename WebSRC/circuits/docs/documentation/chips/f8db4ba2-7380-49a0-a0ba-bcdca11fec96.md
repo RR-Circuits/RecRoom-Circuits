@@ -1,5 +1,5 @@
 ---
-sidebar_position: 471
+sidebar_position: 480
 tags: [._tags]
 ---
 
@@ -15,11 +15,11 @@ tags: [._tags]
 
 | Input Name | Input Type |
 |-----------|-----------|
-|  | any |
+| *No name.* | any |
 
 | Output Name | Output Type |
 |-----------|-----------|
-|  | any |
+| *No name.* | any |
 
 ## Properties:
 
@@ -29,5 +29,8 @@ tags: [._tags]
 | Is Beta? | No. |
 | Chip UUID | `f8db4ba2-7380-49a0-a0ba-bcdca11fec96` |
 
-## Info:
-._extrainfo
+## Uses
+
+## Issues
+
+## Tips
