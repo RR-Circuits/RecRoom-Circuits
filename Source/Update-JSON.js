@@ -77,12 +77,6 @@ const template = {
     "Color": "#F5C51F",
 }
 
-function FindFileContent(pathtofind, searchfor) {
-    const dirr = fs.readdirSync(pathtofind);
-    const thiscontents = fs.readFileSync(__dirname + "/../ExtraInfo/".concat(dirr.find(element => element.includes(searchfor))))
-    return thiscontents;
-}
-
 function RetrievePorts(){
     for(const chip of Object.values(OldJSON)){
         for(const nodedesc of chip["NodeDescs"]){
@@ -126,9 +120,17 @@ function PrepareFiles() {
     const chps = JSON.parse(chps_rw)
     const entries = Object.entries(chps)
     for(const [uuid, contents] of entries){
+        var ExtraInfoFile = ""
+        var TagsFile = ""
+        const DirPath = __dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid)
 
         try {
-            fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
+            fs.mkdirSync(DirPath, {recursive: true}, function (err){
+                if (err) console.log("error");
+            })
+            fs.writeFileSync(DirPath.concat("/extrainfo.md"), ExtraInfoTemplate, { flag: "wx" })
+            fs.writeFileSync(DirPath.concat("/tags.txt"), "Chip", { flag: "wx" })
+           // fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
         } catch (error) {
             
         }
@@ -185,7 +187,8 @@ function PrepareFiles() {
         .replace("._inputs", InputsStr)
         .replace("._outputs", OutputsStr)
         .replace("._sidebarpos", Currentindex)
-        .replace("._extrainfo", FindFileContent(__dirname + "/../ExtraInfo", uuid))
+        .replace("._extrainfo", fs.readFileSync(DirPath.concat("/extrainfo.md"), "utf-8"))
+        .replace("._tags", fs.readFileSync(DirPath.concat("/tags.txt"), "utf-8"))
 
         switch (contents["DeprecationStage"]) {
             case "Deprecated":
@@ -200,7 +203,7 @@ function PrepareFiles() {
             NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "[").replace(">", "]"))
         } else NewChipFile = NewChipFile.replace("._chipdesc", "*No description.*")
 
-        fs.writeFileSync(__dirname + '/../WebSRC/circuits/docs/documentation/chips/'.concat(uuid, ".md"), NewChipFile);
+        fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".md"), NewChipFile);
 
         Currentindex++
     }

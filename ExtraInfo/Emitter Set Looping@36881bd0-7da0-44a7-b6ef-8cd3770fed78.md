@@ -1,5 +1,0 @@
-## Uses
-
-## Issues
-
-## Tips
