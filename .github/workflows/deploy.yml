@@ -4,9 +4,15 @@ on:
   pull_request:
     branches:
       - 'main'
+    paths:
+      - '/ExtraInfo/**'
+      - '/Circuits/docs/documentation/chips/**'
   push:
     branches:
       - 'main'
+    paths:
+      - '/ExtraInfo/**'
+      - '/Circuits/docs/documentation/chips/**'
 
 jobs:
   test-deploy:
