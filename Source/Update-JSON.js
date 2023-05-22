@@ -6,9 +6,14 @@ const https = require('follow-redirects').https
 
 const ChipTemplate = fs.readFileSync("templates/chip.mdx", "utf-8")
 const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.mdx", "utf-8")
-const DeprMsg = `:::caution
+const DeprMsg = `:::danger DEPRECATED
 
-This chip has been deprecated. Please use to a different chip.
+This chip has been deprecated. Please move to a different chip.
+
+:::`
+const BetaMsg = `:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
 
 :::`
 
@@ -196,7 +201,11 @@ function PrepareFiles() {
                 break;
         
             default:
-                NewChipFile = NewChipFile.replace("._depr", "")
+                if (contents["IsBeta"]) {
+                    NewChipFile = NewChipFile.replace("._depr", BetaMsg)
+                } else {
+                    NewChipFile = NewChipFile.replace("._depr", "")
+                }
                 break;
         }
         if(contents["Description"] !== "") {
