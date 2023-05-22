@@ -39,4 +39,4 @@ jobs:
           git config --global user.email "rrobuxian@gmail.com"
           git config --global user.name "FunnPunn"
           npm ci
-          npm run deploy
+          npm run docusaurus deploy 
