@@ -1,4 +1,4 @@
-name: 'Generate chips.json'
+name: 'Generate chip markdown'
 on:
   workflow_dispatch:
   push:
@@ -9,7 +9,7 @@ on:
       - '!Circuits/docs/chips/**'
 jobs:
   generate:
-    name: 'Generate chips.json'
+    name: 'Generate chip markdown'
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -20,7 +20,7 @@ jobs:
           node-version: 18
           cache: npm
       - name: 'Run script'
-        working-directory: ./Source
+        working-directory: './Source'
         run: |
           npm ci
           npm run generate
@@ -29,3 +29,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "gh-action"
           git pull origin master
+          git add Circuits/docs/chips
+      - name: 'Push'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.COMFY_ORANGE_PAT || secrets.GITHUB_TOKEN }}
