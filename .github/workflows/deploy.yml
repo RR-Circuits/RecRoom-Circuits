@@ -19,6 +19,12 @@ jobs:
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+
+      - name: Run script.
+        working-directory: ./Source
+        run: npm ci
+        run: npm run test
+
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
@@ -28,4 +34,4 @@ jobs:
           git config --global user.email "84284151+FunnPunn@users.noreply.github.com"
           git config --global user.name "FunnPunn"
           npm ci
-          npm run docusaurus deploy 
+          npm run docusaurus deploy
