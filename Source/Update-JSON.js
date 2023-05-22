@@ -4,8 +4,8 @@ const { exit } = require("process")
 const { stringify } = require("querystring")
 const https = require('follow-redirects').https
 
-const ChipTemplate = fs.readFileSync("templates/chip.md", "utf-8")
-const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.md", "utf-8")
+const ChipTemplate = fs.readFileSync("templates/chip.mdx", "utf-8")
+const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.mdx", "utf-8")
 const DeprMsg = `:::caution
 
 This chip has been deprecated. Please use to a different chip.
@@ -128,7 +128,7 @@ function PrepareFiles() {
             fs.mkdirSync(DirPath, {recursive: true}, function (err){
                 if (err) console.log("error");
             })
-            fs.writeFileSync(DirPath.concat("/extrainfo.md"), ExtraInfoTemplate, { flag: "wx" })
+            fs.writeFileSync(DirPath.concat("/extrainfo.mdx"), ExtraInfoTemplate, { flag: "wx" })
             fs.writeFileSync(DirPath.concat("/tags.txt"), "Chip", { flag: "wx" })
            // fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
         } catch (error) {
@@ -187,7 +187,7 @@ function PrepareFiles() {
         .replace("._inputs", InputsStr)
         .replace("._outputs", OutputsStr)
         .replace("._sidebarpos", Currentindex)
-        .replace("._extrainfo", fs.readFileSync(DirPath.concat("/extrainfo.md"), "utf-8"))
+        .replace("._extrainfo", fs.readFileSync(DirPath.concat("/extrainfo.mdx"), "utf-8"))
         .replace("._tags", fs.readFileSync(DirPath.concat("/tags.txt"), "utf-8"))
 
         switch (contents["DeprecationStage"]) {
@@ -203,7 +203,8 @@ function PrepareFiles() {
             NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "[").replace(">", "]"))
         } else NewChipFile = NewChipFile.replace("._chipdesc", "*No description.*")
 
-        fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".md"), NewChipFile);
+        fs.unlink(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".md"), (err) => { if (err) { throw err }});
+        fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".mdx"), NewChipFile);
 
         Currentindex++
     }
