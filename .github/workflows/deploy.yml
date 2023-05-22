@@ -35,6 +35,7 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
+        working-directory: ./Circuits
         run: |
           git config --global user.email "rrobuxian@gmail.com"
           git config --global user.name "FunnPunn"
