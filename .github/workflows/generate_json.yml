@@ -1,0 +1,31 @@
+name: 'Generate chips.json'
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'ExtraInfo/**'
+      - '!Circuits/docs/chips/**'
+jobs:
+  generate:
+    name: 'Generate chips.json'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+      - name: 'Setup Node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - name: 'Run script'
+        working-directory: ./Source
+        run: |
+          npm ci
+          npm run generate
+      - name: 'Commit'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "gh-action"
+          git pull origin master
