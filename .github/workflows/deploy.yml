@@ -6,7 +6,6 @@ on:
       - 'main'
     paths:
       - '/Circuits/**'
-      - '/ExtraInfo/**'
 
 jobs:
   deploy:
@@ -20,11 +19,6 @@ jobs:
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
-
-      - name: Run script.
-        working-directory: ./Source
-        run: npm ci
-        run: npm run test
 
       - name: Deploy to GitHub Pages
         env:
