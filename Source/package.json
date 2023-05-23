@@ -10,6 +10,7 @@
   "author": "Funn Punn, PeteBrick",
   "license": "ISC",
   "dependencies": {
-    "follow-redirects": "^1.15.2"
+    "follow-redirects": "^1.15.2",
+    "fs-extra": "^11.1.1"
   }
 }

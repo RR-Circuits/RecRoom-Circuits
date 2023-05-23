@@ -1,4 +1,4 @@
-const fs = require("fs")
+const fs = require("fs-extra")
 const { join } = require("path")
 const { exit } = require("process")
 const { stringify } = require("querystring")
@@ -119,25 +119,49 @@ function RetrievePorts(){
         }
     }
 }
+function CheckHasFileName(arr, checkr) {
+    for (const element of arr) {
+        if (element.includes(checkr)) {
+            return [true, element]
+        }
+    }
+    return [false]
+}
 
 function PrepareFiles() {
     const chps_rw = fs.readFileSync("Generated/chips.json", "utf-8")
     const chps = JSON.parse(chps_rw)
     const entries = Object.entries(chps)
+    fs.mkdirSync(__dirname + '/../ExtraInfo/', {recursive: true}, function (err){
+        if (err) console.log("error");
+    })
+    const ExtraInfoDir = fs.readdirSync(__dirname + '/../ExtraInfo/', {}, (err, files) => {
+        if (err) {
+            console.log(err)
+        }
+    })
     for(const [uuid, contents] of entries){
         var ExtraInfoFile = ""
         var TagsFile = ""
         const DirPath = __dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid)
+        const FlNm = contents["ChipName"].replace("<", "[").replace(">", "]").concat("@", uuid)
+        const [Success, Element] = CheckHasFileName(ExtraInfoDir, uuid)
 
-        try {
-            fs.mkdirSync(DirPath, {recursive: true}, function (err){
-                if (err) console.log("error");
-            })
-            fs.writeFileSync(DirPath.concat("/extrainfo.mdx"), ExtraInfoTemplate, { flag: "wx" })
-            fs.writeFileSync(DirPath.concat("/tags.txt"), "Chip", { flag: "wx" })
-           // fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
-        } catch (error) {
-            
+        if (Success) {
+            if (Element != FlNm) {
+                fs.renameSync(__dirname + '/../ExtraInfo/' + Element, DirPath)
+            }
+        } else {
+            try {
+                fs.mkdirSync(DirPath, {recursive: true}, function (err){
+                    if (err) console.log("error");
+                })
+                fs.writeFileSync(DirPath.concat("/extrainfo.mdx"), ExtraInfoTemplate, { flag: "wx" })
+                fs.writeFileSync(DirPath.concat("/tags.txt"), "Chip", { flag: "wx" })
+               // fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
+            } catch (error) {
+                
+            }
         }
 
         var NewChipFile = ChipTemplate
