@@ -41,4 +41,4 @@ jobs:
           git push
       - name: 'Deploy'
         if: '!inputs.skip-deploy'
-        uses: './.github/workflows/deploy.yml'
+        uses: './.github/workflows/actions/deploy_website'
