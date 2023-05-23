@@ -11,6 +11,8 @@ jobs:
   generate:
     name: 'Generate chip markdown'
     runs-on: ubuntu-latest
+    permissions:
+      contents: 'write'
     steps:
       - name: 'Checkout'
         uses: actions/checkout@v3
@@ -24,14 +26,10 @@ jobs:
         run: |
           npm ci
           npm run generate
-      - name: 'Commit'
+      - name: 'Commit and push'
         run: |
           git config --local user.email "github-actions@github.com"
           git config --local user.name "github-actions"
           git add Circuits/docs/documentation/chips
           git commit -m "Update extra info in static markdown"
-          git push https://${{ secrets.CI_TOKEN }}@github.com/${{ github.repository }}.git
-#      - name: 'Push'
-#        uses: ad-m/github-push-action@df39337088a4cf2782a73f221bbd33f90e3e091d
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
+          git push
