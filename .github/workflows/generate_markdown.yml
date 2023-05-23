@@ -26,11 +26,9 @@ jobs:
           npm run generate
       - name: 'Commit and push'
         run: |
-          pwd
-          ls -l
           git config --local user.email "github-actions@github.com"
           git config --local user.name "github-actions"
-          git add Circuits/docs/chips/**
+          git add Circuits/docs/documentation/chips
           git commit -m "Update extra info in static markdown"
           git push
 #      - name: 'Push'
