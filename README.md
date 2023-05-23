@@ -1,5 +1,5 @@
 # Rec Room Circuits
-Maintained by Funn Punn
+Maintained by Funn Punn and Joksulainen
 
 | Task                  | Progress |
 |-----------------------|----------|

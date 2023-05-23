@@ -4,18 +4,14 @@ tags: [Chip]
 ---
 
 # Lerp Unclamped
+
+Computes a linear interpolation. The interpolant is not clamped. When lerping between Colors, the interpolant is still constrained to values which stay within the set of real colors.
+
 :::caution BETA
 
 This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
 
 :::
-
-Computes a linear interpolation. The interpolant is not clamped. When lerping between Colors, the interpolant is still constrained to values which stay within the set of real colors.
-
-| ![](https://images-ext-2.discordapp.net/external/MPmIaQzlEPmgGWlgi-WxBBXt0Bjv_zWPkg1y1f_sy3s/https/www.recroomcircuits.com/image/circuit/absolute-value?width=206&height=108) |
-|-----|
-
-## Ports:
 
 | Input Name | Input Type |
 |-----------|-----------|
@@ -27,13 +23,30 @@ Computes a linear interpolation. The interpolant is not clamped. When lerping be
 |-----------|-----------|
 | Result | Union(float , quaternion , vector3 , color) |
 
-## Properties:
 
-| Property  | Value |
-|-------------------|-----------|
-| Is Trolling Risk? | No. |
-| Is Beta? | Yes. |
-| Chip UUID | `6e9219ab-89d2-47e3-a105-562a9a1fddda` |
+<details>
+  <summary>Properties</summary>
+  <div>
+    <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Is beta required?</th>
+          <th>✅</th>
+        </tr>
+        <tr>
+          <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Chip UUPD</th>
+          <th>6e9219ab-89d2-47e3-a105-562a9a1fddda</th>
+        </tr>
+      </thead>
+    </table>
+    </div>
+  </div>
+</details>
 
 ### Uses
 

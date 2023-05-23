@@ -26,7 +26,7 @@ function AddStep(prnt) {
     console.log("[".concat(CurrentStep, "/", TotalSteps, "] ", prnt))
 }
 function BoolToYesNo(bl) {
-    if(bl) return "Yes."; else return "No.";
+    if(bl) return "✅"; else return "❌";
 }
 const DownloadFile = "Generated/Chips_OLD.json"
 
@@ -188,7 +188,7 @@ function PrepareFiles() {
         .replace("._chipname", contents["ChipName"].replace("<", "[").replace(">", "]"))
         .replace("._istroll", BoolToYesNo(contents["TrollingRisk"]))
         .replace("._isbeta", BoolToYesNo(contents["IsBeta"]))
-        .replace("._uuid", "`" + uuid + "`")
+        .replace("._uuid", uuid)
         .replace("._inputs", InputsStr)
         .replace("._outputs", OutputsStr)
         .replace("._sidebarpos", Currentindex)
