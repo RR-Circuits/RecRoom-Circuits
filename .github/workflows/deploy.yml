@@ -29,7 +29,7 @@ jobs:
         working-directory: './Circuits'
         run: |
           export NODE_OPTIONS="--max_old_space_size=4096"
-          git config --global user.email "github-actions@github.com"
-          git config --global user.name "github-actions"
+          git config --global user.email "action@github.com"
+          git config --global user.name "actions-user"
           npm ci
           npm run docusaurus deploy
