@@ -1,0 +1,37 @@
+name: 'Generate chip markdown'
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'ExtraInfo/**'
+      - '!Circuits/docs/chips/**'
+jobs:
+  generate:
+    name: 'Generate chip markdown'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+      - name: 'Setup Node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - name: 'Run script'
+        working-directory: './Source'
+        run: |
+          npm ci
+          npm run generate
+      - name: 'Commit and push'
+        run: |
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "github-actions"
+          git add Circuits/docs/chips
+          git commit -m "Update extra info in static markdown"
+          git push
+#      - name: 'Push'
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.CI_TOKEN }}

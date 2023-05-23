@@ -4,7 +4,8 @@
   "description": "Data for the docs page.",
   "main": "Update-JSON.js",
   "scripts": {
-    "test": "node Update-JSON.js"
+    "test": "node Update-JSON.js",
+    "generate": "node Update-JSON.js"
   },
   "author": "Funn Punn, PeteBrick",
   "license": "ISC",
