@@ -30,7 +30,7 @@ jobs:
           git config --local user.name "github-actions"
           git add Circuits/docs/documentation/chips
           git commit -m "Update extra info in static markdown"
-          git push
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 #      - name: 'Push'
 #        uses: ad-m/github-push-action@master
 #        with:
