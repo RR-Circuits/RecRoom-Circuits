@@ -330,9 +330,6 @@ function RestOfUpdate(){
     
     AddStep("Updating ports.json...")
     RetrievePorts();
-    fs.mkdirSync("Generated", {recursive: true}, function (err){
-        if (err) console.log("error");
-    })
     fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
 
     AddStep("Translating chips...")
@@ -349,6 +346,9 @@ function RestOfUpdate(){
     exit(0)
 }
 AddStep("Downloading chips...")
+fs.mkdirSync("Generated", {recursive: true}, function (err){
+    if (err) console.log("error");
+})
 const file = fs.createWriteStream("Generated/Chips_OLD.json");
 const request = https.get("https://raw.githubusercontent.com/tyleo-rec/CircuitsV2Resources/master/misc/circuitsv2.json", function(response) {
     response.pipe(file);
