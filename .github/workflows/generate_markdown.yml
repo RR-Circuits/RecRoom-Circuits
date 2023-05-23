@@ -27,9 +27,10 @@ jobs:
       - name: 'Commit and push'
         run: |
           pwd
+          ls --verbose
           git config --local user.email "github-actions@github.com"
           git config --local user.name "github-actions"
-          git add Circuits/docs/chips
+          git add Circuits/docs/chips/**
           git commit -m "Update extra info in static markdown"
           git push
 #      - name: 'Push'
