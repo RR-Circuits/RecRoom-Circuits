@@ -28,9 +28,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "gh-action"
-          git pull origin master
           git add Circuits/docs/chips
+          git commit -m "Update extra info in static markdown"
       - name: 'Push'
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.CI_TOKEN }}
