@@ -1,12 +1,12 @@
 name: 'Generate chip markdown'
 on:
   workflow_dispatch:
-    inputs:
-      skip-deploy:
-        description: 'Skip deployment step'
-        type: boolean
-        required: true
-        default: false
+#    inputs:
+#      skip-deploy:
+#        description: 'Skip deployment step'
+#        type: boolean
+#        required: true
+#        default: false
   push:
     branches:
       - 'main'
@@ -39,6 +39,6 @@ jobs:
           git add Circuits/docs/documentation/chips
           git commit -m "Update extra info in static markdown"
           git push
-      - name: 'Deploy'
-        if: '!inputs.skip-deploy'
-        uses: './.github/workflows/actions/deploy_website'
+#      - name: 'Deploy'
+#        if: '!inputs.skip-deploy'
+#        uses: './.github/workflows/actions/deploy_website'
