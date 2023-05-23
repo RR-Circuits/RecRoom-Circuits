@@ -1,10 +1,11 @@
 name: 'Deploy to GitHub Pages'
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'main'
     paths:
-      - 'Circuits/**'
+      - 'Circuits/docs/**'
 jobs:
   deploy:
     name: 'Deploy'
