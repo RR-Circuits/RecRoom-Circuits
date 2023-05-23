@@ -330,6 +330,9 @@ function RestOfUpdate(){
     
     AddStep("Updating ports.json...")
     RetrievePorts();
+    fs.mkdirSync("Generated", {recursive: true}, function (err){
+        if (err) console.log("error");
+    })
     fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
 
     AddStep("Translating chips...")
