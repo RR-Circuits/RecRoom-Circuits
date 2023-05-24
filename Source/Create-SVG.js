@@ -102,18 +102,21 @@ const NewChip = d3.select(Template.window.document.body).append("svg")
     .attr("height", 400)
 
 const Top = NewChip
+    .append("path")
+        .attr("d",
+            "M._posx, ._posy v-31 q0,-11,22,-11 h67 q22,0,22,11 v31 h-111".replace("._posx", chipxoffset).replace("._posy", TopHeight)
+        )
+        .attr("fill", "#525152")
+    /*
     .append("rect")
         .attr("x", chipxoffset)
         .attr("y", 0)
         .attr("width", MinimalPadding)
         .attr("height", TopHeight)
         .attr("fill", "#525152")
-
+*/
 const Bottom = NewChip 
-        .append("rect")
-            .attr("x", chipxoffset)
-            .attr("y", TopHeight)
-            .attr("width", Math.max(MinimalPadding, 0))
+        .append("path")
             .attr("fill", "#818081")
 
 const Funcs = Chip[tempUUID]["Functions"][0]
@@ -139,6 +142,10 @@ for (const port of Funcs["Outputs"]) {
     OutSpacing = OutSpacing + returnedwidth + VerticalPortPadding
 }
 
-Bottom.attr("height", PaddingFromTop + PaddingFromBottom + Math.max(TotalInputSpacing, TotalOutputSpacing))
+const NewPathHeight = ("height", PaddingFromTop + PaddingFromBottom + Math.max(TotalInputSpacing, TotalOutputSpacing))
+
+Bottom.attr("d",
+    "M._posx, ._posy v._heightsubten q0,10,10,10 h._chipwdsubten q10,0,10,-10 v._negheig h._chipyw".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._heightsubten", NewPathHeight - 10).replace("._chipwdsubten", MinimalPadding - 20).replace("._chipyw", MinimalPadding).replace("._negheig", 0-NewPathHeight + 10)
+)
 
 fs.writeFileSync("Generated/TestElement.svg", Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
