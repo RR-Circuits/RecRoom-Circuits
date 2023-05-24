@@ -1,10 +1,10 @@
 # Rec Room Circuits
-Maintained by Funn Punn and Joksulainen
+Maintained by Funn Punn and joksulainen
 
 | Task                  | Progress |
 |-----------------------|----------|
 | Implement Chip JSON   | ✅        |
-| Create Chip Docs      | 🚧        |
+| Create Chip Docs      | :warning:        |
 | Create Circuit Guides | 🚧        |
 
 ## How to add extra info to chip files?
@@ -40,3 +40,10 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 ```
 
 You can also test the new pages by going to Website/circuits and running `npm run start -- --host 0.0.0.0`. (after you installed the `docusaurus` module, of course).
+
+
+### Credits
+
+- joksulainen - went through 7 stages of life in one day, just to make the most important stuff work
+- Funn Punn - did a thing, I guess
+- CV2 community - used this (actually I'm not sure)
