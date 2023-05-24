@@ -1,11 +1,10 @@
 const fs = require("fs-extra")
-const { join } = require("path")
 const { exit } = require("process")
-const { stringify } = require("querystring")
 const https = require('follow-redirects').https
 
 const ChipTemplate = fs.readFileSync("templates/chip.mdx", "utf-8")
 const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.mdx", "utf-8")
+
 const DeprMsg = `:::danger DEPRECATED
 
 This chip has been deprecated. Please move to a different chip.
@@ -358,16 +357,10 @@ const request = https.get("https://raw.githubusercontent.com/tyleo-rec/CircuitsV
         RestOfUpdate()
     })
 })
-/*
-{
-    NodeDescs: [
-        {
-            Inputs/Outputs: [
-                {
 
-                }
-            ]
-        }
-    ]
-}
+/*
+Script made by Funn Punn. Please don't modify this, I already have a hard time reading my own code.
+Thanks!
+
+^•ﻌ•^
 */
