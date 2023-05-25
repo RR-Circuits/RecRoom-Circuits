@@ -41,8 +41,12 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
         
     }
     if (Model == "Exec") {
-        ParentObject.append("path")
-            .attr("d", "M._posx,._posyh-16.465c-0.552,0,-1,0.448,-1,1v16c0,0.552,0.448,1,1,1h16.465c0.334,0,0.647,-0.167,0.832,-0.445l5.333,-8c0.224,-0.336,0.224,-0.774,0,-1.11l-5.333,-8c-0.185,-0.278,-0.498,-0.445,-0.832,-0.445z".replace("._posx", posx + portoffset).replace("._posy", posy))
+        var posxrep = posx + portoffset
+        if (!IsInput) {
+            posxrep = posxrep + 2
+        }
+        const testpath = ParentObject.append("path")
+            .attr("d", "M._posx,._posyh-16.465c-0.552,0,-1,0.448,-1,1v16c0,0.552,0.448,1,1,1h16.465c0.334,0,0.647,-0.167,0.832,-0.445l5.333,-8c0.224,-0.336,0.224,-0.774,0,-1.11l-5.333,-8c-0.185,-0.278,-0.498,-0.445,-0.832,-0.445z".replace("._posx", posxrep).replace("._posy", posy))
             .attr("fill", Color)
         prtheight = 18
     } else if (Model == "Data") {
@@ -86,13 +90,16 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
                     .attr("fill", Color)
 
         } else {
-            ParentObject.append("rect")
+            const testrect = ParentObject.append("rect")
                 .attr("x", posx - 12)
                 .attr("y", posy)
                 .attr("width", "22")
                 .attr("height", "15")
                 .attr("rx", "1")
                 .attr("fill", Color)
+            if (!IsInput) {
+                testrect.attr("x", posx - 10)
+            }
         }
 
     prtheight = 15
@@ -117,6 +124,8 @@ function GenerateSVG (tempUUID) {
     const NewChip = d3.select(Template.window.document.body).append("svg")
         .attr("width", 800)
         .attr("height", 800)
+        .attr("xmlns", "http://www.w3.org/2000/svg")
+        .attr("viewbox", "0 0 800 800")
 
     NewChip.append("defs")
         .append("style")
@@ -177,14 +186,15 @@ function GenerateSVG (tempUUID) {
         }
     } catch (err) {}
 
-    const NewPathHeight = ("height", PaddingFromTop + PaddingFromBottom + Math.max(TotalInputSpacing, TotalOutputSpacing))
+    const NewPathHeight = (PaddingFromTop + PaddingFromBottom + Math.max(TotalInputSpacing, TotalOutputSpacing))
 
     const ChipLen = Math.max(MinimalPadding, TopBarWidth, LargestInputText + LargestOutputText)
 
     Bottom.attr("d",
         "M._posx, ._posy v._heightsubten q0,10,10,10 h._chipwdsubten q10,0,10,-10 v._negheig h._chipyw".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._heightsubten", NewPathHeight - 10).replace("._chipwdsubten", ChipLen - 20).replace("._chipyw", ChipLen).replace("._negheig", 0-NewPathHeight + 10)
     )
-
+    NewChip.attr("height", ChipLen)
+    NewChip.attr("viewbox", "0 0 800 ".concat(ChipLen))
     const Top = NewChip
         .append("path")
             .attr("d",
