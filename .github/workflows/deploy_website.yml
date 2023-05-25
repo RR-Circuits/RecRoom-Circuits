@@ -3,12 +3,12 @@ on:
   workflow_dispatch:
     inputs:
       just-deploy:
-        description: 'Only do deployment step'
+        description: 'Just deploy (overrides skip because of or)'
         type: boolean
         required: true
         default: false
       skip-deploy:
-        description: 'Skip deployment step'
+        description: 'Skip deploy'
         type: boolean
         required: true
         default: false
