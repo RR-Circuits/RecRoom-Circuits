@@ -20,14 +20,18 @@ const PaddingFromBottom = 4
 
 const chipxoffset = 160
 
+const FontSize = 8
+
 //Padding
 
-function AppendPort(ParentObject, IsInput, PortType, [posx, posy]) {
+function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
     const PType = Ports[PortType]
     var Color = "#F6EEE8"
     var Model = "Data"
     var HasDefaultValue = false
     var portoffset = 5
+
+    var prtheight = 0
     try {
         Color = PType["Color"]
         Model = PType["Model"]
@@ -40,7 +44,7 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy]) {
         ParentObject.append("path")
             .attr("d", "M._posx,._posyh-16.465c-0.552,0,-1,0.448,-1,1v16c0,0.552,0.448,1,1,1h16.465c0.334,0,0.647,-0.167,0.832,-0.445l5.333,-8c0.224,-0.336,0.224,-0.774,0,-1.11l-5.333,-8c-0.185,-0.278,-0.498,-0.445,-0.832,-0.445z".replace("._posx", posx + portoffset).replace("._posy", posy))
             .attr("fill", Color)
-        return 18
+        prtheight = 18
     } else if (Model == "Data") {
         if (HasDefaultValue && IsInput) {
             ParentObject.append("g")
@@ -90,23 +94,47 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy]) {
                 .attr("rx", "1")
                 .attr("fill", Color)
         }
-    return 15
+
+    prtheight = 15
     }
+    var Anch = "start"
+    if (!IsInput) {Anch = "end"; portoffset = -16} else {portoffset = 16}
+
+    ParentObject.append("svg:text")
+        .attr("x", posx + portoffset)
+        .attr("y", posy+12.5)
+        .text(PortName)
+        .attr("fill", "white")
+        .attr("text-anchor", Anch)
+        .attr("font-size", "medium")
+        .attr("font-family", "Ubuntu")
+    
+    return [prtheight, PortName.length * FontSize + HorizontalPortPadding]
 }
 
 function GenerateSVG (tempUUID) {
     const Template = new jsdom.JSDOM('<body></body>')
     const NewChip = d3.select(Template.window.document.body).append("svg")
-        .attr("width", 400)
-        .attr("height", 400)
+        .attr("width", 800)
+        .attr("height", 800)
 
-    const Top = NewChip
-        .append("path")
-            .attr("d",
-                "M._posx, ._posy v-31 q0,-10,10,-10 h91 q10,0,10,10 v31 h-111".replace("._posx", chipxoffset).replace("._posy", TopHeight)
-            )
-            .attr("fill", "#525152")
+    NewChip.append("defs")
+        .append("style")
+            .attr("type", "text/css")
+            .html("@import url('https://fonts.googleapis.com/css2?family=Ubuntu');")
 
+    const Title = NewChip
+        .append("svg:text")
+            .attr("x", 10)
+            .attr("y", 20)
+            .text(Chip[tempUUID]["ChipName"])
+            .attr("fill", "white")
+            .attr("text-anchor", "middle")
+            .attr("font-size", "medium")
+            .attr("font-family", "Ubuntu")
+
+    const TopBarWidth = Title.text().length * FontSize + 57 * 2
+    Title.attr("x", TopBarWidth/2 + chipxoffset).attr("y", TopHeight/2+FontSize)
     const Bottom = NewChip 
             .append("path")
                 .attr("fill", "#818081")
@@ -115,31 +143,55 @@ function GenerateSVG (tempUUID) {
     var TotalInputSpacing = 0
     var TotalOutputSpacing = 0
 
-    if (Funcs["Inputs"].length > 0) {
-        TotalInputSpacing = (Funcs["Inputs"].length) * VerticalPortPadding - 1 + Funcs["Inputs"].length * PortHeight
-    }
-    if (Funcs["Outputs"].length > 0) {
-        TotalOutputSpacing = (Funcs["Outputs"].length) * VerticalPortPadding - 1 + Funcs["Outputs"].length * PortHeight
-    }
+    var LargestInputText = 0
+    var LargestOutputText = 0
 
     var InSpacing = TopHeight + PaddingFromTop
     var OutSpacing = TopHeight + PaddingFromTop
-
-    for (const port of Funcs["Inputs"]) {
-        const returnedwidth = AppendPort(NewChip, true, port["DataType"], [chipxoffset, InSpacing])
-        InSpacing = InSpacing + returnedwidth + VerticalPortPadding
-    }
-    for (const port of Funcs["Outputs"]) {
-        const returnedwidth = AppendPort(NewChip, false, port["DataType"], [chipxoffset + 111, OutSpacing])
-        OutSpacing = OutSpacing + returnedwidth + VerticalPortPadding
-    }
+    
+    try {
+        if (Funcs["Inputs"].length > 0) {
+            TotalInputSpacing = (Funcs["Inputs"].length) * VerticalPortPadding - 1 + Funcs["Inputs"].length * PortHeight
+        }
+        if (Funcs["Outputs"].length > 0) {
+            TotalOutputSpacing = (Funcs["Outputs"].length) * VerticalPortPadding - 1 + Funcs["Outputs"].length * PortHeight
+        }
+    
+        for (const port of Funcs["Inputs"]) {
+            const RtrnVL = AppendPort(NewChip, true, port["DataType"], [chipxoffset, InSpacing], port["Name"])
+            const returnedwidth = RtrnVL[0]
+            const namelen = RtrnVL[1]
+            InSpacing = InSpacing + returnedwidth + VerticalPortPadding
+            if (namelen > LargestInputText) {
+                LargestInputText = namelen
+            }
+        }
+        for (const port of Funcs["Outputs"]) {
+            const RtrnVL = AppendPort(NewChip, false, port["DataType"], [chipxoffset + Math.max(MinimalPadding, TopBarWidth), OutSpacing], port["Name"])
+            const returnedwidth = RtrnVL[0]
+            const namelen = RtrnVL[1]
+            OutSpacing = OutSpacing + returnedwidth + VerticalPortPadding
+            if (namelen > LargestOutputText) {
+                LargestOutputText = namelen
+            }
+        }
+    } catch (err) {}
 
     const NewPathHeight = ("height", PaddingFromTop + PaddingFromBottom + Math.max(TotalInputSpacing, TotalOutputSpacing))
 
+    const ChipLen = Math.max(MinimalPadding, TopBarWidth, LargestInputText + LargestOutputText)
+
     Bottom.attr("d",
-        "M._posx, ._posy v._heightsubten q0,10,10,10 h._chipwdsubten q10,0,10,-10 v._negheig h._chipyw".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._heightsubten", NewPathHeight - 10).replace("._chipwdsubten", MinimalPadding - 20).replace("._chipyw", MinimalPadding).replace("._negheig", 0-NewPathHeight + 10)
+        "M._posx, ._posy v._heightsubten q0,10,10,10 h._chipwdsubten q10,0,10,-10 v._negheig h._chipyw".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._heightsubten", NewPathHeight - 10).replace("._chipwdsubten", ChipLen - 20).replace("._chipyw", ChipLen).replace("._negheig", 0-NewPathHeight + 10)
     )
 
+    const Top = NewChip
+        .append("path")
+            .attr("d",
+                "M._posx, ._posy v-31 q0,-10,10,-10 h._horsub20 q10,0,10,10 v31 h-._horr".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._horsub20", ChipLen - 20).replace("._horr", ChipLen)
+            )
+            .attr("fill", "#525152")
+    Title.raise()
     return (Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
 }
 

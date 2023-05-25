@@ -239,6 +239,10 @@ function PrepareFiles() {
         fs.unlink(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".md"), (err) => { if (err) { throw err }});
         fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".mdx"), NewChipFile);
 
+        const returnedsvg = SVGGen.Generate(uuid)
+        fs.removeSync(__dirname + "/../Circuits/static/svg".concat(uuid, ".svg"))
+        fs.writeFileSync(__dirname + "/../Circuits/static/svg/".concat(uuid, ".svg"), returnedsvg)
+
         Currentindex++
     }
 }
@@ -341,9 +345,6 @@ function RestOfUpdate(){
 
     AddStep("Preparing page files...")
     PrepareFiles();
-
-    AddStep("TEMP: Generating test SVG")
-    fs.writeFileSync("Generated/TestSVG.svg", SVGGen.Generate("7e321d9b-4500-4917-9361-a32e1463401c"))
 
     console.log("Finished!")
     exit(0)

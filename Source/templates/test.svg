@@ -1,11 +1,10 @@
-<svg width="324" height="165" viewBox="0 0 324 165" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_di_2556_19132)">
-<rect x="36" y="77" width="22" height="15" rx="1" fill="#F6EEE8"/>
-</g>
-<g filter="url(#filter1_di_2556_19132)">
-<rect x="12" y="73" width="15" height="23" rx="1" fill="#F6EEE8"/>
-<rect x="16" y="77.001" width="7" height="15" rx="1" fill="#818081"/>
-</g>
-<g filter="url(#filter2_di_2556_19132)">
-<rect x="27" y="81" width="9" height="7" fill="#F6EEE8"/>
-</g>
+<svg width="400" height="400">
+    <path d="M160, 41 v-31 q0,-10,10,-10 h91 q10,0,10,10 v31 h-111" fill="#525152"></path>
+    <path fill="#818081" d="M160, 41 v76 q0,10,10,10 h91 q10,0,10,-10 v-76 h111"></path>
+    <path d="M165,49h-16.465c-0.552,0,-1,0.448,-1,1v16c0,0.552,0.448,1,1,1h16.465c0.334,0,0.647,-0.167,0.832,-0.445l5.333,-8c0.224,-0.336,0.224,-0.774,0,-1.11l-5.333,-8c-0.185,-0.278,-0.498,-0.445,-0.832,-0.445z" fill="#F55C1A"></path>
+    <rect x="148" y="73" width="22" height="15" rx="1" fill="#F5C51F"></rect>
+    <g filter="url(#filter0_di_2556_19132)"><rect x="148" y="94" width="22" height="15" rx="1" fill="#F5C51F"></rect></g>
+    <g filter="url(#filter1_di_2556_19132)"><rect x="94" y="90" width="45" height="23" rx="1" fill="#F5C51F"></rect><rect x="98" y="94.001" width="37" height="15" rx="1" fill="#818081"></rect></g>
+    <g filter="url(#filter2_di_2556_19132)"><rect x="139" y="98" width="9" height="7" fill="#F5C51F"></rect></g>
+    <path d="M276,49h-16.465c-0.552,0,-1,0.448,-1,1v16c0,0.552,0.448,1,1,1h16.465c0.334,0,0.647,-0.167,0.832,-0.445l5.333,-8c0.224,-0.336,0.224,-0.774,0,-1.11l-5.333,-8c-0.185,-0.278,-0.498,-0.445,-0.832,-0.445z" fill="#F55C1A"></path>
+</svg>
