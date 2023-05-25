@@ -1,6 +1,7 @@
 const fs = require("fs-extra")
 const { exit } = require("process")
 const https = require('follow-redirects').https
+const SVGGen = require("./Create-SVG")
 
 const ChipTemplate = fs.readFileSync("templates/chip.mdx", "utf-8")
 const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.mdx", "utf-8")
@@ -340,6 +341,9 @@ function RestOfUpdate(){
 
     AddStep("Preparing page files...")
     PrepareFiles();
+
+    AddStep("TEMP: Generating test SVG")
+    fs.writeFileSync("Generated/TestSVG.svg", SVGGen.Generate("7e321d9b-4500-4917-9361-a32e1463401c"))
 
     console.log("Finished!")
     exit(0)

@@ -2,23 +2,21 @@ const fs = require("fs-extra")
 const d3 = require("d3")
 const jsdom = require("jsdom")
 
-const Chip_raw = fs.readFileSync("Generated/examplechip.json")
+const Chip_raw = fs.readFileSync("Generated/chips.json")
 const Chip = JSON.parse(Chip_raw)
 const Ports = JSON.parse(fs.readFileSync("Generated/ports.json"))
 const Exec = ""
 const DataNoDef = ""
 
-const tempUUID = "ff1c2a15-4099-4aaa-afe3-c217b2fca15b"
-
 //Padding
 const PortHeight = 19
 const MinimalPadding = 111
-const VerticalPortPadding = 4
+const VerticalPortPadding = 6
 const HorizontalPortPadding = 2
 const TopHeight = 41
 
 const PaddingFromTop = 8
-const PaddingFromBottom = 20
+const PaddingFromBottom = 4
 
 const chipxoffset = 160
 
@@ -96,56 +94,55 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy]) {
     }
 }
 
-const Template = new jsdom.JSDOM('<body></body>')
-const NewChip = d3.select(Template.window.document.body).append("svg")
-    .attr("width", 400)
-    .attr("height", 400)
+function GenerateSVG (tempUUID) {
+    const Template = new jsdom.JSDOM('<body></body>')
+    const NewChip = d3.select(Template.window.document.body).append("svg")
+        .attr("width", 400)
+        .attr("height", 400)
 
-const Top = NewChip
-    .append("path")
-        .attr("d",
-            "M._posx, ._posy v-31 q0,-11,22,-11 h67 q22,0,22,11 v31 h-111".replace("._posx", chipxoffset).replace("._posy", TopHeight)
-        )
-        .attr("fill", "#525152")
-    /*
-    .append("rect")
-        .attr("x", chipxoffset)
-        .attr("y", 0)
-        .attr("width", MinimalPadding)
-        .attr("height", TopHeight)
-        .attr("fill", "#525152")
-*/
-const Bottom = NewChip 
+    const Top = NewChip
         .append("path")
-            .attr("fill", "#818081")
+            .attr("d",
+                "M._posx, ._posy v-31 q0,-10,10,-10 h91 q10,0,10,10 v31 h-111".replace("._posx", chipxoffset).replace("._posy", TopHeight)
+            )
+            .attr("fill", "#525152")
 
-const Funcs = Chip[tempUUID]["Functions"][0]
-var TotalInputSpacing = 0
-var TotalOutputSpacing = 0
+    const Bottom = NewChip 
+            .append("path")
+                .attr("fill", "#818081")
 
-if (Funcs["Inputs"].length > 0) {
-    TotalInputSpacing = (Funcs["Inputs"].length) * VerticalPortPadding - 1 + Funcs["Inputs"].length * PortHeight
+    const Funcs = Chip[tempUUID]["Functions"][0]
+    var TotalInputSpacing = 0
+    var TotalOutputSpacing = 0
+
+    if (Funcs["Inputs"].length > 0) {
+        TotalInputSpacing = (Funcs["Inputs"].length) * VerticalPortPadding - 1 + Funcs["Inputs"].length * PortHeight
+    }
+    if (Funcs["Outputs"].length > 0) {
+        TotalOutputSpacing = (Funcs["Outputs"].length) * VerticalPortPadding - 1 + Funcs["Outputs"].length * PortHeight
+    }
+
+    var InSpacing = TopHeight + PaddingFromTop
+    var OutSpacing = TopHeight + PaddingFromTop
+
+    for (const port of Funcs["Inputs"]) {
+        const returnedwidth = AppendPort(NewChip, true, port["DataType"], [chipxoffset, InSpacing])
+        InSpacing = InSpacing + returnedwidth + VerticalPortPadding
+    }
+    for (const port of Funcs["Outputs"]) {
+        const returnedwidth = AppendPort(NewChip, false, port["DataType"], [chipxoffset + 111, OutSpacing])
+        OutSpacing = OutSpacing + returnedwidth + VerticalPortPadding
+    }
+
+    const NewPathHeight = ("height", PaddingFromTop + PaddingFromBottom + Math.max(TotalInputSpacing, TotalOutputSpacing))
+
+    Bottom.attr("d",
+        "M._posx, ._posy v._heightsubten q0,10,10,10 h._chipwdsubten q10,0,10,-10 v._negheig h._chipyw".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._heightsubten", NewPathHeight - 10).replace("._chipwdsubten", MinimalPadding - 20).replace("._chipyw", MinimalPadding).replace("._negheig", 0-NewPathHeight + 10)
+    )
+
+    return (Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
 }
-if (Funcs["Outputs"].length > 0) {
-    TotalOutputSpacing = (Funcs["Outputs"].length) * VerticalPortPadding - 1 + Funcs["Outputs"].length * PortHeight
+
+module.exports ={
+    Generate: GenerateSVG
 }
-
-var InSpacing = TopHeight + PaddingFromTop
-var OutSpacing = TopHeight + PaddingFromTop
-
-for (const port of Funcs["Inputs"]) {
-    const returnedwidth = AppendPort(NewChip, true, port["DataType"], [chipxoffset, InSpacing])
-    InSpacing = InSpacing + returnedwidth + VerticalPortPadding
-}
-for (const port of Funcs["Outputs"]) {
-    const returnedwidth = AppendPort(NewChip, false, port["DataType"], [chipxoffset + 111, OutSpacing])
-    OutSpacing = OutSpacing + returnedwidth + VerticalPortPadding
-}
-
-const NewPathHeight = ("height", PaddingFromTop + PaddingFromBottom + Math.max(TotalInputSpacing, TotalOutputSpacing))
-
-Bottom.attr("d",
-    "M._posx, ._posy v._heightsubten q0,10,10,10 h._chipwdsubten q10,0,10,-10 v._negheig h._chipyw".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._heightsubten", NewPathHeight - 10).replace("._chipwdsubten", MinimalPadding - 20).replace("._chipyw", MinimalPadding).replace("._negheig", 0-NewPathHeight + 10)
-)
-
-fs.writeFileSync("Generated/TestElement.svg", Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
