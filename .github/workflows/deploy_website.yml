@@ -1,0 +1,73 @@
+name: 'Deploy website'
+on:
+  workflow_dispatch:
+    inputs:
+      just-deploy:
+        description: 'Only do deployment step'
+        type: boolean
+        required: true
+        default: false
+      skip-deploy:
+        description: 'Skip deployment step'
+        type: boolean
+        required: true
+        default: false
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'ExtraInfo/**'
+jobs:
+  generate:
+    name: 'Generate chip markdown'
+    runs-on: ubuntu-latest
+    if: '${{ !inputs.just-deploy }}'
+    permissions:
+      contents: 'write'
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+      - name: 'Setup Node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - name: 'Run script'
+        working-directory: './Source'
+        run: |
+          npm ci
+          npm run generate
+      - name: 'Commit and push'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "actions-user"
+          git add Circuits/docs/documentation/chips
+          git commit -m "Generated markdown and svg (based on ${{ github.sha || 'manual run #${{ github.run_number }}' }})"
+          git push
+  deploy:
+    name: 'Deploy'
+    runs-on: ubuntu-latest
+    needs: 'generate'
+    if: '${{ (success() || failure()) && (!inputs.skip-deploy || inputs.just-deploy) }}'
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+      - name: 'Setup Node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - name: 'Use SSH agent'
+        uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+      - name: 'Deploy to GitHub Pages'
+        env:
+          USE_SSH: true
+        working-directory: './Circuits'
+        run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
+          git config --global user.email "action@github.com"
+          git config --global user.name "actions-user"
+          npm ci
+          npm run docusaurus deploy
