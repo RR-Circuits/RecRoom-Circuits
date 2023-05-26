@@ -238,7 +238,8 @@ function PrepareFiles() {
 
         fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".mdx"), NewChipFile);
 
-        const returnedsvg = SVGGen.Generate(uuid)
+        const Untouchedver = JSON.parse(fs.readFileSync("Generated/chips.json", "utf-8"))
+        const returnedsvg = SVGGen.Generate(uuid, Untouchedver)
 
         fs.removeSync(__dirname + "/../Circuits/docs/assets/".concat(uuid, ".svg"))
         fs.writeFileSync(__dirname + "/../Circuits/docs/documentation/chips/assets/".concat(uuid, ".svg"), returnedsvg)

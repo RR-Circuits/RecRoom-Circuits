@@ -2,8 +2,7 @@ const fs = require("fs-extra")
 const d3 = require("d3")
 const jsdom = require("jsdom")
 const StringWidth = require("string-pixel-width")
-const Chip_raw = fs.readFileSync("Generated/chips.json")
-const Chip = JSON.parse(Chip_raw)
+var Chip = ""
 const Ports = JSON.parse(fs.readFileSync("Generated/ports.json"))
 const Exec = ""
 const DataNoDef = ""
@@ -27,7 +26,7 @@ function GetStringWidth (str) {
     return StringWidth(str, {size: FontSize})
 }
 
-function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
+function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName, IsList) {
     const PType = Ports[PortType]
     var Color = "#F6EEE8"
     var Model = "Data"
@@ -53,14 +52,14 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
             .attr("fill", Color)
         prtheight = 18
     } else if (Model == "Data") {
-        if (HasDefaultValue && IsInput) {
+        if (HasDefaultValue && IsInput && !IsList) {
             ParentObject.append("g")
                 .attr("filter", "url(#filter0_di_2556_19132)")
                 .append("rect")
                     .attr("x", posx - 12)
                     .attr("y", posy)
                     .attr("width", 22)
-                    .attr("height", "15")
+                    .attr("height", 15)
                     .attr("rx", "1")
                     .attr("fill", Color)
 
@@ -69,17 +68,17 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
             const TempWidth = 30
             g2.append("rect")
                 .attr("x", posx - 24 - TempWidth - 12)
-                .attr("y", posy - 4)
+                .attr("y", posy - 4 + 1)
                 .attr("width", 15 + TempWidth)
-                .attr("height", 23)
+                .attr("height", 23-2)
                 .attr("rx", "1")
                 .attr("fill", Color)
 
             g2.append("rect")
                 .attr("x", posx - 20 - TempWidth - 12)
-                .attr("y", posy + 0.001)
+                .attr("y", posy + 0.001 + 1)
                 .attr("width", 7 + TempWidth)
-                .attr("height", 15)
+                .attr("height", 15-2)
                 .attr("rx", "1")
                 .attr("fill", "#818081")
 
@@ -122,7 +121,8 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
     return [prtheight]
 }
 
-function GenerateSVG (tempUUID) {
+function GenerateSVG (tempUUID, JSObject) {
+    Chip = JSObject
     const Template = new jsdom.JSDOM('<body></body>')
     const NewChip = d3.select(Template.window.document.body).append("svg")
         .attr("width", 800)
@@ -176,13 +176,13 @@ function GenerateSVG (tempUUID) {
         }
 
         for (const port of Funcs["Inputs"]) {
-            const RtrnVL = AppendPort(NewChip, true, port["DataType"], [chipxoffset, InSpacing], port["Name"])
+            const RtrnVL = AppendPort(NewChip, true, port["DataType"], [chipxoffset, InSpacing], port["Name"], port["IsList"])
             const returnedwidth = RtrnVL[0]
             const namelen = RtrnVL[1]
             InSpacing = InSpacing + returnedwidth + VerticalPortPadding
         }
         for (const port of Funcs["Outputs"]) {
-            const RtrnVL = AppendPort(NewChip, false, port["DataType"], [chipxoffset + Math.max(MinimalPadding, TopBarWidth, LargestInputText + LargestOutputText + HorizontalPortPadding), OutSpacing], port["Name"])
+            const RtrnVL = AppendPort(NewChip, false, port["DataType"], [chipxoffset + Math.max(MinimalPadding, TopBarWidth, LargestInputText + LargestOutputText + HorizontalPortPadding), OutSpacing], port["Name"], port["IsList"])
             const returnedwidth = RtrnVL[0]
             const namelen = RtrnVL[1]
             OutSpacing = OutSpacing + returnedwidth + VerticalPortPadding
