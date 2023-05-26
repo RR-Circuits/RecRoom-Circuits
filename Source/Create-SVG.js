@@ -18,7 +18,7 @@ const TopHeight = 41
 const PaddingFromTop = 8
 const PaddingFromBottom = 4
 
-const chipxoffset = 160
+const chipxoffset = 72
 
 const FontSize = 18
 
@@ -196,8 +196,8 @@ function GenerateSVG (tempUUID) {
     Bottom.attr("d",
         "M._posx, ._posy v._heightsubten q0,10,10,10 h._chipwdsubten q10,0,10,-10 v._negheig h._chipyw".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._heightsubten", NewPathHeight - 10).replace("._chipwdsubten", ChipLen - 20).replace("._chipyw", ChipLen).replace("._negheig", 0-NewPathHeight + 10)
     )
-    NewChip.attr("height", ChipLen)
-    NewChip.attr("viewbox", "0 0 800 ".concat(ChipLen))
+    NewChip.attr("height", 41 + NewPathHeight)
+    NewChip.attr("viewbox", "0 0 800 ".concat(41 + NewPathHeight))
     const Top = NewChip
         .append("path")
             .attr("d",

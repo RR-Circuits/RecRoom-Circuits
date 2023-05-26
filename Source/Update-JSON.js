@@ -212,7 +212,7 @@ function PrepareFiles() {
         .replace("._chipname", contents["ChipName"].replace("<", "[").replace(">", "]"))
         .replace("._istroll", BoolToYesNo(contents["TrollingRisk"]))
         .replace("._isbeta", BoolToYesNo(contents["IsBeta"]))
-        .replace("._uuid", uuid).replace("._uuid2", uuid)
+        .replace("._uuid1", uuid).replace("._uuid2", uuid).replace("._uuid3", uuid)
         .replace("._inputs", InputsStr)
         .replace("._outputs", OutputsStr)
         .replace("._sidebarpos", Currentindex)
