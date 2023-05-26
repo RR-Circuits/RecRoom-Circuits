@@ -138,7 +138,7 @@ function GenerateSVG (tempUUID) {
             .attr("fill", "white")
             .attr("text-anchor", "middle")
             .attr("font-size", "18px")
-            .attr("class", "Uwuntu")
+            .attr("class", "uwuntu")
 
     const TopBarWidth = GetStringWidth(Title.text()) + 57 * 2
     Title.attr("x", TopBarWidth/2 + chipxoffset).attr("y", (TopHeight+FontSize)/2)
