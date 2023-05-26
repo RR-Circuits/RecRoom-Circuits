@@ -117,7 +117,7 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
         .attr("fill", "white")
         .attr("text-anchor", Anch)
         .attr("font-size", "medium")
-        .attr("font-family", "Ubuntu")
+        .attr("class", "uwuntu")
     
     return [prtheight]
 }
@@ -130,11 +130,6 @@ function GenerateSVG (tempUUID) {
         .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("viewbox", "0 0 800 800")
 
-    NewChip.append("defs")
-        .append("style")
-            .attr("type", "text/css")
-            .html("@import url('https://fonts.googleapis.com/css2?family=Ubuntu');")
-
     const Title = NewChip
         .append("svg:text")
             .attr("x", 10)
@@ -143,7 +138,7 @@ function GenerateSVG (tempUUID) {
             .attr("fill", "white")
             .attr("text-anchor", "middle")
             .attr("font-size", "18px")
-            .attr("font-family", "Ubuntu")
+            .attr("class", "Uwuntu")
 
     const TopBarWidth = GetStringWidth(Title.text()) + 57 * 2
     Title.attr("x", TopBarWidth/2 + chipxoffset).attr("y", (TopHeight+FontSize)/2)
