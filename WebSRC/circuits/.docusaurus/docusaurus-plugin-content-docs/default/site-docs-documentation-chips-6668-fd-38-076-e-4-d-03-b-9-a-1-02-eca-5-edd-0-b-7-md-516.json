@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6668fd38-076e-4d03-b9a1-02eca5edd0b7",
+  "id": "documentation/chips/6668fd38-076e-4d03-b9a1-02eca5edd0b7",
+  "title": "Trigger Volume Set Filter Tags",
+  "description": "Sets the tags that are being used as a filter for a Trigger Volume. An object is considered by the Trigger Volume, if it has any of the tags in this list.",
+  "source": "@site/docs/documentation/chips/6668fd38-076e-4d03-b9a1-02eca5edd0b7.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6668fd38-076e-4d03-b9a1-02eca5edd0b7",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6668fd38-076e-4d03-b9a1-02eca5edd0b7",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6668fd38-076e-4d03-b9a1-02eca5edd0b7.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 636,
+  "frontMatter": {
+    "sidebar_position": 636,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trigger Volume Set Filter Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/55cfecf9-2623-4aad-948c-6ca89f11911b"
+  },
+  "next": {
+    "title": "Value Integer Switch",
+    "permalink": "/Circuits/Website/docs/documentation/chips/be534038-473e-40ad-b4e2-abd38a76711b"
+  }
+}

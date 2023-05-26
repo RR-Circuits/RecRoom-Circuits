@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0a6f6078-8075-43c7-bbb2-32b63ae48e92",
+  "id": "documentation/chips/0a6f6078-8075-43c7-bbb2-32b63ae48e92",
+  "title": "Set Rotation",
+  "description": "Sets the rotation of the target player or object. Players will rotate about the vertical axis only. Will fail in the following cases: If the target object is currently held, select/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.",
+  "source": "@site/docs/documentation/chips/0a6f6078-8075-43c7-bbb2-32b63ae48e92.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0a6f6078-8075-43c7-bbb2-32b63ae48e92",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0a6f6078-8075-43c7-bbb2-32b63ae48e92",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0a6f6078-8075-43c7-bbb2-32b63ae48e92.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 540,
+  "frontMatter": {
+    "sidebar_position": 540,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Set Position",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6e68ede8-32de-455f-9449-83951b4e4f73"
+  },
+  "next": {
+    "title": "Set Transform",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6873f341-1ae8-4ddd-9f8c-892a977ef974"
+  }
+}

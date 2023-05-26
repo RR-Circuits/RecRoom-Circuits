@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1637b250-e497-4f4a-9d5e-64206488391c",
+  "id": "documentation/chips/1637b250-e497-4f4a-9d5e-64206488391c",
+  "title": "AI Get Target",
+  "description": "Outputs the current combat target of an inputted AI.",
+  "source": "@site/docs/documentation/chips/1637b250-e497-4f4a-9d5e-64206488391c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1637b250-e497-4f4a-9d5e-64206488391c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1637b250-e497-4f4a-9d5e-64206488391c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1637b250-e497-4f4a-9d5e-64206488391c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Get Line of Sight Parameters",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3edc785f-46ef-4f30-b101-a07126d3a370"
+  },
+  "next": {
+    "title": "AI Has Line of Sight To Target",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5858a52e-54fb-4bb2-80a0-ec5fce88b3ef"
+  }
+}

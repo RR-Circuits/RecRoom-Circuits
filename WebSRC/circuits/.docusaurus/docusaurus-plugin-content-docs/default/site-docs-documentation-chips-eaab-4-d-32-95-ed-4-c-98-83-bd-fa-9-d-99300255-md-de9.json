@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/eaab4d32-95ed-4c98-83bd-fa9d99300255",
+  "id": "documentation/chips/eaab4d32-95ed-4c98-83bd-fa9d99300255",
+  "title": "Gun Handle Set ADS Enabled",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/eaab4d32-95ed-4c98-83bd-fa9d99300255.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/eaab4d32-95ed-4c98-83bd-fa9d99300255",
+  "permalink": "/Circuits/Website/docs/documentation/chips/eaab4d32-95ed-4c98-83bd-fa9d99300255",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/eaab4d32-95ed-4c98-83bd-fa9d99300255.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 251,
+  "frontMatter": {
+    "sidebar_position": 251,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gun Handle Remove Auto Aim Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/16e9da8d-137b-4b51-bc8c-12b32314363b"
+  },
+  "next": {
+    "title": "Gun Handle Set Auto Aim Roles",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e9c22501-3d32-4f9e-a6fb-322bad4eaca1"
+  }
+}

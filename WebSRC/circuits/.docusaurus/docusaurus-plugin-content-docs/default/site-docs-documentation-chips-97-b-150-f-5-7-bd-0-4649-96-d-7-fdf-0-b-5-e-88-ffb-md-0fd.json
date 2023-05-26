@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/97b150f5-7bd0-4649-96d7-fdf0b5e88ffb",
+  "id": "documentation/chips/97b150f5-7bd0-4649-96d7-fdf0b5e88ffb",
+  "title": "Vector3 Inverse Transform",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/97b150f5-7bd0-4649-96d7-fdf0b5e88ffb.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/97b150f5-7bd0-4649-96d7-fdf0b5e88ffb",
+  "permalink": "/Circuits/Website/docs/documentation/chips/97b150f5-7bd0-4649-96d7-fdf0b5e88ffb",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/97b150f5-7bd0-4649-96d7-fdf0b5e88ffb.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 641,
+  "frontMatter": {
+    "sidebar_position": 641,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vector3 Dot",
+    "permalink": "/Circuits/Website/docs/documentation/chips/498c4e25-f73b-49a6-912e-ae148ed50dca"
+  },
+  "next": {
+    "title": "Vector3 Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fba2accf-44e2-412d-a204-ae3bd04f7dfa"
+  }
+}

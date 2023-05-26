@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/bc45bb9f-619a-48c4-a3ed-14596c83424f",
+  "id": "documentation/chips/bc45bb9f-619a-48c4-a3ed-14596c83424f",
+  "title": "Light Get Color",
+  "description": "Returns the color of the target light.",
+  "source": "@site/docs/documentation/chips/bc45bb9f-619a-48c4-a3ed-14596c83424f.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/bc45bb9f-619a-48c4-a3ed-14596c83424f",
+  "permalink": "/Circuits/Website/docs/documentation/chips/bc45bb9f-619a-48c4-a3ed-14596c83424f",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/bc45bb9f-619a-48c4-a3ed-14596c83424f.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 299,
+  "frontMatter": {
+    "sidebar_position": 299,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Light Get Angle",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8a6c0623-7585-402c-8734-7fa7248b15a0"
+  },
+  "next": {
+    "title": "Light Get Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d5eafcf1-1762-4ece-bc31-7e2eddac253e"
+  }
+}

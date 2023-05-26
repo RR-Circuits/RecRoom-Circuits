@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6809978a-e1fc-403a-a41a-d4e94f22281f",
+  "id": "documentation/chips/6809978a-e1fc-403a-a41a-d4e94f22281f",
+  "title": "Consumable Deactivate",
+  "description": "Sets the input consumable to inactive. Displays the consumable as not active in the backback and allow using another one.",
+  "source": "@site/docs/documentation/chips/6809978a-e1fc-403a-a41a-d4e94f22281f.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6809978a-e1fc-403a-a41a-d4e94f22281f",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6809978a-e1fc-403a-a41a-d4e94f22281f",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6809978a-e1fc-403a-a41a-d4e94f22281f.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 113,
+  "frontMatter": {
+    "sidebar_position": 113,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rec Room Object Set Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/191f8009-5a2e-4da4-8817-980842a08d48"
+  },
+  "next": {
+    "title": "Delay",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cefee2a5-d4a8-4dff-8c4e-bad684ca8d34"
+  }
+}

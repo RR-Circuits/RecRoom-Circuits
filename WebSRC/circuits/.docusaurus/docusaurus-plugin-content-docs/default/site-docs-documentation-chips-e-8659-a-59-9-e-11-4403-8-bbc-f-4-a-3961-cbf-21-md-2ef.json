@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e8659a59-9e11-4403-8bbc-f4a3961cbf21",
+  "id": "documentation/chips/e8659a59-9e11-4403-8bbc-f4a3961cbf21",
+  "title": "Cos",
+  "description": "Computes the cosine of a number.",
+  "source": "@site/docs/documentation/chips/e8659a59-9e11-4403-8bbc-f4a3961cbf21.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e8659a59-9e11-4403-8bbc-f4a3961cbf21",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e8659a59-9e11-4403-8bbc-f4a3961cbf21",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e8659a59-9e11-4403-8bbc-f4a3961cbf21.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 102,
+  "frontMatter": {
+    "sidebar_position": 102,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Room Key",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b9b000ca-eb3d-4b9f-9f45-0fd64045f63d"
+  },
+  "next": {
+    "title": "Costume Equip",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1f57e165-dee2-470d-9ab2-9c836aeccccf"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8d5f0586-1ecf-42ba-a34f-c6ccbb0eadb9",
+  "id": "documentation/chips/8d5f0586-1ecf-42ba-a34f-c6ccbb0eadb9",
+  "title": "Slerp",
+  "description": "Spherically interpolates between quaternions or Vector3s \"Start\" and \"End\". Progress is 0 to 1. Also a rare, but refreshing beverage.",
+  "source": "@site/docs/documentation/chips/8d5f0586-1ecf-42ba-a34f-c6ccbb0eadb9.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8d5f0586-1ecf-42ba-a34f-c6ccbb0eadb9",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8d5f0586-1ecf-42ba-a34f-c6ccbb0eadb9",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8d5f0586-1ecf-42ba-a34f-c6ccbb0eadb9.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 555,
+  "frontMatter": {
+    "sidebar_position": 555,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Skydome Constant",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bff88a1e-4888-4e03-a1f4-804864a2f177"
+  },
+  "next": {
+    "title": "Spawner Reset",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6a669e6e-4ebf-434c-9c23-d2b769d49b47"
+  }
+}

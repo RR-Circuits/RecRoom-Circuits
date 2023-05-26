@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d2df4993-d858-4df1-aca2-fc0e7f479668",
+  "id": "documentation/chips/d2df4993-d858-4df1-aca2-fc0e7f479668",
+  "title": "SFX Set Volume",
+  "description": "Sets the volume for an SFX object.",
+  "source": "@site/docs/documentation/chips/d2df4993-d858-4df1-aca2-fc0e7f479668.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d2df4993-d858-4df1-aca2-fc0e7f479668",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d2df4993-d858-4df1-aca2-fc0e7f479668",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d2df4993-d858-4df1-aca2-fc0e7f479668.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 546,
+  "frontMatter": {
+    "sidebar_position": 546,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SFX Play",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5f8991bb-d1b8-4c74-a54a-86e7033b53a0"
+  },
+  "next": {
+    "title": "SFX Stop",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3ad57fda-1fab-4b00-81b3-71d61af37c65"
+  }
+}

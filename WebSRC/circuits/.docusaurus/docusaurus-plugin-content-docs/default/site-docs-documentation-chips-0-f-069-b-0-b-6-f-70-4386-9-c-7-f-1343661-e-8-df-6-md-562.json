@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0f069b0b-6f70-4386-9c7f-1343661e8df6",
+  "id": "documentation/chips/0f069b0b-6f70-4386-9c7f-1343661e8df6",
+  "title": "Trail Get Lifetime",
+  "description": "Returns the lifetime of the target Motion Trail object.",
+  "source": "@site/docs/documentation/chips/0f069b0b-6f70-4386-9c7f-1343661e8df6.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0f069b0b-6f70-4386-9c7f-1343661e8df6",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0f069b0b-6f70-4386-9c7f-1343661e8df6",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0f069b0b-6f70-4386-9c7f-1343661e8df6.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 620,
+  "frontMatter": {
+    "sidebar_position": 620,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trail Get Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f3e39f47-1835-4d09-8e19-d3e9d661990b"
+  },
+  "next": {
+    "title": "Trail Get Opacity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6dcc7a44-0163-4058-97a9-1ef7f482a3d5"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d6e62624-06b0-416e-8e3c-ca058efd3c46",
+  "id": "documentation/chips/d6e62624-06b0-416e-8e3c-ca058efd3c46",
+  "title": "Bit Leading Zeros",
+  "description": "Counts the number of zeros at the beginning (most significant side) of the binary representation of an integer.",
+  "source": "@site/docs/documentation/chips/d6e62624-06b0-416e-8e3c-ca058efd3c46.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d6e62624-06b0-416e-8e3c-ca058efd3c46",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d6e62624-06b0-416e-8e3c-ca058efd3c46",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d6e62624-06b0-416e-8e3c-ca058efd3c46.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 55,
+  "frontMatter": {
+    "sidebar_position": 55,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bit And",
+    "permalink": "/Circuits/Website/docs/documentation/chips/28a95bc3-ab08-48ae-b0c0-16b41168bf47"
+  },
+  "next": {
+    "title": "Bit Nand",
+    "permalink": "/Circuits/Website/docs/documentation/chips/05305e33-a809-4751-b928-2c8a5bbc6dc9"
+  }
+}

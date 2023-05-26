@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/2687fb17-96ea-4106-94d7-be8854cfa978",
+  "id": "documentation/chips/2687fb17-96ea-4106-94d7-be8854cfa978",
+  "title": "List Remove Last",
+  "description": "Removes the last element in a list.",
+  "source": "@site/docs/documentation/chips/2687fb17-96ea-4106-94d7-be8854cfa978.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/2687fb17-96ea-4106-94d7-be8854cfa978",
+  "permalink": "/Circuits/Website/docs/documentation/chips/2687fb17-96ea-4106-94d7-be8854cfa978",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/2687fb17-96ea-4106-94d7-be8854cfa978.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 341,
+  "frontMatter": {
+    "sidebar_position": 341,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Remove Item (First)",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1657cd3d-6bc5-41d2-b70f-1854f9288ffa"
+  },
+  "next": {
+    "title": "List Shuffle",
+    "permalink": "/Circuits/Website/docs/documentation/chips/26a97d16-34e6-48c7-83a3-6cf74c1e4985"
+  }
+}

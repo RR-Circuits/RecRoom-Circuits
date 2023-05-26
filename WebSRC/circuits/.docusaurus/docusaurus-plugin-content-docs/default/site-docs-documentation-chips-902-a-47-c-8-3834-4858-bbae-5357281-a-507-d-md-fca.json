@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/902a47c8-3834-4858-bbae-5357281a507d",
+  "id": "documentation/chips/902a47c8-3834-4858-bbae-5357281a507d",
+  "title": "Light Set Intensity",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/902a47c8-3834-4858-bbae-5357281a507d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/902a47c8-3834-4858-bbae-5357281a507d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/902a47c8-3834-4858-bbae-5357281a507d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/902a47c8-3834-4858-bbae-5357281a507d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 309,
+  "frontMatter": {
+    "sidebar_position": 309,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Light Set Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b2698906-68bd-4ea3-be98-35a23615b522"
+  },
+  "next": {
+    "title": "Light Set Intensity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/aa6dc013-3f5b-45f4-87a2-8aa4d16cc375"
+  }
+}

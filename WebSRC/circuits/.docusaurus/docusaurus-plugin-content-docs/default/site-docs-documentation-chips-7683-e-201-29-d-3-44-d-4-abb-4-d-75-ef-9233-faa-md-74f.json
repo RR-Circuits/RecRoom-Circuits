@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/7683e201-29d3-44d4-abb4-d75ef9233faa",
+  "id": "documentation/chips/7683e201-29d3-44d4-abb4-d75ef9233faa",
+  "title": "Player Get Room Index",
+  "description": "Returns the unique index of this player in the room, bounded by the room capacity.",
+  "source": "@site/docs/documentation/chips/7683e201-29d3-44d4-abb4-d75ef9233faa.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/7683e201-29d3-44d4-abb4-d75ef9233faa",
+  "permalink": "/Circuits/Website/docs/documentation/chips/7683e201-29d3-44d4-abb4-d75ef9233faa",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/7683e201-29d3-44d4-abb4-d75ef9233faa.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 398,
+  "frontMatter": {
+    "sidebar_position": 398,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Get Radio Channel",
+    "permalink": "/Circuits/Website/docs/documentation/chips/be2f38d2-c6cb-4d9a-b74d-0a664c216a7b"
+  },
+  "next": {
+    "title": "Player Get Seat",
+    "permalink": "/Circuits/Website/docs/documentation/chips/47038300-2f6d-4876-bbb7-7c2e64fd9364"
+  }
+}

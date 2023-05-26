@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/bc3059d8-b613-4e91-ac7f-4c3566e01dc2",
+  "id": "documentation/chips/bc3059d8-b613-4e91-ac7f-4c3566e01dc2",
+  "title": "Time Get Universal Seconds",
+  "description": "Gets the number of seconds since 1970. Uses server's clock. This will be synchronized between players. This is also not guaranteed to be continuous. To measure time, use Time Get Precise Seconds instead.",
+  "source": "@site/docs/documentation/chips/bc3059d8-b613-4e91-ac7f-4c3566e01dc2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/bc3059d8-b613-4e91-ac7f-4c3566e01dc2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/bc3059d8-b613-4e91-ac7f-4c3566e01dc2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/bc3059d8-b613-4e91-ac7f-4c3566e01dc2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 213,
+  "frontMatter": {
+    "sidebar_position": 213,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Room Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d7557465-963e-4451-a55a-dea2050e9b74"
+  },
+  "next": {
+    "title": "Time Get Universal Time",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1b220886-d851-474c-a79e-0a18d0893ee9"
+  }
+}

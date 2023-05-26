@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c2cb2ea2-f663-4aa6-9394-3b741f6b9064",
+  "id": "documentation/chips/c2cb2ea2-f663-4aa6-9394-3b741f6b9064",
+  "title": "AI Rotate",
+  "description": "Commands an AI to turn an inputted number of degrees. To command the AI to back to default rotating behavior, use the AI Stop Looking node.",
+  "source": "@site/docs/documentation/chips/c2cb2ea2-f663-4aa6-9394-3b741f6b9064.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c2cb2ea2-f663-4aa6-9394-3b741f6b9064",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c2cb2ea2-f663-4aa6-9394-3b741f6b9064",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c2cb2ea2-f663-4aa6-9394-3b741f6b9064.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "sidebar_position": 13,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Path To",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7b05df01-d4c8-490c-9442-55aa3b4975fa"
+  },
+  "next": {
+    "title": "AI Set Line of Sight Parameters",
+    "permalink": "/Circuits/Website/docs/documentation/chips/02557d1f-2265-4b6d-8177-92f1802dc106"
+  }
+}

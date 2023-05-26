@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/20b2528d-96a9-4be8-9782-aa75959f5232",
+  "id": "documentation/chips/20b2528d-96a9-4be8-9782-aa75959f5232",
+  "title": "Text Set Color Id",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/20b2528d-96a9-4be8-9782-aa75959f5232.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/20b2528d-96a9-4be8-9782-aa75959f5232",
+  "permalink": "/Circuits/Website/docs/documentation/chips/20b2528d-96a9-4be8-9782-aa75959f5232",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/20b2528d-96a9-4be8-9782-aa75959f5232.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 608,
+  "frontMatter": {
+    "sidebar_position": 608,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Text Get Text",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3e8fbb88-3179-4a4c-9f8f-d9c2db35b9b5"
+  },
+  "next": {
+    "title": "Text Set Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0bfaa337-46a1-472f-beac-12faa21867d4"
+  }
+}

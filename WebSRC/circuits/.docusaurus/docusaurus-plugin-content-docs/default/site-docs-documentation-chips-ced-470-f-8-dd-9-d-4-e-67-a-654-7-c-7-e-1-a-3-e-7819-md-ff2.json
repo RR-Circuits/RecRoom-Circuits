@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ced470f8-dd9d-4e67-a654-7c7e1a3e7819",
+  "id": "documentation/chips/ced470f8-dd9d-4e67-a654-7c7e1a3e7819",
+  "title": "Collision Data Get Normal",
+  "description": "Gets unit vector specifying the direction of an object/player from center specified in \"Overlap Sphere\" chip.",
+  "source": "@site/docs/documentation/chips/ced470f8-dd9d-4e67-a654-7c7e1a3e7819.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ced470f8-dd9d-4e67-a654-7c7e1a3e7819",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ced470f8-dd9d-4e67-a654-7c7e1a3e7819",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/ced470f8-dd9d-4e67-a654-7c7e1a3e7819.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 80,
+  "frontMatter": {
+    "sidebar_position": 80,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Collision Data Get Distance",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c3fc963c-6d73-4d88-9c9b-95e9faae219f"
+  },
+  "next": {
+    "title": "Collision Data Get Object",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8c8931da-1a8e-4164-a3a5-0f68db8cafb5"
+  }
+}

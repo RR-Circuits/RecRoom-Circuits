@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/a8c52ef2-17bf-47e6-9084-3e5623584b48",
+  "id": "documentation/chips/a8c52ef2-17bf-47e6-9084-3e5623584b48",
+  "title": "Get Position (Deprecated)",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/a8c52ef2-17bf-47e6-9084-3e5623584b48.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/a8c52ef2-17bf-47e6-9084-3e5623584b48",
+  "permalink": "/Circuits/Website/docs/documentation/chips/a8c52ef2-17bf-47e6-9084-3e5623584b48",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/a8c52ef2-17bf-47e6-9084-3e5623584b48.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 209,
+  "frontMatter": {
+    "sidebar_position": 209,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Player World UI Text Value",
+    "permalink": "/Circuits/Website/docs/documentation/chips/447bbb2e-11e4-408c-b4a9-b758e3e07ee7"
+  },
+  "next": {
+    "title": "Get Position",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344"
+  }
+}

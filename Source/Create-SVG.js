@@ -1,7 +1,7 @@
 const fs = require("fs-extra")
 const d3 = require("d3")
 const jsdom = require("jsdom")
-
+const StringWidth = require("string-pixel-width")
 const Chip_raw = fs.readFileSync("Generated/chips.json")
 const Chip = JSON.parse(Chip_raw)
 const Ports = JSON.parse(fs.readFileSync("Generated/ports.json"))
@@ -20,9 +20,12 @@ const PaddingFromBottom = 4
 
 const chipxoffset = 160
 
-const FontSize = 8
+const FontSize = 18
 
 //Padding
+function GetStringWidth (str) {
+    return StringWidth(str, {size: FontSize})
+}
 
 function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
     const PType = Ports[PortType]
@@ -116,7 +119,7 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName) {
         .attr("font-size", "medium")
         .attr("font-family", "Ubuntu")
     
-    return [prtheight, PortName.length * FontSize + HorizontalPortPadding]
+    return [prtheight]
 }
 
 function GenerateSVG (tempUUID) {
@@ -139,11 +142,11 @@ function GenerateSVG (tempUUID) {
             .text(Chip[tempUUID]["ChipName"])
             .attr("fill", "white")
             .attr("text-anchor", "middle")
-            .attr("font-size", "medium")
+            .attr("font-size", "18px")
             .attr("font-family", "Ubuntu")
 
-    const TopBarWidth = Title.text().length * FontSize + 57 * 2
-    Title.attr("x", TopBarWidth/2 + chipxoffset).attr("y", TopHeight/2+FontSize)
+    const TopBarWidth = GetStringWidth(Title.text()) + 57 * 2
+    Title.attr("x", TopBarWidth/2 + chipxoffset).attr("y", (TopHeight+FontSize)/2)
     const Bottom = NewChip 
             .append("path")
                 .attr("fill", "#818081")
@@ -165,30 +168,35 @@ function GenerateSVG (tempUUID) {
         if (Funcs["Outputs"].length > 0) {
             TotalOutputSpacing = (Funcs["Outputs"].length) * VerticalPortPadding - 1 + Funcs["Outputs"].length * PortHeight
         }
-    
+        
+        for (const port of Funcs["Inputs"]) {
+            if (GetStringWidth(port["Name"]) > LargestInputText) {
+                LargestInputText = GetStringWidth(port["Name"])
+            }
+        }
+        for (const port of Funcs["Outputs"]) {
+            if (GetStringWidth(port["Name"]) > LargestOutputText) {
+                LargestOutputText = GetStringWidth(port["Name"])
+            }
+        }
+
         for (const port of Funcs["Inputs"]) {
             const RtrnVL = AppendPort(NewChip, true, port["DataType"], [chipxoffset, InSpacing], port["Name"])
             const returnedwidth = RtrnVL[0]
             const namelen = RtrnVL[1]
             InSpacing = InSpacing + returnedwidth + VerticalPortPadding
-            if (namelen > LargestInputText) {
-                LargestInputText = namelen
-            }
         }
         for (const port of Funcs["Outputs"]) {
-            const RtrnVL = AppendPort(NewChip, false, port["DataType"], [chipxoffset + Math.max(MinimalPadding, TopBarWidth), OutSpacing], port["Name"])
+            const RtrnVL = AppendPort(NewChip, false, port["DataType"], [chipxoffset + Math.max(MinimalPadding, TopBarWidth, LargestInputText + LargestOutputText + HorizontalPortPadding), OutSpacing], port["Name"])
             const returnedwidth = RtrnVL[0]
             const namelen = RtrnVL[1]
             OutSpacing = OutSpacing + returnedwidth + VerticalPortPadding
-            if (namelen > LargestOutputText) {
-                LargestOutputText = namelen
-            }
         }
     } catch (err) {}
 
     const NewPathHeight = (PaddingFromTop + PaddingFromBottom + Math.max(TotalInputSpacing, TotalOutputSpacing))
 
-    const ChipLen = Math.max(MinimalPadding, TopBarWidth, LargestInputText + LargestOutputText)
+    const ChipLen = Math.max(MinimalPadding, TopBarWidth, LargestInputText + LargestOutputText + HorizontalPortPadding)
 
     Bottom.attr("d",
         "M._posx, ._posy v._heightsubten q0,10,10,10 h._chipwdsubten q10,0,10,-10 v._negheig h._chipyw".replace("._posx", chipxoffset).replace("._posy", TopHeight).replace("._heightsubten", NewPathHeight - 10).replace("._chipwdsubten", ChipLen - 20).replace("._chipyw", ChipLen).replace("._negheig", 0-NewPathHeight + 10)
@@ -202,6 +210,7 @@ function GenerateSVG (tempUUID) {
             )
             .attr("fill", "#525152")
     Title.raise()
+    Title.attr("x", ChipLen/2 + chipxoffset)
     return (Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
 }
 

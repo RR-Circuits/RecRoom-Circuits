@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f24d537e-da9e-47bf-8764-fba6eeefb043",
+  "id": "documentation/chips/f24d537e-da9e-47bf-8764-fba6eeefb043",
+  "title": "Get Is Event Instance",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/f24d537e-da9e-47bf-8764-fba6eeefb043.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f24d537e-da9e-47bf-8764-fba6eeefb043",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f24d537e-da9e-47bf-8764-fba6eeefb043",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f24d537e-da9e-47bf-8764-fba6eeefb043.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 283,
+  "frontMatter": {
+    "sidebar_position": 283,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Invisible Collision Set Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a5b78c7e-d718-44d4-91c4-7f795bf73814"
+  },
+  "next": {
+    "title": "Get Is Private Instance",
+    "permalink": "/Circuits/Website/docs/documentation/chips/aa263220-c6aa-4789-b09c-c73d7fa144fd"
+  }
+}

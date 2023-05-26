@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f8c16cc7-ceaf-471a-b196-5d46ec7ab72a",
+  "id": "documentation/chips/f8c16cc7-ceaf-471a-b196-5d46ec7ab72a",
+  "title": "Trail Get Color",
+  "description": "Returns the color of the target Motion Trail object.",
+  "source": "@site/docs/documentation/chips/f8c16cc7-ceaf-471a-b196-5d46ec7ab72a.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f8c16cc7-ceaf-471a-b196-5d46ec7ab72a",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f8c16cc7-ceaf-471a-b196-5d46ec7ab72a",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f8c16cc7-ceaf-471a-b196-5d46ec7ab72a.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 618,
+  "frontMatter": {
+    "sidebar_position": 618,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "To String",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bddc8e4e-b496-48ee-8e25-5b9fe8e1c6c9"
+  },
+  "next": {
+    "title": "Trail Get Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f3e39f47-1835-4d09-8e19-d3e9d661990b"
+  }
+}

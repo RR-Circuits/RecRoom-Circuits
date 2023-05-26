@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/dc78ca9e-29c4-4cba-a6cb-3ea87ffbe780",
+  "id": "documentation/chips/dc78ca9e-29c4-4cba-a6cb-3ea87ffbe780",
+  "title": "Ground Vehicle Add Boost Fuel",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/dc78ca9e-29c4-4cba-a6cb-3ea87ffbe780.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/dc78ca9e-29c4-4cba-a6cb-3ea87ffbe780",
+  "permalink": "/Circuits/Website/docs/documentation/chips/dc78ca9e-29c4-4cba-a6cb-3ea87ffbe780",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/dc78ca9e-29c4-4cba-a6cb-3ea87ffbe780.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 228,
+  "frontMatter": {
+    "sidebar_position": 228,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Greater or Equal",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f3ced0d8-396e-4311-a807-8ffd9b147060"
+  },
+  "next": {
+    "title": "Ground Vehicle Apply Boost",
+    "permalink": "/Circuits/Website/docs/documentation/chips/29dd429b-81e5-40c7-b3b6-8d03bcc1eec3"
+  }
+}

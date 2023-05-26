@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d619a625-f624-491a-9f53-3bf969f1ae14",
+  "id": "documentation/chips/d619a625-f624-491a-9f53-3bf969f1ae14",
+  "title": "Holster Object",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/d619a625-f624-491a-9f53-3bf969f1ae14.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d619a625-f624-491a-9f53-3bf969f1ae14",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d619a625-f624-491a-9f53-3bf969f1ae14",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d619a625-f624-491a-9f53-3bf969f1ae14.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 407,
+  "frontMatter": {
+    "sidebar_position": 407,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Head Velocity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6577e6e8-8039-4843-aba1-993eb6967326"
+  },
+  "next": {
+    "title": "Player Get Is Authority Of",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c35fe6fe-d231-4ee5-80ff-9e69f24eb29e"
+  }
+}

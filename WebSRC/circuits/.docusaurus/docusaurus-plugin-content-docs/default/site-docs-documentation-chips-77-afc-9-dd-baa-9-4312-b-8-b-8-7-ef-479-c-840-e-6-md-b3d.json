@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/77afc9dd-baa9-4312-b8b8-7ef479c840e6",
+  "id": "documentation/chips/77afc9dd-baa9-4312-b8b8-7ef479c840e6",
+  "title": "String Format",
+  "description": "Use this chip to combine multiple strings together into a single string output. The \"Format\" input is part of final string output and can include other string inputs by using this syntax: {input pin  starting at 0}. For example, a \"Format\" input with a default value of “Hello, !” with a single additional input pin with the value \"World\" is fully output as \"Hello, World!\". If you had another input pin you would use {1} to denote the 2nd pin. You can add more string inputs by configuring the chip and pressing \"Add Input\".",
+  "source": "@site/docs/documentation/chips/77afc9dd-baa9-4312-b8b8-7ef479c840e6.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/77afc9dd-baa9-4312-b8b8-7ef479c840e6",
+  "permalink": "/Circuits/Website/docs/documentation/chips/77afc9dd-baa9-4312-b8b8-7ef479c840e6",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/77afc9dd-baa9-4312-b8b8-7ef479c840e6.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 574,
+  "frontMatter": {
+    "sidebar_position": 574,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "String Contains",
+    "permalink": "/Circuits/Website/docs/documentation/chips/aa24edab-c707-4cff-8c73-07e479b4cd07"
+  },
+  "next": {
+    "title": "String Length",
+    "permalink": "/Circuits/Website/docs/documentation/chips/dcde9345-00f2-41fb-9a2d-5a938f39bfb5"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6141ff64-412b-452f-beb0-f338eb6abfb5",
+  "id": "documentation/chips/6141ff64-412b-452f-beb0-f338eb6abfb5",
+  "title": "Get Player Account Name",
+  "description": "Outputs the player's Account name (e.g Coach) in a form of a string. To get a display name, use To String.",
+  "source": "@site/docs/documentation/chips/6141ff64-412b-452f-beb0-f338eb6abfb5.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6141ff64-412b-452f-beb0-f338eb6abfb5",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6141ff64-412b-452f-beb0-f338eb6abfb5",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6141ff64-412b-452f-beb0-f338eb6abfb5.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 191,
+  "frontMatter": {
+    "sidebar_position": 191,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Party Of Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/dcbd4d6a-8f42-48ef-ad66-e1f245228d84"
+  },
+  "next": {
+    "title": "Get Player By Account Name",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2ee5a268-9d44-4326-8a34-ad126a3218f2"
+  }
+}

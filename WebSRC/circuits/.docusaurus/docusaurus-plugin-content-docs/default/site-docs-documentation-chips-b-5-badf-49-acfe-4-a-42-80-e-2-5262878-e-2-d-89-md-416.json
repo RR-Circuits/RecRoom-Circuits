@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b5badf49-acfe-4a42-80e2-5262878e2d89",
+  "id": "documentation/chips/b5badf49-acfe-4a42-80e2-5262878e2d89",
+  "title": "AI Look At",
+  "description": "Command an AI to look at the input target. If you want the AI to look in a passed in vector as a direction, set the “Look Target Is Direction” parameter to True. To make an AI stop looking, use the AI Stop Looking node.",
+  "source": "@site/docs/documentation/chips/b5badf49-acfe-4a42-80e2-5262878e2d89.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b5badf49-acfe-4a42-80e2-5262878e2d89",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b5badf49-acfe-4a42-80e2-5262878e2d89",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b5badf49-acfe-4a42-80e2-5262878e2d89.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Has Line of Sight To Target",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5858a52e-54fb-4bb2-80a0-ec5fce88b3ef"
+  },
+  "next": {
+    "title": "AI Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0e92a7fb-fb38-418c-af39-9afec92112ee"
+  }
+}

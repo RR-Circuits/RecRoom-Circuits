@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/02d62908-550d-4f8b-8bc7-0960fb1b547f",
+  "id": "documentation/chips/02d62908-550d-4f8b-8bc7-0960fb1b547f",
+  "title": "Atan2",
+  "description": "Computes the 2-argument arctangent of a number.",
+  "source": "@site/docs/documentation/chips/02d62908-550d-4f8b-8bc7-0960fb1b547f.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/02d62908-550d-4f8b-8bc7-0960fb1b547f",
+  "permalink": "/Circuits/Website/docs/documentation/chips/02d62908-550d-4f8b-8bc7-0960fb1b547f",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/02d62908-550d-4f8b-8bc7-0960fb1b547f.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 28,
+  "frontMatter": {
+    "sidebar_position": 28,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Asin",
+    "permalink": "/Circuits/Website/docs/documentation/chips/aaa4e58f-16df-426a-b7a7-a654eab97037"
+  },
+  "next": {
+    "title": "Atan",
+    "permalink": "/Circuits/Website/docs/documentation/chips/84646ed2-015e-4a8b-9d37-5115cb9ebadc"
+  }
+}

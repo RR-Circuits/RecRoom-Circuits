@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/268d931e-172b-48e8-8eb8-8ec2a9614f0d",
+  "id": "documentation/chips/268d931e-172b-48e8-8eb8-8ec2a9614f0d",
+  "title": "Quaternion Dot",
+  "description": "The dot product between two rotations.",
+  "source": "@site/docs/documentation/chips/268d931e-172b-48e8-8eb8-8ec2a9614f0d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/268d931e-172b-48e8-8eb8-8ec2a9614f0d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/268d931e-172b-48e8-8eb8-8ec2a9614f0d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/268d931e-172b-48e8-8eb8-8ec2a9614f0d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 463,
+  "frontMatter": {
+    "sidebar_position": 463,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Create",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cff17d2a-4333-41da-81ac-2825f25bf819"
+  },
+  "next": {
+    "title": "Quaternion Euler Angles",
+    "permalink": "/Circuits/Website/docs/documentation/chips/81048ea5-2778-4816-99c5-1c50faad8a87"
+  }
+}

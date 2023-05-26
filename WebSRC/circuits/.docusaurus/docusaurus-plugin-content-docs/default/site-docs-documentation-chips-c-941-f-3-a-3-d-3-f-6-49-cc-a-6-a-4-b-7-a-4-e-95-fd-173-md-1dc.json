@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c941f3a3-d3f6-49cc-a6a4-b7a4e95fd173",
+  "id": "documentation/chips/c941f3a3-d3f6-49cc-a6a4-b7a4e95fd173",
+  "title": "Text Set Text",
+  "description": "Set the visible text for a Text object.",
+  "source": "@site/docs/documentation/chips/c941f3a3-d3f6-49cc-a6a4-b7a4e95fd173.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c941f3a3-d3f6-49cc-a6a4-b7a4e95fd173",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c941f3a3-d3f6-49cc-a6a4-b7a4e95fd173",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c941f3a3-d3f6-49cc-a6a4-b7a4e95fd173.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 611,
+  "frontMatter": {
+    "sidebar_position": 611,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Text Set Material",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ef6fcf56-1b3f-42bc-af50-019ff0a9cfc5"
+  },
+  "next": {
+    "title": "To Combatant",
+    "permalink": "/Circuits/Website/docs/documentation/chips/75a3a9c2-da17-4762-b87b-1735b44af659"
+  }
+}

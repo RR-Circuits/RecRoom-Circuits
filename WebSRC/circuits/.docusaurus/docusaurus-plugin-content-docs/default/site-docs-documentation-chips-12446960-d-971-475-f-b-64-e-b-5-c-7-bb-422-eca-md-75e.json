@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d971-475f-b64e-b5c7bb422eca",
+  "id": "documentation/chips/d971-475f-b64e-b5c7bb422eca",
+  "title": "Emitter Set Speed",
+  "description": "Sets the speed particles are emitted.",
+  "source": "@site/docs/documentation/chips/12446960-d971-475f-b64e-b5c7bb422eca.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d971-475f-b64e-b5c7bb422eca",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d971-475f-b64e-b5c7bb422eca",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/12446960-d971-475f-b64e-b5c7bb422eca.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 136,
+  "frontMatter": {
+    "sidebar_position": 136,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Emitter Set Size",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1fdf4bab-c868-4ffb-8bfc-b2e360450495"
+  },
+  "next": {
+    "title": "Emitter Start",
+    "permalink": "/Circuits/Website/docs/documentation/chips/56ebaa0b-256a-40ed-a066-f5663dfa2b59"
+  }
+}

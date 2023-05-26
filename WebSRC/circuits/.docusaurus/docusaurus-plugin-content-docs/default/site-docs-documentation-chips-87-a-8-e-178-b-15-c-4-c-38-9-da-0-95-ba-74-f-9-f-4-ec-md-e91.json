@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/87a8e178-b15c-4c38-9da0-95ba74f9f4ec",
+  "id": "documentation/chips/87a8e178-b15c-4c38-9da0-95ba74f9f4ec",
+  "title": "Color",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/87a8e178-b15c-4c38-9da0-95ba74f9f4ec.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/87a8e178-b15c-4c38-9da0-95ba74f9f4ec",
+  "permalink": "/Circuits/Website/docs/documentation/chips/87a8e178-b15c-4c38-9da0-95ba74f9f4ec",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/87a8e178-b15c-4c38-9da0-95ba74f9f4ec.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 84,
+  "frontMatter": {
+    "sidebar_position": 84,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Collision Data Get Position",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5910618b-f862-49ce-9779-46130e47f985"
+  },
+  "next": {
+    "title": "Color Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3d2fd0b5-eeac-45cc-a622-1701710f0792"
+  }
+}

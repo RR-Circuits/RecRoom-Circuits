@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d00aed86-97ac-4717-872e-ca6646ee266d",
+  "id": "documentation/chips/d00aed86-97ac-4717-872e-ca6646ee266d",
+  "title": "Ground Vehicle Set Wheel Friction Multiplier",
+  "description": "Wheel Friction affects how good the wheels are at gripping the ground - lower values decrease traction and make the wheels slip more and higher values can increase traction and make the wheels slip less. 1 is the default value for Wheel Friction.",
+  "source": "@site/docs/documentation/chips/d00aed86-97ac-4717-872e-ca6646ee266d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d00aed86-97ac-4717-872e-ca6646ee266d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d00aed86-97ac-4717-872e-ca6646ee266d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d00aed86-97ac-4717-872e-ca6646ee266d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 238,
+  "frontMatter": {
+    "sidebar_position": 238,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ground Vehicle Set Seated Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/50458d97-a7cf-45e3-892b-fb67c0fbe64b"
+  },
+  "next": {
+    "title": "Ground Vehicle Unseat Player From Seat",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4bb12ec4-780e-4186-a597-36bdc5c67b43"
+  }
+}

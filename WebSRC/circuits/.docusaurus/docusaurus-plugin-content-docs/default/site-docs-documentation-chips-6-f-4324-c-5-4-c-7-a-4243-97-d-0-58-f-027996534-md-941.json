@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6f4324c5-4c7a-4243-97d0-58f027996534",
+  "id": "documentation/chips/6f4324c5-4c7a-4243-97d0-58f027996534",
+  "title": "Player Is Room Host",
+  "description": "Outputs True if the input Player is one of the current room's hosts.",
+  "source": "@site/docs/documentation/chips/6f4324c5-4c7a-4243-97d0-58f027996534.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6f4324c5-4c7a-4243-97d0-58f027996534",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6f4324c5-4c7a-4243-97d0-58f027996534",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6f4324c5-4c7a-4243-97d0-58f027996534.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 410,
+  "frontMatter": {
+    "sidebar_position": 410,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Is In Party",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7e6788b0-08a1-4c76-b591-9c8460bcf925"
+  },
+  "next": {
+    "title": "Player Is Room Mod",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8f9b0921-a92b-4d01-a4d5-a8d2e6fc6ca0"
+  }
+}

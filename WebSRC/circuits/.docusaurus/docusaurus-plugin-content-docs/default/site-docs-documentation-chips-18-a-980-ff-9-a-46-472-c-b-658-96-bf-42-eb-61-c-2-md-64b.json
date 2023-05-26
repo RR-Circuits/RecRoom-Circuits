@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/18a980ff-9a46-472c-b658-96bf42eb61c2",
+  "id": "documentation/chips/18a980ff-9a46-472c-b658-96bf42eb61c2",
+  "title": "Quaternion Variable",
+  "description": "Reads or writes a variable in the current scope based on the name.",
+  "source": "@site/docs/documentation/chips/18a980ff-9a46-472c-b658-96bf42eb61c2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/18a980ff-9a46-472c-b658-96bf42eb61c2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/18a980ff-9a46-472c-b658-96bf42eb61c2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/18a980ff-9a46-472c-b658-96bf42eb61c2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 467,
+  "frontMatter": {
+    "sidebar_position": 467,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Inverse",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2097bef3-9ed1-4601-ab5d-f620654bd1c4"
+  },
+  "next": {
+    "title": "Quaternion Normalize",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8157b896-fce8-45fc-957a-4407f0d6c42a"
+  }
+}

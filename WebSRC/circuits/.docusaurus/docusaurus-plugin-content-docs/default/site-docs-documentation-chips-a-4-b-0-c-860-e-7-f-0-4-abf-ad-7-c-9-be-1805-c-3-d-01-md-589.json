@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/a4b0c860-e7f0-4abf-ad7c-9be1805c3d01",
+  "id": "documentation/chips/a4b0c860-e7f0-4abf-ad7c-9be1805c3d01",
+  "title": "Get Currency Balance",
+  "description": "Returns the local players balance of one room currency. Configure this chip to selecht which currency to use.",
+  "source": "@site/docs/documentation/chips/a4b0c860-e7f0-4abf-ad7c-9be1805c3d01.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/a4b0c860-e7f0-4abf-ad7c-9be1805c3d01",
+  "permalink": "/Circuits/Website/docs/documentation/chips/a4b0c860-e7f0-4abf-ad7c-9be1805c3d01",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/a4b0c860-e7f0-4abf-ad7c-9be1805c3d01.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 166,
+  "frontMatter": {
+    "sidebar_position": 166,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/eaf712f8-3257-4415-9f88-ae94e308396e"
+  },
+  "next": {
+    "title": "Get Broadcasting Attendance",
+    "permalink": "/Circuits/Website/docs/documentation/chips/78f5a9f2-4e3d-4534-aada-4af3a551a953"
+  }
+}

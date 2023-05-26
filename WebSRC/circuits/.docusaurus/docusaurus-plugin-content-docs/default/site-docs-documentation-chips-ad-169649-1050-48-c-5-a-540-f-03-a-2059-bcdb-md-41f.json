@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ad169649-1050-48c5-a540-f03a2059bcdb",
+  "id": "documentation/chips/ad169649-1050-48c5-a540-f03a2059bcdb",
+  "title": "String Split",
+  "description": "Splits the target string at the input character.",
+  "source": "@site/docs/documentation/chips/ad169649-1050-48c5-a540-f03a2059bcdb.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ad169649-1050-48c5-a540-f03a2059bcdb",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ad169649-1050-48c5-a540-f03a2059bcdb",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/ad169649-1050-48c5-a540-f03a2059bcdb.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 578,
+  "frontMatter": {
+    "sidebar_position": 578,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "String Replace",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b394650e-7673-40a3-8b9e-3aa8eaa2a77e"
+  },
+  "next": {
+    "title": "String Split At Index",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6b92c345-e6bc-40d9-aae9-4754e634777c"
+  }
+}

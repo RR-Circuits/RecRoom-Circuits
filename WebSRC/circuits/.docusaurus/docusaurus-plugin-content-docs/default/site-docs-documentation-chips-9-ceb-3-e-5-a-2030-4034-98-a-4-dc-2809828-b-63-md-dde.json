@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/9ceb3e5a-2030-4034-98a4-dc2809828b63",
+  "id": "documentation/chips/9ceb3e5a-2030-4034-98a4-dc2809828b63",
+  "title": "Award Consumable",
+  "description": "Award a room consumable to a player. Multiple award room consumable requests from the same client are sent in bulk with a ten-second cooldown. The Success port will be TRUE if the consumable was entirely, or in part, awarded to the player. If the consumable could not be awarded, the Success port will be FALSE. Use the Log Output toggle in the configuration settings to see more information about why a failure occurred. Logging output may impact room performance and should be toggled off when not in use.",
+  "source": "@site/docs/documentation/chips/9ceb3e5a-2030-4034-98a4-dc2809828b63.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/9ceb3e5a-2030-4034-98a4-dc2809828b63",
+  "permalink": "/Circuits/Website/docs/documentation/chips/9ceb3e5a-2030-4034-98a4-dc2809828b63",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/9ceb3e5a-2030-4034-98a4-dc2809828b63.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 44,
+  "frontMatter": {
+    "sidebar_position": 44,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Audio Player Stop",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f6c546cc-becd-44cc-999b-bf2031b5f737"
+  },
+  "next": {
+    "title": "Award Currency",
+    "permalink": "/Circuits/Website/docs/documentation/chips/03461631-734f-491b-ab86-6bdf66947556"
+  }
+}

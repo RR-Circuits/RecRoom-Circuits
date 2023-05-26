@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d376a3c7-67c2-4607-a124-e2b93dc256d8",
+  "id": "documentation/chips/d376a3c7-67c2-4607-a124-e2b93dc256d8",
+  "title": "Player Prompt Multiple Choice",
+  "description": "Sends a watch notification to the specified player containing the prompt title and body, along with each of the answer choices on its own line. Once this watch notification is opened, the player can choose a response and hit \"ok,\" triggering the On Prompt Complete event. Since there is a delay between sending a notification and receiving the response in which other responses may be received, the Player output can be used to disambiguate multiple responses",
+  "source": "@site/docs/documentation/chips/d376a3c7-67c2-4607-a124-e2b93dc256d8.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d376a3c7-67c2-4607-a124-e2b93dc256d8",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d376a3c7-67c2-4607-a124-e2b93dc256d8",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d376a3c7-67c2-4607-a124-e2b93dc256d8.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 421,
+  "frontMatter": {
+    "sidebar_position": 421,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Owns Room Key",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e61558a9-0ce4-4dba-ac87-b16e61bcdb23"
+  },
+  "next": {
+    "title": "Remove Player From Radio Channel",
+    "permalink": "/Circuits/Website/docs/documentation/chips/eb605a54-315e-495e-b051-8d113c32ed7c"
+  }
+}

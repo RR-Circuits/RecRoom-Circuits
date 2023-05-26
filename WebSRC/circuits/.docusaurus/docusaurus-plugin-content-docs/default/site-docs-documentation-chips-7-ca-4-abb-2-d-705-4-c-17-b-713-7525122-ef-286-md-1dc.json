@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/7ca4abb2-d705-4c17-b713-7525122ef286",
+  "id": "documentation/chips/7ca4abb2-d705-4c17-b713-7525122ef286",
+  "title": "Door Set Locked",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/7ca4abb2-d705-4c17-b713-7525122ef286.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/7ca4abb2-d705-4c17-b713-7525122ef286",
+  "permalink": "/Circuits/Website/docs/documentation/chips/7ca4abb2-d705-4c17-b713-7525122ef286",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/7ca4abb2-d705-4c17-b713-7525122ef286.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 127,
+  "frontMatter": {
+    "sidebar_position": 127,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Door Set Destination",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5b9dc865-0fac-4d3a-9edc-68184ee189a2"
+  },
+  "next": {
+    "title": "Emitter Get Looping",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f8c91da0-bb4f-4958-9016-546a387f45dd"
+  }
+}

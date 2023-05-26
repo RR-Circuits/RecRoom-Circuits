@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/672e473f-7099-4f76-aead-8b3df7c2fcd2",
+  "id": "documentation/chips/672e473f-7099-4f76-aead-8b3df7c2fcd2",
+  "title": "Explosion Emitter Set Explosion Radius",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/672e473f-7099-4f76-aead-8b3df7c2fcd2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/672e473f-7099-4f76-aead-8b3df7c2fcd2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/672e473f-7099-4f76-aead-8b3df7c2fcd2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/672e473f-7099-4f76-aead-8b3df7c2fcd2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 154,
+  "frontMatter": {
+    "sidebar_position": 154,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Explosion Emitter Set Firing Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d39b968d-bdab-4548-aaa7-745e3155789e"
+  },
+  "next": {
+    "title": "float Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/04a31ca5-91d2-4a69-bf3d-484d18411cc0"
+  }
+}

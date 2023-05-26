@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1657cd3d-6bc5-41d2-b70f-1854f9288ffa",
+  "id": "documentation/chips/1657cd3d-6bc5-41d2-b70f-1854f9288ffa",
+  "title": "List Remove Item (First)",
+  "description": "Removes the first instance of the item in the list, and returns the index where it was found (-1 if not present)",
+  "source": "@site/docs/documentation/chips/1657cd3d-6bc5-41d2-b70f-1854f9288ffa.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1657cd3d-6bc5-41d2-b70f-1854f9288ffa",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1657cd3d-6bc5-41d2-b70f-1854f9288ffa",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1657cd3d-6bc5-41d2-b70f-1854f9288ffa.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 340,
+  "frontMatter": {
+    "sidebar_position": 340,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Remove Item (All)",
+    "permalink": "/Circuits/Website/docs/documentation/chips/370f1016-69e0-4265-a4a2-7841067f1fa7"
+  },
+  "next": {
+    "title": "List Remove Last",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2687fb17-96ea-4106-94d7-be8854cfa978"
+  }
+}

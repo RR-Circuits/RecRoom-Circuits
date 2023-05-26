@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/9b39ed47-e9a5-4f04-b4cd-80f5bbaff2f7",
+  "id": "documentation/chips/9b39ed47-e9a5-4f04-b4cd-80f5bbaff2f7",
+  "title": "Player Has Role",
+  "description": "Outputs True if the input player has the input role.",
+  "source": "@site/docs/documentation/chips/9b39ed47-e9a5-4f04-b4cd-80f5bbaff2f7.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/9b39ed47-e9a5-4f04-b4cd-80f5bbaff2f7",
+  "permalink": "/Circuits/Website/docs/documentation/chips/9b39ed47-e9a5-4f04-b4cd-80f5bbaff2f7",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/9b39ed47-e9a5-4f04-b4cd-80f5bbaff2f7.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 400,
+  "frontMatter": {
+    "sidebar_position": 400,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Get Seat",
+    "permalink": "/Circuits/Website/docs/documentation/chips/47038300-2f6d-4876-bbb7-7c2e64fd9364"
+  },
+  "next": {
+    "title": "Player Head Forward Vector",
+    "permalink": "/Circuits/Website/docs/documentation/chips/9fb898a5-f5f2-4d62-be3d-31381279d1d3"
+  }
+}

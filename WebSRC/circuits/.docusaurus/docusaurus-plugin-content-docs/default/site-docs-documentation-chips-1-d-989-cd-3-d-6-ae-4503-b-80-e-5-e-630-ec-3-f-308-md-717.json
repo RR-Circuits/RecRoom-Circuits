@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1d989cd3-d6ae-4503-b80e-5e630ec3f308",
+  "id": "documentation/chips/1d989cd3-d6ae-4503-b80e-5e630ec3f308",
+  "title": "Piston Get Speed",
+  "description": "Returns the speed of a piston.",
+  "source": "@site/docs/documentation/chips/1d989cd3-d6ae-4503-b80e-5e630ec3f308.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1d989cd3-d6ae-4503-b80e-5e630ec3f308",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1d989cd3-d6ae-4503-b80e-5e630ec3f308",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1d989cd3-d6ae-4503-b80e-5e630ec3f308.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 378,
+  "frontMatter": {
+    "sidebar_position": 378,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Piston Get Max Distance",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bb702e97-9f40-45cb-b35d-3a2193ab6800"
+  },
+  "next": {
+    "title": "Piston Set Acceleration",
+    "permalink": "/Circuits/Website/docs/documentation/chips/07c316df-cfa1-4ef8-ac3b-d7e9c4795812"
+  }
+}

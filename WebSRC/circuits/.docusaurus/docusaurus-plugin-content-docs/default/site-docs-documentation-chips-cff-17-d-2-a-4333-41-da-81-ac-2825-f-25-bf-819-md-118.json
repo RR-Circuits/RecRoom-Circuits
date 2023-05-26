@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/cff17d2a-4333-41da-81ac-2825f25bf819",
+  "id": "documentation/chips/cff17d2a-4333-41da-81ac-2825f25bf819",
+  "title": "Quaternion Create",
+  "description": "Manually create a quaternion. Congratulations, you have reached peak math.",
+  "source": "@site/docs/documentation/chips/cff17d2a-4333-41da-81ac-2825f25bf819.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/cff17d2a-4333-41da-81ac-2825f25bf819",
+  "permalink": "/Circuits/Website/docs/documentation/chips/cff17d2a-4333-41da-81ac-2825f25bf819",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/cff17d2a-4333-41da-81ac-2825f25bf819.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 462,
+  "frontMatter": {
+    "sidebar_position": 462,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Create Look",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b28f369d-6758-4afc-80e2-8f09ea1df125"
+  },
+  "next": {
+    "title": "Quaternion Dot",
+    "permalink": "/Circuits/Website/docs/documentation/chips/268d931e-172b-48e8-8eb8-8ec2a9614f0d"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/fba2accf-44e2-412d-a204-ae3bd04f7dfa",
+  "id": "documentation/chips/fba2accf-44e2-412d-a204-ae3bd04f7dfa",
+  "title": "Vector3 Variable",
+  "description": "Reads or writes a variable in the current scope based on the name.",
+  "source": "@site/docs/documentation/chips/fba2accf-44e2-412d-a204-ae3bd04f7dfa.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/fba2accf-44e2-412d-a204-ae3bd04f7dfa",
+  "permalink": "/Circuits/Website/docs/documentation/chips/fba2accf-44e2-412d-a204-ae3bd04f7dfa",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/fba2accf-44e2-412d-a204-ae3bd04f7dfa.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 642,
+  "frontMatter": {
+    "sidebar_position": 642,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vector3 Inverse Transform",
+    "permalink": "/Circuits/Website/docs/documentation/chips/97b150f5-7bd0-4649-96d7-fdf0b5e88ffb"
+  },
+  "next": {
+    "title": "Vector3 Normalize",
+    "permalink": "/Circuits/Website/docs/documentation/chips/92ded211-17d6-4c73-b29c-71323c6a40ee"
+  }
+}

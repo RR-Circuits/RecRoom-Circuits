@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/bad6a57b-2af8-4526-8caa-e07476da4a5b",
+  "id": "documentation/chips/bad6a57b-2af8-4526-8caa-e07476da4a5b",
+  "title": "Go To Room",
+  "description": "Execution sends the specified player to a preconfigured destination. Use a destination constant or variable to specify the destination of this chip. Follow settings are a property of the destination.",
+  "source": "@site/docs/documentation/chips/bad6a57b-2af8-4526-8caa-e07476da4a5b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/bad6a57b-2af8-4526-8caa-e07476da4a5b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/bad6a57b-2af8-4526-8caa-e07476da4a5b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/bad6a57b-2af8-4526-8caa-e07476da4a5b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 223,
+  "frontMatter": {
+    "sidebar_position": 223,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Velocity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0310de62-2ede-4af0-b551-0228290fc54c"
+  },
+  "next": {
+    "title": "Greater Than",
+    "permalink": "/Circuits/Website/docs/documentation/chips/110c29b1-ac90-4a71-b3c0-53372aa134bc"
+  }
+}

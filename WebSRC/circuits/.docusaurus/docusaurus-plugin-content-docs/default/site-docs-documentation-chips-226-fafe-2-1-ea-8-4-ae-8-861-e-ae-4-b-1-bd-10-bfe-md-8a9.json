@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/226fafe2-1ea8-4ae8-861e-ae4b1bd10bfe",
+  "id": "documentation/chips/226fafe2-1ea8-4ae8-861e-ae4b1bd10bfe",
+  "title": "String Substring",
+  "description": "Allows you to extract individual parts from a string. You can think of this like a list of characters.",
+  "source": "@site/docs/documentation/chips/226fafe2-1ea8-4ae8-861e-ae4b1bd10bfe.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/226fafe2-1ea8-4ae8-861e-ae4b1bd10bfe",
+  "permalink": "/Circuits/Website/docs/documentation/chips/226fafe2-1ea8-4ae8-861e-ae4b1bd10bfe",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/226fafe2-1ea8-4ae8-861e-ae4b1bd10bfe.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 599,
+  "frontMatter": {
+    "sidebar_position": 599,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Studio Object Get Property - String",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a0708f14-89b6-4ef7-97eb-38359a57422f"
+  },
+  "next": {
+    "title": "Subtract",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1fbb364c-1af0-44bb-a82b-905caeb6819a"
+  }
+}

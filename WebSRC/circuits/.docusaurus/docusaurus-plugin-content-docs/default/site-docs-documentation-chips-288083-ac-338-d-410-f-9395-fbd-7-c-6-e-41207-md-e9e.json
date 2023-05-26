@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/288083ac-338d-410f-9395-fbd7c6e41207",
+  "id": "documentation/chips/288083ac-338d-410f-9395-fbd7c6e41207",
+  "title": "Get Player Season League Name",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/288083ac-338d-410f-9395-fbd7c6e41207.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/288083ac-338d-410f-9395-fbd7c6e41207",
+  "permalink": "/Circuits/Website/docs/documentation/chips/288083ac-338d-410f-9395-fbd7c6e41207",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/288083ac-338d-410f-9395-fbd7c6e41207.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 195,
+  "frontMatter": {
+    "sidebar_position": 195,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Leaderboard Get Player Stat",
+    "permalink": "/Circuits/Website/docs/documentation/chips/12cf9781-1e1b-4e59-a783-c7214b66be8a"
+  },
+  "next": {
+    "title": "Get All Players With Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1c0a6bd4-bcac-40a9-8bae-fceff7ff7cff"
+  }
+}

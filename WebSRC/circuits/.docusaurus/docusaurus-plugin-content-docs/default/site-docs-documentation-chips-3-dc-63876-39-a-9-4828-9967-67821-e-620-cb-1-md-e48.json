@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/3dc63876-39a9-4828-9967-67821e620cb1",
+  "id": "documentation/chips/3dc63876-39a9-4828-9967-67821e620cb1",
+  "title": "Consumable",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/3dc63876-39a9-4828-9967-67821e620cb1.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/3dc63876-39a9-4828-9967-67821e620cb1",
+  "permalink": "/Circuits/Website/docs/documentation/chips/3dc63876-39a9-4828-9967-67821e620cb1",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/3dc63876-39a9-4828-9967-67821e620cb1.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 99,
+  "frontMatter": {
+    "sidebar_position": 99,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "i",
+    "permalink": "/Circuits/Website/docs/documentation/chips/83623f53-86b2-477d-bb2f-fe68f68ba617"
+  },
+  "next": {
+    "title": "Destination Room",
+    "permalink": "/Circuits/Website/docs/documentation/chips/330f3621-0d37-4cd7-8b92-270c7df43fcb"
+  }
+}

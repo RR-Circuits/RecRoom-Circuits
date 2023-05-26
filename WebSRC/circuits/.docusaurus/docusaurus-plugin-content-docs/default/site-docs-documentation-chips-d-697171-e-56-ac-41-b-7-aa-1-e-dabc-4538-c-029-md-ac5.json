@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d697171e-56ac-41b7-aa1e-dabc4538c029",
+  "id": "documentation/chips/d697171e-56ac-41b7-aa1e-dabc4538c029",
+  "title": "Color To HSV",
+  "description": "Return hue, saturation, and value from the given color.",
+  "source": "@site/docs/documentation/chips/d697171e-56ac-41b7-aa1e-dabc4538c029.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d697171e-56ac-41b7-aa1e-dabc4538c029",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d697171e-56ac-41b7-aa1e-dabc4538c029",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d697171e-56ac-41b7-aa1e-dabc4538c029.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 86,
+  "frontMatter": {
+    "sidebar_position": 86,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Color Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3d2fd0b5-eeac-45cc-a622-1701710f0792"
+  },
+  "next": {
+    "title": "Color To Int",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8e412141-635d-435c-a900-f40d8a261906"
+  }
+}

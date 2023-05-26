@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e750-441f-9e92-8455232f1703",
+  "id": "documentation/chips/e750-441f-9e92-8455232f1703",
+  "title": "Explosion Emitter Explode",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/49774675-e750-441f-9e92-8455232f1703.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e750-441f-9e92-8455232f1703",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e750-441f-9e92-8455232f1703",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/49774675-e750-441f-9e92-8455232f1703.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 146,
+  "frontMatter": {
+    "sidebar_position": 146,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Execution String Switch",
+    "permalink": "/Circuits/Website/docs/documentation/chips/80c7d803-df40-45a5-ac7b-bfccb0b511c7"
+  },
+  "next": {
+    "title": "Explosion Emitter Get Explosion Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6039d63b-f484-4436-bb7c-ea58529ed4ec"
+  }
+}

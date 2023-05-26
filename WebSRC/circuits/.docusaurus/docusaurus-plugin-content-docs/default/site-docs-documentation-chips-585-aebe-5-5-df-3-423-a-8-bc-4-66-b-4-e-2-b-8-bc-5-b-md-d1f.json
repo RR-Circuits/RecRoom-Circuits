@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/585aebe5-5df3-423a-8bc4-66b4e2b8bc5b",
+  "id": "documentation/chips/585aebe5-5df3-423a-8bc4-66b4e2b8bc5b",
+  "title": "List Multiply",
+  "description": "Multiplies each element in the list by the next element.",
+  "source": "@site/docs/documentation/chips/585aebe5-5df3-423a-8bc4-66b4e2b8bc5b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/585aebe5-5df3-423a-8bc4-66b4e2b8bc5b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/585aebe5-5df3-423a-8bc4-66b4e2b8bc5b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/585aebe5-5df3-423a-8bc4-66b4e2b8bc5b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 335,
+  "frontMatter": {
+    "sidebar_position": 335,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Min",
+    "permalink": "/Circuits/Website/docs/documentation/chips/73e9cc79-66cc-4526-8ed7-87500e208c6b"
+  },
+  "next": {
+    "title": "List[Player] Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/32837e14-12de-465f-89dc-ceddb64cdd6c"
+  }
+}

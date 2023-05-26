@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/117b8c83-5ada-4665-a0c6-2c6ffdec98b9",
+  "id": "documentation/chips/117b8c83-5ada-4665-a0c6-2c6ffdec98b9",
+  "title": "Rotator Get Target Rotation",
+  "description": "Outputs the rotation of the Marker on the target Rotator.",
+  "source": "@site/docs/documentation/chips/117b8c83-5ada-4665-a0c6-2c6ffdec98b9.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/117b8c83-5ada-4665-a0c6-2c6ffdec98b9",
+  "permalink": "/Circuits/Website/docs/documentation/chips/117b8c83-5ada-4665-a0c6-2c6ffdec98b9",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/117b8c83-5ada-4665-a0c6-2c6ffdec98b9.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 497,
+  "frontMatter": {
+    "sidebar_position": 497,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Root",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8b96e472-2b19-4265-aade-2c6202358d86"
+  },
+  "next": {
+    "title": "Rotator Get Rotation Acceleration",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2d96da47-4d37-4463-a3bd-8f8cd2ab0c58"
+  }
+}

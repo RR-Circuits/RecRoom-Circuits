@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/88f95338-d1a6-4fad-8424-d714d651f6ac",
+  "id": "documentation/chips/88f95338-d1a6-4fad-8424-d714d651f6ac",
+  "title": "Get Forward Vector (Deprecated)",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/88f95338-d1a6-4fad-8424-d714d651f6ac.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/88f95338-d1a6-4fad-8424-d714d651f6ac",
+  "permalink": "/Circuits/Website/docs/documentation/chips/88f95338-d1a6-4fad-8424-d714d651f6ac",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/88f95338-d1a6-4fad-8424-d714d651f6ac.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 174,
+  "frontMatter": {
+    "sidebar_position": 174,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Formatted Time",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7dfed109-e641-47f3-8844-fd0753e4e764"
+  },
+  "next": {
+    "title": "Get Forward Vector",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4536e1df-1138-4a2c-9117-475bb3f38eae"
+  }
+}

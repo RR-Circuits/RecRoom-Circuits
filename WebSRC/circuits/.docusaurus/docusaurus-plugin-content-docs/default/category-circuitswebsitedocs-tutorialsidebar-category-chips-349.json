@@ -1,0 +1,16 @@
+{
+  "title": "Chips",
+  "description": "A list of rec room chips.",
+  "slug": "/category/chips",
+  "permalink": "/Circuits/Website/docs/category/chips",
+  "navigation": {
+    "previous": {
+      "title": "Documentation",
+      "permalink": "/Circuits/Website/docs/category/documentation"
+    },
+    "next": {
+      "title": "Absolute Value",
+      "permalink": "/Circuits/Website/docs/documentation/chips/98b99011-9be8-43b3-89cc-1e9d55bd8b51"
+    }
+  }
+}

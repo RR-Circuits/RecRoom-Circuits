@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9",
+  "id": "documentation/chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9",
+  "title": "Respawn Point Respawn Player",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9",
+  "permalink": "/Circuits/Website/docs/documentation/chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 568,
+  "frontMatter": {
+    "sidebar_position": 568,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Respawn Point Respawn Player At Respawn Point",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c52419da-019e-4104-95e3-0f0adfa8ebf2"
+  },
+  "next": {
+    "title": "Respawn Point Set Active",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bf3275dc-686f-4a63-87b7-5422a70cc4d2"
+  }
+}

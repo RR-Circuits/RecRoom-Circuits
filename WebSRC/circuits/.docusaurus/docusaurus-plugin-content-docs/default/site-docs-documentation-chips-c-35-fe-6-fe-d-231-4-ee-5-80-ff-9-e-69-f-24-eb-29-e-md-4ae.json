@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c35fe6fe-d231-4ee5-80ff-9e69f24eb29e",
+  "id": "documentation/chips/c35fe6fe-d231-4ee5-80ff-9e69f24eb29e",
+  "title": "Player Get Is Authority Of",
+  "description": "Outputs if a Player is authority of the input object.",
+  "source": "@site/docs/documentation/chips/c35fe6fe-d231-4ee5-80ff-9e69f24eb29e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c35fe6fe-d231-4ee5-80ff-9e69f24eb29e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c35fe6fe-d231-4ee5-80ff-9e69f24eb29e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c35fe6fe-d231-4ee5-80ff-9e69f24eb29e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 408,
+  "frontMatter": {
+    "sidebar_position": 408,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Holster Object",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d619a625-f624-491a-9f53-3bf969f1ae14"
+  },
+  "next": {
+    "title": "Player Is In Party",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7e6788b0-08a1-4c76-b591-9c8460bcf925"
+  }
+}

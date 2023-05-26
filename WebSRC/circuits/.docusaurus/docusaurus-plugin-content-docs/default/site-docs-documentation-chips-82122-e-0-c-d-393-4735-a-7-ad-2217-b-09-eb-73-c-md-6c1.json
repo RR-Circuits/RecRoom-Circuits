@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/82122e0c-d393-4735-a7ad-2217b09eb73c",
+  "id": "documentation/chips/82122e0c-d393-4735-a7ad-2217b09eb73c",
+  "title": "Respawn Point Add Avoid Tag",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/82122e0c-d393-4735-a7ad-2217b09eb73c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/82122e0c-d393-4735-a7ad-2217b09eb73c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/82122e0c-d393-4735-a7ad-2217b09eb73c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/82122e0c-d393-4735-a7ad-2217b09eb73c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 559,
+  "frontMatter": {
+    "sidebar_position": 559,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Respawn Point Add Avoid Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e9b24d3a-7abc-4e97-99f9-e3d31d2c885c"
+  },
+  "next": {
+    "title": "Respawn Point Add Spawn Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/83bc6208-b272-46a7-add2-46178a71a9e6"
+  }
+}

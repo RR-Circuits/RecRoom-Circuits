@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/de407f3c-2fb0-4c9a-9dc4-fb6d6709737e",
+  "id": "documentation/chips/de407f3c-2fb0-4c9a-9dc4-fb6d6709737e",
+  "title": "Invisible Collision Get Enabled",
+  "description": "Outputs True if the target Invisible Collision object is enabled.",
+  "source": "@site/docs/documentation/chips/de407f3c-2fb0-4c9a-9dc4-fb6d6709737e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/de407f3c-2fb0-4c9a-9dc4-fb6d6709737e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/de407f3c-2fb0-4c9a-9dc4-fb6d6709737e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/de407f3c-2fb0-4c9a-9dc4-fb6d6709737e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 280,
+  "frontMatter": {
+    "sidebar_position": 280,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Invisible Collision Get Blocks Players",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0938d870-2f6d-4144-ba3d-c73af0e46348"
+  },
+  "next": {
+    "title": "Invisible Collision Set Blocks Players",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ed61effe-a684-4c1a-92c8-79fc6df010fb"
+  }
+}

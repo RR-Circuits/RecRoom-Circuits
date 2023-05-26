@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/2891bcb4-a6ab-4a2e-a08d-dd2a55f1cf66",
+  "id": "documentation/chips/2891bcb4-a6ab-4a2e-a08d-dd2a55f1cf66",
+  "title": "Nor",
+  "description": "Outputs True when all inputs are False. Otherwise, outputs False.",
+  "source": "@site/docs/documentation/chips/2891bcb4-a6ab-4a2e-a08d-dd2a55f1cf66.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/2891bcb4-a6ab-4a2e-a08d-dd2a55f1cf66",
+  "permalink": "/Circuits/Website/docs/documentation/chips/2891bcb4-a6ab-4a2e-a08d-dd2a55f1cf66",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/2891bcb4-a6ab-4a2e-a08d-dd2a55f1cf66.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 364,
+  "frontMatter": {
+    "sidebar_position": 364,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Noise",
+    "permalink": "/Circuits/Website/docs/documentation/chips/06f8732b-b1cb-4b79-815e-5b389c1dd78f"
+  },
+  "next": {
+    "title": "Not",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ff551243-beb4-470e-ab48-9d616818d5e4"
+  }
+}

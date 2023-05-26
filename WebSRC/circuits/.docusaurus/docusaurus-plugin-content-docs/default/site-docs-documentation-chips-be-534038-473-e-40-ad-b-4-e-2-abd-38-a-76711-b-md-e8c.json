@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/be534038-473e-40ad-b4e2-abd38a76711b",
+  "id": "documentation/chips/be534038-473e-40ad-b4e2-abd38a76711b",
+  "title": "Value Integer Switch",
+  "description": "Returns the associated input of the compare value that matches the 'match' input. Returns the default value if no match can be found.",
+  "source": "@site/docs/documentation/chips/be534038-473e-40ad-b4e2-abd38a76711b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/be534038-473e-40ad-b4e2-abd38a76711b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/be534038-473e-40ad-b4e2-abd38a76711b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/be534038-473e-40ad-b4e2-abd38a76711b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 637,
+  "frontMatter": {
+    "sidebar_position": 637,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trigger Volume Set Filter Tags",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6668fd38-076e-4d03-b9a1-02eca5edd0b7"
+  },
+  "next": {
+    "title": "Value String Switch",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2c9dcd54-dd65-498e-8a13-50c221448358"
+  }
+}

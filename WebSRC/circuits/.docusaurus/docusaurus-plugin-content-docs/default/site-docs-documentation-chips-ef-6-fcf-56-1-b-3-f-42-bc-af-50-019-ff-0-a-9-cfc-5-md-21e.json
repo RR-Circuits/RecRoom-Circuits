@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ef6fcf56-1b3f-42bc-af50-019ff0a9cfc5",
+  "id": "documentation/chips/ef6fcf56-1b3f-42bc-af50-019ff0a9cfc5",
+  "title": "Text Set Material",
+  "description": "Sets the material for a Text object.",
+  "source": "@site/docs/documentation/chips/ef6fcf56-1b3f-42bc-af50-019ff0a9cfc5.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ef6fcf56-1b3f-42bc-af50-019ff0a9cfc5",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ef6fcf56-1b3f-42bc-af50-019ff0a9cfc5",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/ef6fcf56-1b3f-42bc-af50-019ff0a9cfc5.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 610,
+  "frontMatter": {
+    "sidebar_position": 610,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Text Set Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0bfaa337-46a1-472f-beac-12faa21867d4"
+  },
+  "next": {
+    "title": "Text Set Text",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c941f3a3-d3f6-49cc-a6a4-b7a4e95fd173"
+  }
+}

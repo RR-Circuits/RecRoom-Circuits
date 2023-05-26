@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/70e7663d-a5fd-435d-8995-942b4babc262",
+  "id": "documentation/chips/70e7663d-a5fd-435d-8995-942b4babc262",
+  "title": "Button Get Text",
+  "description": "Outputs a target Button's Text property.",
+  "source": "@site/docs/documentation/chips/70e7663d-a5fd-435d-8995-942b4babc262.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/70e7663d-a5fd-435d-8995-942b4babc262",
+  "permalink": "/Circuits/Website/docs/documentation/chips/70e7663d-a5fd-435d-8995-942b4babc262",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/70e7663d-a5fd-435d-8995-942b4babc262.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 70,
+  "frontMatter": {
+    "sidebar_position": 70,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Button Get Is Pressed",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fe32ba92-9018-4575-92e2-3b0d82c9419b"
+  },
+  "next": {
+    "title": "Button Set Text",
+    "permalink": "/Circuits/Website/docs/documentation/chips/21bbaa09-6bcf-435c-86da-e853a78bc27b"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e6f056ee-cf6d-4696-b338-31418275af16",
+  "id": "documentation/chips/e6f056ee-cf6d-4696-b338-31418275af16",
+  "title": "String Trim",
+  "description": "Outputs the string with leading and trailing whitespace removed.",
+  "source": "@site/docs/documentation/chips/e6f056ee-cf6d-4696-b338-31418275af16.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e6f056ee-cf6d-4696-b338-31418275af16",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e6f056ee-cf6d-4696-b338-31418275af16",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e6f056ee-cf6d-4696-b338-31418275af16.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 584,
+  "frontMatter": {
+    "sidebar_position": 584,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "String To Upper",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8f5995c7-5af0-4064-9cb7-2b80d75d157f"
+  },
+  "next": {
+    "title": "Studio Audio",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7dc47ad4-9b51-4cb3-8e40-6b76f1243e6f"
+  }
+}

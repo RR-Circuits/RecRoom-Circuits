@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/5db71859-228a-41d9-8742-99bf9aa1df2a",
+  "id": "documentation/chips/5db71859-228a-41d9-8742-99bf9aa1df2a",
+  "title": "Gun Handle Add Auto Aim Role",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/5db71859-228a-41d9-8742-99bf9aa1df2a.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/5db71859-228a-41d9-8742-99bf9aa1df2a",
+  "permalink": "/Circuits/Website/docs/documentation/chips/5db71859-228a-41d9-8742-99bf9aa1df2a",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/5db71859-228a-41d9-8742-99bf9aa1df2a.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 241,
+  "frontMatter": {
+    "sidebar_position": 241,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ground Vehicle Unseat Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5815406b-a3f2-471e-88ec-dffc212293be"
+  },
+  "next": {
+    "title": "Gun Handle Apply Recoil",
+    "permalink": "/Circuits/Website/docs/documentation/chips/dca5d998-4ce5-4121-9915-bc4f54df595d"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/05305e33-a809-4751-b928-2c8a5bbc6dc9",
+  "id": "documentation/chips/05305e33-a809-4751-b928-2c8a5bbc6dc9",
+  "title": "Bit Nand",
+  "description": "Computes a bitwise NAND. (NOT AND) The result has a bit set for every bit that is not set in either of the inputs.",
+  "source": "@site/docs/documentation/chips/05305e33-a809-4751-b928-2c8a5bbc6dc9.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/05305e33-a809-4751-b928-2c8a5bbc6dc9",
+  "permalink": "/Circuits/Website/docs/documentation/chips/05305e33-a809-4751-b928-2c8a5bbc6dc9",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/05305e33-a809-4751-b928-2c8a5bbc6dc9.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 56,
+  "frontMatter": {
+    "sidebar_position": 56,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bit Leading Zeros",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d6e62624-06b0-416e-8e3c-ca058efd3c46"
+  },
+  "next": {
+    "title": "Bit Not",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ec74ea41-24e5-491c-8919-a502638583f9"
+  }
+}

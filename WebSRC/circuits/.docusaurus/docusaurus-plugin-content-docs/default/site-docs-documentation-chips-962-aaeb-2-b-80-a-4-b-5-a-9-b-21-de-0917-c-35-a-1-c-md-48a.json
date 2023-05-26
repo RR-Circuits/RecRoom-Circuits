@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/962aaeb2-b80a-4b5a-9b21-de0917c35a1c",
+  "id": "documentation/chips/962aaeb2-b80a-4b5a-9b21-de0917c35a1c",
+  "title": "Reset Player World UI",
+  "description": "Reset the player's active world UI to its default values.",
+  "source": "@site/docs/documentation/chips/962aaeb2-b80a-4b5a-9b21-de0917c35a1c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/962aaeb2-b80a-4b5a-9b21-de0917c35a1c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/962aaeb2-b80a-4b5a-9b21-de0917c35a1c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/962aaeb2-b80a-4b5a-9b21-de0917c35a1c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 482,
+  "frontMatter": {
+    "sidebar_position": 482,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rec Room Object Reset",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6ba175cf-493a-4790-b916-57259f94cd98"
+  },
+  "next": {
+    "title": "Reset Room",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e921b08d-10c2-4be4-86fe-b8c7155cb97b"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0938d870-2f6d-4144-ba3d-c73af0e46348",
+  "id": "documentation/chips/0938d870-2f6d-4144-ba3d-c73af0e46348",
+  "title": "Invisible Collision Get Blocks Players",
+  "description": "Outputs True if the target Invisible Collision object is set to collide with players.",
+  "source": "@site/docs/documentation/chips/0938d870-2f6d-4144-ba3d-c73af0e46348.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0938d870-2f6d-4144-ba3d-c73af0e46348",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0938d870-2f6d-4144-ba3d-c73af0e46348",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0938d870-2f6d-4144-ba3d-c73af0e46348.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 279,
+  "frontMatter": {
+    "sidebar_position": 279,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Inverse Lerp Unclamped",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d33e7a63-ec6b-40b2-9f81-ab110457a9f2"
+  },
+  "next": {
+    "title": "Invisible Collision Get Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/de407f3c-2fb0-4c9a-9dc4-fb6d6709737e"
+  }
+}

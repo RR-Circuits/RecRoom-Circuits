@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/214bb1b7-f808-4a36-9c10-113045b4fe44",
+  "id": "documentation/chips/214bb1b7-f808-4a36-9c10-113045b4fe44",
+  "title": "Light Set Range",
+  "description": "Sets the range of a point light or a spotlight.",
+  "source": "@site/docs/documentation/chips/214bb1b7-f808-4a36-9c10-113045b4fe44.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/214bb1b7-f808-4a36-9c10-113045b4fe44",
+  "permalink": "/Circuits/Website/docs/documentation/chips/214bb1b7-f808-4a36-9c10-113045b4fe44",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/214bb1b7-f808-4a36-9c10-113045b4fe44.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 312,
+  "frontMatter": {
+    "sidebar_position": 312,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Light Set Range",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c3d0ef1f-921c-4602-a6eb-b03ed46d556f"
+  },
+  "next": {
+    "title": "Light Set Softness",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7876451d-982d-4880-b78b-b3d02389af2c"
+  }
+}

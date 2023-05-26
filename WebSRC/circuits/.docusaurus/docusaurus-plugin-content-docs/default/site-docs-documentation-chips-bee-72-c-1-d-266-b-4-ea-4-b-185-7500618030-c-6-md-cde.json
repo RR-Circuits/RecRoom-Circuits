@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/bee72c1d-266b-4ea4-b185-7500618030c6",
+  "id": "documentation/chips/bee72c1d-266b-4ea4-b185-7500618030c6",
+  "title": "Make Tuple",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/bee72c1d-266b-4ea4-b185-7500618030c6.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/bee72c1d-266b-4ea4-b185-7500618030c6",
+  "permalink": "/Circuits/Website/docs/documentation/chips/bee72c1d-266b-4ea4-b185-7500618030c6",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/bee72c1d-266b-4ea4-b185-7500618030c6.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 356,
+  "frontMatter": {
+    "sidebar_position": 356,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Create",
+    "permalink": "/Circuits/Website/docs/documentation/chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07"
+  },
+  "next": {
+    "title": "Max",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1cb807b1-85e7-4c14-b3ae-5775b7873b7d"
+  }
+}

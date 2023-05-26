@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1fcd6f83-b403-426d-8ded-7064e8790b2d",
+  "id": "documentation/chips/1fcd6f83-b403-426d-8ded-7064e8790b2d",
+  "title": "Projectile Launcher Set Rec Room Object Damage",
+  "description": "Sets the damage value that projectiles from the target launcher will do when hitting Rec Room Objects.",
+  "source": "@site/docs/documentation/chips/1fcd6f83-b403-426d-8ded-7064e8790b2d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1fcd6f83-b403-426d-8ded-7064e8790b2d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1fcd6f83-b403-426d-8ded-7064e8790b2d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1fcd6f83-b403-426d-8ded-7064e8790b2d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 453,
+  "frontMatter": {
+    "sidebar_position": 453,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Projectile Launcher Set Projectile Lifetime",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b91d3e3d-7c6b-4fba-9505-66c8afd0245d"
+  },
+  "next": {
+    "title": "Projectile Launcher Set Projectile Speed",
+    "permalink": "/Circuits/Website/docs/documentation/chips/01cf75ba-b056-4226-b646-84fee1b7c9aa"
+  }
+}

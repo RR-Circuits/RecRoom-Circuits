@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/7e40f770-c9a4-4233-8845-cac6ec99ae67",
+  "id": "documentation/chips/7e40f770-c9a4-4233-8845-cac6ec99ae67",
+  "title": "Award Room Key",
+  "description": "Unlocks a room key for the target player. Multiple award room key requests from the same client are sent in bulk with a one-second cooldown.",
+  "source": "@site/docs/documentation/chips/7e40f770-c9a4-4233-8845-cac6ec99ae67.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/7e40f770-c9a4-4233-8845-cac6ec99ae67",
+  "permalink": "/Circuits/Website/docs/documentation/chips/7e40f770-c9a4-4233-8845-cac6ec99ae67",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/7e40f770-c9a4-4233-8845-cac6ec99ae67.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 46,
+  "frontMatter": {
+    "sidebar_position": 46,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Award Currency",
+    "permalink": "/Circuits/Website/docs/documentation/chips/03461631-734f-491b-ab86-6bdf66947556"
+  },
+  "next": {
+    "title": "Background Objects Constant",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c6e9ffef-b505-41d3-bb2d-ff86838398c6"
+  }
+}

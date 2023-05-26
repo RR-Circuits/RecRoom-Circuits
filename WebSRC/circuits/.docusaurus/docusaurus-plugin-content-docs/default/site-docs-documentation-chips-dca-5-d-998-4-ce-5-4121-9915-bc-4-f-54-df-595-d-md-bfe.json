@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/dca5d998-4ce5-4121-9915-bc4f54df595d",
+  "id": "documentation/chips/dca5d998-4ce5-4121-9915-bc4f54df595d",
+  "title": "Gun Handle Apply Recoil",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/dca5d998-4ce5-4121-9915-bc4f54df595d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/dca5d998-4ce5-4121-9915-bc4f54df595d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/dca5d998-4ce5-4121-9915-bc4f54df595d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/dca5d998-4ce5-4121-9915-bc4f54df595d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 242,
+  "frontMatter": {
+    "sidebar_position": 242,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gun Handle Add Auto Aim Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5db71859-228a-41d9-8742-99bf9aa1df2a"
+  },
+  "next": {
+    "title": "Gun Handle Get Supports Reload",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ec1f7c92-8484-4d00-b820-32726299f67a"
+  }
+}

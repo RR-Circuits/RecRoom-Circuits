@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/30fe0829-2f08-4bd2-b4b1-9a41764e5a76",
+  "id": "documentation/chips/30fe0829-2f08-4bd2-b4b1-9a41764e5a76",
+  "title": "Rotator Get Rotation",
+  "description": "Outputs the rotation of a target Rotator in degrees.",
+  "source": "@site/docs/documentation/chips/30fe0829-2f08-4bd2-b4b1-9a41764e5a76.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/30fe0829-2f08-4bd2-b4b1-9a41764e5a76",
+  "permalink": "/Circuits/Website/docs/documentation/chips/30fe0829-2f08-4bd2-b4b1-9a41764e5a76",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/30fe0829-2f08-4bd2-b4b1-9a41764e5a76.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 499,
+  "frontMatter": {
+    "sidebar_position": 499,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rotator Get Rotation Acceleration",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2d96da47-4d37-4463-a3bd-8f8cd2ab0c58"
+  },
+  "next": {
+    "title": "Rotator Get Rotation Speed",
+    "permalink": "/Circuits/Website/docs/documentation/chips/be834de9-91cb-4588-8988-3a6abfd56573"
+  }
+}

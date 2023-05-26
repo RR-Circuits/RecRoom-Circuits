@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/191f8009-5a2e-4da4-8817-980842a08d48",
+  "id": "documentation/chips/191f8009-5a2e-4da4-8817-980842a08d48",
+  "title": "Rec Room Object Set Authority",
+  "description": "Sets the authority player of the input Rec Room Object.",
+  "source": "@site/docs/documentation/chips/191f8009-5a2e-4da4-8817-980842a08d48.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/191f8009-5a2e-4da4-8817-980842a08d48",
+  "permalink": "/Circuits/Website/docs/documentation/chips/191f8009-5a2e-4da4-8817-980842a08d48",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/191f8009-5a2e-4da4-8817-980842a08d48.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 112,
+  "frontMatter": {
+    "sidebar_position": 112,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rec Room Object Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7077d139-9876-495e-9756-58150fef9f3b"
+  },
+  "next": {
+    "title": "Consumable Deactivate",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6809978a-e1fc-403a-a41a-d4e94f22281f"
+  }
+}

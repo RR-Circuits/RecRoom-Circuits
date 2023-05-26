@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/86e8581c-ddf9-4302-a06f-c451b5055a98",
+  "id": "documentation/chips/86e8581c-ddf9-4302-a06f-c451b5055a98",
+  "title": "Player Right Hand Thumb Direction",
+  "description": "Outputs the direction of a Player's right hand thumb.",
+  "source": "@site/docs/documentation/chips/86e8581c-ddf9-4302-a06f-c451b5055a98.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/86e8581c-ddf9-4302-a06f-c451b5055a98",
+  "permalink": "/Circuits/Website/docs/documentation/chips/86e8581c-ddf9-4302-a06f-c451b5055a98",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/86e8581c-ddf9-4302-a06f-c451b5055a98.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 427,
+  "frontMatter": {
+    "sidebar_position": 427,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Right Hand Position",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e9d3330d-c290-41d5-aa37-cc5e43198836"
+  },
+  "next": {
+    "title": "Player Right Hand Velocity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/aba06411-9c8c-477a-bc7f-76ab5605c85d"
+  }
+}

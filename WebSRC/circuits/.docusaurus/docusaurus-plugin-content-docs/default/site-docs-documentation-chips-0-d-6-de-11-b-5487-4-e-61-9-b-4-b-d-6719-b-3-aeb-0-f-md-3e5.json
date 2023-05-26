@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0d6de11b-5487-4e61-9b4b-d6719b3aeb0f",
+  "id": "documentation/chips/0d6de11b-5487-4e61-9b4b-d6719b3aeb0f",
+  "title": "Gun Handle Get Max Ammo",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/0d6de11b-5487-4e61-9b4b-d6719b3aeb0f.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0d6de11b-5487-4e61-9b4b-d6719b3aeb0f",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0d6de11b-5487-4e61-9b4b-d6719b3aeb0f",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0d6de11b-5487-4e61-9b4b-d6719b3aeb0f.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 247,
+  "frontMatter": {
+    "sidebar_position": 247,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gun Handle Get Is Reloading",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f3ef0346-e593-47c9-85f0-f551efe0a9b6"
+  },
+  "next": {
+    "title": "Gun Handle Get Rate Of Fire",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a06ad097-0666-42ff-ab3d-0f00c383e9a1"
+  }
+}

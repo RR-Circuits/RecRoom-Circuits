@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/92ded211-17d6-4c73-b29c-71323c6a40ee",
+  "id": "documentation/chips/92ded211-17d6-4c73-b29c-71323c6a40ee",
+  "title": "Vector3 Normalize",
+  "description": "Outputs the target vector, but its magnitude is 1.",
+  "source": "@site/docs/documentation/chips/92ded211-17d6-4c73-b29c-71323c6a40ee.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/92ded211-17d6-4c73-b29c-71323c6a40ee",
+  "permalink": "/Circuits/Website/docs/documentation/chips/92ded211-17d6-4c73-b29c-71323c6a40ee",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/92ded211-17d6-4c73-b29c-71323c6a40ee.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 643,
+  "frontMatter": {
+    "sidebar_position": 643,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vector3 Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fba2accf-44e2-412d-a204-ae3bd04f7dfa"
+  },
+  "next": {
+    "title": "Vector3 Scale",
+    "permalink": "/Circuits/Website/docs/documentation/chips/87aa17b1-7760-4b07-8c44-a2d530590597"
+  }
+}

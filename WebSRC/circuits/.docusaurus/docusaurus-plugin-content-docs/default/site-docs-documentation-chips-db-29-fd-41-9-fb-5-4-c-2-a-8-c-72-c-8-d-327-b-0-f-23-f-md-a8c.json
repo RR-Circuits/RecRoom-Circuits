@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/db29fd41-9fb5-4c2a-8c72-c8d327b0f23f",
+  "id": "documentation/chips/db29fd41-9fb5-4c2a-8c72-c8d327b0f23f",
+  "title": "Rotator Set Rotation Acceleration",
+  "description": "Sets the acceleration of a target Rotator.",
+  "source": "@site/docs/documentation/chips/db29fd41-9fb5-4c2a-8c72-c8d327b0f23f.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/db29fd41-9fb5-4c2a-8c72-c8d327b0f23f",
+  "permalink": "/Circuits/Website/docs/documentation/chips/db29fd41-9fb5-4c2a-8c72-c8d327b0f23f",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/db29fd41-9fb5-4c2a-8c72-c8d327b0f23f.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 502,
+  "frontMatter": {
+    "sidebar_position": 502,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rotator Set Target Rotation",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0f9da436-0752-422d-8323-fa445a9ca06b"
+  },
+  "next": {
+    "title": "Rotator Set Rotation",
+    "permalink": "/Circuits/Website/docs/documentation/chips/07ae26b8-e0d7-49c0-bb2c-25d66d31fe3c"
+  }
+}

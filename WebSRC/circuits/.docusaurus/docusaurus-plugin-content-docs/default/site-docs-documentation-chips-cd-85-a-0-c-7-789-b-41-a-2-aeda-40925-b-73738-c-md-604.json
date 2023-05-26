@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/cd85a0c7-789b-41a2-aeda-40925b73738c",
+  "id": "documentation/chips/cd85a0c7-789b-41a2-aeda-40925b73738c",
+  "title": "AI Set Pathing Speed",
+  "description": "Sets the speed for an inputted AI. This same setting can be determined by configuring the AI itself.",
+  "source": "@site/docs/documentation/chips/cd85a0c7-789b-41a2-aeda-40925b73738c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/cd85a0c7-789b-41a2-aeda-40925b73738c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/cd85a0c7-789b-41a2-aeda-40925b73738c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/cd85a0c7-789b-41a2-aeda-40925b73738c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "sidebar_position": 15,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Set Line of Sight Parameters",
+    "permalink": "/Circuits/Website/docs/documentation/chips/02557d1f-2265-4b6d-8177-92f1802dc106"
+  },
+  "next": {
+    "title": "AI Set Patrol Point",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6370b8d9-8c72-4e6b-a623-acb7202a3110"
+  }
+}

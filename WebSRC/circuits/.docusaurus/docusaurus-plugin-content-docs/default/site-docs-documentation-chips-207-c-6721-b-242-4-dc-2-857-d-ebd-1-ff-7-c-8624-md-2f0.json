@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/207c6721-b242-4dc2-857d-ebd1ff7c8624",
+  "id": "documentation/chips/207c6721-b242-4dc2-857d-ebd1ff7c8624",
+  "title": "Remove Tag",
+  "description": "Removes a tag from the input object or player.",
+  "source": "@site/docs/documentation/chips/207c6721-b242-4dc2-857d-ebd1ff7c8624.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/207c6721-b242-4dc2-857d-ebd1ff7c8624",
+  "permalink": "/Circuits/Website/docs/documentation/chips/207c6721-b242-4dc2-857d-ebd1ff7c8624",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/207c6721-b242-4dc2-857d-ebd1ff7c8624.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 478,
+  "frontMatter": {
+    "sidebar_position": 478,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Recalculate Room Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d5df73b6-4b92-4867-ab3a-5d308876598b"
+  },
+  "next": {
+    "title": "Remove Tags",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fb368814-daaf-475f-ae08-1d01b9d63b8e"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d5df73b6-4b92-4867-ab3a-5d308876598b",
+  "id": "documentation/chips/d5df73b6-4b92-4867-ab3a-5d308876598b",
+  "title": "Recalculate Room Authority",
+  "description": "Recalcualtes and updates the current room authority based on parameters such as their network connection and platform.",
+  "source": "@site/docs/documentation/chips/d5df73b6-4b92-4867-ab3a-5d308876598b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d5df73b6-4b92-4867-ab3a-5d308876598b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d5df73b6-4b92-4867-ab3a-5d308876598b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d5df73b6-4b92-4867-ab3a-5d308876598b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 477,
+  "frontMatter": {
+    "sidebar_position": 477,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Raycast",
+    "permalink": "/Circuits/Website/docs/documentation/chips/af203a1f-f3c9-479b-86f0-72224b094179"
+  },
+  "next": {
+    "title": "Remove Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/207c6721-b242-4dc2-857d-ebd1ff7c8624"
+  }
+}

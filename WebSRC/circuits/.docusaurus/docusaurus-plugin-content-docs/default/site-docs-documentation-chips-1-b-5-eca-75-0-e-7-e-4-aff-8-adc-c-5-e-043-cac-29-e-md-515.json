@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1b5eca75-0e7e-4aff-8adc-c5e043cac29e",
+  "id": "documentation/chips/1b5eca75-0e7e-4aff-8adc-c5e043cac29e",
+  "title": "Velocity Add",
+  "description": "Adds velocity to the input target. The input velocity will be multiplied by the magnitude of the vector provided in the input direction.",
+  "source": "@site/docs/documentation/chips/1b5eca75-0e7e-4aff-8adc-c5e043cac29e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1b5eca75-0e7e-4aff-8adc-c5e043cac29e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1b5eca75-0e7e-4aff-8adc-c5e043cac29e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1b5eca75-0e7e-4aff-8adc-c5e043cac29e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 266,
+  "frontMatter": {
+    "sidebar_position": 266,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "If Player Is Local",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c7643011-f320-4155-89b8-d693730c1935"
+  },
+  "next": {
+    "title": "Velocity Reflect",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f0137efc-b3b7-4217-ba8b-1d2e78d451bd"
+  }
+}

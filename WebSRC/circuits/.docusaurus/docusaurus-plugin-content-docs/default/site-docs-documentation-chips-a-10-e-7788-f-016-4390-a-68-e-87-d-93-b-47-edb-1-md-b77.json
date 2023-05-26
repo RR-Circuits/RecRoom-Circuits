@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/a10e7788-f016-4390-a68e-87d93b47edb1",
+  "id": "documentation/chips/a10e7788-f016-4390-a68e-87d93b47edb1",
+  "title": "Greater or Equal",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/a10e7788-f016-4390-a68e-87d93b47edb1.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/a10e7788-f016-4390-a68e-87d93b47edb1",
+  "permalink": "/Circuits/Website/docs/documentation/chips/a10e7788-f016-4390-a68e-87d93b47edb1",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/a10e7788-f016-4390-a68e-87d93b47edb1.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 226,
+  "frontMatter": {
+    "sidebar_position": 226,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Greater Than",
+    "permalink": "/Circuits/Website/docs/documentation/chips/65aa2570-98b8-413b-a9a9-2eae9f562871"
+  },
+  "next": {
+    "title": "Greater or Equal",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f3ced0d8-396e-4311-a807-8ffd9b147060"
+  }
+}

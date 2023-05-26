@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/9478334a-451d-4802-bab1-4b05f00d45e4",
+  "id": "documentation/chips/9478334a-451d-4802-bab1-4b05f00d45e4",
+  "title": "Break Tuple",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/9478334a-451d-4802-bab1-4b05f00d45e4.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/9478334a-451d-4802-bab1-4b05f00d45e4",
+  "permalink": "/Circuits/Website/docs/documentation/chips/9478334a-451d-4802-bab1-4b05f00d45e4",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/9478334a-451d-4802-bab1-4b05f00d45e4.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 68,
+  "frontMatter": {
+    "sidebar_position": 68,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "If",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7adc6ab1-fcab-4746-aec6-006352e29cdc"
+  },
+  "next": {
+    "title": "Button Get Is Pressed",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fe32ba92-9018-4575-92e2-3b0d82c9419b"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e0ef8c83-e5a6-4272-a102-07bfc0a40fd5",
+  "id": "documentation/chips/e0ef8c83-e5a6-4272-a102-07bfc0a40fd5",
+  "title": "List[bool] Variable",
+  "description": "Reads or writes a variable in the current scope based on the name.",
+  "source": "@site/docs/documentation/chips/e0ef8c83-e5a6-4272-a102-07bfc0a40fd5.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e0ef8c83-e5a6-4272-a102-07bfc0a40fd5",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e0ef8c83-e5a6-4272-a102-07bfc0a40fd5",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e0ef8c83-e5a6-4272-a102-07bfc0a40fd5.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 320,
+  "frontMatter": {
+    "sidebar_position": 320,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Any True",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f9589495-685e-4e14-af2e-5cd45f860021"
+  },
+  "next": {
+    "title": "List[Color] Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/9216dded-da74-49a7-a327-5750f4809787"
+  }
+}

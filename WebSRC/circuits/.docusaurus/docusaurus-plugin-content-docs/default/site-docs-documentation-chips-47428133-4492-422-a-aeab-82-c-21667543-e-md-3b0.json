@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/47428133-4492-422a-aeab-82c21667543e",
+  "id": "documentation/chips/47428133-4492-422a-aeab-82c21667543e",
+  "title": "List Max",
+  "description": "Outputs the highest value in the target list.",
+  "source": "@site/docs/documentation/chips/47428133-4492-422a-aeab-82c21667543e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/47428133-4492-422a-aeab-82c21667543e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/47428133-4492-422a-aeab-82c21667543e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/47428133-4492-422a-aeab-82c21667543e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 333,
+  "frontMatter": {
+    "sidebar_position": 333,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List[int] Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fe2f9c12-d213-4234-a387-9d2ec1ad7fc1"
+  },
+  "next": {
+    "title": "List Min",
+    "permalink": "/Circuits/Website/docs/documentation/chips/73e9cc79-66cc-4526-8ed7-87500e208c6b"
+  }
+}

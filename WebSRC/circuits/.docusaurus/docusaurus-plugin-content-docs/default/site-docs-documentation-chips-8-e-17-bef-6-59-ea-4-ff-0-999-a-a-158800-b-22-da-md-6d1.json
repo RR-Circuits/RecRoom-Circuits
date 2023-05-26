@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8e17bef6-59ea-4ff0-999a-a158800b22da",
+  "id": "documentation/chips/8e17bef6-59ea-4ff0-999a-a158800b22da",
+  "title": "Get Farthest",
+  "description": "Finds the element in Targets that is farthest in space to Origin, and returns it, its index in the list, and its distance to Origin.",
+  "source": "@site/docs/documentation/chips/8e17bef6-59ea-4ff0-999a-a158800b22da.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8e17bef6-59ea-4ff0-999a-a158800b22da",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8e17bef6-59ea-4ff0-999a-a158800b22da",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8e17bef6-59ea-4ff0-999a-a158800b22da.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 170,
+  "frontMatter": {
+    "sidebar_position": 170,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Get Element",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e8c5082f-0a75-4025-9679-293bc8d72989"
+  },
+  "next": {
+    "title": "Get Any Player with Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a924cac0-0245-4846-862d-df4092c5e1c2"
+  }
+}

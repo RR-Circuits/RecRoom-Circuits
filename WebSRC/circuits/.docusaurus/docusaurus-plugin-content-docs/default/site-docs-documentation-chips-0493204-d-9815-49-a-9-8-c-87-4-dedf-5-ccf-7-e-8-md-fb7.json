@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0493204d-9815-49a9-8c87-4dedf5ccf7e8",
+  "id": "documentation/chips/0493204d-9815-49a9-8c87-4dedf5ccf7e8",
+  "title": "List Get Count",
+  "description": "Outputs the number of elements inside the input list.",
+  "source": "@site/docs/documentation/chips/0493204d-9815-49a9-8c87-4dedf5ccf7e8.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0493204d-9815-49a9-8c87-4dedf5ccf7e8",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0493204d-9815-49a9-8c87-4dedf5ccf7e8",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0493204d-9815-49a9-8c87-4dedf5ccf7e8.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 180,
+  "frontMatter": {
+    "sidebar_position": 180,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get HUD Element Value",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d9cbf25f-01c6-468f-8607-d1dd8317bb2f"
+  },
+  "next": {
+    "title": "Get Loading Players",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2e02d617-5ada-4876-84ac-d1b6d6270fc4"
+  }
+}

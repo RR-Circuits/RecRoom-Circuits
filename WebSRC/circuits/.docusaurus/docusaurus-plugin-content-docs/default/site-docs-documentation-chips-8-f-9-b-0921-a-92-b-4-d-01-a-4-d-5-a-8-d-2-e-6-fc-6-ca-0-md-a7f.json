@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8f9b0921-a92b-4d01-a4d5-a8d2e6fc6ca0",
+  "id": "documentation/chips/8f9b0921-a92b-4d01-a4d5-a8d2e6fc6ca0",
+  "title": "Player Is Room Mod",
+  "description": "Outputs True if the input Player is one of the current room's moderators.",
+  "source": "@site/docs/documentation/chips/8f9b0921-a92b-4d01-a4d5-a8d2e6fc6ca0.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8f9b0921-a92b-4d01-a4d5-a8d2e6fc6ca0",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8f9b0921-a92b-4d01-a4d5-a8d2e6fc6ca0",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8f9b0921-a92b-4d01-a4d5-a8d2e6fc6ca0.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 411,
+  "frontMatter": {
+    "sidebar_position": 411,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Is Room Host",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6f4324c5-4c7a-4243-97d0-58f027996534"
+  },
+  "next": {
+    "title": "Player Get Is Room Owner",
+    "permalink": "/Circuits/Website/docs/documentation/chips/58c5cab7-ddf7-4de8-86c8-25f3d3c19d98"
+  }
+}

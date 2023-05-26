@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1b220886-d851-474c-a79e-0a18d0893ee9",
+  "id": "documentation/chips/1b220886-d851-474c-a79e-0a18d0893ee9",
+  "title": "Time Get Universal Time",
+  "description": "Gets the UTC time. Uses server's clock. This will be synchronized between players.",
+  "source": "@site/docs/documentation/chips/1b220886-d851-474c-a79e-0a18d0893ee9.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1b220886-d851-474c-a79e-0a18d0893ee9",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1b220886-d851-474c-a79e-0a18d0893ee9",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1b220886-d851-474c-a79e-0a18d0893ee9.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 214,
+  "frontMatter": {
+    "sidebar_position": 214,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Time Get Universal Seconds",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bc3059d8-b613-4e91-ac7f-4c3566e01dc2"
+  },
+  "next": {
+    "title": "Get Tags",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e67cfcb7-03e8-4152-ba41-af8ca61d93fb"
+  }
+}

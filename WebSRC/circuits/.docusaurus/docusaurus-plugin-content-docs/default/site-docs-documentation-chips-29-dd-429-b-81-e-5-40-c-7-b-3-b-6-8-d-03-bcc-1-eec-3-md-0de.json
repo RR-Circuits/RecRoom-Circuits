@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/29dd429b-81e5-40c7-b3b6-8d03bcc1eec3",
+  "id": "documentation/chips/29dd429b-81e5-40c7-b3b6-8d03bcc1eec3",
+  "title": "Ground Vehicle Apply Boost",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/29dd429b-81e5-40c7-b3b6-8d03bcc1eec3.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/29dd429b-81e5-40c7-b3b6-8d03bcc1eec3",
+  "permalink": "/Circuits/Website/docs/documentation/chips/29dd429b-81e5-40c7-b3b6-8d03bcc1eec3",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/29dd429b-81e5-40c7-b3b6-8d03bcc1eec3.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 229,
+  "frontMatter": {
+    "sidebar_position": 229,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ground Vehicle Add Boost Fuel",
+    "permalink": "/Circuits/Website/docs/documentation/chips/dc78ca9e-29c4-4cba-a6cb-3ea87ffbe780"
+  },
+  "next": {
+    "title": "Ground Vehicle Get Boost Fuel",
+    "permalink": "/Circuits/Website/docs/documentation/chips/76d46244-7b8e-43de-bd8c-55375411ffe1"
+  }
+}

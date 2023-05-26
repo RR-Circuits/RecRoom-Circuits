@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0ea23792-e987-459e-8cd7-c0c60f667e08",
+  "id": "documentation/chips/0ea23792-e987-459e-8cd7-c0c60f667e08",
+  "title": "Spherecast",
+  "description": "Fires an invisible sphere of the specified Radius from the Start Position, in the Direction specified. Returns true if any object or player is hit within the target Max Distance. Otherwise, returns false. You can configure the chip itself to ignore players or objects specifically.",
+  "source": "@site/docs/documentation/chips/0ea23792-e987-459e-8cd7-c0c60f667e08.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0ea23792-e987-459e-8cd7-c0c60f667e08",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0ea23792-e987-459e-8cd7-c0c60f667e08",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0ea23792-e987-459e-8cd7-c0c60f667e08.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 570,
+  "frontMatter": {
+    "sidebar_position": 570,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Respawn Point Set Active",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bf3275dc-686f-4a63-87b7-5422a70cc4d2"
+  },
+  "next": {
+    "title": "Stop Camera Shake",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a06b802b-bb80-4f66-937e-3a764a419c4d"
+  }
+}

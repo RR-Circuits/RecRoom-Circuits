@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/edfe7cbb-6973-4489-9b7a-75746243dd6d",
+  "id": "documentation/chips/edfe7cbb-6973-4489-9b7a-75746243dd6d",
+  "title": "Quaternion Rotate Towards",
+  "description": "Rotates a rotation from \"From\" towards \"To\".",
+  "source": "@site/docs/documentation/chips/edfe7cbb-6973-4489-9b7a-75746243dd6d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/edfe7cbb-6973-4489-9b7a-75746243dd6d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/edfe7cbb-6973-4489-9b7a-75746243dd6d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/edfe7cbb-6973-4489-9b7a-75746243dd6d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 469,
+  "frontMatter": {
+    "sidebar_position": 469,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Normalize",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8157b896-fce8-45fc-957a-4407f0d6c42a"
+  },
+  "next": {
+    "title": "Rotate Vector",
+    "permalink": "/Circuits/Website/docs/documentation/chips/02c4048a-5f67-47ea-9f00-692f51c66e65"
+  }
+}

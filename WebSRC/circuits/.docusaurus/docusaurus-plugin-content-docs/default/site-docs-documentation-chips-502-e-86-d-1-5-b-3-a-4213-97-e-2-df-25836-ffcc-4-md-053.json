@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/502e86d1-5b3a-4213-97e2-df25836ffcc4",
+  "id": "documentation/chips/502e86d1-5b3a-4213-97e2-df25836ffcc4",
+  "title": "Nand",
+  "description": "Outputs False only when all inputs are True. If any input is False, it outputs True.",
+  "source": "@site/docs/documentation/chips/502e86d1-5b3a-4213-97e2-df25836ffcc4.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/502e86d1-5b3a-4213-97e2-df25836ffcc4",
+  "permalink": "/Circuits/Website/docs/documentation/chips/502e86d1-5b3a-4213-97e2-df25836ffcc4",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/502e86d1-5b3a-4213-97e2-df25836ffcc4.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 362,
+  "frontMatter": {
+    "sidebar_position": 362,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Music",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ce3cbe60-7983-4458-b44a-738ea7036155"
+  },
+  "next": {
+    "title": "Noise",
+    "permalink": "/Circuits/Website/docs/documentation/chips/06f8732b-b1cb-4b79-815e-5b389c1dd78f"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b23bdd96-7676-4236-a5ab-ca0aae513916",
+  "id": "documentation/chips/b23bdd96-7676-4236-a5ab-ca0aae513916",
+  "title": "Get Player World UI Secondary Bar Max Value",
+  "description": "Returns the max value of the given player's secondary bar in their current world UI.",
+  "source": "@site/docs/documentation/chips/b23bdd96-7676-4236-a5ab-ca0aae513916.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b23bdd96-7676-4236-a5ab-ca0aae513916",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b23bdd96-7676-4236-a5ab-ca0aae513916",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b23bdd96-7676-4236-a5ab-ca0aae513916.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 204,
+  "frontMatter": {
+    "sidebar_position": 204,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Player World UI Secondary Bar Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/eaddf07d-4beb-4841-990c-a6b674a66126"
+  },
+  "next": {
+    "title": "Get Player World UI Secondary Bar Value",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cafb066f-d6f5-4a1a-a833-e1a0186c6d8e"
+  }
+}

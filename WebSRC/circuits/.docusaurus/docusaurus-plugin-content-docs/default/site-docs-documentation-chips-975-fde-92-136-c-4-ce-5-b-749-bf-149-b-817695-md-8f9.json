@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/975fde92-136c-4ce5-b749-bf149b817695",
+  "id": "documentation/chips/975fde92-136c-4ce5-b749-bf149b817695",
+  "title": "Get New Line",
+  "description": "Returns a new line string.",
+  "source": "@site/docs/documentation/chips/975fde92-136c-4ce5-b749-bf149b817695.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/975fde92-136c-4ce5-b749-bf149b817695",
+  "permalink": "/Circuits/Website/docs/documentation/chips/975fde92-136c-4ce5-b749-bf149b817695",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/975fde92-136c-4ce5-b749-bf149b817695.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 187,
+  "frontMatter": {
+    "sidebar_position": 187,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Local Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fdf733a8-bdd6-4800-b1d4-95b06b3d6f02"
+  },
+  "next": {
+    "title": "Get Rotation (Deprecated)",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c453fa47-d0db-4c4a-a6a1-dac4ebad0aca"
+  }
+}

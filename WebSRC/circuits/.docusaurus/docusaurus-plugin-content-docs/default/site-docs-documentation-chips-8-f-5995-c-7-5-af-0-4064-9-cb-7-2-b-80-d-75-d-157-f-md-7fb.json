@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8f5995c7-5af0-4064-9cb7-2b80d75d157f",
+  "id": "documentation/chips/8f5995c7-5af0-4064-9cb7-2b80d75d157f",
+  "title": "String To Upper",
+  "description": "Outputs the target string in upper case.",
+  "source": "@site/docs/documentation/chips/8f5995c7-5af0-4064-9cb7-2b80d75d157f.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8f5995c7-5af0-4064-9cb7-2b80d75d157f",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8f5995c7-5af0-4064-9cb7-2b80d75d157f",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8f5995c7-5af0-4064-9cb7-2b80d75d157f.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 583,
+  "frontMatter": {
+    "sidebar_position": 583,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "String To Lower",
+    "permalink": "/Circuits/Website/docs/documentation/chips/678f6d33-1e94-4be6-b959-0212c1a2207f"
+  },
+  "next": {
+    "title": "String Trim",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e6f056ee-cf6d-4696-b338-31418275af16"
+  }
+}

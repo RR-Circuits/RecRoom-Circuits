@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/eff7cfca-dcee-4ea1-887f-e4c60f3c8269",
+  "id": "documentation/chips/eff7cfca-dcee-4ea1-887f-e4c60f3c8269",
+  "title": "Explosion Emitter Get Explosion Radius",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/eff7cfca-dcee-4ea1-887f-e4c60f3c8269.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/eff7cfca-dcee-4ea1-887f-e4c60f3c8269",
+  "permalink": "/Circuits/Website/docs/documentation/chips/eff7cfca-dcee-4ea1-887f-e4c60f3c8269",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/eff7cfca-dcee-4ea1-887f-e4c60f3c8269.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 150,
+  "frontMatter": {
+    "sidebar_position": 150,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Explosion Emitter Get Firing Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/36cd4562-2c1f-43e3-ba90-56daa0cb7339"
+  },
+  "next": {
+    "title": "Explosion Emitter Set Explosion Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a3211c4f-9924-4a9a-afea-ab48f37bbc67"
+  }
+}

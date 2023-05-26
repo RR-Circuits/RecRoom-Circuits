@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/4467dc43-b07c-41fc-9e43-21ebf8f86554",
+  "id": "documentation/chips/4467dc43-b07c-41fc-9e43-21ebf8f86554",
+  "title": "Studio Object Get Property - Int",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/4467dc43-b07c-41fc-9e43-21ebf8f86554.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/4467dc43-b07c-41fc-9e43-21ebf8f86554",
+  "permalink": "/Circuits/Website/docs/documentation/chips/4467dc43-b07c-41fc-9e43-21ebf8f86554",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/4467dc43-b07c-41fc-9e43-21ebf8f86554.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 597,
+  "frontMatter": {
+    "sidebar_position": 597,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Studio Object Get Property - Float",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0dda9345-0211-4757-8fea-03e05fac89c3"
+  },
+  "next": {
+    "title": "Studio Object Get Property - String",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a0708f14-89b6-4ef7-97eb-38359a57422f"
+  }
+}

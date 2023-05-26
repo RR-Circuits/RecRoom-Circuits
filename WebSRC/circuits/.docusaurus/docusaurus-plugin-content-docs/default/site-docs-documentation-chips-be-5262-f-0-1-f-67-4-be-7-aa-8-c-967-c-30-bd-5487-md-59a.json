@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/be5262f0-1f67-4be7-aa8c-967c30bd5487",
+  "id": "documentation/chips/be5262f0-1f67-4be7-aa8c-967c30bd5487",
+  "title": "Audio Get Length",
+  "description": "Returns the length in seconds of the given audio reference.",
+  "source": "@site/docs/documentation/chips/be5262f0-1f67-4be7-aa8c-967c30bd5487.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/be5262f0-1f67-4be7-aa8c-967c30bd5487",
+  "permalink": "/Circuits/Website/docs/documentation/chips/be5262f0-1f67-4be7-aa8c-967c30bd5487",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/be5262f0-1f67-4be7-aa8c-967c30bd5487.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 30,
+  "frontMatter": {
+    "sidebar_position": 30,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Atan",
+    "permalink": "/Circuits/Website/docs/documentation/chips/84646ed2-015e-4a8b-9d37-5115cb9ebadc"
+  },
+  "next": {
+    "title": "Audio Player Get Audio",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0f4433b6-425d-4172-968a-2c867bc0fef5"
+  }
+}

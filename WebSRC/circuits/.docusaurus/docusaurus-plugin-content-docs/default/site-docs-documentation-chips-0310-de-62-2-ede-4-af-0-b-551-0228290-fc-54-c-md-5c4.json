@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0310de62-2ede-4af0-b551-0228290fc54c",
+  "id": "documentation/chips/0310de62-2ede-4af0-b551-0228290fc54c",
+  "title": "Get Velocity",
+  "description": "Returns the velocity of a Player or a Rec Room Object.",
+  "source": "@site/docs/documentation/chips/0310de62-2ede-4af0-b551-0228290fc54c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0310de62-2ede-4af0-b551-0228290fc54c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0310de62-2ede-4af0-b551-0228290fc54c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0310de62-2ede-4af0-b551-0228290fc54c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 222,
+  "frontMatter": {
+    "sidebar_position": 222,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Velocity (Deprecated)",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e9c65fbe-9d0f-4373-bd45-fe620de801b4"
+  },
+  "next": {
+    "title": "Go To Room",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bad6a57b-2af8-4526-8caa-e07476da4a5b"
+  }
+}

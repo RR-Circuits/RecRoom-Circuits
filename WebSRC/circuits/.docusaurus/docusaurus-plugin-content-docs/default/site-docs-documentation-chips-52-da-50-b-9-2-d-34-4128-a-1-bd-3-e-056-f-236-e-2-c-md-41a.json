@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/52da50b9-2d34-4128-a1bd-3e056f236e2c",
+  "id": "documentation/chips/52da50b9-2d34-4128-a1bd-3e056f236e2c",
+  "title": "Equip Object to Off Hand",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/52da50b9-2d34-4128-a1bd-3e056f236e2c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/52da50b9-2d34-4128-a1bd-3e056f236e2c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/52da50b9-2d34-4128-a1bd-3e056f236e2c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/52da50b9-2d34-4128-a1bd-3e056f236e2c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 390,
+  "frontMatter": {
+    "sidebar_position": 390,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Equip Object to Dominant Hand",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c840f770-80aa-4e96-8677-963a2ca3cff1"
+  },
+  "next": {
+    "title": "Player Get All with Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8286a047-19a2-4ad0-bdec-833f35adf4f2"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/637e07e4-9b93-44b6-bba3-68966080d064",
+  "id": "documentation/chips/637e07e4-9b93-44b6-bba3-68966080d064",
+  "title": "Get Player By Display Name",
+  "description": "Gets a Player based on a display name. (E.g. my display name is Coach and if I input a string \"Coach\", the output would be my Player object.) Outputs an invalid Player if nobody in the room has the given display name.",
+  "source": "@site/docs/documentation/chips/637e07e4-9b93-44b6-bba3-68966080d064.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/637e07e4-9b93-44b6-bba3-68966080d064",
+  "permalink": "/Circuits/Website/docs/documentation/chips/637e07e4-9b93-44b6-bba3-68966080d064",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/637e07e4-9b93-44b6-bba3-68966080d064.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 193,
+  "frontMatter": {
+    "sidebar_position": 193,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Player By Account Name",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2ee5a268-9d44-4326-8a34-ad126a3218f2"
+  },
+  "next": {
+    "title": "Leaderboard Get Player Stat",
+    "permalink": "/Circuits/Website/docs/documentation/chips/12cf9781-1e1b-4e59-a783-c7214b66be8a"
+  }
+}

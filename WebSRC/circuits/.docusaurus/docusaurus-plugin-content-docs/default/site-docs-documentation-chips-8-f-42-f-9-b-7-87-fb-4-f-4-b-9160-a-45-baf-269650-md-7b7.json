@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8f42f9b7-87fb-4f4b-9160-a45baf269650",
+  "id": "documentation/chips/8f42f9b7-87fb-4f4b-9160-a45baf269650",
+  "title": "Trigger Volume Get Filter Tags",
+  "description": "Gets the tags that are being used as a filter for a Trigger Volume.",
+  "source": "@site/docs/documentation/chips/8f42f9b7-87fb-4f4b-9160-a45baf269650.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8f42f9b7-87fb-4f4b-9160-a45baf269650",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8f42f9b7-87fb-4f4b-9160-a45baf269650",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8f42f9b7-87fb-4f4b-9160-a45baf269650.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 630,
+  "frontMatter": {
+    "sidebar_position": 630,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trigger Volume Get Filter Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b49c4e16-93c5-45c3-b457-fb960c661bc5"
+  },
+  "next": {
+    "title": "Trigger Volume Get Object Count",
+    "permalink": "/Circuits/Website/docs/documentation/chips/338c7e0a-fa55-49e1-91e8-1609d00f1fd0"
+  }
+}

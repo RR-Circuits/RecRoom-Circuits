@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/03461631-734f-491b-ab86-6bdf66947556",
+  "id": "documentation/chips/03461631-734f-491b-ab86-6bdf66947556",
+  "title": "Award Currency",
+  "description": "Award some amount to the Player's balance of one room currency. Configure this chip to set the affected currency.",
+  "source": "@site/docs/documentation/chips/03461631-734f-491b-ab86-6bdf66947556.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/03461631-734f-491b-ab86-6bdf66947556",
+  "permalink": "/Circuits/Website/docs/documentation/chips/03461631-734f-491b-ab86-6bdf66947556",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/03461631-734f-491b-ab86-6bdf66947556.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 45,
+  "frontMatter": {
+    "sidebar_position": 45,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Award Consumable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/9ceb3e5a-2030-4034-98a4-dc2809828b63"
+  },
+  "next": {
+    "title": "Award Room Key",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7e40f770-c9a4-4233-8845-cac6ec99ae67"
+  }
+}

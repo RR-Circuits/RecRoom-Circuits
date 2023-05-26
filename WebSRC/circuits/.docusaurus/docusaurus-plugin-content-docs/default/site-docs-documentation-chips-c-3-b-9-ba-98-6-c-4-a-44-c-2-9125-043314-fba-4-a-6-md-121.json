@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c3b9ba98-6c4a-44c2-9125-043314fba4a6",
+  "id": "documentation/chips/c3b9ba98-6c4a-44c2-9125-043314fba4a6",
+  "title": "Vector Get Magnitude",
+  "description": "Outputs the length of the input vector.",
+  "source": "@site/docs/documentation/chips/c3b9ba98-6c4a-44c2-9125-043314fba4a6.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c3b9ba98-6c4a-44c2-9125-043314fba4a6",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c3b9ba98-6c4a-44c2-9125-043314fba4a6",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c3b9ba98-6c4a-44c2-9125-043314fba4a6.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 648,
+  "frontMatter": {
+    "sidebar_position": 648,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vector Component Get Vector",
+    "permalink": "/Circuits/Website/docs/documentation/chips/74ba9189-2880-46fa-b4b0-3c9a7152489e"
+  },
+  "next": {
+    "title": "Vector3 Split",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2d677241-61b7-45d2-aec2-4a302e3483a0"
+  }
+}

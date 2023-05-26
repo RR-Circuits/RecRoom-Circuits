@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/2097bef3-9ed1-4601-ab5d-f620654bd1c4",
+  "id": "documentation/chips/2097bef3-9ed1-4601-ab5d-f620654bd1c4",
+  "title": "Quaternion Inverse",
+  "description": "Outputs the Inverse of rotation.",
+  "source": "@site/docs/documentation/chips/2097bef3-9ed1-4601-ab5d-f620654bd1c4.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/2097bef3-9ed1-4601-ab5d-f620654bd1c4",
+  "permalink": "/Circuits/Website/docs/documentation/chips/2097bef3-9ed1-4601-ab5d-f620654bd1c4",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/2097bef3-9ed1-4601-ab5d-f620654bd1c4.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 466,
+  "frontMatter": {
+    "sidebar_position": 466,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Get Angle Axis",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b415c3ce-5f9f-472b-8d70-daeb728b7c2d"
+  },
+  "next": {
+    "title": "Quaternion Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/18a980ff-9a46-472c-b658-96bf42eb61c2"
+  }
+}

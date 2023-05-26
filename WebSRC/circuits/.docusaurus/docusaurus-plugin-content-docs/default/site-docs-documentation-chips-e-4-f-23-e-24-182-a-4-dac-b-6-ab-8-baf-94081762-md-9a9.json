@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e4f23e24-182a-4dac-b6ab-8baf94081762",
+  "id": "documentation/chips/e4f23e24-182a-4dac-b6ab-8baf94081762",
+  "title": "Studio Event Sender",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/e4f23e24-182a-4dac-b6ab-8baf94081762.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e4f23e24-182a-4dac-b6ab-8baf94081762",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e4f23e24-182a-4dac-b6ab-8baf94081762",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e4f23e24-182a-4dac-b6ab-8baf94081762.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 586,
+  "frontMatter": {
+    "sidebar_position": 586,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Studio Audio",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7dc47ad4-9b51-4cb3-8e40-6b76f1243e6f"
+  },
+  "next": {
+    "title": "Studio Event Sender - Bool",
+    "permalink": "/Circuits/Website/docs/documentation/chips/84efd7b3-fddc-4f50-b0b6-c728bef04f52"
+  }
+}

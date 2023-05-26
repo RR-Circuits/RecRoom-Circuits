@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/3a253a6e-fc0f-4ae2-b669-0418c09fc553",
+  "id": "documentation/chips/3a253a6e-fc0f-4ae2-b669-0418c09fc553",
+  "title": "Projectile Launcher Set Projectile Color",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/3a253a6e-fc0f-4ae2-b669-0418c09fc553.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/3a253a6e-fc0f-4ae2-b669-0418c09fc553",
+  "permalink": "/Circuits/Website/docs/documentation/chips/3a253a6e-fc0f-4ae2-b669-0418c09fc553",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/3a253a6e-fc0f-4ae2-b669-0418c09fc553.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 447,
+  "frontMatter": {
+    "sidebar_position": 447,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Projectile Launcher Get Torso Damage",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0da5a0be-9c01-4fcc-83a4-a660971c8644"
+  },
+  "next": {
+    "title": "Projectile Launcher Set Projectile Count",
+    "permalink": "/Circuits/Website/docs/documentation/chips/28132c36-99ac-405d-807e-aeacbc37a3f1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1fdf4bab-c868-4ffb-8bfc-b2e360450495",
+  "id": "documentation/chips/1fdf4bab-c868-4ffb-8bfc-b2e360450495",
+  "title": "Emitter Set Size",
+  "description": "Sets the size of the particles emitted.",
+  "source": "@site/docs/documentation/chips/1fdf4bab-c868-4ffb-8bfc-b2e360450495.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1fdf4bab-c868-4ffb-8bfc-b2e360450495",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1fdf4bab-c868-4ffb-8bfc-b2e360450495",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1fdf4bab-c868-4ffb-8bfc-b2e360450495.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 135,
+  "frontMatter": {
+    "sidebar_position": 135,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Emitter Set Looping",
+    "permalink": "/Circuits/Website/docs/documentation/chips/36881bd0-7da0-44a7-b6ef-8cd3770fed78"
+  },
+  "next": {
+    "title": "Emitter Set Speed",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d971-475f-b64e-b5c7bb422eca"
+  }
+}

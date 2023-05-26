@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b8b667b9-7b55-4b8d-b116-abef220777e2",
+  "id": "documentation/chips/b8b667b9-7b55-4b8d-b116-abef220777e2",
+  "title": "If Local Player Is Authority",
+  "description": "I'm Authority exec fires on the player's machine who has authority in the current context. At the room level, this is room authority, inside an object board, this is object authority. I'm Not Authority exec fires for everyone else.",
+  "source": "@site/docs/documentation/chips/b8b667b9-7b55-4b8d-b116-abef220777e2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b8b667b9-7b55-4b8d-b116-abef220777e2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b8b667b9-7b55-4b8d-b116-abef220777e2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b8b667b9-7b55-4b8d-b116-abef220777e2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 262,
+  "frontMatter": {
+    "sidebar_position": 262,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "If Value",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a4f8a9a1-fd7b-4702-8345-93ae4d57f333"
+  },
+  "next": {
+    "title": "If Local Player Is Room Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5e28057f-214b-4ff8-81bc-512be207c9d7"
+  }
+}

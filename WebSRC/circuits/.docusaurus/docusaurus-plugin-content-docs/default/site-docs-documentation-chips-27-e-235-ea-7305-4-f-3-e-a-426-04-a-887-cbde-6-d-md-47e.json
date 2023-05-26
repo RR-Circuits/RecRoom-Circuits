@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/27e235ea-7305-4f3e-a426-04a887cbde6d",
+  "id": "documentation/chips/27e235ea-7305-4f3e-a426-04a887cbde6d",
+  "title": "Projectile Launcher Fire Projectile",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/27e235ea-7305-4f3e-a426-04a887cbde6d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/27e235ea-7305-4f3e-a426-04a887cbde6d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/27e235ea-7305-4f3e-a426-04a887cbde6d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/27e235ea-7305-4f3e-a426-04a887cbde6d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 436,
+  "frontMatter": {
+    "sidebar_position": 436,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Power",
+    "permalink": "/Circuits/Website/docs/documentation/chips/288d4e89-ebed-41ed-a522-4c79bd48471a"
+  },
+  "next": {
+    "title": "Projectile Launcher Get Projectile Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/29005ae6-2611-4ed3-9bed-e256749b487a"
+  }
+}

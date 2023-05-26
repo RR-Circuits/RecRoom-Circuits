@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/70c830bb-223a-4a7c-b0ae-df240c6f1f33",
+  "id": "documentation/chips/70c830bb-223a-4a7c-b0ae-df240c6f1f33",
+  "title": "Get Local Camera Forward",
+  "description": "Gets the direction your avatar is looking, output as a Vector3.",
+  "source": "@site/docs/documentation/chips/70c830bb-223a-4a7c-b0ae-df240c6f1f33.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/70c830bb-223a-4a7c-b0ae-df240c6f1f33",
+  "permalink": "/Circuits/Website/docs/documentation/chips/70c830bb-223a-4a7c-b0ae-df240c6f1f33",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/70c830bb-223a-4a7c-b0ae-df240c6f1f33.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 182,
+  "frontMatter": {
+    "sidebar_position": 182,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Loading Players",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2e02d617-5ada-4876-84ac-d1b6d6270fc4"
+  },
+  "next": {
+    "title": "Get Local Camera Rotation",
+    "permalink": "/Circuits/Website/docs/documentation/chips/912f0e1b-267d-4424-8002-3f82a2d835fe"
+  }
+}

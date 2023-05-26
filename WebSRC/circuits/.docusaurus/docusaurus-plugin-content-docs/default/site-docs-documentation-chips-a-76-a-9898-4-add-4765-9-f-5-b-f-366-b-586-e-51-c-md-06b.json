@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/a76a9898-4add-4765-9f5b-f366b586e51c",
+  "id": "documentation/chips/a76a9898-4add-4765-9f5b-f366b586e51c",
+  "title": "Rec Room Object Get Last Equipping Player",
+  "description": "Returns the player who last held an object.",
+  "source": "@site/docs/documentation/chips/a76a9898-4add-4765-9f5b-f366b586e51c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/a76a9898-4add-4765-9f5b-f366b586e51c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/a76a9898-4add-4765-9f5b-f366b586e51c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/a76a9898-4add-4765-9f5b-f366b586e51c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 110,
+  "frontMatter": {
+    "sidebar_position": 110,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rec Room Object Get Is Local Player Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b0497de0-3dd3-470d-a421-8f0d321bfc3e"
+  },
+  "next": {
+    "title": "Rec Room Object Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7077d139-9876-495e-9756-58150fef9f3b"
+  }
+}

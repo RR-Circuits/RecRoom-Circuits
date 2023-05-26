@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ec74ea41-24e5-491c-8919-a502638583f9",
+  "id": "documentation/chips/ec74ea41-24e5-491c-8919-a502638583f9",
+  "title": "Bit Not",
+  "description": "Computes a bitwise NOT. The result has a bit set for every bit that is not set in the input.",
+  "source": "@site/docs/documentation/chips/ec74ea41-24e5-491c-8919-a502638583f9.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ec74ea41-24e5-491c-8919-a502638583f9",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ec74ea41-24e5-491c-8919-a502638583f9",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/ec74ea41-24e5-491c-8919-a502638583f9.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 57,
+  "frontMatter": {
+    "sidebar_position": 57,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bit Nand",
+    "permalink": "/Circuits/Website/docs/documentation/chips/05305e33-a809-4751-b928-2c8a5bbc6dc9"
+  },
+  "next": {
+    "title": "Bit Or",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2c24bc11-9543-4738-8c6c-0c5e3fadd944"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/956ccd66-4406-42a3-b08c-78d3efdd5fec",
+  "id": "documentation/chips/956ccd66-4406-42a3-b08c-78d3efdd5fec",
+  "title": "Angular Velocity Add",
+  "description": "Add angular velocity to an object. The Angular Velocity vector should lie along the axis of the rotation being added, with a magnitude that (once multiplied by the speed multiplier) represents the clockwise rotation speed in deg/s. Once the new angular velocity has been computed, its speed will be capped by the Max Angular Speed.",
+  "source": "@site/docs/documentation/chips/956ccd66-4406-42a3-b08c-78d3efdd5fec.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/956ccd66-4406-42a3-b08c-78d3efdd5fec",
+  "permalink": "/Circuits/Website/docs/documentation/chips/956ccd66-4406-42a3-b08c-78d3efdd5fec",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/956ccd66-4406-42a3-b08c-78d3efdd5fec.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 24,
+  "frontMatter": {
+    "sidebar_position": 24,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Angular Velocity Add (Deprecated)",
+    "permalink": "/Circuits/Website/docs/documentation/chips/87f6886f-fa2b-4961-b0ed-c8014aadc56b"
+  },
+  "next": {
+    "title": "Angular Velocity Set (Deprecated)",
+    "permalink": "/Circuits/Website/docs/documentation/chips/98b24bc7-32d8-4386-9348-d44ad00d7702"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/142438cd-1bd2-4df2-b2fa-c93aaf99f771",
+  "id": "documentation/chips/142438cd-1bd2-4df2-b2fa-c93aaf99f771",
+  "title": "Clear Screen",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/142438cd-1bd2-4df2-b2fa-c93aaf99f771.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/142438cd-1bd2-4df2-b2fa-c93aaf99f771",
+  "permalink": "/Circuits/Website/docs/documentation/chips/142438cd-1bd2-4df2-b2fa-c93aaf99f771",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/142438cd-1bd2-4df2-b2fa-c93aaf99f771.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 604,
+  "frontMatter": {
+    "sidebar_position": 604,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tan",
+    "permalink": "/Circuits/Website/docs/documentation/chips/13dbbd78-11c0-4b4f-9098-1ef59e584324"
+  },
+  "next": {
+    "title": "Print Text To Screen",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5f9f8c85-8aaa-4c9d-9d9d-4c952053b623"
+  }
+}

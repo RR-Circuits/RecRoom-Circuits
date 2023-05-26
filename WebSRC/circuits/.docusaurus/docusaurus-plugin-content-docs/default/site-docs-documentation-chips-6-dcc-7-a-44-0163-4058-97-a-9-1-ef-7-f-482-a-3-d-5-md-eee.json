@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6dcc7a44-0163-4058-97a9-1ef7f482a3d5",
+  "id": "documentation/chips/6dcc7a44-0163-4058-97a9-1ef7f482a3d5",
+  "title": "Trail Get Opacity",
+  "description": "Returns the max opacity of the target Motion Trail object.",
+  "source": "@site/docs/documentation/chips/6dcc7a44-0163-4058-97a9-1ef7f482a3d5.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6dcc7a44-0163-4058-97a9-1ef7f482a3d5",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6dcc7a44-0163-4058-97a9-1ef7f482a3d5",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6dcc7a44-0163-4058-97a9-1ef7f482a3d5.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 621,
+  "frontMatter": {
+    "sidebar_position": 621,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trail Get Lifetime",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0f069b0b-6f70-4386-9c7f-1343661e8df6"
+  },
+  "next": {
+    "title": "Trail Set Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d326ebc4-1653-4c1d-886c-c1bd4c06db86"
+  }
+}

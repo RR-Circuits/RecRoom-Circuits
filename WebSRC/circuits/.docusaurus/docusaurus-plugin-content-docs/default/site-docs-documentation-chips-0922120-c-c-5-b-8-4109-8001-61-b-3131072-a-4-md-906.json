@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0922120c-c5b8-4109-8001-61b3131072a4",
+  "id": "documentation/chips/0922120c-c5b8-4109-8001-61b3131072a4",
+  "title": "Get Angular Velocity",
+  "description": "Returns the angular velocity in degrees per second of a Rec Room Object.",
+  "source": "@site/docs/documentation/chips/0922120c-c5b8-4109-8001-61b3131072a4.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0922120c-c5b8-4109-8001-61b3131072a4",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0922120c-c5b8-4109-8001-61b3131072a4",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0922120c-c5b8-4109-8001-61b3131072a4.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 164,
+  "frontMatter": {
+    "sidebar_position": 164,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get All Players",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3f4346b1-bc6f-4aca-9650-d43cbd4acc5b"
+  },
+  "next": {
+    "title": "Get Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/eaf712f8-3257-4415-9f88-ae94e308396e"
+  }
+}

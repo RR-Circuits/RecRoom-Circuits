@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/639a360e-aeb1-4c5d-8bc1-96bfaea8aef2",
+  "id": "documentation/chips/639a360e-aeb1-4c5d-8bc1-96bfaea8aef2",
+  "title": "Piston Get Target Distance",
+  "description": "Outputs the set distance of the Marker on a target Piston.",
+  "source": "@site/docs/documentation/chips/639a360e-aeb1-4c5d-8bc1-96bfaea8aef2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/639a360e-aeb1-4c5d-8bc1-96bfaea8aef2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/639a360e-aeb1-4c5d-8bc1-96bfaea8aef2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/639a360e-aeb1-4c5d-8bc1-96bfaea8aef2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 376,
+  "frontMatter": {
+    "sidebar_position": 376,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Piston Get Distance",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e503b0e4-d295-48cc-bf95-1f1a8127a009"
+  },
+  "next": {
+    "title": "Piston Get Max Distance",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bb702e97-9f40-45cb-b35d-3a2193ab6800"
+  }
+}

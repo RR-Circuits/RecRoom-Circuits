@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b0497de0-3dd3-470d-a421-8f0d321bfc3e",
+  "id": "documentation/chips/b0497de0-3dd3-470d-a421-8f0d321bfc3e",
+  "title": "Rec Room Object Get Is Local Player Authority",
+  "description": "Outputs True on the player's machine who has authority of the input.",
+  "source": "@site/docs/documentation/chips/b0497de0-3dd3-470d-a421-8f0d321bfc3e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b0497de0-3dd3-470d-a421-8f0d321bfc3e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b0497de0-3dd3-470d-a421-8f0d321bfc3e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b0497de0-3dd3-470d-a421-8f0d321bfc3e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 109,
+  "frontMatter": {
+    "sidebar_position": 109,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rec Room Object Get First with Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/43ff2d3c-c3aa-45bc-a7b7-01587c8a61f6"
+  },
+  "next": {
+    "title": "Rec Room Object Get Last Equipping Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a76a9898-4add-4765-9f5b-f366b586e51c"
+  }
+}

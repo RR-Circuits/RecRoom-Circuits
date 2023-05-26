@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c840f770-80aa-4e96-8677-963a2ca3cff1",
+  "id": "documentation/chips/c840f770-80aa-4e96-8677-963a2ca3cff1",
+  "title": "Equip Object to Dominant Hand",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/c840f770-80aa-4e96-8677-963a2ca3cff1.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c840f770-80aa-4e96-8677-963a2ca3cff1",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c840f770-80aa-4e96-8677-963a2ca3cff1",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c840f770-80aa-4e96-8677-963a2ca3cff1.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 389,
+  "frontMatter": {
+    "sidebar_position": 389,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Definition Board",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4c9e7840-0721-4d1c-b334-167f79d3bf40"
+  },
+  "next": {
+    "title": "Equip Object to Off Hand",
+    "permalink": "/Circuits/Website/docs/documentation/chips/52da50b9-2d34-4128-a1bd-3e056f236e2c"
+  }
+}

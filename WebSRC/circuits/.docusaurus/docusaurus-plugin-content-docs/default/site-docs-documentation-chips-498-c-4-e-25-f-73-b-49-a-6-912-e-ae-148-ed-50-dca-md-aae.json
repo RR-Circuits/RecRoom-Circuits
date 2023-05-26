@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/498c4e25-f73b-49a6-912e-ae148ed50dca",
+  "id": "documentation/chips/498c4e25-f73b-49a6-912e-ae148ed50dca",
+  "title": "Vector3 Dot",
+  "description": "Computes the dot product. Commonly used to determine if the camera is facing a particular direction.",
+  "source": "@site/docs/documentation/chips/498c4e25-f73b-49a6-912e-ae148ed50dca.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/498c4e25-f73b-49a6-912e-ae148ed50dca",
+  "permalink": "/Circuits/Website/docs/documentation/chips/498c4e25-f73b-49a6-912e-ae148ed50dca",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/498c4e25-f73b-49a6-912e-ae148ed50dca.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 640,
+  "frontMatter": {
+    "sidebar_position": 640,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vector3 Cross",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6bd92538-6889-41f3-b819-9511e6f81944"
+  },
+  "next": {
+    "title": "Vector3 Inverse Transform",
+    "permalink": "/Circuits/Website/docs/documentation/chips/97b150f5-7bd0-4649-96d7-fdf0b5e88ffb"
+  }
+}

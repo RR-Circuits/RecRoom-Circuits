@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/2e537d07-930e-44f6-8757-ff34c365fd06",
+  "id": "documentation/chips/2e537d07-930e-44f6-8757-ff34c365fd06",
+  "title": "Get Player World UI Secondary Bar Color",
+  "description": "Returns the color of the given player's secondary bar in their current world UI.",
+  "source": "@site/docs/documentation/chips/2e537d07-930e-44f6-8757-ff34c365fd06.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/2e537d07-930e-44f6-8757-ff34c365fd06",
+  "permalink": "/Circuits/Website/docs/documentation/chips/2e537d07-930e-44f6-8757-ff34c365fd06",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/2e537d07-930e-44f6-8757-ff34c365fd06.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 202,
+  "frontMatter": {
+    "sidebar_position": 202,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Player World UI Primary Bar Value",
+    "permalink": "/Circuits/Website/docs/documentation/chips/84f241f5-fa59-43a3-9b2d-029b831e9275"
+  },
+  "next": {
+    "title": "Get Player World UI Secondary Bar Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/eaddf07d-4beb-4841-990c-a6b674a66126"
+  }
+}

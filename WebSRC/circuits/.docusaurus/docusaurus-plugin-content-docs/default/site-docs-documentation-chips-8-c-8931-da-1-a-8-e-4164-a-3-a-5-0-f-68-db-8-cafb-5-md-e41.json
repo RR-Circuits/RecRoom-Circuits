@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8c8931da-1a8e-4164-a3a5-0f68db8cafb5",
+  "id": "documentation/chips/8c8931da-1a8e-4164-a3a5-0f68db8cafb5",
+  "title": "Collision Data Get Object",
+  "description": "Gets object of a collision data (or null for players) returned from \"Overlap Sphere\" chip.",
+  "source": "@site/docs/documentation/chips/8c8931da-1a8e-4164-a3a5-0f68db8cafb5.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8c8931da-1a8e-4164-a3a5-0f68db8cafb5",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8c8931da-1a8e-4164-a3a5-0f68db8cafb5",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8c8931da-1a8e-4164-a3a5-0f68db8cafb5.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 81,
+  "frontMatter": {
+    "sidebar_position": 81,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Collision Data Get Normal",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ced470f8-dd9d-4e67-a654-7c7e1a3e7819"
+  },
+  "next": {
+    "title": "Collision Data Get Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2729e8db-62d1-4f9e-b076-74f27cd43332"
+  }
+}

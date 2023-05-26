@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/26062297-4aab-4fd4-bfb8-95fbf64f6bb7",
+  "id": "documentation/chips/26062297-4aab-4fd4-bfb8-95fbf64f6bb7",
+  "title": "Sun Constant",
+  "description": "Defines values for the room's sun.",
+  "source": "@site/docs/documentation/chips/26062297-4aab-4fd4-bfb8-95fbf64f6bb7.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/26062297-4aab-4fd4-bfb8-95fbf64f6bb7",
+  "permalink": "/Circuits/Website/docs/documentation/chips/26062297-4aab-4fd4-bfb8-95fbf64f6bb7",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/26062297-4aab-4fd4-bfb8-95fbf64f6bb7.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 601,
+  "frontMatter": {
+    "sidebar_position": 601,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Subtract",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1fbb364c-1af0-44bb-a82b-905caeb6819a"
+  },
+  "next": {
+    "title": "Room Sun Modify",
+    "permalink": "/Circuits/Website/docs/documentation/chips/884408a8-5884-41e4-9399-1b0ef5d353e0"
+  }
+}

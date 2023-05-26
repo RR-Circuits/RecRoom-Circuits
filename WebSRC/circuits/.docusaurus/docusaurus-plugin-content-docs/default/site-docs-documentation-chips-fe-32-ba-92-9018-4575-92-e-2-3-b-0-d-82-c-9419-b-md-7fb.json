@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/fe32ba92-9018-4575-92e2-3b0d82c9419b",
+  "id": "documentation/chips/fe32ba92-9018-4575-92e2-3b0d82c9419b",
+  "title": "Button Get Is Pressed",
+  "description": "Outputs a target Button's Pressed property.",
+  "source": "@site/docs/documentation/chips/fe32ba92-9018-4575-92e2-3b0d82c9419b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/fe32ba92-9018-4575-92e2-3b0d82c9419b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/fe32ba92-9018-4575-92e2-3b0d82c9419b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/fe32ba92-9018-4575-92e2-3b0d82c9419b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 69,
+  "frontMatter": {
+    "sidebar_position": 69,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Break Tuple",
+    "permalink": "/Circuits/Website/docs/documentation/chips/9478334a-451d-4802-bab1-4b05f00d45e4"
+  },
+  "next": {
+    "title": "Button Get Text",
+    "permalink": "/Circuits/Website/docs/documentation/chips/70e7663d-a5fd-435d-8995-942b4babc262"
+  }
+}

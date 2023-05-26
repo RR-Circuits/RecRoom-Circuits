@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f211a503-a237-41bc-875e-ae3ef62d745b",
+  "id": "documentation/chips/f211a503-a237-41bc-875e-ae3ef62d745b",
+  "title": "AI Stop Looking",
+  "description": "Command the input AI to cancel its current Rotate and Look At commands. Call this before telling an AI to path after having it Rotate/Look At so it rotates properly while moving again.",
+  "source": "@site/docs/documentation/chips/f211a503-a237-41bc-875e-ae3ef62d745b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f211a503-a237-41bc-875e-ae3ef62d745b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f211a503-a237-41bc-875e-ae3ef62d745b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f211a503-a237-41bc-875e-ae3ef62d745b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {
+    "sidebar_position": 20,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Stop Combat Behavior",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6e244bf2-cf71-4baa-912d-3e61c7fcd1be"
+  },
+  "next": {
+    "title": "Ambience",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1ad615de-65ea-40a3-b500-3a5b56b2a65d"
+  }
+}

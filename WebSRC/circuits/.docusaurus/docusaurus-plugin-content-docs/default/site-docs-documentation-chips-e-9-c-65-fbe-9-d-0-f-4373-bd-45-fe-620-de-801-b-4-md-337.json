@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e9c65fbe-9d0f-4373-bd45-fe620de801b4",
+  "id": "documentation/chips/e9c65fbe-9d0f-4373-bd45-fe620de801b4",
+  "title": "Get Velocity (Deprecated)",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/e9c65fbe-9d0f-4373-bd45-fe620de801b4.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e9c65fbe-9d0f-4373-bd45-fe620de801b4",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e9c65fbe-9d0f-4373-bd45-fe620de801b4",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e9c65fbe-9d0f-4373-bd45-fe620de801b4.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 221,
+  "frontMatter": {
+    "sidebar_position": 221,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Up Vector",
+    "permalink": "/Circuits/Website/docs/documentation/chips/824f6801-17b6-4ada-9a97-4f36cef02e8b"
+  },
+  "next": {
+    "title": "Get Velocity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0310de62-2ede-4af0-b551-0228290fc54c"
+  }
+}

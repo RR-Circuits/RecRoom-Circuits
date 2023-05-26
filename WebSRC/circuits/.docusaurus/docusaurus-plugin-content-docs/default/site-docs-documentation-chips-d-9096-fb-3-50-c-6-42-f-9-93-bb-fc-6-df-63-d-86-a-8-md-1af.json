@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d9096fb3-50c6-42f9-93bb-fc6df63d86a8",
+  "id": "documentation/chips/d9096fb3-50c6-42f9-93bb-fc6df63d86a8",
+  "title": "Quaternion Create Angle Axis",
+  "description": "Creates a rotation which rotates \"Angle\" degrees around \"Axis\".",
+  "source": "@site/docs/documentation/chips/d9096fb3-50c6-42f9-93bb-fc6df63d86a8.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d9096fb3-50c6-42f9-93bb-fc6df63d86a8",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d9096fb3-50c6-42f9-93bb-fc6df63d86a8",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d9096fb3-50c6-42f9-93bb-fc6df63d86a8.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 458,
+  "frontMatter": {
+    "sidebar_position": 458,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Prompt Local Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/46e6b40e-2416-4078-b7dc-a0ecc2c2aa20"
+  },
+  "next": {
+    "title": "Quaternion Create Euler Angles",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e320278c-13f0-4fe3-b838-7e671bdd9b49"
+  }
+}

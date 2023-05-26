@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/3ad57fda-1fab-4b00-81b3-71d61af37c65",
+  "id": "documentation/chips/3ad57fda-1fab-4b00-81b3-71d61af37c65",
+  "title": "SFX Stop",
+  "description": "Stops the sound currently playing from an SFX object.",
+  "source": "@site/docs/documentation/chips/3ad57fda-1fab-4b00-81b3-71d61af37c65.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/3ad57fda-1fab-4b00-81b3-71d61af37c65",
+  "permalink": "/Circuits/Website/docs/documentation/chips/3ad57fda-1fab-4b00-81b3-71d61af37c65",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/3ad57fda-1fab-4b00-81b3-71d61af37c65.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 547,
+  "frontMatter": {
+    "sidebar_position": 547,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SFX Set Volume",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d2df4993-d858-4df1-aca2-fc0e7f479668"
+  },
+  "next": {
+    "title": "Set HUD Element Label Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2231d8fa-fa63-4952-8ba4-a8258ffb2f9b"
+  }
+}

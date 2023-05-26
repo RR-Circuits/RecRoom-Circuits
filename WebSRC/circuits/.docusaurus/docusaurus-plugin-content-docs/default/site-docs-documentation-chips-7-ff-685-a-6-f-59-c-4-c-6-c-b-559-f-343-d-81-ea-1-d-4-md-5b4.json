@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/7ff685a6-f59c-4c6c-b559-f343d81ea1d4",
+  "id": "documentation/chips/7ff685a6-f59c-4c6c-b559-f343d81ea1d4",
+  "title": "From Rec Room Object",
+  "description": "Converts the input Rec Room Object to the object's subtype.",
+  "source": "@site/docs/documentation/chips/7ff685a6-f59c-4c6c-b559-f343d81ea1d4.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/7ff685a6-f59c-4c6c-b559-f343d81ea1d4",
+  "permalink": "/Circuits/Website/docs/documentation/chips/7ff685a6-f59c-4c6c-b559-f343d81ea1d4",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/7ff685a6-f59c-4c6c-b559-f343d81ea1d4.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 162,
+  "frontMatter": {
+    "sidebar_position": 162,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "For",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8f945c22-988b-45d2-b7f2-409ba304fef4"
+  },
+  "next": {
+    "title": "Get All Players",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3f4346b1-bc6f-4aca-9650-d43cbd4acc5b"
+  }
+}

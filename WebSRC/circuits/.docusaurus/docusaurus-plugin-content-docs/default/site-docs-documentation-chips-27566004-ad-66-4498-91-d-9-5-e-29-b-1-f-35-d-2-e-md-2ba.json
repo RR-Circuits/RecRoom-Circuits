@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ad66-4498-91d9-5e29b1f35d2e",
+  "id": "documentation/chips/ad66-4498-91d9-5e29b1f35d2e",
+  "title": "Gun Handle Set Supports Reload",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/27566004-ad66-4498-91d9-5e29b1f35d2e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ad66-4498-91d9-5e29b1f35d2e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ad66-4498-91d9-5e29b1f35d2e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/27566004-ad66-4498-91d9-5e29b1f35d2e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 253,
+  "frontMatter": {
+    "sidebar_position": 253,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gun Handle Set Auto Aim Roles",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e9c22501-3d32-4f9e-a6fb-322bad4eaca1"
+  },
+  "next": {
+    "title": "Gun Handle Set Current Ammo",
+    "permalink": "/Circuits/Website/docs/documentation/chips/75c94e14-2fd9-4097-93c4-ee5b56a27b64"
+  }
+}

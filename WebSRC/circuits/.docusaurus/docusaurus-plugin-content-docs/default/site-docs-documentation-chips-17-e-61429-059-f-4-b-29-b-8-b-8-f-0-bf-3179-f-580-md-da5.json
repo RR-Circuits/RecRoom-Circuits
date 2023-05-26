@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/17e61429-059f-4b29-b8b8-f0bf3179f580",
+  "id": "documentation/chips/17e61429-059f-4b29-b8b8-f0bf3179f580",
+  "title": "Player Left Hand Rotation",
+  "description": "Outputs the rotation of a Player's left hand.",
+  "source": "@site/docs/documentation/chips/17e61429-059f-4b29-b8b8-f0bf3179f580.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/17e61429-059f-4b29-b8b8-f0bf3179f580",
+  "permalink": "/Circuits/Website/docs/documentation/chips/17e61429-059f-4b29-b8b8-f0bf3179f580",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/17e61429-059f-4b29-b8b8-f0bf3179f580.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 414,
+  "frontMatter": {
+    "sidebar_position": 414,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Left Hand Finger Direction",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6b5c4b0b-be26-4055-b26f-1e5f061c63ca"
+  },
+  "next": {
+    "title": "Player Left Hand Position",
+    "permalink": "/Circuits/Website/docs/documentation/chips/619b3bc8-bcb9-4812-86f5-f6442cdbb557"
+  }
+}

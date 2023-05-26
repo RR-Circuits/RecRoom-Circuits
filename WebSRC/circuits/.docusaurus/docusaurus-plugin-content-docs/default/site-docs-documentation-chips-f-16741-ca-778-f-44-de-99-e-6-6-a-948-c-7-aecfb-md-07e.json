@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f16741ca-778f-44de-99e6-6a948c7aecfb",
+  "id": "documentation/chips/f16741ca-778f-44de-99e6-6a948c7aecfb",
+  "title": "Room Background Objects Modify",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/f16741ca-778f-44de-99e6-6a948c7aecfb.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f16741ca-778f-44de-99e6-6a948c7aecfb",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f16741ca-778f-44de-99e6-6a948c7aecfb",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f16741ca-778f-44de-99e6-6a948c7aecfb.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 487,
+  "frontMatter": {
+    "sidebar_position": 487,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RGB To Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c38b908d-df40-4bd0-bf8b-38afe6cbe9e2"
+  },
+  "next": {
+    "title": "Room Background Objects Reset",
+    "permalink": "/Circuits/Website/docs/documentation/chips/56c10ead-6198-4b13-b6de-d1df9080341b"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/714654bc-7266-4088-8efe-287bdca164fd",
+  "id": "documentation/chips/714654bc-7266-4088-8efe-287bdca164fd",
+  "title": "Interaction Volume Set Normalized Hold Progress",
+  "description": "Sets normalized hold progress for Interaction Volume V2",
+  "source": "@site/docs/documentation/chips/714654bc-7266-4088-8efe-287bdca164fd.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/714654bc-7266-4088-8efe-287bdca164fd",
+  "permalink": "/Circuits/Website/docs/documentation/chips/714654bc-7266-4088-8efe-287bdca164fd",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/714654bc-7266-4088-8efe-287bdca164fd.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 274,
+  "frontMatter": {
+    "sidebar_position": 274,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Interaction Volume Set Locked",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a1e57113-f0b5-45c5-b1e0-95163674daa4"
+  },
+  "next": {
+    "title": "int Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/33224907-68ff-4102-802e-7c3eed481d37"
+  }
+}

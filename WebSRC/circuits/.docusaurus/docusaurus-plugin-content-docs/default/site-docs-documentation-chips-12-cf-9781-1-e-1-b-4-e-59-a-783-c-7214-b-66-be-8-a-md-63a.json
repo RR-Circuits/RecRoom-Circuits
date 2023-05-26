@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/12cf9781-1e1b-4e59-a783-c7214b66be8a",
+  "id": "documentation/chips/12cf9781-1e1b-4e59-a783-c7214b66be8a",
+  "title": "Leaderboard Get Player Stat",
+  "description": "Get leaderboard stat for the given player on stat channel 1, 2 or 3.",
+  "source": "@site/docs/documentation/chips/12cf9781-1e1b-4e59-a783-c7214b66be8a.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/12cf9781-1e1b-4e59-a783-c7214b66be8a",
+  "permalink": "/Circuits/Website/docs/documentation/chips/12cf9781-1e1b-4e59-a783-c7214b66be8a",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/12cf9781-1e1b-4e59-a783-c7214b66be8a.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 194,
+  "frontMatter": {
+    "sidebar_position": 194,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Player By Display Name",
+    "permalink": "/Circuits/Website/docs/documentation/chips/637e07e4-9b93-44b6-bba3-68966080d064"
+  },
+  "next": {
+    "title": "Get Player Season League Name",
+    "permalink": "/Circuits/Website/docs/documentation/chips/288083ac-338d-410f-9395-fbd7c6e41207"
+  }
+}

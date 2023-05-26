@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/447bbb2e-11e4-408c-b4a9-b758e3e07ee7",
+  "id": "documentation/chips/447bbb2e-11e4-408c-b4a9-b758e3e07ee7",
+  "title": "Get Player World UI Text Value",
+  "description": "Returns the value of the given player's text in their current world UI.",
+  "source": "@site/docs/documentation/chips/447bbb2e-11e4-408c-b4a9-b758e3e07ee7.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/447bbb2e-11e4-408c-b4a9-b758e3e07ee7",
+  "permalink": "/Circuits/Website/docs/documentation/chips/447bbb2e-11e4-408c-b4a9-b758e3e07ee7",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/447bbb2e-11e4-408c-b4a9-b758e3e07ee7.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 208,
+  "frontMatter": {
+    "sidebar_position": 208,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Player World UI Text Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cd1b799d-855a-4ade-b62f-043a0db60a44"
+  },
+  "next": {
+    "title": "Get Position (Deprecated)",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a8c52ef2-17bf-47e6-9084-3e5623584b48"
+  }
+}

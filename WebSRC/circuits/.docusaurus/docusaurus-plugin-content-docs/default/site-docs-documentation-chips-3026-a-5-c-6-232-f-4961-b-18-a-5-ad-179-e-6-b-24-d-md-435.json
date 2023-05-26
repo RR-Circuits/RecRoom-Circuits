@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/3026a5c6-232f-4961-b18a-5ad179e6b24d",
+  "id": "documentation/chips/3026a5c6-232f-4961-b18a-5ad179e6b24d",
+  "title": "Fog Constant",
+  "description": "Defines settings for room fog.",
+  "source": "@site/docs/documentation/chips/3026a5c6-232f-4961-b18a-5ad179e6b24d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/3026a5c6-232f-4961-b18a-5ad179e6b24d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/3026a5c6-232f-4961-b18a-5ad179e6b24d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/3026a5c6-232f-4961-b18a-5ad179e6b24d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 158,
+  "frontMatter": {
+    "sidebar_position": 158,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Floor to Int",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bc451cab-2292-4e60-832d-31060eb82bd0"
+  },
+  "next": {
+    "title": "Room Fog Modify",
+    "permalink": "/Circuits/Website/docs/documentation/chips/471f7cf9-a4e4-4162-a6e9-d594b6ec28ef"
+  }
+}

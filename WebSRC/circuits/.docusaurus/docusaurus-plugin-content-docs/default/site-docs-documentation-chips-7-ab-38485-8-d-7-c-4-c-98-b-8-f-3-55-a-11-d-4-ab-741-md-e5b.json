@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/7ab38485-8d7c-4c98-b8f3-55a11d4ab741",
+  "id": "documentation/chips/7ab38485-8d7c-4c98-b8f3-55a11d4ab741",
+  "title": "Studio Object Get Property - Bool",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/7ab38485-8d7c-4c98-b8f3-55a11d4ab741.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/7ab38485-8d7c-4c98-b8f3-55a11d4ab741",
+  "permalink": "/Circuits/Website/docs/documentation/chips/7ab38485-8d7c-4c98-b8f3-55a11d4ab741",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/7ab38485-8d7c-4c98-b8f3-55a11d4ab741.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 595,
+  "frontMatter": {
+    "sidebar_position": 595,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Studio Event Sender - String, String",
+    "permalink": "/Circuits/Website/docs/documentation/chips/06225a58-e343-4cec-b93b-949f69a430c7"
+  },
+  "next": {
+    "title": "Studio Object Get Property - Float",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0dda9345-0211-4757-8fea-03e05fac89c3"
+  }
+}

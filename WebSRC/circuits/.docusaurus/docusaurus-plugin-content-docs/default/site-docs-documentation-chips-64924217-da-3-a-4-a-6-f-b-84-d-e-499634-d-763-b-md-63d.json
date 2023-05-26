@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/da3a-4a6f-b84d-e499634d763b",
+  "id": "documentation/chips/da3a-4a6f-b84d-e499634d763b",
+  "title": "Vector3 Transform",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/64924217-da3a-4a6f-b84d-e499634d763b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/da3a-4a6f-b84d-e499634d763b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/da3a-4a6f-b84d-e499634d763b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/64924217-da3a-4a6f-b84d-e499634d763b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 645,
+  "frontMatter": {
+    "sidebar_position": 645,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vector3 Scale",
+    "permalink": "/Circuits/Website/docs/documentation/chips/87aa17b1-7760-4b07-8c44-a2d530590597"
+  },
+  "next": {
+    "title": "Vector3 Create",
+    "permalink": "/Circuits/Website/docs/documentation/chips/814e9337-7542-4851-9da0-c73885ab0b4f"
+  }
+}

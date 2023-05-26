@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/9e2bb0fe-6179-4ffc-92df-6f3b43bca52d",
+  "id": "documentation/chips/9e2bb0fe-6179-4ffc-92df-6f3b43bca52d",
+  "title": "Gun Handle Get Current Ammo",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/9e2bb0fe-6179-4ffc-92df-6f3b43bca52d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/9e2bb0fe-6179-4ffc-92df-6f3b43bca52d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/9e2bb0fe-6179-4ffc-92df-6f3b43bca52d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/9e2bb0fe-6179-4ffc-92df-6f3b43bca52d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 244,
+  "frontMatter": {
+    "sidebar_position": 244,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gun Handle Get Supports Reload",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ec1f7c92-8484-4d00-b820-32726299f67a"
+  },
+  "next": {
+    "title": "Gun Handle Get Firing Direction",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1521eb32-29db-4708-81de-71398c29e76d"
+  }
+}

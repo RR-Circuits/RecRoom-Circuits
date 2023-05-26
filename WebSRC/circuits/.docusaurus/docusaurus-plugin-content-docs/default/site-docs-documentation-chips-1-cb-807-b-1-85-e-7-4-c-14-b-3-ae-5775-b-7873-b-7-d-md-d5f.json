@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1cb807b1-85e7-4c14-b3ae-5775b7873b7d",
+  "id": "documentation/chips/1cb807b1-85e7-4c14-b3ae-5775b7873b7d",
+  "title": "Max",
+  "description": "Returns largest of two or more values.",
+  "source": "@site/docs/documentation/chips/1cb807b1-85e7-4c14-b3ae-5775b7873b7d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1cb807b1-85e7-4c14-b3ae-5775b7873b7d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1cb807b1-85e7-4c14-b3ae-5775b7873b7d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1cb807b1-85e7-4c14-b3ae-5775b7873b7d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 357,
+  "frontMatter": {
+    "sidebar_position": 357,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Make Tuple",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bee72c1d-266b-4ea4-b185-7500618030c6"
+  },
+  "next": {
+    "title": "Min",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bfb1ad17-5ade-4bd8-9c31-6d4b1e47dae3"
+  }
+}

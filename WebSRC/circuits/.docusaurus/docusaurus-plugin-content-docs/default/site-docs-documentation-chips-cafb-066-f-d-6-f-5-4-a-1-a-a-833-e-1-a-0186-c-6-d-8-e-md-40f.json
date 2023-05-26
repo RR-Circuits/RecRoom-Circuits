@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/cafb066f-d6f5-4a1a-a833-e1a0186c6d8e",
+  "id": "documentation/chips/cafb066f-d6f5-4a1a-a833-e1a0186c6d8e",
+  "title": "Get Player World UI Secondary Bar Value",
+  "description": "Returns the value of the given player's secondary bar in their current world UI.",
+  "source": "@site/docs/documentation/chips/cafb066f-d6f5-4a1a-a833-e1a0186c6d8e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/cafb066f-d6f5-4a1a-a833-e1a0186c6d8e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/cafb066f-d6f5-4a1a-a833-e1a0186c6d8e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/cafb066f-d6f5-4a1a-a833-e1a0186c6d8e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 205,
+  "frontMatter": {
+    "sidebar_position": 205,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Player World UI Secondary Bar Max Value",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b23bdd96-7676-4236-a5ab-ca0aae513916"
+  },
+  "next": {
+    "title": "Get Player World UI Text Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a8cdbc23-b8de-431e-9428-10b7ccc07192"
+  }
+}

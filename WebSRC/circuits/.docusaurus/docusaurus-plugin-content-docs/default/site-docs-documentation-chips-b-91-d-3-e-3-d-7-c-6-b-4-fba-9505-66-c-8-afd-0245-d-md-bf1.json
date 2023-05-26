@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b91d3e3d-7c6b-4fba-9505-66c8afd0245d",
+  "id": "documentation/chips/b91d3e3d-7c6b-4fba-9505-66c8afd0245d",
+  "title": "Projectile Launcher Set Projectile Lifetime",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/b91d3e3d-7c6b-4fba-9505-66c8afd0245d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b91d3e3d-7c6b-4fba-9505-66c8afd0245d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b91d3e3d-7c6b-4fba-9505-66c8afd0245d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b91d3e3d-7c6b-4fba-9505-66c8afd0245d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 452,
+  "frontMatter": {
+    "sidebar_position": 452,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Projectile Launcher Set Head Damage",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f9eeb1b4-5721-4d30-82d4-3bfdea0b8617"
+  },
+  "next": {
+    "title": "Projectile Launcher Set Rec Room Object Damage",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1fcd6f83-b403-426d-8ded-7064e8790b2d"
+  }
+}

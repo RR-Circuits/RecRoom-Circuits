@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d39b968d-bdab-4548-aaa7-745e3155789e",
+  "id": "documentation/chips/d39b968d-bdab-4548-aaa7-745e3155789e",
+  "title": "Explosion Emitter Set Firing Player",
+  "description": "Sets the firing player of the target Explosion Emitter. If none is set, the component will use the authority player.",
+  "source": "@site/docs/documentation/chips/d39b968d-bdab-4548-aaa7-745e3155789e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d39b968d-bdab-4548-aaa7-745e3155789e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d39b968d-bdab-4548-aaa7-745e3155789e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d39b968d-bdab-4548-aaa7-745e3155789e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 153,
+  "frontMatter": {
+    "sidebar_position": 153,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Explosion Emitter Set Damage",
+    "permalink": "/Circuits/Website/docs/documentation/chips/748f210d-f9e2-4dca-a29a-8eacf99daff7"
+  },
+  "next": {
+    "title": "Explosion Emitter Set Explosion Radius",
+    "permalink": "/Circuits/Website/docs/documentation/chips/672e473f-7099-4f76-aead-8b3df7c2fcd2"
+  }
+}

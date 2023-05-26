@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/fe2f9c12-d213-4234-a387-9d2ec1ad7fc1",
+  "id": "documentation/chips/fe2f9c12-d213-4234-a387-9d2ec1ad7fc1",
+  "title": "List[int] Variable",
+  "description": "Reads or writes a variable in the current scope based on the name.",
+  "source": "@site/docs/documentation/chips/fe2f9c12-d213-4234-a387-9d2ec1ad7fc1.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/fe2f9c12-d213-4234-a387-9d2ec1ad7fc1",
+  "permalink": "/Circuits/Website/docs/documentation/chips/fe2f9c12-d213-4234-a387-9d2ec1ad7fc1",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/fe2f9c12-d213-4234-a387-9d2ec1ad7fc1.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 332,
+  "frontMatter": {
+    "sidebar_position": 332,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Insert",
+    "permalink": "/Circuits/Website/docs/documentation/chips/592c8aab-9489-492f-a4aa-1e558e6a8ce7"
+  },
+  "next": {
+    "title": "List Max",
+    "permalink": "/Circuits/Website/docs/documentation/chips/47428133-4492-422a-aeab-82c21667543e"
+  }
+}

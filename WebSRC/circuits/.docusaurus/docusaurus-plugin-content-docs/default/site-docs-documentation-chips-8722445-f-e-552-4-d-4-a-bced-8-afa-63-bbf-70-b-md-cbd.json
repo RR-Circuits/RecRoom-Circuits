@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8722445f-e552-4d4a-bced-8afa63bbf70b",
+  "id": "documentation/chips/8722445f-e552-4d4a-bced-8afa63bbf70b",
+  "title": "Time Get Precise Seconds",
+  "description": "Gets the amount of seconds since a player launched Rec Room.",
+  "source": "@site/docs/documentation/chips/8722445f-e552-4d4a-bced-8afa63bbf70b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8722445f-e552-4d4a-bced-8afa63bbf70b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8722445f-e552-4d4a-bced-8afa63bbf70b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8722445f-e552-4d4a-bced-8afa63bbf70b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 211,
+  "frontMatter": {
+    "sidebar_position": 211,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Position",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344"
+  },
+  "next": {
+    "title": "Get Room Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d7557465-963e-4451-a55a-dea2050e9b74"
+  }
+}

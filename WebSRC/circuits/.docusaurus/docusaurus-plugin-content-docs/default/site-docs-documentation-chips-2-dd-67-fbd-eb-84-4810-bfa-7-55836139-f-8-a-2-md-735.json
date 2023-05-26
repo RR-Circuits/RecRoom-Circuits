@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/2dd67fbd-eb84-4810-bfa7-55836139f8a2",
+  "id": "documentation/chips/2dd67fbd-eb84-4810-bfa7-55836139f8a2",
+  "title": "Room Fog Reset",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/2dd67fbd-eb84-4810-bfa7-55836139f8a2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/2dd67fbd-eb84-4810-bfa7-55836139f8a2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/2dd67fbd-eb84-4810-bfa7-55836139f8a2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/2dd67fbd-eb84-4810-bfa7-55836139f8a2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 489,
+  "frontMatter": {
+    "sidebar_position": 489,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Room Background Objects Reset",
+    "permalink": "/Circuits/Website/docs/documentation/chips/56c10ead-6198-4b13-b6de-d1df9080341b"
+  },
+  "next": {
+    "title": "Room Get Matchmaking State",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2d358c91-9000-4851-ad37-65759a135ab7"
+  }
+}

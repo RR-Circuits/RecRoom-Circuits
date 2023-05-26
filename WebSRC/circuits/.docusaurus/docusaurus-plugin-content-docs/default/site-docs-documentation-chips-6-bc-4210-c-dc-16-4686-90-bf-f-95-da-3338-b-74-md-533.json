@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6bc4210c-dc16-4686-90bf-f95da3338b74",
+  "id": "documentation/chips/6bc4210c-dc16-4686-90bf-f95da3338b74",
+  "title": "Studio Event Sender - String",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/6bc4210c-dc16-4686-90bf-f95da3338b74.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6bc4210c-dc16-4686-90bf-f95da3338b74",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6bc4210c-dc16-4686-90bf-f95da3338b74",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6bc4210c-dc16-4686-90bf-f95da3338b74.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 590,
+  "frontMatter": {
+    "sidebar_position": 590,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Studio Event Sender - Int",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1a29d0ac-0372-4a8a-84cd-9df9af8920a1"
+  },
+  "next": {
+    "title": "Studio Event Sender - String, Bool",
+    "permalink": "/Circuits/Website/docs/documentation/chips/91f2d5db-f6c6-4ef0-b134-056fa57c953d"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c",
+  "id": "documentation/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c",
+  "title": "Add",
+  "description": "Computes the sum of two or more inputs.",
+  "source": "@site/docs/documentation/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Consumable Activate",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d7ea08ab-aee6-43d0-99e1-54478ac3db7f"
+  },
+  "next": {
+    "title": "Add Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/953fb21b-c9f0-46fc-a0f1-ee1a937854f8"
+  }
+}

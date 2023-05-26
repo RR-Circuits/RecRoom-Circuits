@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/494ceaa7-3520-4f5b-87e0-7dd08334730c",
+  "id": "documentation/chips/494ceaa7-3520-4f5b-87e0-7dd08334730c",
+  "title": "Light Set Angle",
+  "description": "Sets the angle of the spotlight's cone.",
+  "source": "@site/docs/documentation/chips/494ceaa7-3520-4f5b-87e0-7dd08334730c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/494ceaa7-3520-4f5b-87e0-7dd08334730c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/494ceaa7-3520-4f5b-87e0-7dd08334730c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/494ceaa7-3520-4f5b-87e0-7dd08334730c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 306,
+  "frontMatter": {
+    "sidebar_position": 306,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Light Set Angle",
+    "permalink": "/Circuits/Website/docs/documentation/chips/873d8765-9dc7-41ea-87ef-dd6e32119af8"
+  },
+  "next": {
+    "title": "Light Set Color Id",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2b6d9368-2ddc-41fb-ac14-b1a3561b19fc"
+  }
+}

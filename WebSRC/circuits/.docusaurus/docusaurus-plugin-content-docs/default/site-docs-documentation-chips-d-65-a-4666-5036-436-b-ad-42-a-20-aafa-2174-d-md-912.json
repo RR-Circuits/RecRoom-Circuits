@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d65a4666-5036-436b-ad42-a20aafa2174d",
+  "id": "documentation/chips/d65a4666-5036-436b-ad42-a20aafa2174d",
+  "title": "SFX",
+  "description": "Choose from a selection of SFX, for use with the Audio Player.",
+  "source": "@site/docs/documentation/chips/d65a4666-5036-436b-ad42-a20aafa2174d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d65a4666-5036-436b-ad42-a20aafa2174d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d65a4666-5036-436b-ad42-a20aafa2174d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d65a4666-5036-436b-ad42-a20aafa2174d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 542,
+  "frontMatter": {
+    "sidebar_position": 542,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Set Transform",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6873f341-1ae8-4ddd-9f8c-892a977ef974"
+  },
+  "next": {
+    "title": "SFX Get Volume",
+    "permalink": "/Circuits/Website/docs/documentation/chips/aaf39143-c5dc-47cd-ad85-c659c3035cab"
+  }
+}

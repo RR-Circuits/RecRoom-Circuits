@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/7b05df01-d4c8-490c-9442-55aa3b4975fa",
+  "id": "documentation/chips/7b05df01-d4c8-490c-9442-55aa3b4975fa",
+  "title": "AI Path To",
+  "description": "Commands the AI to path to the input target destination.",
+  "source": "@site/docs/documentation/chips/7b05df01-d4c8-490c-9442-55aa3b4975fa.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/7b05df01-d4c8-490c-9442-55aa3b4975fa",
+  "permalink": "/Circuits/Website/docs/documentation/chips/7b05df01-d4c8-490c-9442-55aa3b4975fa",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/7b05df01-d4c8-490c-9442-55aa3b4975fa.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_position": 12,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0e92a7fb-fb38-418c-af39-9afec92112ee"
+  },
+  "next": {
+    "title": "AI Rotate",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c2cb2ea2-f663-4aa6-9394-3b741f6b9064"
+  }
+}

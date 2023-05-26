@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/288d4e89-ebed-41ed-a522-4c79bd48471a",
+  "id": "documentation/chips/288d4e89-ebed-41ed-a522-4c79bd48471a",
+  "title": "Power",
+  "description": "Multiplies a value by itself an input number of times.",
+  "source": "@site/docs/documentation/chips/288d4e89-ebed-41ed-a522-4c79bd48471a.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/288d4e89-ebed-41ed-a522-4c79bd48471a",
+  "permalink": "/Circuits/Website/docs/documentation/chips/288d4e89-ebed-41ed-a522-4c79bd48471a",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/288d4e89-ebed-41ed-a522-4c79bd48471a.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 435,
+  "frontMatter": {
+    "sidebar_position": 435,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Play Handle Haptics",
+    "permalink": "/Circuits/Website/docs/documentation/chips/da6980ad-92eb-4ce8-a643-291e2bf82bc7"
+  },
+  "next": {
+    "title": "Projectile Launcher Fire Projectile",
+    "permalink": "/Circuits/Website/docs/documentation/chips/27e235ea-7305-4f3e-a426-04a887cbde6d"
+  }
+}

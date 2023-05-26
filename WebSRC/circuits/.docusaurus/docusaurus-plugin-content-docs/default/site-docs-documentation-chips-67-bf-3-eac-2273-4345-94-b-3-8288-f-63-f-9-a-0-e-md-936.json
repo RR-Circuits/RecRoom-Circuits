@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/67bf3eac-2273-4345-94b3-8288f63f9a0e",
+  "id": "documentation/chips/67bf3eac-2273-4345-94b3-8288f63f9a0e",
+  "title": "Light Get Intensity",
+  "description": "Returns the intensity of the target light.",
+  "source": "@site/docs/documentation/chips/67bf3eac-2273-4345-94b3-8288f63f9a0e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/67bf3eac-2273-4345-94b3-8288f63f9a0e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/67bf3eac-2273-4345-94b3-8288f63f9a0e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/67bf3eac-2273-4345-94b3-8288f63f9a0e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 301,
+  "frontMatter": {
+    "sidebar_position": 301,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Light Get Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d5eafcf1-1762-4ece-bc31-7e2eddac253e"
+  },
+  "next": {
+    "title": "Light Get Range",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e218e55a-3307-4839-a3d4-b7cc72e1e3bc"
+  }
+}

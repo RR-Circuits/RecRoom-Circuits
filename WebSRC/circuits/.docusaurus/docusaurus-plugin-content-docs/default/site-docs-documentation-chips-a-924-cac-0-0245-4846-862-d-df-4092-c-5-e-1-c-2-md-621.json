@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/a924cac0-0245-4846-862d-df4092c5e1c2",
+  "id": "documentation/chips/a924cac0-0245-4846-862d-df4092c5e1c2",
+  "title": "Get Any Player with Role",
+  "description": "Gets a player with the role. Returns invalid player if no player has the role.",
+  "source": "@site/docs/documentation/chips/a924cac0-0245-4846-862d-df4092c5e1c2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/a924cac0-0245-4846-862d-df4092c5e1c2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/a924cac0-0245-4846-862d-df4092c5e1c2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/a924cac0-0245-4846-862d-df4092c5e1c2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 171,
+  "frontMatter": {
+    "sidebar_position": 171,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Farthest",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8e17bef6-59ea-4ff0-999a-a158800b22da"
+  },
+  "next": {
+    "title": "Get First Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cb909206-8627-4c66-ac8d-47b1a046ef8b"
+  }
+}

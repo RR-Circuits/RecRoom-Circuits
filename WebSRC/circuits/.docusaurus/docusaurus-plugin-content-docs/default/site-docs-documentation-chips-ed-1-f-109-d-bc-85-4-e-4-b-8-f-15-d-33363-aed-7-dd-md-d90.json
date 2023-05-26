@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ed1f109d-bc85-4e4b-8f15-d33363aed7dd",
+  "id": "documentation/chips/ed1f109d-bc85-4e4b-8f15-d33363aed7dd",
+  "title": "Projectile Launcher Get Hand Damage",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/ed1f109d-bc85-4e4b-8f15-d33363aed7dd.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ed1f109d-bc85-4e4b-8f15-d33363aed7dd",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ed1f109d-bc85-4e4b-8f15-d33363aed7dd",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/ed1f109d-bc85-4e4b-8f15-d33363aed7dd.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 440,
+  "frontMatter": {
+    "sidebar_position": 440,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Projectile Launcher Get Firing Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/9bc9def7-d7c3-4248-ba1c-35116f013768"
+  },
+  "next": {
+    "title": "Projectile Launcher Get Head Damage",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7aa59933-c380-428e-aca9-2de2875cb38d"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/19d7fe7e-99e9-444c-8e4f-12c5237abe90",
+  "id": "documentation/chips/19d7fe7e-99e9-444c-8e4f-12c5237abe90",
+  "title": "Set Player Name Color",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/19d7fe7e-99e9-444c-8e4f-12c5237abe90.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/19d7fe7e-99e9-444c-8e4f-12c5237abe90",
+  "permalink": "/Circuits/Website/docs/documentation/chips/19d7fe7e-99e9-444c-8e4f-12c5237abe90",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/19d7fe7e-99e9-444c-8e4f-12c5237abe90.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 524,
+  "frontMatter": {
+    "sidebar_position": 524,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Leaderboard Set Local Player Stat",
+    "permalink": "/Circuits/Website/docs/documentation/chips/57a1553a-ba24-4422-903a-e610a03e7994"
+  },
+  "next": {
+    "title": "Set Player Vignette",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fee486b2-823f-4110-b33a-241adb59b634"
+  }
+}

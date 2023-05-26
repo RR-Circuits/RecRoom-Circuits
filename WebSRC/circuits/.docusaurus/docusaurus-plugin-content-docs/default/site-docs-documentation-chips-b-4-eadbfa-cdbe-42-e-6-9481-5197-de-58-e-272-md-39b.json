@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b4eadbfa-cdbe-42e6-9481-5197de58e272",
+  "id": "documentation/chips/b4eadbfa-cdbe-42e6-9481-5197de58e272",
+  "title": "Combatant Get Velocity",
+  "description": "Outputs the input combatant's current velocity and speed.",
+  "source": "@site/docs/documentation/chips/b4eadbfa-cdbe-42e6-9481-5197de58e272.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b4eadbfa-cdbe-42e6-9481-5197de58e272",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b4eadbfa-cdbe-42e6-9481-5197de58e272",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b4eadbfa-cdbe-42e6-9481-5197de58e272.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 92,
+  "frontMatter": {
+    "sidebar_position": 92,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Combatant Get Is Alive",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2a12c389-c3c6-4484-8c63-21cdaf0fac6c"
+  },
+  "next": {
+    "title": "Combatant Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cfd8e246-8682-4707-a0ae-da55bacfbf72"
+  }
+}

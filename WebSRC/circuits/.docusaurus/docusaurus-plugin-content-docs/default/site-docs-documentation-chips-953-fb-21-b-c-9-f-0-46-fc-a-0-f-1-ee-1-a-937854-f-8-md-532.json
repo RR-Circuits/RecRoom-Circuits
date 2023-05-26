@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/953fb21b-c9f0-46fc-a0f1-ee1a937854f8",
+  "id": "documentation/chips/953fb21b-c9f0-46fc-a0f1-ee1a937854f8",
+  "title": "Add Tag",
+  "description": "Adds a tag to the input object or player.",
+  "source": "@site/docs/documentation/chips/953fb21b-c9f0-46fc-a0f1-ee1a937854f8.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/953fb21b-c9f0-46fc-a0f1-ee1a937854f8",
+  "permalink": "/Circuits/Website/docs/documentation/chips/953fb21b-c9f0-46fc-a0f1-ee1a937854f8",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/953fb21b-c9f0-46fc-a0f1-ee1a937854f8.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Add",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c"
+  },
+  "next": {
+    "title": "Add Tags",
+    "permalink": "/Circuits/Website/docs/documentation/chips/81939b0e-428f-481c-9fba-453b4c84f01e"
+  }
+}

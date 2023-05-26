@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d326ebc4-1653-4c1d-886c-c1bd4c06db86",
+  "id": "documentation/chips/d326ebc4-1653-4c1d-886c-c1bd4c06db86",
+  "title": "Trail Set Color",
+  "description": "Sets the color of the target Motion Trail object.",
+  "source": "@site/docs/documentation/chips/d326ebc4-1653-4c1d-886c-c1bd4c06db86.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d326ebc4-1653-4c1d-886c-c1bd4c06db86",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d326ebc4-1653-4c1d-886c-c1bd4c06db86",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d326ebc4-1653-4c1d-886c-c1bd4c06db86.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 622,
+  "frontMatter": {
+    "sidebar_position": 622,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trail Get Opacity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6dcc7a44-0163-4058-97a9-1ef7f482a3d5"
+  },
+  "next": {
+    "title": "Trail Set Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0bf0dcf8-0731-40d4-883d-288862c98aed"
+  }
+}

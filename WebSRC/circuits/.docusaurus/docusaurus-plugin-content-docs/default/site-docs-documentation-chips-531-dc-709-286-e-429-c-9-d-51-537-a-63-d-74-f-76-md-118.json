@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/531dc709-286e-429c-9d51-537a63d74f76",
+  "id": "documentation/chips/531dc709-286e-429c-9d51-537a63d74f76",
+  "title": "Projectile Launcher Set Torso Damage",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/531dc709-286e-429c-9d51-537a63d74f76.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/531dc709-286e-429c-9d51-537a63d74f76",
+  "permalink": "/Circuits/Website/docs/documentation/chips/531dc709-286e-429c-9d51-537a63d74f76",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/531dc709-286e-429c-9d51-537a63d74f76.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 456,
+  "frontMatter": {
+    "sidebar_position": 456,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Projectile Launcher Set Projectile Spread",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c01cee87-a81e-4cdb-84c5-d443cfe53bce"
+  },
+  "next": {
+    "title": "Prompt Local Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/46e6b40e-2416-4078-b7dc-a0ecc2c2aa20"
+  }
+}

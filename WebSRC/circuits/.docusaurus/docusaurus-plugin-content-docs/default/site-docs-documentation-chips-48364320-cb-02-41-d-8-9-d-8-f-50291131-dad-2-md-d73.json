@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/cb02-41d8-9d8f-50291131dad2",
+  "id": "documentation/chips/cb02-41d8-9d8f-50291131dad2",
+  "title": "Player Get First with Tag",
+  "description": "Gets the first player with the input tag.",
+  "source": "@site/docs/documentation/chips/48364320-cb02-41d8-9d8f-50291131dad2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/cb02-41d8-9d8f-50291131dad2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/cb02-41d8-9d8f-50291131dad2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/48364320-cb02-41d8-9d8f-50291131dad2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 394,
+  "frontMatter": {
+    "sidebar_position": 394,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Get Equipped Objects",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f0827a17-7d21-45ba-b302-c2b068bd50ca"
+  },
+  "next": {
+    "title": "Player Get Is Jumping Or Falling",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a474eca1-e820-4249-a314-fbc0ae223a5f"
+  }
+}

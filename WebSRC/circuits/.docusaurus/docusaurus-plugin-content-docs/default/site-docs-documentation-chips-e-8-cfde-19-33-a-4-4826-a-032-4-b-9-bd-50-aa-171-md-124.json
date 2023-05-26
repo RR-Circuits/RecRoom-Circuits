@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e8cfde19-33a4-4826-a032-4b9bd50aa171",
+  "id": "documentation/chips/e8cfde19-33a4-4826-a032-4b9bd50aa171",
+  "title": "List[Quaternion] Variable",
+  "description": "Reads or writes a variable in the current scope based on the name.",
+  "source": "@site/docs/documentation/chips/e8cfde19-33a4-4826-a032-4b9bd50aa171.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e8cfde19-33a4-4826-a032-4b9bd50aa171",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e8cfde19-33a4-4826-a032-4b9bd50aa171",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e8cfde19-33a4-4826-a032-4b9bd50aa171.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 337,
+  "frontMatter": {
+    "sidebar_position": 337,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List[Player] Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/32837e14-12de-465f-89dc-ceddb64cdd6c"
+  },
+  "next": {
+    "title": "List Remove At",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d41a-4b59-9aa9-2aeb0aad9e37"
+  }
+}

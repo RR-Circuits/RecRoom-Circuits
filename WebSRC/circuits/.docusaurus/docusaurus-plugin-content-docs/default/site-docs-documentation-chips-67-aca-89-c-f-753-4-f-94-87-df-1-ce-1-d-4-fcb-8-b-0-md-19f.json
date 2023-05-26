@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/67aca89c-f753-4f94-87df-1ce1d4fcb8b0",
+  "id": "documentation/chips/67aca89c-f753-4f94-87df-1ce1d4fcb8b0",
+  "title": "Combatant Receive Damage",
+  "description": "Deals damage to the given target combatant with various parameters.",
+  "source": "@site/docs/documentation/chips/67aca89c-f753-4f94-87df-1ce1d4fcb8b0.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/67aca89c-f753-4f94-87df-1ce1d4fcb8b0",
+  "permalink": "/Circuits/Website/docs/documentation/chips/67aca89c-f753-4f94-87df-1ce1d4fcb8b0",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/67aca89c-f753-4f94-87df-1ce1d4fcb8b0.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 94,
+  "frontMatter": {
+    "sidebar_position": 94,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Combatant Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cfd8e246-8682-4707-a0ae-da55bacfbf72"
+  },
+  "next": {
+    "title": "Combatant Set Health",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3dc4807f-2acd-446d-928f-5d301d0795d6"
+  }
+}

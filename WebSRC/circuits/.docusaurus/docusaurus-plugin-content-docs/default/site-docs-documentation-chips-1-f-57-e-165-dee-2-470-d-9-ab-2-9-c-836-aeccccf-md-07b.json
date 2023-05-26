@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1f57e165-dee2-470d-9ab2-9c836aeccccf",
+  "id": "documentation/chips/1f57e165-dee2-470d-9ab2-9c836aeccccf",
+  "title": "Costume Equip",
+  "description": "Equip a Player with a costume.",
+  "source": "@site/docs/documentation/chips/1f57e165-dee2-470d-9ab2-9c836aeccccf.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1f57e165-dee2-470d-9ab2-9c836aeccccf",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1f57e165-dee2-470d-9ab2-9c836aeccccf",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1f57e165-dee2-470d-9ab2-9c836aeccccf.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 103,
+  "frontMatter": {
+    "sidebar_position": 103,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Cos",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e8659a59-9e11-4403-8bbc-f4a3961cbf21"
+  },
+  "next": {
+    "title": "Costume Get Wearer",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f28d1a5e-a08c-471b-89e6-5ee6372d9897"
+  }
+}

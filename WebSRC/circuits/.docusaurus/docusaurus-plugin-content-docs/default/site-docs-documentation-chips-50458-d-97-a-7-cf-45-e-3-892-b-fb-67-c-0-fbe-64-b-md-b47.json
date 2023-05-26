@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/50458d97-a7cf-45e3-892b-fb67c0fbe64b",
+  "id": "documentation/chips/50458d97-a7cf-45e3-892b-fb67c0fbe64b",
+  "title": "Ground Vehicle Set Seated Player",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/50458d97-a7cf-45e3-892b-fb67c0fbe64b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/50458d97-a7cf-45e3-892b-fb67c0fbe64b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/50458d97-a7cf-45e3-892b-fb67c0fbe64b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/50458d97-a7cf-45e3-892b-fb67c0fbe64b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 237,
+  "frontMatter": {
+    "sidebar_position": 237,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ground Vehicle Set Engine Torque Multiplier",
+    "permalink": "/Circuits/Website/docs/documentation/chips/128116c8-591f-44bc-97cd-f787d660cfb5"
+  },
+  "next": {
+    "title": "Ground Vehicle Set Wheel Friction Multiplier",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d00aed86-97ac-4717-872e-ca6646ee266d"
+  }
+}

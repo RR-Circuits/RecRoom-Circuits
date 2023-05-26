@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f28d1a5e-a08c-471b-89e6-5ee6372d9897",
+  "id": "documentation/chips/f28d1a5e-a08c-471b-89e6-5ee6372d9897",
+  "title": "Costume Get Wearer",
+  "description": "Get Player wearing a costume.",
+  "source": "@site/docs/documentation/chips/f28d1a5e-a08c-471b-89e6-5ee6372d9897.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f28d1a5e-a08c-471b-89e6-5ee6372d9897",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f28d1a5e-a08c-471b-89e6-5ee6372d9897",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f28d1a5e-a08c-471b-89e6-5ee6372d9897.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 104,
+  "frontMatter": {
+    "sidebar_position": 104,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Costume Equip",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1f57e165-dee2-470d-9ab2-9c836aeccccf"
+  },
+  "next": {
+    "title": "Costume Unequip",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d5070b89-da23-4e4b-848c-07bb22c0420e"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b38f186d-67b3-44a1-8a95-120123ddb182",
+  "id": "documentation/chips/b38f186d-67b3-44a1-8a95-120123ddb182",
+  "title": "Room Sun Reset",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/b38f186d-67b3-44a1-8a95-120123ddb182.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b38f186d-67b3-44a1-8a95-120123ddb182",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b38f186d-67b3-44a1-8a95-120123ddb182",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b38f186d-67b3-44a1-8a95-120123ddb182.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 495,
+  "frontMatter": {
+    "sidebar_position": 495,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Room Skydome Reset",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b17f7045-6fa5-4fc5-84d5-def4f78d4f45"
+  },
+  "next": {
+    "title": "Root",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8b96e472-2b19-4265-aade-2c6202358d86"
+  }
+}

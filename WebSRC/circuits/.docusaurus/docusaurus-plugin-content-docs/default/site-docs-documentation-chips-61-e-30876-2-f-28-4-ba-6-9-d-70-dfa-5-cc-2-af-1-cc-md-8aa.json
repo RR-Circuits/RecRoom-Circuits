@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/61e30876-2f28-4ba6-9d70-dfa5cc2af1cc",
+  "id": "documentation/chips/61e30876-2f28-4ba6-9d70-dfa5cc2af1cc",
+  "title": "Room Index Get Player",
+  "description": "Returns the player in the room with this unique index, bounded by the room capacity.",
+  "source": "@site/docs/documentation/chips/61e30876-2f28-4ba6-9d70-dfa5cc2af1cc.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/61e30876-2f28-4ba6-9d70-dfa5cc2af1cc",
+  "permalink": "/Circuits/Website/docs/documentation/chips/61e30876-2f28-4ba6-9d70-dfa5cc2af1cc",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/61e30876-2f28-4ba6-9d70-dfa5cc2af1cc.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 491,
+  "frontMatter": {
+    "sidebar_position": 491,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Room Get Matchmaking State",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2d358c91-9000-4851-ad37-65759a135ab7"
+  },
+  "next": {
+    "title": "Room Set Matchmaking State",
+    "permalink": "/Circuits/Website/docs/documentation/chips/be4decd2-56a0-46af-8e96-091261946fd9"
+  }
+}

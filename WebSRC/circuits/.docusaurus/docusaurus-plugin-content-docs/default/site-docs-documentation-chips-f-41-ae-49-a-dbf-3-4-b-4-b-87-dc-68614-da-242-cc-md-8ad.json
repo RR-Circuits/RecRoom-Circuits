@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f41ae49a-dbf3-4b4b-87dc-68614da242cc",
+  "id": "documentation/chips/f41ae49a-dbf3-4b4b-87dc-68614da242cc",
+  "title": "Ground Vehicle Get Driving Enabled",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/f41ae49a-dbf3-4b4b-87dc-68614da242cc.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f41ae49a-dbf3-4b4b-87dc-68614da242cc",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f41ae49a-dbf3-4b4b-87dc-68614da242cc",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f41ae49a-dbf3-4b4b-87dc-68614da242cc.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 231,
+  "frontMatter": {
+    "sidebar_position": 231,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ground Vehicle Get Boost Fuel",
+    "permalink": "/Circuits/Website/docs/documentation/chips/76d46244-7b8e-43de-bd8c-55375411ffe1"
+  },
+  "next": {
+    "title": "Ground Vehicle Get Engine Torque Multiplier",
+    "permalink": "/Circuits/Website/docs/documentation/chips/390257d5-e382-4416-81f7-40562d5473d3"
+  }
+}

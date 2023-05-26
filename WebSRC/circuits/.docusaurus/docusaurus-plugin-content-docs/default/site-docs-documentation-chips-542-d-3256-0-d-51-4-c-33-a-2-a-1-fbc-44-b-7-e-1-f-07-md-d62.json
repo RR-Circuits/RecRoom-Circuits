@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07",
+  "id": "documentation/chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07",
+  "title": "List Create",
+  "description": "Creates a list from input values. Add more inputs by using the configure tool on the node and press \"Add Input\". All items in a list must be of the same type.",
+  "source": "@site/docs/documentation/chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07",
+  "permalink": "/Circuits/Website/docs/documentation/chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 355,
+  "frontMatter": {
+    "sidebar_position": 355,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Log String",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4047a8cc-3dcc-4fa8-85a7-41d569b8e547"
+  },
+  "next": {
+    "title": "Make Tuple",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bee72c1d-266b-4ea4-b185-7500618030c6"
+  }
+}

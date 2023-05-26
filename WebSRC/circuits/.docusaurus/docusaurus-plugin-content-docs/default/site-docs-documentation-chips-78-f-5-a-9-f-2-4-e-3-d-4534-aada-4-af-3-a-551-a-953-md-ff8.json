@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/78f5a9f2-4e3d-4534-aada-4af3a551a953",
+  "id": "documentation/chips/78f5a9f2-4e3d-4534-aada-4af3a551a953",
+  "title": "Get Broadcasting Attendance",
+  "description": "Outputs player counts if you're in an event that's actively broadcasting.",
+  "source": "@site/docs/documentation/chips/78f5a9f2-4e3d-4534-aada-4af3a551a953.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/78f5a9f2-4e3d-4534-aada-4af3a551a953",
+  "permalink": "/Circuits/Website/docs/documentation/chips/78f5a9f2-4e3d-4534-aada-4af3a551a953",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/78f5a9f2-4e3d-4534-aada-4af3a551a953.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 167,
+  "frontMatter": {
+    "sidebar_position": 167,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Currency Balance",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a4b0c860-e7f0-4abf-ad7c-9be1805c3d01"
+  },
+  "next": {
+    "title": "Get Closest",
+    "permalink": "/Circuits/Website/docs/documentation/chips/49fa5928-1af5-49e3-96d0-5ae67e6d81c9"
+  }
+}

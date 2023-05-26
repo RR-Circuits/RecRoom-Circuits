@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ce696294-0c85-4823-8fe3-5fd6a41df2c9",
+  "id": "documentation/chips/ce696294-0c85-4823-8fe3-5fd6a41df2c9",
+  "title": "Gun Handle Get Reload Duration",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/ce696294-0c85-4823-8fe3-5fd6a41df2c9.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ce696294-0c85-4823-8fe3-5fd6a41df2c9",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ce696294-0c85-4823-8fe3-5fd6a41df2c9",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/ce696294-0c85-4823-8fe3-5fd6a41df2c9.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 249,
+  "frontMatter": {
+    "sidebar_position": 249,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gun Handle Get Rate Of Fire",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a06ad097-0666-42ff-ab3d-0f00c383e9a1"
+  },
+  "next": {
+    "title": "Gun Handle Remove Auto Aim Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/16e9da8d-137b-4b51-bc8c-12b32314363b"
+  }
+}

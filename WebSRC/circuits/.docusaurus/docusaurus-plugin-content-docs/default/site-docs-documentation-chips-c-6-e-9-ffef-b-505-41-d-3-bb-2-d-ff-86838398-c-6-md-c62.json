@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c6e9ffef-b505-41d3-bb2d-ff86838398c6",
+  "id": "documentation/chips/c6e9ffef-b505-41d3-bb2d-ff86838398c6",
+  "title": "Background Objects Constant",
+  "description": "Defines values for the room's background objects.",
+  "source": "@site/docs/documentation/chips/c6e9ffef-b505-41d3-bb2d-ff86838398c6.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c6e9ffef-b505-41d3-bb2d-ff86838398c6",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c6e9ffef-b505-41d3-bb2d-ff86838398c6",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c6e9ffef-b505-41d3-bb2d-ff86838398c6.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 47,
+  "frontMatter": {
+    "sidebar_position": 47,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Award Room Key",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7e40f770-c9a4-4233-8845-cac6ec99ae67"
+  },
+  "next": {
+    "title": "Beacon Get Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5f7cd28c-bafc-409d-8872-f21ccec5f022"
+  }
+}

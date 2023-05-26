@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b394650e-7673-40a3-8b9e-3aa8eaa2a77e",
+  "id": "documentation/chips/b394650e-7673-40a3-8b9e-3aa8eaa2a77e",
+  "title": "String Replace",
+  "description": "Replaces all instances of pattern within string with replacement.",
+  "source": "@site/docs/documentation/chips/b394650e-7673-40a3-8b9e-3aa8eaa2a77e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b394650e-7673-40a3-8b9e-3aa8eaa2a77e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b394650e-7673-40a3-8b9e-3aa8eaa2a77e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b394650e-7673-40a3-8b9e-3aa8eaa2a77e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 577,
+  "frontMatter": {
+    "sidebar_position": 577,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "string Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/66b6ea20-9a00-4f80-9636-2cfb676b3965"
+  },
+  "next": {
+    "title": "String Split",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ad169649-1050-48c5-a540-f03a2059bcdb"
+  }
+}

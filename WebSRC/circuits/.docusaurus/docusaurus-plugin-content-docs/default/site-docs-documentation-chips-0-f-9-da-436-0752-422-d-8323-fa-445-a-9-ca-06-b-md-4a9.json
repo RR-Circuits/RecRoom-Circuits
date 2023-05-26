@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0f9da436-0752-422d-8323-fa445a9ca06b",
+  "id": "documentation/chips/0f9da436-0752-422d-8323-fa445a9ca06b",
+  "title": "Rotator Set Target Rotation",
+  "description": "Sets the rotation of the Marker on a target Rotator.",
+  "source": "@site/docs/documentation/chips/0f9da436-0752-422d-8323-fa445a9ca06b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0f9da436-0752-422d-8323-fa445a9ca06b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0f9da436-0752-422d-8323-fa445a9ca06b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0f9da436-0752-422d-8323-fa445a9ca06b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 501,
+  "frontMatter": {
+    "sidebar_position": 501,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rotator Get Rotation Speed",
+    "permalink": "/Circuits/Website/docs/documentation/chips/be834de9-91cb-4588-8988-3a6abfd56573"
+  },
+  "next": {
+    "title": "Rotator Set Rotation Acceleration",
+    "permalink": "/Circuits/Website/docs/documentation/chips/db29fd41-9fb5-4c2a-8c72-c8d327b0f23f"
+  }
+}

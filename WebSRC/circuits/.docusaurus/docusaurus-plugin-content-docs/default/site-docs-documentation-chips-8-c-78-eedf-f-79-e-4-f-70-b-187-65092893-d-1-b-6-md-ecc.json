@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8c78eedf-f79e-4f70-b187-65092893d1b6",
+  "id": "documentation/chips/8c78eedf-f79e-4f70-b187-65092893d1b6",
+  "title": "Less or Equal",
+  "description": "Returns True if input A is less than or equal to input B.",
+  "source": "@site/docs/documentation/chips/8c78eedf-f79e-4f70-b187-65092893d1b6.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8c78eedf-f79e-4f70-b187-65092893d1b6",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8c78eedf-f79e-4f70-b187-65092893d1b6",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8c78eedf-f79e-4f70-b187-65092893d1b6.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 297,
+  "frontMatter": {
+    "sidebar_position": 297,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Less or Equal",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a027073f-9189-457f-a53d-8562e8829daf"
+  },
+  "next": {
+    "title": "Light Get Angle",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8a6c0623-7585-402c-8734-7fa7248b15a0"
+  }
+}

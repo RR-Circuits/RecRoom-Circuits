@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f258d689-3341-4383-a8f1-73ab7b2f37a1",
+  "id": "documentation/chips/f258d689-3341-4383-a8f1-73ab7b2f37a1",
+  "title": "Set HUD Element Max Value",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/f258d689-3341-4383-a8f1-73ab7b2f37a1.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f258d689-3341-4383-a8f1-73ab7b2f37a1",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f258d689-3341-4383-a8f1-73ab7b2f37a1",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f258d689-3341-4383-a8f1-73ab7b2f37a1.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 521,
+  "frontMatter": {
+    "sidebar_position": 521,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Set HUD Element Label",
+    "permalink": "/Circuits/Website/docs/documentation/chips/04fb09fa-5be2-491b-9d16-d5b21083f528"
+  },
+  "next": {
+    "title": "Set HUD Element Value",
+    "permalink": "/Circuits/Website/docs/documentation/chips/61efbc78-9ddf-42bb-814a-3758a34f5faf"
+  }
+}

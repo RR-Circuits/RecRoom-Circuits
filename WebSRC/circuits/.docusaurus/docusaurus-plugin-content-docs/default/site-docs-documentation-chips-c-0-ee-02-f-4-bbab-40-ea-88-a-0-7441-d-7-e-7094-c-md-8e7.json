@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c0ee02f4-bbab-40ea-88a0-7441d7e7094c",
+  "id": "documentation/chips/c0ee02f4-bbab-40ea-88a0-7441d7e7094c",
+  "title": "Combatant Get Ground Position",
+  "description": "Outputs the ground position of an input combatant.",
+  "source": "@site/docs/documentation/chips/c0ee02f4-bbab-40ea-88a0-7441d7e7094c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c0ee02f4-bbab-40ea-88a0-7441d7e7094c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c0ee02f4-bbab-40ea-88a0-7441d7e7094c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c0ee02f4-bbab-40ea-88a0-7441d7e7094c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 89,
+  "frontMatter": {
+    "sidebar_position": 89,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Color To RGB",
+    "permalink": "/Circuits/Website/docs/documentation/chips/52565e5d-73d1-4f29-bca7-0c8ae9afcc57"
+  },
+  "next": {
+    "title": "Combatant Get Health",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3967a8ad-4237-4ae7-8cbf-850d8e24fe30"
+  }
+}

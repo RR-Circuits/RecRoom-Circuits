@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/04a31ca5-91d2-4a69-bf3d-484d18411cc0",
+  "id": "documentation/chips/04a31ca5-91d2-4a69-bf3d-484d18411cc0",
+  "title": "float Variable",
+  "description": "Reads or writes a variable in the current scope based on the name.",
+  "source": "@site/docs/documentation/chips/04a31ca5-91d2-4a69-bf3d-484d18411cc0.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/04a31ca5-91d2-4a69-bf3d-484d18411cc0",
+  "permalink": "/Circuits/Website/docs/documentation/chips/04a31ca5-91d2-4a69-bf3d-484d18411cc0",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/04a31ca5-91d2-4a69-bf3d-484d18411cc0.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 155,
+  "frontMatter": {
+    "sidebar_position": 155,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Explosion Emitter Set Explosion Radius",
+    "permalink": "/Circuits/Website/docs/documentation/chips/672e473f-7099-4f76-aead-8b3df7c2fcd2"
+  },
+  "next": {
+    "title": "Floor",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c90d9339-cdce-4d22-a885-f142fd5567ab"
+  }
+}

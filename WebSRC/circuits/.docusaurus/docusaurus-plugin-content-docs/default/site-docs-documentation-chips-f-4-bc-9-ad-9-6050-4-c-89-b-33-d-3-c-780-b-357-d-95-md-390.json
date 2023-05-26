@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f4bc9ad9-6050-4c89-b33d-3c780b357d95",
+  "id": "documentation/chips/f4bc9ad9-6050-4c89-b33d-3c780b357d95",
+  "title": "Trigger Handle Set Control Prompt",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/f4bc9ad9-6050-4c89-b33d-3c780b357d95.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f4bc9ad9-6050-4c89-b33d-3c780b357d95",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f4bc9ad9-6050-4c89-b33d-3c780b357d95",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f4bc9ad9-6050-4c89-b33d-3c780b357d95.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 628,
+  "frontMatter": {
+    "sidebar_position": 628,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trigger Handle Get Primary Action Held",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b309c032-1bcd-4ca1-83cf-b8871e65fb16"
+  },
+  "next": {
+    "title": "Trigger Volume Get Filter Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b49c4e16-93c5-45c3-b457-fb960c661bc5"
+  }
+}

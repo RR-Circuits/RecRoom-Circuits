@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e320278c-13f0-4fe3-b838-7e671bdd9b49",
+  "id": "documentation/chips/e320278c-13f0-4fe3-b838-7e671bdd9b49",
+  "title": "Quaternion Create Euler Angles",
+  "description": "Creates a quaternion from an input Vector3.",
+  "source": "@site/docs/documentation/chips/e320278c-13f0-4fe3-b838-7e671bdd9b49.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e320278c-13f0-4fe3-b838-7e671bdd9b49",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e320278c-13f0-4fe3-b838-7e671bdd9b49",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e320278c-13f0-4fe3-b838-7e671bdd9b49.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 459,
+  "frontMatter": {
+    "sidebar_position": 459,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Create Angle Axis",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d9096fb3-50c6-42f9-93bb-fc6df63d86a8"
+  },
+  "next": {
+    "title": "Quaternion Create From To",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1069c5de-c7e3-40e0-bd90-52135873b36d"
+  }
+}

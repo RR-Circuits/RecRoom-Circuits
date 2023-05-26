@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e218e55a-3307-4839-a3d4-b7cc72e1e3bc",
+  "id": "documentation/chips/e218e55a-3307-4839-a3d4-b7cc72e1e3bc",
+  "title": "Light Get Range",
+  "description": "Returns the range of the target light.",
+  "source": "@site/docs/documentation/chips/e218e55a-3307-4839-a3d4-b7cc72e1e3bc.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e218e55a-3307-4839-a3d4-b7cc72e1e3bc",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e218e55a-3307-4839-a3d4-b7cc72e1e3bc",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e218e55a-3307-4839-a3d4-b7cc72e1e3bc.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 302,
+  "frontMatter": {
+    "sidebar_position": 302,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Light Get Intensity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/67bf3eac-2273-4345-94b3-8288f63f9a0e"
+  },
+  "next": {
+    "title": "Light Get Softness",
+    "permalink": "/Circuits/Website/docs/documentation/chips/afc674dc-06b5-44fc-9d01-95d8ca56db41"
+  }
+}

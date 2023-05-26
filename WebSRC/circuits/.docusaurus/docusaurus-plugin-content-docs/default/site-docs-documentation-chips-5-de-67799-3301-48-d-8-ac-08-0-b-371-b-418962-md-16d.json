@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/5de67799-3301-48d8-ac08-0b371b418962",
+  "id": "documentation/chips/5de67799-3301-48d8-ac08-0b371b418962",
+  "title": "Player Body Position",
+  "description": "Outputs the postion of a Player's body in world space.",
+  "source": "@site/docs/documentation/chips/5de67799-3301-48d8-ac08-0b371b418962.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/5de67799-3301-48d8-ac08-0b371b418962",
+  "permalink": "/Circuits/Website/docs/documentation/chips/5de67799-3301-48d8-ac08-0b371b418962",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/5de67799-3301-48d8-ac08-0b371b418962.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 387,
+  "frontMatter": {
+    "sidebar_position": 387,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Body Orientation",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d5f0503f-eee6-4a2a-811d-33ead7122bd3"
+  },
+  "next": {
+    "title": "Player Definition Board",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4c9e7840-0721-4d1c-b334-167f79d3bf40"
+  }
+}

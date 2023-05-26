@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/81b08e44-0a1e-40da-b8a1-79f416691dcf",
+  "id": "documentation/chips/81b08e44-0a1e-40da-b8a1-79f416691dcf",
+  "title": "Combatant Split",
+  "description": "Splits the input Combatant into Player and AI types. Use this off of Combatant outputs to directly access the Player or AI.",
+  "source": "@site/docs/documentation/chips/81b08e44-0a1e-40da-b8a1-79f416691dcf.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/81b08e44-0a1e-40da-b8a1-79f416691dcf",
+  "permalink": "/Circuits/Website/docs/documentation/chips/81b08e44-0a1e-40da-b8a1-79f416691dcf",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/81b08e44-0a1e-40da-b8a1-79f416691dcf.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 97,
+  "frontMatter": {
+    "sidebar_position": 97,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Combatant Set Max Health",
+    "permalink": "/Circuits/Website/docs/documentation/chips/82f71bcc-5e83-4825-8306-6a2bb2a296dd"
+  },
+  "next": {
+    "title": "i",
+    "permalink": "/Circuits/Website/docs/documentation/chips/83623f53-86b2-477d-bb2f-fe68f68ba617"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/36ad6c98-0fb8-43a0-bf8d-0784394d2d28",
+  "id": "documentation/chips/36ad6c98-0fb8-43a0-bf8d-0784394d2d28",
+  "title": "Get Player World UI Enabled",
+  "description": "Returns the enabled state of the given player's world UI.",
+  "source": "@site/docs/documentation/chips/36ad6c98-0fb8-43a0-bf8d-0784394d2d28.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/36ad6c98-0fb8-43a0-bf8d-0784394d2d28",
+  "permalink": "/Circuits/Website/docs/documentation/chips/36ad6c98-0fb8-43a0-bf8d-0784394d2d28",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/36ad6c98-0fb8-43a0-bf8d-0784394d2d28.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 197,
+  "frontMatter": {
+    "sidebar_position": 197,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get All Players With Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1c0a6bd4-bcac-40a9-8bae-fceff7ff7cff"
+  },
+  "next": {
+    "title": "Get Player World UI Primary Bar Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/72101b8c-e522-43ad-ad96-7332f7962c10"
+  }
+}

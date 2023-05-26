@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/a05cd0de-609a-4d92-93ad-65b635306233",
+  "id": "documentation/chips/a05cd0de-609a-4d92-93ad-65b635306233",
+  "title": "Less Than",
+  "description": "Returns True if input A is less than input B.",
+  "source": "@site/docs/documentation/chips/a05cd0de-609a-4d92-93ad-65b635306233.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/a05cd0de-609a-4d92-93ad-65b635306233",
+  "permalink": "/Circuits/Website/docs/documentation/chips/a05cd0de-609a-4d92-93ad-65b635306233",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/a05cd0de-609a-4d92-93ad-65b635306233.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 295,
+  "frontMatter": {
+    "sidebar_position": 295,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Less Than",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7e58b3f4-2694-4ced-b3a8-0fe23f48f60f"
+  },
+  "next": {
+    "title": "Less or Equal",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a027073f-9189-457f-a53d-8562e8829daf"
+  }
+}

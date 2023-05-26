@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/73f261e2-d65d-4607-858d-3f4c37c76963",
+  "id": "documentation/chips/73f261e2-d65d-4607-858d-3f4c37c76963",
+  "title": "List Contains",
+  "description": "Outputs True if the target list contains the input value.",
+  "source": "@site/docs/documentation/chips/73f261e2-d65d-4607-858d-3f4c37c76963.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/73f261e2-d65d-4607-858d-3f4c37c76963",
+  "permalink": "/Circuits/Website/docs/documentation/chips/73f261e2-d65d-4607-858d-3f4c37c76963",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/73f261e2-d65d-4607-858d-3f4c37c76963.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 323,
+  "frontMatter": {
+    "sidebar_position": 323,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Concat",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0e2f21e0-bc71-423a-a983-72e27193ca8b"
+  },
+  "next": {
+    "title": "List Copy",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b336b889-407a-45c8-ad82-a89f4e033c05"
+  }
+}

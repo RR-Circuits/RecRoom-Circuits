@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/be2f38d2-c6cb-4d9a-b74d-0a664c216a7b",
+  "id": "documentation/chips/be2f38d2-c6cb-4d9a-b74d-0a664c216a7b",
+  "title": "Player Get Radio Channel",
+  "description": "Get the radio channel number of a player. If a player is not in any, this node returns -1",
+  "source": "@site/docs/documentation/chips/be2f38d2-c6cb-4d9a-b74d-0a664c216a7b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/be2f38d2-c6cb-4d9a-b74d-0a664c216a7b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/be2f38d2-c6cb-4d9a-b74d-0a664c216a7b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/be2f38d2-c6cb-4d9a-b74d-0a664c216a7b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 397,
+  "frontMatter": {
+    "sidebar_position": 397,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Get Is Local",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4646dbed-e616-470e-8e0c-eb446b91838b"
+  },
+  "next": {
+    "title": "Player Get Room Index",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7683e201-29d3-44d4-abb4-d75ef9233faa"
+  }
+}

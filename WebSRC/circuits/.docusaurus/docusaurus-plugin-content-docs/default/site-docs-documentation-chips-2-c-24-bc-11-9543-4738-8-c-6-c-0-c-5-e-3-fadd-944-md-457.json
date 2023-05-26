@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/2c24bc11-9543-4738-8c6c-0c5e3fadd944",
+  "id": "documentation/chips/2c24bc11-9543-4738-8c6c-0c5e3fadd944",
+  "title": "Bit Or",
+  "description": "Computes a bitwise OR. The result has a bit set for every bit that is set in either of the inputs.",
+  "source": "@site/docs/documentation/chips/2c24bc11-9543-4738-8c6c-0c5e3fadd944.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/2c24bc11-9543-4738-8c6c-0c5e3fadd944",
+  "permalink": "/Circuits/Website/docs/documentation/chips/2c24bc11-9543-4738-8c6c-0c5e3fadd944",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/2c24bc11-9543-4738-8c6c-0c5e3fadd944.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 58,
+  "frontMatter": {
+    "sidebar_position": 58,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bit Not",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ec74ea41-24e5-491c-8919-a502638583f9"
+  },
+  "next": {
+    "title": "Bit Pop Count",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6982e235-5814-4c5a-8bc8-fdbcc9a73eb8"
+  }
+}

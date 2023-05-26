@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ce3cbe60-7983-4458-b44a-738ea7036155",
+  "id": "documentation/chips/ce3cbe60-7983-4458-b44a-738ea7036155",
+  "title": "Music",
+  "description": "Choose from a selection of music tracks, for use with the Audio Player.",
+  "source": "@site/docs/documentation/chips/ce3cbe60-7983-4458-b44a-738ea7036155.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ce3cbe60-7983-4458-b44a-738ea7036155",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ce3cbe60-7983-4458-b44a-738ea7036155",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/ce3cbe60-7983-4458-b44a-738ea7036155.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 361,
+  "frontMatter": {
+    "sidebar_position": 361,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Multiply",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4738d696-d05a-42ee-a182-7641c429ae06"
+  },
+  "next": {
+    "title": "Nand",
+    "permalink": "/Circuits/Website/docs/documentation/chips/502e86d1-5b3a-4213-97e2-df25836ffcc4"
+  }
+}

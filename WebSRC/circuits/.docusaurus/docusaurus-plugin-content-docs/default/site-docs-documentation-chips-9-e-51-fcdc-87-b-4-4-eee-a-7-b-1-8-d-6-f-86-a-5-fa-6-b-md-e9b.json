@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/9e51fcdc-87b4-4eee-a7b1-8d6f86a5fa6b",
+  "id": "documentation/chips/9e51fcdc-87b4-4eee-a7b1-8d6f86a5fa6b",
+  "title": "Rec Room Object Get Authority",
+  "description": "Outputs the authority Player of the input object.",
+  "source": "@site/docs/documentation/chips/9e51fcdc-87b4-4eee-a7b1-8d6f86a5fa6b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/9e51fcdc-87b4-4eee-a7b1-8d6f86a5fa6b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/9e51fcdc-87b4-4eee-a7b1-8d6f86a5fa6b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/9e51fcdc-87b4-4eee-a7b1-8d6f86a5fa6b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 107,
+  "frontMatter": {
+    "sidebar_position": 107,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rec Room Object Get All with Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/02d69553-ae96-4c2d-8477-59ada6a66783"
+  },
+  "next": {
+    "title": "Rec Room Object Get First with Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/43ff2d3c-c3aa-45bc-a7b7-01587c8a61f6"
+  }
+}

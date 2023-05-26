@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6bd92538-6889-41f3-b819-9511e6f81944",
+  "id": "documentation/chips/6bd92538-6889-41f3-b819-9511e6f81944",
+  "title": "Vector3 Cross",
+  "description": "The cross product of two vectors results in a third vector which is perpendicular to the two input vectors.",
+  "source": "@site/docs/documentation/chips/6bd92538-6889-41f3-b819-9511e6f81944.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6bd92538-6889-41f3-b819-9511e6f81944",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6bd92538-6889-41f3-b819-9511e6f81944",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6bd92538-6889-41f3-b819-9511e6f81944.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 639,
+  "frontMatter": {
+    "sidebar_position": 639,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Value String Switch",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2c9dcd54-dd65-498e-8a13-50c221448358"
+  },
+  "next": {
+    "title": "Vector3 Dot",
+    "permalink": "/Circuits/Website/docs/documentation/chips/498c4e25-f73b-49a6-912e-ae148ed50dca"
+  }
+}

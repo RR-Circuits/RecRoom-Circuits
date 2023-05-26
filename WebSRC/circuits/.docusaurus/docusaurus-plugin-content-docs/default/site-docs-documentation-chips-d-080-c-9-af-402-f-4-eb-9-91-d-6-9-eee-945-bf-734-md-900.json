@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d080c9af-402f-4eb9-91d6-9eee945bf734",
+  "id": "documentation/chips/d080c9af-402f-4eb9-91d6-9eee945bf734",
+  "title": "List Sum",
+  "description": "Adds each element in the list by the next element.",
+  "source": "@site/docs/documentation/chips/d080c9af-402f-4eb9-91d6-9eee945bf734.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d080c9af-402f-4eb9-91d6-9eee945bf734",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d080c9af-402f-4eb9-91d6-9eee945bf734",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d080c9af-402f-4eb9-91d6-9eee945bf734.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 346,
+  "frontMatter": {
+    "sidebar_position": 346,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Subtract",
+    "permalink": "/Circuits/Website/docs/documentation/chips/20f069cb-30e5-4df8-8e2f-d91f322a83dd"
+  },
+  "next": {
+    "title": "List[Vector3] Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/35f84cfc-b10e-451e-832e-c6ad8d99685d"
+  }
+}

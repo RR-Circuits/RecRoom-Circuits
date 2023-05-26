@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c19eff8a-980c-444a-983f-bb4c53a94daf",
+  "id": "documentation/chips/c19eff8a-980c-444a-983f-bb4c53a94daf",
+  "title": "Get Local Camera Position",
+  "description": "Gets the position of your avatar's view, output as a Vector3.",
+  "source": "@site/docs/documentation/chips/c19eff8a-980c-444a-983f-bb4c53a94daf.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c19eff8a-980c-444a-983f-bb4c53a94daf",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c19eff8a-980c-444a-983f-bb4c53a94daf",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c19eff8a-980c-444a-983f-bb4c53a94daf.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 184,
+  "frontMatter": {
+    "sidebar_position": 184,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Local Camera Rotation",
+    "permalink": "/Circuits/Website/docs/documentation/chips/912f0e1b-267d-4424-8002-3f82a2d835fe"
+  },
+  "next": {
+    "title": "Get Local Camera Up",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5d9da95f-a64f-4660-a11f-bf0855769659"
+  }
+}

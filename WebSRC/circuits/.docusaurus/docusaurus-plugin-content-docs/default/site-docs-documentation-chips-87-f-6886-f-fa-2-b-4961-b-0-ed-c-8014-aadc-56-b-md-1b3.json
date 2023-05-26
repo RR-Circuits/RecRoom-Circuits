@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/87f6886f-fa2b-4961-b0ed-c8014aadc56b",
+  "id": "documentation/chips/87f6886f-fa2b-4961-b0ed-c8014aadc56b",
+  "title": "Angular Velocity Add (Deprecated)",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/87f6886f-fa2b-4961-b0ed-c8014aadc56b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/87f6886f-fa2b-4961-b0ed-c8014aadc56b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/87f6886f-fa2b-4961-b0ed-c8014aadc56b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/87f6886f-fa2b-4961-b0ed-c8014aadc56b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 23,
+  "frontMatter": {
+    "sidebar_position": 23,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "And",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3fb9fd93-8d45-4395-b9a3-63a99a14442b"
+  },
+  "next": {
+    "title": "Angular Velocity Add",
+    "permalink": "/Circuits/Website/docs/documentation/chips/956ccd66-4406-42a3-b08c-78d3efdd5fec"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6b92c345-e6bc-40d9-aae9-4754e634777c",
+  "id": "documentation/chips/6b92c345-e6bc-40d9-aae9-4754e634777c",
+  "title": "String Split At Index",
+  "description": "Splits the target string in two at the input index.",
+  "source": "@site/docs/documentation/chips/6b92c345-e6bc-40d9-aae9-4754e634777c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6b92c345-e6bc-40d9-aae9-4754e634777c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6b92c345-e6bc-40d9-aae9-4754e634777c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6b92c345-e6bc-40d9-aae9-4754e634777c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 579,
+  "frontMatter": {
+    "sidebar_position": 579,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "String Split",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ad169649-1050-48c5-a540-f03a2059bcdb"
+  },
+  "next": {
+    "title": "String Split Whitespace",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7695ff77-5b9d-4a41-a894-6602b98f289f"
+  }
+}

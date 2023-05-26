@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/bd013fe7-3799-46b5-b1f3-66a3f5add5ed",
+  "id": "documentation/chips/bd013fe7-3799-46b5-b1f3-66a3f5add5ed",
+  "title": "Bit Rotate Left",
+  "description": "Rotates digits in the binary representation of an integer to the left. As the leftmost bits fall off, they are used to fill the rightmost bits.",
+  "source": "@site/docs/documentation/chips/bd013fe7-3799-46b5-b1f3-66a3f5add5ed.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/bd013fe7-3799-46b5-b1f3-66a3f5add5ed",
+  "permalink": "/Circuits/Website/docs/documentation/chips/bd013fe7-3799-46b5-b1f3-66a3f5add5ed",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/bd013fe7-3799-46b5-b1f3-66a3f5add5ed.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 60,
+  "frontMatter": {
+    "sidebar_position": 60,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bit Pop Count",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6982e235-5814-4c5a-8bc8-fdbcc9a73eb8"
+  },
+  "next": {
+    "title": "Bit Rotate Right",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b5f36fdf-0a2e-489a-bbdf-f17c50974cc1"
+  }
+}

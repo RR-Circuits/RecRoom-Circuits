@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8ea2fd23-02c2-4055-ab39-68acd0b6ce67",
+  "id": "documentation/chips/8ea2fd23-02c2-4055-ab39-68acd0b6ce67",
+  "title": "Trigger Handle Get Control Prompt",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/8ea2fd23-02c2-4055-ab39-68acd0b6ce67.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8ea2fd23-02c2-4055-ab39-68acd0b6ce67",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8ea2fd23-02c2-4055-ab39-68acd0b6ce67",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8ea2fd23-02c2-4055-ab39-68acd0b6ce67.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 626,
+  "frontMatter": {
+    "sidebar_position": 626,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trail Set Opacity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bb79cf12-6d38-4691-a004-c2b3ad963374"
+  },
+  "next": {
+    "title": "Trigger Handle Get Primary Action Held",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b309c032-1bcd-4ca1-83cf-b8871e65fb16"
+  }
+}

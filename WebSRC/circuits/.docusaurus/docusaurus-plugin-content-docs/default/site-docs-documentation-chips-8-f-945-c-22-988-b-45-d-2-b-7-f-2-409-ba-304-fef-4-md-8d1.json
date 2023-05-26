@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/8f945c22-988b-45d2-b7f2-409ba304fef4",
+  "id": "documentation/chips/8f945c22-988b-45d2-b7f2-409ba304fef4",
+  "title": "For",
+  "description": "Iterates over the \"From\" pin (inclusive) to the \"To\" pin (exclusive).",
+  "source": "@site/docs/documentation/chips/8f945c22-988b-45d2-b7f2-409ba304fef4.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/8f945c22-988b-45d2-b7f2-409ba304fef4",
+  "permalink": "/Circuits/Website/docs/documentation/chips/8f945c22-988b-45d2-b7f2-409ba304fef4",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/8f945c22-988b-45d2-b7f2-409ba304fef4.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 161,
+  "frontMatter": {
+    "sidebar_position": 161,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "For Each",
+    "permalink": "/Circuits/Website/docs/documentation/chips/744e5311-6cc7-4130-962e-fe050a475d43"
+  },
+  "next": {
+    "title": "From Rec Room Object",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7ff685a6-f59c-4c6c-b559-f343d81ea1d4"
+  }
+}

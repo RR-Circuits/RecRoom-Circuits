@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0c351297-db4d-43e7-81a3-95dc5ddde401",
+  "id": "documentation/chips/0c351297-db4d-43e7-81a3-95dc5ddde401",
+  "title": "Interaction Volume Get Interaction Prompt",
+  "description": "Gets the interaction promt of an Interaction Volume.",
+  "source": "@site/docs/documentation/chips/0c351297-db4d-43e7-81a3-95dc5ddde401.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0c351297-db4d-43e7-81a3-95dc5ddde401",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0c351297-db4d-43e7-81a3-95dc5ddde401",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0c351297-db4d-43e7-81a3-95dc5ddde401.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 269,
+  "frontMatter": {
+    "sidebar_position": 269,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Velocity Set",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f97c530d-03bf-498c-8854-33e814d2600b"
+  },
+  "next": {
+    "title": "Interaction Volume Get Is Locked",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c536089c-e2c3-4a6a-a4fa-aba8dca6b810"
+  }
+}

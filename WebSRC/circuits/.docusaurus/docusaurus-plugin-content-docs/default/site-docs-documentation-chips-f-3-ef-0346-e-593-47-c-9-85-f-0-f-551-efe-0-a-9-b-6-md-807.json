@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f3ef0346-e593-47c9-85f0-f551efe0a9b6",
+  "id": "documentation/chips/f3ef0346-e593-47c9-85f0-f551efe0a9b6",
+  "title": "Gun Handle Get Is Reloading",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/f3ef0346-e593-47c9-85f0-f551efe0a9b6.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f3ef0346-e593-47c9-85f0-f551efe0a9b6",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f3ef0346-e593-47c9-85f0-f551efe0a9b6",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f3ef0346-e593-47c9-85f0-f551efe0a9b6.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 246,
+  "frontMatter": {
+    "sidebar_position": 246,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gun Handle Get Firing Direction",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1521eb32-29db-4708-81de-71398c29e76d"
+  },
+  "next": {
+    "title": "Gun Handle Get Max Ammo",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0d6de11b-5487-4e61-9b4b-d6719b3aeb0f"
+  }
+}

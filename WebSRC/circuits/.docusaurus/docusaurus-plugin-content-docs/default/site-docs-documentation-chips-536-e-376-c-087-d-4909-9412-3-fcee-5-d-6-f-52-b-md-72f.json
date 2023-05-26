@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/536e376c-087d-4909-9412-3fcee5d6f52b",
+  "id": "documentation/chips/536e376c-087d-4909-9412-3fcee5d6f52b",
+  "title": "List[Rec Room Object] Variable",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/536e376c-087d-4909-9412-3fcee5d6f52b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/536e376c-087d-4909-9412-3fcee5d6f52b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/536e376c-087d-4909-9412-3fcee5d6f52b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/536e376c-087d-4909-9412-3fcee5d6f52b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 325,
+  "frontMatter": {
+    "sidebar_position": 325,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Copy",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b336b889-407a-45c8-ad82-a89f4e033c05"
+  },
+  "next": {
+    "title": "List[Destination Room] Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fff164aa-d775-4d67-a6b0-d1396cb74161"
+  }
+}

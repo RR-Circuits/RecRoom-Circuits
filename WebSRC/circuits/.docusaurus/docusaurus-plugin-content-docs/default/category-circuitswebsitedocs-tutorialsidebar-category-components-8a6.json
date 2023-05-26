@@ -1,0 +1,16 @@
+{
+  "title": "Components",
+  "description": "A list of rec room components.",
+  "slug": "/category/components",
+  "permalink": "/Circuits/Website/docs/category/components",
+  "navigation": {
+    "previous": {
+      "title": "Welcome Mat Set Enabled",
+      "permalink": "/Circuits/Website/docs/documentation/chips/d503f1b3-7c5e-4eba-85ac-b89be2d2360f"
+    },
+    "next": {
+      "title": "translate-your-site",
+      "permalink": "/Circuits/Website/docs/documentation/components/translate-your-site"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/02c4048a-5f67-47ea-9f00-692f51c66e65",
+  "id": "documentation/chips/02c4048a-5f67-47ea-9f00-692f51c66e65",
+  "title": "Rotate Vector",
+  "description": "Rotate a Vector3 with a Quaternion.",
+  "source": "@site/docs/documentation/chips/02c4048a-5f67-47ea-9f00-692f51c66e65.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/02c4048a-5f67-47ea-9f00-692f51c66e65",
+  "permalink": "/Circuits/Website/docs/documentation/chips/02c4048a-5f67-47ea-9f00-692f51c66e65",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/02c4048a-5f67-47ea-9f00-692f51c66e65.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 470,
+  "frontMatter": {
+    "sidebar_position": 470,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Rotate Towards",
+    "permalink": "/Circuits/Website/docs/documentation/chips/edfe7cbb-6973-4489-9b7a-75746243dd6d"
+  },
+  "next": {
+    "title": "Quaternion Split",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1d2a37e1-428e-4385-bc96-4ad5adff0a05"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b415c3ce-5f9f-472b-8d70-daeb728b7c2d",
+  "id": "documentation/chips/b415c3ce-5f9f-472b-8d70-daeb728b7c2d",
+  "title": "Quaternion Get Angle Axis",
+  "description": "Gets the rotation which rotates angle degrees around axis.",
+  "source": "@site/docs/documentation/chips/b415c3ce-5f9f-472b-8d70-daeb728b7c2d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b415c3ce-5f9f-472b-8d70-daeb728b7c2d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b415c3ce-5f9f-472b-8d70-daeb728b7c2d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b415c3ce-5f9f-472b-8d70-daeb728b7c2d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 465,
+  "frontMatter": {
+    "sidebar_position": 465,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Euler Angles",
+    "permalink": "/Circuits/Website/docs/documentation/chips/81048ea5-2778-4816-99c5-1c50faad8a87"
+  },
+  "next": {
+    "title": "Quaternion Inverse",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2097bef3-9ed1-4601-ab5d-f620654bd1c4"
+  }
+}

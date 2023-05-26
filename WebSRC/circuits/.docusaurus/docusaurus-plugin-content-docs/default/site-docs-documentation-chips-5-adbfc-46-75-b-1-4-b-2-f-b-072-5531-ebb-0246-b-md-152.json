@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/5adbfc46-75b1-4b2f-b072-5531ebb0246b",
+  "id": "documentation/chips/5adbfc46-75b1-4b2f-b072-5531ebb0246b",
+  "title": "Player Head Up Vector",
+  "description": "Outputs the up vector of a Player's head.",
+  "source": "@site/docs/documentation/chips/5adbfc46-75b1-4b2f-b072-5531ebb0246b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/5adbfc46-75b1-4b2f-b072-5531ebb0246b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/5adbfc46-75b1-4b2f-b072-5531ebb0246b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/5adbfc46-75b1-4b2f-b072-5531ebb0246b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 405,
+  "frontMatter": {
+    "sidebar_position": 405,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Head Position",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2f3571aa-53bf-4f52-b8fe-d1c42eda6081"
+  },
+  "next": {
+    "title": "Player Head Velocity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6577e6e8-8039-4843-aba1-993eb6967326"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/54fc909a-a864-4e89-be6e-e7f92b7f275a",
+  "id": "documentation/chips/54fc909a-a864-4e89-be6e-e7f92b7f275a",
+  "title": "Laser Pointer Get Enabled",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/54fc909a-a864-4e89-be6e-e7f92b7f275a.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/54fc909a-a864-4e89-be6e-e7f92b7f275a",
+  "permalink": "/Circuits/Website/docs/documentation/chips/54fc909a-a864-4e89-be6e-e7f92b7f275a",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/54fc909a-a864-4e89-be6e-e7f92b7f275a.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 287,
+  "frontMatter": {
+    "sidebar_position": 287,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Laser Pointer Get Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cb035f05-f3dc-4550-bd64-27cb96bd6be0"
+  },
+  "next": {
+    "title": "Laser Pointer Get Length",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a839c882-9317-4b99-92e6-c3815532b479"
+  }
+}

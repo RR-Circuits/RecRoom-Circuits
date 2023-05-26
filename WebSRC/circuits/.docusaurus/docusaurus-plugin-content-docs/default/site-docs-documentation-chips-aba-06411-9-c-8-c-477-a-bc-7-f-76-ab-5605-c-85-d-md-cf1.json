@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/aba06411-9c8c-477a-bc7f-76ab5605c85d",
+  "id": "documentation/chips/aba06411-9c8c-477a-bc7f-76ab5605c85d",
+  "title": "Player Right Hand Velocity",
+  "description": "Outputs the velocity of a Player's right hand.",
+  "source": "@site/docs/documentation/chips/aba06411-9c8c-477a-bc7f-76ab5605c85d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/aba06411-9c8c-477a-bc7f-76ab5605c85d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/aba06411-9c8c-477a-bc7f-76ab5605c85d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/aba06411-9c8c-477a-bc7f-76ab5605c85d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 428,
+  "frontMatter": {
+    "sidebar_position": 428,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Right Hand Thumb Direction",
+    "permalink": "/Circuits/Website/docs/documentation/chips/86e8581c-ddf9-4302-a06f-c451b5055a98"
+  },
+  "next": {
+    "title": "Player Set Radio Channel",
+    "permalink": "/Circuits/Website/docs/documentation/chips/231d05ba-8577-4d1e-888d-115e657dd525"
+  }
+}

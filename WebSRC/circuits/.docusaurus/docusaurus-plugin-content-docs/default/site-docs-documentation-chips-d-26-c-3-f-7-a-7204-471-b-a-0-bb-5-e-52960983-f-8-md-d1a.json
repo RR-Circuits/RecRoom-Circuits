@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d26c3f7a-7204-471b-a0bb-5e52960983f8",
+  "id": "documentation/chips/d26c3f7a-7204-471b-a0bb-5e52960983f8",
+  "title": "Welcome Mat Get Enabled",
+  "description": "Return whether target welcome mat is enabled (true) or disabled (false)",
+  "source": "@site/docs/documentation/chips/d26c3f7a-7204-471b-a0bb-5e52960983f8.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d26c3f7a-7204-471b-a0bb-5e52960983f8",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d26c3f7a-7204-471b-a0bb-5e52960983f8",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d26c3f7a-7204-471b-a0bb-5e52960983f8.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 650,
+  "frontMatter": {
+    "sidebar_position": 650,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vector3 Split",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2d677241-61b7-45d2-aec2-4a302e3483a0"
+  },
+  "next": {
+    "title": "Welcome Mat Set Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d503f1b3-7c5e-4eba-85ac-b89be2d2360f"
+  }
+}

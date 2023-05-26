@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/5f9f8c85-8aaa-4c9d-9d9d-4c952053b623",
+  "id": "documentation/chips/5f9f8c85-8aaa-4c9d-9d9d-4c952053b623",
+  "title": "Print Text To Screen",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/5f9f8c85-8aaa-4c9d-9d9d-4c952053b623.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/5f9f8c85-8aaa-4c9d-9d9d-4c952053b623",
+  "permalink": "/Circuits/Website/docs/documentation/chips/5f9f8c85-8aaa-4c9d-9d9d-4c952053b623",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/5f9f8c85-8aaa-4c9d-9d9d-4c952053b623.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 605,
+  "frontMatter": {
+    "sidebar_position": 605,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Clear Screen",
+    "permalink": "/Circuits/Website/docs/documentation/chips/142438cd-1bd2-4df2-b2fa-c93aaf99f771"
+  },
+  "next": {
+    "title": "Text Get Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2b28277e-29a1-4b97-b151-2f23ff28c4c2"
+  }
+}

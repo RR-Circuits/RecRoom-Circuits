@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/c1fdc4fa-fcb4-4ea4-b505-7b1d15fb8117",
+  "id": "documentation/chips/c1fdc4fa-fcb4-4ea4-b505-7b1d15fb8117",
+  "title": "Dice Get Player Rolled",
+  "description": "Returns the player who rolled the dice.",
+  "source": "@site/docs/documentation/chips/c1fdc4fa-fcb4-4ea4-b505-7b1d15fb8117.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/c1fdc4fa-fcb4-4ea4-b505-7b1d15fb8117",
+  "permalink": "/Circuits/Website/docs/documentation/chips/c1fdc4fa-fcb4-4ea4-b505-7b1d15fb8117",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/c1fdc4fa-fcb4-4ea4-b505-7b1d15fb8117.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 117,
+  "frontMatter": {
+    "sidebar_position": 117,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Destination Room Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/31eab00d-a6f7-4505-9f84-02d3e1eedd86"
+  },
+  "next": {
+    "title": "Dice Get Result",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c80e2979-c672-4e7a-81fb-0ed1964e3ea6"
+  }
+}

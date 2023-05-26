@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/9fbee635-c6a4-4a02-a67b-295e075db7c9",
+  "id": "documentation/chips/9fbee635-c6a4-4a02-a67b-295e075db7c9",
+  "title": "Emitter Get Playing",
+  "description": "Returns True if the target Emitter is playing.",
+  "source": "@site/docs/documentation/chips/9fbee635-c6a4-4a02-a67b-295e075db7c9.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/9fbee635-c6a4-4a02-a67b-295e075db7c9",
+  "permalink": "/Circuits/Website/docs/documentation/chips/9fbee635-c6a4-4a02-a67b-295e075db7c9",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/9fbee635-c6a4-4a02-a67b-295e075db7c9.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 129,
+  "frontMatter": {
+    "sidebar_position": 129,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Emitter Get Looping",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f8c91da0-bb4f-4958-9016-546a387f45dd"
+  },
+  "next": {
+    "title": "Emitter Get Size",
+    "permalink": "/Circuits/Website/docs/documentation/chips/08c3c01c-2c40-4b92-a913-e5a8cbbbe352"
+  }
+}

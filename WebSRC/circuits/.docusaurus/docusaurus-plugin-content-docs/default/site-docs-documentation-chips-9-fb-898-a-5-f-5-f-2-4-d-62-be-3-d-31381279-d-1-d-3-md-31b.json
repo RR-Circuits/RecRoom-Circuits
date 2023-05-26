@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/9fb898a5-f5f2-4d62-be3d-31381279d1d3",
+  "id": "documentation/chips/9fb898a5-f5f2-4d62-be3d-31381279d1d3",
+  "title": "Player Head Forward Vector",
+  "description": "Outputs the forward vector of a Player's head.",
+  "source": "@site/docs/documentation/chips/9fb898a5-f5f2-4d62-be3d-31381279d1d3.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/9fb898a5-f5f2-4d62-be3d-31381279d1d3",
+  "permalink": "/Circuits/Website/docs/documentation/chips/9fb898a5-f5f2-4d62-be3d-31381279d1d3",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/9fb898a5-f5f2-4d62-be3d-31381279d1d3.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 401,
+  "frontMatter": {
+    "sidebar_position": 401,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Has Role",
+    "permalink": "/Circuits/Website/docs/documentation/chips/9b39ed47-e9a5-4f04-b4cd-80f5bbaff2f7"
+  },
+  "next": {
+    "title": "Player Head Height",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6278538c-5ea9-4515-ba00-ffc4d5b99c3b"
+  }
+}

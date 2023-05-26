@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/87d94359-da69-49ed-8b61-fbf78d79fa48",
+  "id": "documentation/chips/87d94359-da69-49ed-8b61-fbf78d79fa48",
+  "title": "Explosion Emitter Get Damage",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/87d94359-da69-49ed-8b61-fbf78d79fa48.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/87d94359-da69-49ed-8b61-fbf78d79fa48",
+  "permalink": "/Circuits/Website/docs/documentation/chips/87d94359-da69-49ed-8b61-fbf78d79fa48",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/87d94359-da69-49ed-8b61-fbf78d79fa48.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 148,
+  "frontMatter": {
+    "sidebar_position": 148,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Explosion Emitter Get Explosion Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/6039d63b-f484-4436-bb7c-ea58529ed4ec"
+  },
+  "next": {
+    "title": "Explosion Emitter Get Firing Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/36cd4562-2c1f-43e3-ba90-56daa0cb7339"
+  }
+}

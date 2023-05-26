@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/4263768a-035b-4d8b-b17c-1a7bb0b9b96d",
+  "id": "documentation/chips/4263768a-035b-4d8b-b17c-1a7bb0b9b96d",
+  "title": "Emitter Set Color",
+  "description": "Sets the color for the particles emitted.",
+  "source": "@site/docs/documentation/chips/4263768a-035b-4d8b-b17c-1a7bb0b9b96d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/4263768a-035b-4d8b-b17c-1a7bb0b9b96d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/4263768a-035b-4d8b-b17c-1a7bb0b9b96d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/4263768a-035b-4d8b-b17c-1a7bb0b9b96d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 133,
+  "frontMatter": {
+    "sidebar_position": 133,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Emitter Set Color Id",
+    "permalink": "/Circuits/Website/docs/documentation/chips/15e42063-cbae-40f9-a9e4-8226e83217ec"
+  },
+  "next": {
+    "title": "Emitter Set Looping",
+    "permalink": "/Circuits/Website/docs/documentation/chips/36881bd0-7da0-44a7-b6ef-8cd3770fed78"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/4646dbed-e616-470e-8e0c-eb446b91838b",
+  "id": "documentation/chips/4646dbed-e616-470e-8e0c-eb446b91838b",
+  "title": "Player Get Is Local",
+  "description": "Outputs True if the input player is the local player executing the chip on their machine.",
+  "source": "@site/docs/documentation/chips/4646dbed-e616-470e-8e0c-eb446b91838b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/4646dbed-e616-470e-8e0c-eb446b91838b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/4646dbed-e616-470e-8e0c-eb446b91838b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/4646dbed-e616-470e-8e0c-eb446b91838b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 396,
+  "frontMatter": {
+    "sidebar_position": 396,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Get Is Jumping Or Falling",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a474eca1-e820-4249-a314-fbc0ae223a5f"
+  },
+  "next": {
+    "title": "Player Get Radio Channel",
+    "permalink": "/Circuits/Website/docs/documentation/chips/be2f38d2-c6cb-4d9a-b74d-0a664c216a7b"
+  }
+}

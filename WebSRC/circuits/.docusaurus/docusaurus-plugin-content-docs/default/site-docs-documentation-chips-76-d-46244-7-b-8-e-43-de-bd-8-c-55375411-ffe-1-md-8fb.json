@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/76d46244-7b8e-43de-bd8c-55375411ffe1",
+  "id": "documentation/chips/76d46244-7b8e-43de-bd8c-55375411ffe1",
+  "title": "Ground Vehicle Get Boost Fuel",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/76d46244-7b8e-43de-bd8c-55375411ffe1.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/76d46244-7b8e-43de-bd8c-55375411ffe1",
+  "permalink": "/Circuits/Website/docs/documentation/chips/76d46244-7b8e-43de-bd8c-55375411ffe1",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/76d46244-7b8e-43de-bd8c-55375411ffe1.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 230,
+  "frontMatter": {
+    "sidebar_position": 230,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ground Vehicle Apply Boost",
+    "permalink": "/Circuits/Website/docs/documentation/chips/29dd429b-81e5-40c7-b3b6-8d03bcc1eec3"
+  },
+  "next": {
+    "title": "Ground Vehicle Get Driving Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f41ae49a-dbf3-4b4b-87dc-68614da242cc"
+  }
+}

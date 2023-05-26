@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/eaf712f8-3257-4415-9f88-ae94e308396e",
+  "id": "documentation/chips/eaf712f8-3257-4415-9f88-ae94e308396e",
+  "title": "Get Authority",
+  "description": "Gets the authority player of the chip's current context.",
+  "source": "@site/docs/documentation/chips/eaf712f8-3257-4415-9f88-ae94e308396e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/eaf712f8-3257-4415-9f88-ae94e308396e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/eaf712f8-3257-4415-9f88-ae94e308396e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/eaf712f8-3257-4415-9f88-ae94e308396e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 165,
+  "frontMatter": {
+    "sidebar_position": 165,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Angular Velocity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0922120c-c5b8-4109-8001-61b3131072a4"
+  },
+  "next": {
+    "title": "Get Currency Balance",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a4b0c860-e7f0-4abf-ad7c-9be1805c3d01"
+  }
+}

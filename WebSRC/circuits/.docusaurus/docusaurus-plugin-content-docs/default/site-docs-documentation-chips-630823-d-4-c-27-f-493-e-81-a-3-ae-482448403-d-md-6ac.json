@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/630823d4-c27f-493e-81a3-ae482448403d",
+  "id": "documentation/chips/630823d4-c27f-493e-81a3-ae482448403d",
+  "title": "Projectile Launcher Get Rec Room Object Damage",
+  "description": "Returns the damage value that projectiles from the target launcher will do when hitting Rec Room Objects.",
+  "source": "@site/docs/documentation/chips/630823d4-c27f-493e-81a3-ae482448403d.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/630823d4-c27f-493e-81a3-ae482448403d",
+  "permalink": "/Circuits/Website/docs/documentation/chips/630823d4-c27f-493e-81a3-ae482448403d",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/630823d4-c27f-493e-81a3-ae482448403d.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 443,
+  "frontMatter": {
+    "sidebar_position": 443,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Projectile Launcher Get Projectile Lifetime",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7af08c60-bd52-4733-9a9a-c22317f28738"
+  },
+  "next": {
+    "title": "Projectile Launcher Get Projectile Speed",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1803843e-4e3b-4422-ada9-5f8959337ee5"
+  }
+}

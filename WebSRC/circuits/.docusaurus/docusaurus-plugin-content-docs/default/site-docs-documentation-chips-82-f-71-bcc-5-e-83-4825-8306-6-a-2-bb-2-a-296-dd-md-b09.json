@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/82f71bcc-5e83-4825-8306-6a2bb2a296dd",
+  "id": "documentation/chips/82f71bcc-5e83-4825-8306-6a2bb2a296dd",
+  "title": "Combatant Set Max Health",
+  "description": "Sets the Max Health property of the input combatant.",
+  "source": "@site/docs/documentation/chips/82f71bcc-5e83-4825-8306-6a2bb2a296dd.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/82f71bcc-5e83-4825-8306-6a2bb2a296dd",
+  "permalink": "/Circuits/Website/docs/documentation/chips/82f71bcc-5e83-4825-8306-6a2bb2a296dd",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/82f71bcc-5e83-4825-8306-6a2bb2a296dd.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "sidebar_position": 96,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Combatant Set Health",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3dc4807f-2acd-446d-928f-5d301d0795d6"
+  },
+  "next": {
+    "title": "Combatant Split",
+    "permalink": "/Circuits/Website/docs/documentation/chips/81b08e44-0a1e-40da-b8a1-79f416691dcf"
+  }
+}

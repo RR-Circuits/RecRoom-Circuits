@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/80c7d803-df40-45a5-ac7b-bfccb0b511c7",
+  "id": "documentation/chips/80c7d803-df40-45a5-ac7b-bfccb0b511c7",
+  "title": "Execution String Switch",
+  "description": "Executes the associated output of the compare value that matches the 'match' input. Executes the default output if no match can be found.",
+  "source": "@site/docs/documentation/chips/80c7d803-df40-45a5-ac7b-bfccb0b511c7.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/80c7d803-df40-45a5-ac7b-bfccb0b511c7",
+  "permalink": "/Circuits/Website/docs/documentation/chips/80c7d803-df40-45a5-ac7b-bfccb0b511c7",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/80c7d803-df40-45a5-ac7b-bfccb0b511c7.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 145,
+  "frontMatter": {
+    "sidebar_position": 145,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Execution Integer Switch",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0387e4c7-b917-4d19-937f-5da37b9f41cc"
+  },
+  "next": {
+    "title": "Explosion Emitter Explode",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e750-441f-9e92-8455232f1703"
+  }
+}

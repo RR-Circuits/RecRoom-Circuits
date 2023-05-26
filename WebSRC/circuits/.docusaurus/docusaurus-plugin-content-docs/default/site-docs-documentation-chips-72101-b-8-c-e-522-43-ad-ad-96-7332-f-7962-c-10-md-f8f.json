@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/72101b8c-e522-43ad-ad96-7332f7962c10",
+  "id": "documentation/chips/72101b8c-e522-43ad-ad96-7332f7962c10",
+  "title": "Get Player World UI Primary Bar Color",
+  "description": "Returns the color of the given player's primary bar in their current world UI.",
+  "source": "@site/docs/documentation/chips/72101b8c-e522-43ad-ad96-7332f7962c10.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/72101b8c-e522-43ad-ad96-7332f7962c10",
+  "permalink": "/Circuits/Website/docs/documentation/chips/72101b8c-e522-43ad-ad96-7332f7962c10",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/72101b8c-e522-43ad-ad96-7332f7962c10.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 198,
+  "frontMatter": {
+    "sidebar_position": 198,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Player World UI Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/36ad6c98-0fb8-43a0-bf8d-0784394d2d28"
+  },
+  "next": {
+    "title": "Get Player World UI Primary Bar Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/125d57be-9afa-46b3-a1c4-0c967d044334"
+  }
+}

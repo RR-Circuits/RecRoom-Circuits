@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e9d3330d-c290-41d5-aa37-cc5e43198836",
+  "id": "documentation/chips/e9d3330d-c290-41d5-aa37-cc5e43198836",
+  "title": "Player Right Hand Position",
+  "description": "Outputs the postion of a Player's right hand in world space.",
+  "source": "@site/docs/documentation/chips/e9d3330d-c290-41d5-aa37-cc5e43198836.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e9d3330d-c290-41d5-aa37-cc5e43198836",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e9d3330d-c290-41d5-aa37-cc5e43198836",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e9d3330d-c290-41d5-aa37-cc5e43198836.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 426,
+  "frontMatter": {
+    "sidebar_position": 426,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Right Hand Rotation",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0afab661-0870-42bb-9256-891f1a876b3b"
+  },
+  "next": {
+    "title": "Player Right Hand Thumb Direction",
+    "permalink": "/Circuits/Website/docs/documentation/chips/86e8581c-ddf9-4302-a06f-c451b5055a98"
+  }
+}

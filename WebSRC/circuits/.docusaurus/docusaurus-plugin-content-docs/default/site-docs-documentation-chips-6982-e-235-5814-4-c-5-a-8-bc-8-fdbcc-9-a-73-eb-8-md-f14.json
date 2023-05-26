@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6982e235-5814-4c5a-8bc8-fdbcc9a73eb8",
+  "id": "documentation/chips/6982e235-5814-4c5a-8bc8-fdbcc9a73eb8",
+  "title": "Bit Pop Count",
+  "description": "Counts the number of set bits in the binary representation of an integer.",
+  "source": "@site/docs/documentation/chips/6982e235-5814-4c5a-8bc8-fdbcc9a73eb8.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6982e235-5814-4c5a-8bc8-fdbcc9a73eb8",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6982e235-5814-4c5a-8bc8-fdbcc9a73eb8",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6982e235-5814-4c5a-8bc8-fdbcc9a73eb8.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 59,
+  "frontMatter": {
+    "sidebar_position": 59,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bit Or",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2c24bc11-9543-4738-8c6c-0c5e3fadd944"
+  },
+  "next": {
+    "title": "Bit Rotate Left",
+    "permalink": "/Circuits/Website/docs/documentation/chips/bd013fe7-3799-46b5-b1f3-66a3f5add5ed"
+  }
+}

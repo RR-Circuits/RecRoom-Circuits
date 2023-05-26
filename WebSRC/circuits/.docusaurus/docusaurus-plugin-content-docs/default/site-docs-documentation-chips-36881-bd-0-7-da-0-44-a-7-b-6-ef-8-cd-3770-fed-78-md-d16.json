@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/36881bd0-7da0-44a7-b6ef-8cd3770fed78",
+  "id": "documentation/chips/36881bd0-7da0-44a7-b6ef-8cd3770fed78",
+  "title": "Emitter Set Looping",
+  "description": "Makes the emitter emit continuously or not.",
+  "source": "@site/docs/documentation/chips/36881bd0-7da0-44a7-b6ef-8cd3770fed78.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/36881bd0-7da0-44a7-b6ef-8cd3770fed78",
+  "permalink": "/Circuits/Website/docs/documentation/chips/36881bd0-7da0-44a7-b6ef-8cd3770fed78",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/36881bd0-7da0-44a7-b6ef-8cd3770fed78.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 134,
+  "frontMatter": {
+    "sidebar_position": 134,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Emitter Set Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4263768a-035b-4d8b-b17c-1a7bb0b9b96d"
+  },
+  "next": {
+    "title": "Emitter Set Size",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1fdf4bab-c868-4ffb-8bfc-b2e360450495"
+  }
+}

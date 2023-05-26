@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/ea61960b-3a53-426e-b87c-f0e94dd2c3da",
+  "id": "documentation/chips/ea61960b-3a53-426e-b87c-f0e94dd2c3da",
+  "title": "Player Variable",
+  "description": "Reads or writes a variable in the current scope based on the name.",
+  "source": "@site/docs/documentation/chips/ea61960b-3a53-426e-b87c-f0e94dd2c3da.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/ea61960b-3a53-426e-b87c-f0e94dd2c3da",
+  "permalink": "/Circuits/Website/docs/documentation/chips/ea61960b-3a53-426e-b87c-f0e94dd2c3da",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/ea61960b-3a53-426e-b87c-f0e94dd2c3da.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 419,
+  "frontMatter": {
+    "sidebar_position": 419,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1094590a-ca33-4ca0-8e6b-66d784f4b5d7"
+  },
+  "next": {
+    "title": "Player Owns Room Key",
+    "permalink": "/Circuits/Website/docs/documentation/chips/e61558a9-0ce4-4dba-ac87-b16e61bcdb23"
+  }
+}

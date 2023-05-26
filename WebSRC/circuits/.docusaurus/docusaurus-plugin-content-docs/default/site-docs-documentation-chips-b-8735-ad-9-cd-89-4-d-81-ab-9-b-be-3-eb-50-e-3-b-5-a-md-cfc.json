@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/b8735ad9-cd89-4d81-ab9b-be3eb50e3b5a",
+  "id": "documentation/chips/b8735ad9-cd89-4d81-ab9b-be3eb50e3b5a",
+  "title": "Dice Get Roll finished",
+  "description": "Outputs an exec when the dice finished rolling.",
+  "source": "@site/docs/documentation/chips/b8735ad9-cd89-4d81-ab9b-be3eb50e3b5a.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/b8735ad9-cd89-4d81-ab9b-be3eb50e3b5a",
+  "permalink": "/Circuits/Website/docs/documentation/chips/b8735ad9-cd89-4d81-ab9b-be3eb50e3b5a",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/b8735ad9-cd89-4d81-ab9b-be3eb50e3b5a.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 119,
+  "frontMatter": {
+    "sidebar_position": 119,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dice Get Result",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c80e2979-c672-4e7a-81fb-0ed1964e3ea6"
+  },
+  "next": {
+    "title": "Set HUD Element Enabled",
+    "permalink": "/Circuits/Website/docs/documentation/chips/64ebc8ff-a7d0-47b3-b00b-3cd7e5927978"
+  }
+}

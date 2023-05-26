@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/5b9dc865-0fac-4d3a-9edc-68184ee189a2",
+  "id": "documentation/chips/5b9dc865-0fac-4d3a-9edc-68184ee189a2",
+  "title": "Door Set Destination",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/5b9dc865-0fac-4d3a-9edc-68184ee189a2.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/5b9dc865-0fac-4d3a-9edc-68184ee189a2",
+  "permalink": "/Circuits/Website/docs/documentation/chips/5b9dc865-0fac-4d3a-9edc-68184ee189a2",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/5b9dc865-0fac-4d3a-9edc-68184ee189a2.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 126,
+  "frontMatter": {
+    "sidebar_position": 126,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Door Get Locked",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f2918d8a-444c-429d-ab79-e2d445695a57"
+  },
+  "next": {
+    "title": "Door Set Locked",
+    "permalink": "/Circuits/Website/docs/documentation/chips/7ca4abb2-d705-4c17-b713-7525122ef286"
+  }
+}

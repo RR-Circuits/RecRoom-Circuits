@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e61558a9-0ce4-4dba-ac87-b16e61bcdb23",
+  "id": "documentation/chips/e61558a9-0ce4-4dba-ac87-b16e61bcdb23",
+  "title": "Player Owns Room Key",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/e61558a9-0ce4-4dba-ac87-b16e61bcdb23.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e61558a9-0ce4-4dba-ac87-b16e61bcdb23",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e61558a9-0ce4-4dba-ac87-b16e61bcdb23",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e61558a9-0ce4-4dba-ac87-b16e61bcdb23.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 420,
+  "frontMatter": {
+    "sidebar_position": 420,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ea61960b-3a53-426e-b87c-f0e94dd2c3da"
+  },
+  "next": {
+    "title": "Player Prompt Multiple Choice",
+    "permalink": "/Circuits/Website/docs/documentation/chips/d376a3c7-67c2-4607-a124-e2b93dc256d8"
+  }
+}

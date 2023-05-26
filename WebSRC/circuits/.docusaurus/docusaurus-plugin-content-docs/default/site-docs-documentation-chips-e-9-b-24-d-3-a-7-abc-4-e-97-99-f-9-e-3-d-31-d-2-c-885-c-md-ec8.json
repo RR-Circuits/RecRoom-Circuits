@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/e9b24d3a-7abc-4e97-99f9-e3d31d2c885c",
+  "id": "documentation/chips/e9b24d3a-7abc-4e97-99f9-e3d31d2c885c",
+  "title": "Respawn Point Add Avoid Role",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/e9b24d3a-7abc-4e97-99f9-e3d31d2c885c.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/e9b24d3a-7abc-4e97-99f9-e3d31d2c885c",
+  "permalink": "/Circuits/Website/docs/documentation/chips/e9b24d3a-7abc-4e97-99f9-e3d31d2c885c",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/e9b24d3a-7abc-4e97-99f9-e3d31d2c885c.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 558,
+  "frontMatter": {
+    "sidebar_position": 558,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Spawner Internal Start Spawning",
+    "permalink": "/Circuits/Website/docs/documentation/chips/fb6a63b1-3f55-4dcf-9bf0-6ef82e3296d5"
+  },
+  "next": {
+    "title": "Respawn Point Add Avoid Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/82122e0c-d393-4735-a7ad-2217b09eb73c"
+  }
+}

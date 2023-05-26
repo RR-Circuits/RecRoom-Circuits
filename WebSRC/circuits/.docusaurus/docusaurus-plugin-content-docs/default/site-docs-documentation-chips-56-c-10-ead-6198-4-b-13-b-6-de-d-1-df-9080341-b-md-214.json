@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/56c10ead-6198-4b13-b6de-d1df9080341b",
+  "id": "documentation/chips/56c10ead-6198-4b13-b6de-d1df9080341b",
+  "title": "Room Background Objects Reset",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/56c10ead-6198-4b13-b6de-d1df9080341b.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/56c10ead-6198-4b13-b6de-d1df9080341b",
+  "permalink": "/Circuits/Website/docs/documentation/chips/56c10ead-6198-4b13-b6de-d1df9080341b",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/56c10ead-6198-4b13-b6de-d1df9080341b.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 488,
+  "frontMatter": {
+    "sidebar_position": 488,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Room Background Objects Modify",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f16741ca-778f-44de-99e6-6a948c7aecfb"
+  },
+  "next": {
+    "title": "Room Fog Reset",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2dd67fbd-eb84-4810-bfa7-55836139f8a2"
+  }
+}

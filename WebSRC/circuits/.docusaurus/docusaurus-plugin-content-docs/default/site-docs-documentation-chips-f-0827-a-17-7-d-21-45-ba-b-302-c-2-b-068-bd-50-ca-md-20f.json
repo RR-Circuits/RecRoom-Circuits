@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/f0827a17-7d21-45ba-b302-c2b068bd50ca",
+  "id": "documentation/chips/f0827a17-7d21-45ba-b302-c2b068bd50ca",
+  "title": "Player Get Equipped Objects",
+  "description": "Gets equipped objects from a player.",
+  "source": "@site/docs/documentation/chips/f0827a17-7d21-45ba-b302-c2b068bd50ca.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/f0827a17-7d21-45ba-b302-c2b068bd50ca",
+  "permalink": "/Circuits/Website/docs/documentation/chips/f0827a17-7d21-45ba-b302-c2b068bd50ca",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/f0827a17-7d21-45ba-b302-c2b068bd50ca.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 393,
+  "frontMatter": {
+    "sidebar_position": 393,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Get Dominant Hand Is Right",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2cc92be4-ca23-4148-88d6-71cfb9b7fd58"
+  },
+  "next": {
+    "title": "Player Get First with Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cb02-41d8-9d8f-50291131dad2"
+  }
+}

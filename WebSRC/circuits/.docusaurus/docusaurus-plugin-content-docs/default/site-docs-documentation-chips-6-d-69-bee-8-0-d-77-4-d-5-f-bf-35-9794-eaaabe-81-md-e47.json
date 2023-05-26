@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/6d69bee8-0d77-4d5f-bf35-9794eaaabe81",
+  "id": "documentation/chips/6d69bee8-0d77-4d5f-bf35-9794eaaabe81",
+  "title": "If Local Player Should Run",
+  "description": "The \"Should Run\" port will exec a) if the input player is local or b) if input player is invalid and the local player has authority of the current context.",
+  "source": "@site/docs/documentation/chips/6d69bee8-0d77-4d5f-bf35-9794eaaabe81.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/6d69bee8-0d77-4d5f-bf35-9794eaaabe81",
+  "permalink": "/Circuits/Website/docs/documentation/chips/6d69bee8-0d77-4d5f-bf35-9794eaaabe81",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/6d69bee8-0d77-4d5f-bf35-9794eaaabe81.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 264,
+  "frontMatter": {
+    "sidebar_position": 264,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "If Local Player Is Room Authority",
+    "permalink": "/Circuits/Website/docs/documentation/chips/5e28057f-214b-4ff8-81bc-512be207c9d7"
+  },
+  "next": {
+    "title": "If Player Is Local",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c7643011-f320-4155-89b8-d693730c1935"
+  }
+}

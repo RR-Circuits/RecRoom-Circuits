@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/61efbc78-9ddf-42bb-814a-3758a34f5faf",
+  "id": "documentation/chips/61efbc78-9ddf-42bb-814a-3758a34f5faf",
+  "title": "Set HUD Element Value",
+  "description": "No description.",
+  "source": "@site/docs/documentation/chips/61efbc78-9ddf-42bb-814a-3758a34f5faf.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/61efbc78-9ddf-42bb-814a-3758a34f5faf",
+  "permalink": "/Circuits/Website/docs/documentation/chips/61efbc78-9ddf-42bb-814a-3758a34f5faf",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/61efbc78-9ddf-42bb-814a-3758a34f5faf.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 522,
+  "frontMatter": {
+    "sidebar_position": 522,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Set HUD Element Max Value",
+    "permalink": "/Circuits/Website/docs/documentation/chips/f258d689-3341-4383-a8f1-73ab7b2f37a1"
+  },
+  "next": {
+    "title": "Leaderboard Set Local Player Stat",
+    "permalink": "/Circuits/Website/docs/documentation/chips/57a1553a-ba24-4422-903a-e610a03e7994"
+  }
+}

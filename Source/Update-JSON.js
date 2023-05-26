@@ -1,7 +1,7 @@
 const fs = require("fs-extra")
 const { exit } = require("process")
 const https = require('follow-redirects').https
-const SVGGen = require("./Create-SVG")
+var SVGGen = ""
 
 const ChipTemplate = fs.readFileSync("templates/chip.mdx", "utf-8")
 const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.mdx", "utf-8")
@@ -236,7 +236,6 @@ function PrepareFiles() {
             NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "[").replace(">", "]"))
         } else NewChipFile = NewChipFile.replace("._chipdesc", "*No description.*")
 
-        fs.unlink(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".md"), (err) => { if (err) { throw err }});
         fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".mdx"), NewChipFile);
 
         const returnedsvg = SVGGen.Generate(uuid)
@@ -343,7 +342,7 @@ function RestOfUpdate(){
 
     AddStep("Generating info.txt...")
     fs.writeFileSync("Generated/info.txt", "Generated on " + new Date(Date.now()).toDateString())
-
+    SVGGen = require("./Create-SVG")
     AddStep("Preparing page files...")
     PrepareFiles();
 

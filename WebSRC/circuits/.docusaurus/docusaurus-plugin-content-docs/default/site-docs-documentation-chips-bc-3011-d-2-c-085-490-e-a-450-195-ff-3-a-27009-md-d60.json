@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/bc3011d2-c085-490e-a450-195ff3a27009",
+  "id": "documentation/chips/bc3011d2-c085-490e-a450-195ff3a27009",
+  "title": "Has Tag",
+  "description": "Outputs True if the input object or player has the input tag.",
+  "source": "@site/docs/documentation/chips/bc3011d2-c085-490e-a450-195ff3a27009.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/bc3011d2-c085-490e-a450-195ff3a27009",
+  "permalink": "/Circuits/Website/docs/documentation/chips/bc3011d2-c085-490e-a450-195ff3a27009",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/bc3011d2-c085-490e-a450-195ff3a27009.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 258,
+  "frontMatter": {
+    "sidebar_position": 258,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gun Handle Set Reload Duration",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c03abed2-ec9b-494b-89c2-9bbf741d490f"
+  },
+  "next": {
+    "title": "HSV To Color",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2e8d2d58-a73d-407a-9892-6cac4cb9ce9a"
+  }
+}

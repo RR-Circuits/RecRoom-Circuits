@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/65aa2570-98b8-413b-a9a9-2eae9f562871",
+  "id": "documentation/chips/65aa2570-98b8-413b-a9a9-2eae9f562871",
+  "title": "Greater Than",
+  "description": "Returns True if input A is greater than input B.",
+  "source": "@site/docs/documentation/chips/65aa2570-98b8-413b-a9a9-2eae9f562871.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/65aa2570-98b8-413b-a9a9-2eae9f562871",
+  "permalink": "/Circuits/Website/docs/documentation/chips/65aa2570-98b8-413b-a9a9-2eae9f562871",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/65aa2570-98b8-413b-a9a9-2eae9f562871.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 225,
+  "frontMatter": {
+    "sidebar_position": 225,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Greater Than",
+    "permalink": "/Circuits/Website/docs/documentation/chips/110c29b1-ac90-4a71-b3c0-53372aa134bc"
+  },
+  "next": {
+    "title": "Greater or Equal",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a10e7788-f016-4390-a68e-87d93b47edb1"
+  }
+}

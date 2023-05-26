@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/3edc785f-46ef-4f30-b101-a07126d3a370",
+  "id": "documentation/chips/3edc785f-46ef-4f30-b101-a07126d3a370",
+  "title": "AI Get Line of Sight Parameters",
+  "description": "Outputs the current line of sight parameters from the input AI.",
+  "source": "@site/docs/documentation/chips/3edc785f-46ef-4f30-b101-a07126d3a370.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/3edc785f-46ef-4f30-b101-a07126d3a370",
+  "permalink": "/Circuits/Website/docs/documentation/chips/3edc785f-46ef-4f30-b101-a07126d3a370",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/3edc785f-46ef-4f30-b101-a07126d3a370.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Add Tags",
+    "permalink": "/Circuits/Website/docs/documentation/chips/81939b0e-428f-481c-9fba-453b4c84f01e"
+  },
+  "next": {
+    "title": "AI Get Target",
+    "permalink": "/Circuits/Website/docs/documentation/chips/1637b250-e497-4f4a-9d5e-64206488391c"
+  }
+}

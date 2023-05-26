@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/02557d1f-2265-4b6d-8177-92f1802dc106",
+  "id": "documentation/chips/02557d1f-2265-4b6d-8177-92f1802dc106",
+  "title": "AI Set Line of Sight Parameters",
+  "description": "Sets an AI’s various LoS paramters. The “Cone” setting acts like a vision cone that sits in front of AIs like eyes, where the “Circle” setting acts like a radius around the AI. The Require LoS For Targetting parameter defines if AIs can see you through walls.",
+  "source": "@site/docs/documentation/chips/02557d1f-2265-4b6d-8177-92f1802dc106.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/02557d1f-2265-4b6d-8177-92f1802dc106",
+  "permalink": "/Circuits/Website/docs/documentation/chips/02557d1f-2265-4b6d-8177-92f1802dc106",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/02557d1f-2265-4b6d-8177-92f1802dc106.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "sidebar_position": 14,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Rotate",
+    "permalink": "/Circuits/Website/docs/documentation/chips/c2cb2ea2-f663-4aa6-9394-3b741f6b9064"
+  },
+  "next": {
+    "title": "AI Set Pathing Speed",
+    "permalink": "/Circuits/Website/docs/documentation/chips/cd85a0c7-789b-41a2-aeda-40925b73738c"
+  }
+}

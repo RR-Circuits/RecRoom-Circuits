@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/81939b0e-428f-481c-9fba-453b4c84f01e",
+  "id": "documentation/chips/81939b0e-428f-481c-9fba-453b4c84f01e",
+  "title": "Add Tags",
+  "description": "Adds tags to the input object or player.",
+  "source": "@site/docs/documentation/chips/81939b0e-428f-481c-9fba-453b4c84f01e.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/81939b0e-428f-481c-9fba-453b4c84f01e",
+  "permalink": "/Circuits/Website/docs/documentation/chips/81939b0e-428f-481c-9fba-453b4c84f01e",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/81939b0e-428f-481c-9fba-453b4c84f01e.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Add Tag",
+    "permalink": "/Circuits/Website/docs/documentation/chips/953fb21b-c9f0-46fc-a0f1-ee1a937854f8"
+  },
+  "next": {
+    "title": "AI Get Line of Sight Parameters",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3edc785f-46ef-4f30-b101-a07126d3a370"
+  }
+}

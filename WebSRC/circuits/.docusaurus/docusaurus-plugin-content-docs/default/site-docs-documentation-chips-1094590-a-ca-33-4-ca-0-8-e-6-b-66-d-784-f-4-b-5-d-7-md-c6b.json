@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/1094590a-ca33-4ca0-8e6b-66d784f4b5d7",
+  "id": "documentation/chips/1094590a-ca33-4ca0-8e6b-66d784f4b5d7",
+  "title": "Player Variable",
+  "description": "This chip has been deprecated. Please use to a different chip.",
+  "source": "@site/docs/documentation/chips/1094590a-ca33-4ca0-8e6b-66d784f4b5d7.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/1094590a-ca33-4ca0-8e6b-66d784f4b5d7",
+  "permalink": "/Circuits/Website/docs/documentation/chips/1094590a-ca33-4ca0-8e6b-66d784f4b5d7",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/1094590a-ca33-4ca0-8e6b-66d784f4b5d7.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 418,
+  "frontMatter": {
+    "sidebar_position": 418,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Player Left Hand Velocity",
+    "permalink": "/Circuits/Website/docs/documentation/chips/2607a0fe-f200-4f29-83ae-446db4b8e8ce"
+  },
+  "next": {
+    "title": "Player Variable",
+    "permalink": "/Circuits/Website/docs/documentation/chips/ea61960b-3a53-426e-b87c-f0e94dd2c3da"
+  }
+}

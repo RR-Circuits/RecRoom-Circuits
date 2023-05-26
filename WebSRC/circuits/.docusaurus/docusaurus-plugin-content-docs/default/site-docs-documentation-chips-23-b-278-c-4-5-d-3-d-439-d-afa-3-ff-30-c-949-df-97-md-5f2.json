@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/23b278c4-5d3d-439d-afa3-ff30c949df97",
+  "id": "documentation/chips/23b278c4-5d3d-439d-afa3-ff30c949df97",
+  "title": "Emitter Stop",
+  "description": "Stops emitting particles.",
+  "source": "@site/docs/documentation/chips/23b278c4-5d3d-439d-afa3-ff30c949df97.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/23b278c4-5d3d-439d-afa3-ff30c949df97",
+  "permalink": "/Circuits/Website/docs/documentation/chips/23b278c4-5d3d-439d-afa3-ff30c949df97",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/23b278c4-5d3d-439d-afa3-ff30c949df97.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 138,
+  "frontMatter": {
+    "sidebar_position": 138,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Emitter Start",
+    "permalink": "/Circuits/Website/docs/documentation/chips/56ebaa0b-256a-40ed-a066-f5663dfa2b59"
+  },
+  "next": {
+    "title": "Equals",
+    "permalink": "/Circuits/Website/docs/documentation/chips/3663225d-e18d-40e6-a234-ef10378528be"
+  }
+}

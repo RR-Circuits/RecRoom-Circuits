@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/81048ea5-2778-4816-99c5-1c50faad8a87",
+  "id": "documentation/chips/81048ea5-2778-4816-99c5-1c50faad8a87",
+  "title": "Quaternion Euler Angles",
+  "description": "Outputs the input quaternion as a vector3.",
+  "source": "@site/docs/documentation/chips/81048ea5-2778-4816-99c5-1c50faad8a87.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/81048ea5-2778-4816-99c5-1c50faad8a87",
+  "permalink": "/Circuits/Website/docs/documentation/chips/81048ea5-2778-4816-99c5-1c50faad8a87",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/81048ea5-2778-4816-99c5-1c50faad8a87.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 464,
+  "frontMatter": {
+    "sidebar_position": 464,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quaternion Dot",
+    "permalink": "/Circuits/Website/docs/documentation/chips/268d931e-172b-48e8-8eb8-8ec2a9614f0d"
+  },
+  "next": {
+    "title": "Quaternion Get Angle Axis",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b415c3ce-5f9f-472b-8d70-daeb728b7c2d"
+  }
+}

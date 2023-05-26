@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/d652ebe5-1367-44ed-a352-1e5ab84c32b0",
+  "id": "documentation/chips/d652ebe5-1367-44ed-a352-1e5ab84c32b0",
+  "title": "Seat Set Seated Player",
+  "description": "Seats an input player on a target Seat.",
+  "source": "@site/docs/documentation/chips/d652ebe5-1367-44ed-a352-1e5ab84c32b0.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/d652ebe5-1367-44ed-a352-1e5ab84c32b0",
+  "permalink": "/Circuits/Website/docs/documentation/chips/d652ebe5-1367-44ed-a352-1e5ab84c32b0",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/d652ebe5-1367-44ed-a352-1e5ab84c32b0.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 513,
+  "frontMatter": {
+    "sidebar_position": 513,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Seat Set Lock Players Out",
+    "permalink": "/Circuits/Website/docs/documentation/chips/face947c-8ac1-4d8e-8318-e7ec98bf466d"
+  },
+  "next": {
+    "title": "Seat Unseat Player",
+    "permalink": "/Circuits/Website/docs/documentation/chips/70b682f5-5744-4a6a-beaa-a9dcd40066b6"
+  }
+}

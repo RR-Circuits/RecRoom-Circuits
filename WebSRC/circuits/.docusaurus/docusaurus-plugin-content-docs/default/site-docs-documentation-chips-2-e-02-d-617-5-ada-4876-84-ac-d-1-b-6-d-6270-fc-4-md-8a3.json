@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/2e02d617-5ada-4876-84ac-d1b6d6270fc4",
+  "id": "documentation/chips/2e02d617-5ada-4876-84ac-d1b6d6270fc4",
+  "title": "Get Loading Players",
+  "description": "Returns the number of players that are currently loading into the room.",
+  "source": "@site/docs/documentation/chips/2e02d617-5ada-4876-84ac-d1b6d6270fc4.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/2e02d617-5ada-4876-84ac-d1b6d6270fc4",
+  "permalink": "/Circuits/Website/docs/documentation/chips/2e02d617-5ada-4876-84ac-d1b6d6270fc4",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/2e02d617-5ada-4876-84ac-d1b6d6270fc4.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 181,
+  "frontMatter": {
+    "sidebar_position": 181,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List Get Count",
+    "permalink": "/Circuits/Website/docs/documentation/chips/0493204d-9815-49a9-8c87-4dedf5ccf7e8"
+  },
+  "next": {
+    "title": "Get Local Camera Forward",
+    "permalink": "/Circuits/Website/docs/documentation/chips/70c830bb-223a-4a7c-b0ae-df240c6f1f33"
+  }
+}

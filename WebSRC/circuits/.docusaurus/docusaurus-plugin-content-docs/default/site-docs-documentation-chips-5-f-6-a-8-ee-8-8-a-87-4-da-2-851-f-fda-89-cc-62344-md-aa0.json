@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344",
+  "id": "documentation/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344",
+  "title": "Get Position",
+  "description": "Outputs the position of the input object as a vector3.",
+  "source": "@site/docs/documentation/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344",
+  "permalink": "/Circuits/Website/docs/documentation/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 210,
+  "frontMatter": {
+    "sidebar_position": 210,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Position (Deprecated)",
+    "permalink": "/Circuits/Website/docs/documentation/chips/a8c52ef2-17bf-47e6-9084-3e5623584b48"
+  },
+  "next": {
+    "title": "Time Get Precise Seconds",
+    "permalink": "/Circuits/Website/docs/documentation/chips/8722445f-e552-4d4a-bced-8afa63bbf70b"
+  }
+}

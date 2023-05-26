@@ -1,0 +1,35 @@
+{
+  "unversionedId": "documentation/chips/0a7b4058-b1da-442f-8341-81df66979663",
+  "id": "documentation/chips/0a7b4058-b1da-442f-8341-81df66979663",
+  "title": "Bit Shift Left",
+  "description": "Shifts a value left by a number of bits. Leftmost bits are discarded, and rightmost bits are filled with zeros.",
+  "source": "@site/docs/documentation/chips/0a7b4058-b1da-442f-8341-81df66979663.md",
+  "sourceDirName": "documentation/chips",
+  "slug": "/documentation/chips/0a7b4058-b1da-442f-8341-81df66979663",
+  "permalink": "/Circuits/Website/docs/documentation/chips/0a7b4058-b1da-442f-8341-81df66979663",
+  "draft": false,
+  "editUrl": "https://github.com/FunnPunn/RecRoom-Circuits/docs/documentation/chips/0a7b4058-b1da-442f-8341-81df66979663.md",
+  "tags": [
+    {
+      "label": "._tags",
+      "permalink": "/Circuits/Website/docs/tags/tags"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 62,
+  "frontMatter": {
+    "sidebar_position": 62,
+    "tags": [
+      "._tags"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bit Rotate Right",
+    "permalink": "/Circuits/Website/docs/documentation/chips/b5f36fdf-0a2e-489a-bbdf-f17c50974cc1"
+  },
+  "next": {
+    "title": "Bit Shift Right",
+    "permalink": "/Circuits/Website/docs/documentation/chips/4024b483-ab3d-4fa0-b399-b3350b800081"
+  }
+}
