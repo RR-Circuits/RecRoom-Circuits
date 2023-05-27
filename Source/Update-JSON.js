@@ -3,6 +3,25 @@ const { exit } = require("process")
 const https = require('follow-redirects').https
 var SVGGen = ""
 
+const TotalSteps = 6
+var CurrentStep = 0
+
+const GuidesCat = {
+    "label": "Guides",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Guides for people!"
+    }
+  }
+
+const GuideTemplate = `---
+sidebar_position: ._index
+tags: [Guide]
+---
+
+`
+
 // read files
 const ChipTemplate = fs.readFileSync("templates/chip.mdx", "utf-8")
 const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.mdx", "utf-8")
@@ -19,8 +38,6 @@ This chip requires beta content to be enabled in the room. You can access the se
 
 :::`
 
-const TotalSteps = 5
-var CurrentStep = 0
 var Currentindex = 1
 
 function AddStep(prnt) {
@@ -331,6 +348,27 @@ function TranslateChipData(){
         thischip["Functions"] = chipd["NodeDescs"]
     }
 }
+
+function PrepareDocs() {
+    try {
+        fs.mkdirSync(__dirname + "/../Guides/")
+    }
+    catch (err) {}
+    fs.emptyDirSync(__dirname + "/../Circuits/docs/guides/")
+    const DirFolders = fs.readdirSync(__dirname + "/../Guides/")
+    fs.writeFileSync(__dirname + "/../Circuits/docs/guides/_category_.json", JSON.stringify(GuidesCat, null, 4))
+
+    var GuideIndex = 1
+
+    for (const fldr of DirFolders) {
+        if (!fldr.includes("__ignore")) {
+            const GuideContent = fs.readFileSync(__dirname + "/../Guides/" + fldr)
+            fs.writeFileSync(__dirname + "/../Circuits/docs/guides/" + fldr, GuideTemplate.replace("._index", GuideIndex).concat(GuideContent))
+        }
+        GuideIndex++
+    }
+}
+
 function RestOfUpdate(){
     oldJSON_raw = fs.readFileSync(DownloadFile, "utf-8")
     OldJSON = JSON.parse(oldJSON_raw)["Nodes"]
@@ -347,9 +385,13 @@ function RestOfUpdate(){
 
     AddStep("Generating info.txt...")
     fs.writeFileSync("Generated/info.txt", "Generated on " + new Date(Date.now()).toDateString())
+    
     SVGGen = require("./Create-SVG")
     AddStep("Preparing page files...")
     PrepareFiles();
+
+    AddStep("Copying docs...")
+    PrepareDocs();
 
     console.log("Finished!")
     exit(0)
