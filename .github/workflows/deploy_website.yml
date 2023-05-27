@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       just-deploy:
-        description: 'Just deploy (overrides skip because of or)'
+        description: 'Just deploy (overrides skip)'
         type: boolean
         required: true
         default: false
@@ -16,6 +16,7 @@ on:
     branches:
       - 'main'
     paths:
+      - 'Guides/**'
       - 'ExtraInfo/**'
 jobs:
   generate:
@@ -41,7 +42,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "actions-user"
-          git add Circuits/docs/documentation/chips
+          git add Circuits/docs/documentation/
           git commit -m "Generated markdown and svg (based on ${{ github.sha || 'manual run #${{ github.run_number }}' }})"
           git push
   deploy:
