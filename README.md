@@ -19,7 +19,7 @@ Maintained by Funn Punn and joksulainen
 This process is almost identical to the ExtraInfo one.
 
 1. Fork the repository if you haven't already.
-1. Go to the `ExtraInfo` folder under the root directory.
+1. Go to the `Guides` folder under the root directory.
 1. Make a new `.mdx` file. Add your markdown content there. Please use a format similar to the other guides. (if they exist)
 1. Commit your changes and submit a pull request. we'll do the rest.
 
