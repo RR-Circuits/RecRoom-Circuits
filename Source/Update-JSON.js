@@ -3,9 +3,11 @@ const { exit } = require("process")
 const https = require('follow-redirects').https
 var SVGGen = ""
 
+// read files
 const ChipTemplate = fs.readFileSync("templates/chip.mdx", "utf-8")
 const ExtraInfoTemplate = fs.readFileSync("templates/extrainfo.mdx", "utf-8")
 
+// deprecation/beta messages
 const DeprMsg = `:::danger DEPRECATED
 
 This chip has been deprecated. Please move to a different chip.
@@ -37,6 +39,7 @@ var OldJSON
 var OldJSON_Clone
 var entries
 
+// Pre-defined port types, usually the non-yellow ports
 var PortTypes = {
     "exec": {
         "HasDefaultValue": false,
@@ -82,6 +85,7 @@ const template = {
     "Color": "#F5C51F",
 }
 
+// Extract the data types from this JSON and put it in ports.json
 function RetrievePorts(){
     for(const chip of Object.values(OldJSON)){
         for(const nodedesc of chip["NodeDescs"]){
@@ -365,7 +369,7 @@ const request = https.get("https://raw.githubusercontent.com/tyleo-rec/CircuitsV
 })
 
 /*
-Script made by Funn Punn. Please don't modify this, I already have a hard time reading my own code.
+Script made by Funn Punn. Please don't modify this, I already had a hard time reading my own code.
 Thanks!
 
 ^•ﻌ•^

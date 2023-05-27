@@ -4,8 +4,6 @@ const jsdom = require("jsdom")
 const StringWidth = require("string-pixel-width")
 var Chip = ""
 const Ports = JSON.parse(fs.readFileSync("Generated/ports.json"))
-const Exec = ""
-const DataNoDef = ""
 
 //Padding
 const PortHeight = 19
@@ -141,7 +139,7 @@ function GenerateSVG (tempUUID, JSObject) {
             .attr("class", "uwuntu")
 
     const TopBarWidth = GetStringWidth(Title.text()) + 57 * 2
-    Title.attr("x", TopBarWidth/2 + chipxoffset).attr("y", (TopHeight+FontSize)/2)
+    Title.attr("x", TopBarWidth/2 + chipxoffset).attr("y", (TopHeight+FontSize/1.5)/2)
     const Bottom = NewChip 
             .append("path")
                 .attr("fill", "#818081")
