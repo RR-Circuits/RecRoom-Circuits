@@ -92,6 +92,11 @@ var PortTypes = {
         "HasDefaultValue": true,
         "Model": "Data",
         "Color": "#F5C51F",
+    },
+    "any": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F6EEE8",
     }
 }
 
