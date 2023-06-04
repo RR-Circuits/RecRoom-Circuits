@@ -4,8 +4,10 @@ Maintained by Funn Punn and joksulainen
 | Task                  | Progress |
 |-----------------------|----------|
 | Implement Chip JSON   | ✅        |
-| Create Chip Docs      | :warning:        |
+| Create Chip Docs      | ✅*        |
 | Create Circuit Guides | 🚧        |
+
+\* automated creation finished, still need community efforts
 
 ## How to add extra info to chip files?
 
