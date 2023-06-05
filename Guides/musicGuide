@@ -1,10 +1,11 @@
+# Making a background music player
 In this guide, we will teach you how to make a playlist in RecRoom. This guide implies that you know how to use the makerpen, and how to navigate menus. If you don't know how, try the makerpen tutorial at https://rec.net/d/room/CA_Circuits101 . Thise guide also implies that you already have audio in your room from the "Sample Audio" chip. 
 
 
 First we want to spawn a "list create". Wire the sounds to the "list create". (TIP) Configure the "list create" to add inputs so you can have more items in your list
 ![](https://ibb.co/Vw5j18z)
 
-Next, we want to spawn in an "Event Reciever". Once spawned in, configure it, and select Player Joined.
+Next, we want to spawn in an "Event Receiver". Once spawned in, configure it, and select Player Joined.
 ![](https://ibb.co/h8MwQmY)
 
 Next, spawn in a "If Local Player Should Run Chip". Wire it like so.
