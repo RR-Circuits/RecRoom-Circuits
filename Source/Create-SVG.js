@@ -119,7 +119,7 @@ function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName, IsL
     return [prtheight]
 }
 
-function GenerateSVG (tempUUID, JSObject) {
+function GenerateRegular (tempUUID, JSObject) {
     Chip = JSObject
     const Template = new jsdom.JSDOM('<body></body>')
     const NewChip = d3.select(Template.window.document.body).append("svg")
@@ -207,6 +207,76 @@ function GenerateSVG (tempUUID, JSObject) {
     return (Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
 }
 
+function GenerateVar (tempUUID, JSObject) {
+    const Template = new jsdom.JSDOM('<body></body>')
+    const NewChip = d3.select(Template.window.document.body).append("svg")
+        .attr("width", 800)
+        .attr("height", 800)
+        .attr("xmlns", "http://www.w3.org/2000/svg")
+        .attr("viewbox", "0 0 800 800")
+
+    const Title = NewChip
+        .append("svg:text")
+            .attr("x", 0)
+            .attr("y", 35+FontSize/2)
+            .text(Chip[tempUUID]["ChipName"])
+            .attr("fill", "white")
+            .attr("text-anchor", "middle")
+            .attr("font-size", "18px")
+            .attr("class", "uwuntu")
+
+    const TextWidth = GetStringWidth(Title.text()) + 57 * 2
+    const ChipLen = Math.max(TextWidth + 50, 51)
+    const OuterShell = NewChip.append("rect")
+        .attr("x", chipxoffset)
+        .attr("y", 0)
+        .attr("width", ChipLen)
+        .attr("height", 76)
+        .attr("fill", "#818081")
+        .attr("rx", 10)
+
+    const InnerShell = NewChip.append("rect")
+        .attr("x", chipxoffset + 20)
+        .attr("y", 15)
+        .attr("width", Math.max(TextWidth + 10, 11))
+        .attr("height", 46)
+        .attr("fill", "#525152")
+        .attr("rx", 10)
+    const StandardOffset = 17
+    var InSpacingA = 0
+    var OutSpacingA = 0
+
+    try {
+        const FuncsE =  Chip[tempUUID]["Functions"][0]
+        for(const prt of FuncsE["Inputs"]) {
+            const returnedheight = AppendPort(NewChip, true, prt["DataType"], [chipxoffset, StandardOffset + InSpacingA], "", prt["IsList"])
+            InSpacingA = InSpacingA + VerticalPortPadding + returnedheight[0]
+        }
+        for(const prt of FuncsE["Outputs"]) {
+            const returnedheight = AppendPort(NewChip, false, prt["DataType"], [chipxoffset + ChipLen, StandardOffset + OutSpacingA], "", prt["IsList"])
+            OutSpacingA = OutSpacingA + VerticalPortPadding + returnedheight[0]
+        }
+    }
+    catch (error) {}
+
+    Title.raise()
+    Title.attr("x", ChipLen/2 + chipxoffset)
+    return (Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
+}
+
+function GenerateSVG (uid, jsob) {
+    Chip = jsob
+    switch(Chip[uid]["Model"]){
+        case "Default":
+            return GenerateRegular(uid, jsob)
+
+        case "Variable":
+            return GenerateVar(uid, jsob);
+        
+        default:
+            break;
+    }
+}
 module.exports ={
     Generate: GenerateSVG
 }
