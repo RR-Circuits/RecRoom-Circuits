@@ -169,8 +169,8 @@ function PrepareFiles() {
     for(const [uuid, contents] of entries){
         var ExtraInfoFile = ""
         var TagsFile = ""
-        const DirPath = __dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid)
-        const FlNm = contents["ChipName"].replace("<", "[").replace(">", "]").concat("@", uuid)
+        const DirPath = __dirname + '/../ExtraInfo/'.concat(contents["PaletteName"].replace("<", "[").replace(">", "]"), "@", uuid)
+        const FlNm = contents["PaletteName"].replace("<", "[").replace(">", "]").concat("@", uuid)
         const [Success, Element] = CheckHasFileName(ExtraInfoDir, uuid)
 
         if (Success) {
@@ -235,7 +235,7 @@ function PrepareFiles() {
         }
         
         NewChipFile = NewChipFile
-        .replace("._chipname", contents["ChipName"].replace("<", "[").replace(">", "]"))
+        .replace("._chipname", contents["PaletteName"].replace("<", "[").replace(">", "]"))
         .replace("._istroll", BoolToYesNo(contents["TrollingRisk"]))
         .replace("._isbeta", BoolToYesNo(contents["IsBeta"]))
         .replace("._uuid1", uuid).replace("._uuid2", uuid).replace("._uuid3", uuid)
@@ -277,12 +277,16 @@ function PrepareFiles() {
 function TranslateChipData(){
     for(const [uuid, chipd] of entries) {
         // Order: List<> removal -> Param checker
+        var ThisChipModel = "Default"
+        if (chipd["ReadonlyPaletteName"] == "Comment"){
+            ThisChipModel = "Variable"
+        }
         const thischip = NewChips[uuid] = {
             ChipName: chipd["ReadonlyChipName"],
             PaletteName: chipd["ReadonlyPaletteName"],
             Description: chipd["Description"],
             //custom here
-            Model: "Default",
+            Model: ThisChipModel,
             //
             IsBeta: chipd["IsBetaChip"],
             TrollingRisk: chipd["IsTrollingRisk"],
