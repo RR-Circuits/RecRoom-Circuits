@@ -20,8 +20,12 @@ const chipxoffset = 72
 const FontSize = 18
 
 //Padding
-function GetStringWidth (str) {
-    return StringWidth(str, {size: FontSize})
+function GetStringWidth (str, givensize) {
+    var sz = FontSize
+    if(givensize) {
+        sz = givensize
+    }
+    return StringWidth(str, {size: sz})
 }
 
 function AppendPort(ParentObject, IsInput, PortType, [posx, posy], PortName, IsList) {
@@ -211,9 +215,9 @@ function GenerateVar (tempUUID, JSObject) {
     const Template = new jsdom.JSDOM('<body></body>')
     const NewChip = d3.select(Template.window.document.body).append("svg")
         .attr("width", 800)
-        .attr("height", 800)
+        .attr("height", 76)
         .attr("xmlns", "http://www.w3.org/2000/svg")
-        .attr("viewbox", "0 0 800 800")
+        .attr("viewbox", "0 0 800 76")
 
     const Title = NewChip
         .append("svg:text")
@@ -225,7 +229,7 @@ function GenerateVar (tempUUID, JSObject) {
             .attr("font-size", "18px")
             .attr("class", "uwuntu")
 
-    const TextWidth = GetStringWidth(Title.text()) + 57 * 2
+    const TextWidth = GetStringWidth(Title.text()) + 22
     const ChipLen = Math.max(TextWidth + 50, 51)
     const OuterShell = NewChip.append("rect")
         .attr("x", chipxoffset)
@@ -268,14 +272,14 @@ function GenerateConst (tempUUID, JSObject) {
     const Template = new jsdom.JSDOM('<body></body>')
     const NewChip = d3.select(Template.window.document.body).append("svg")
         .attr("width", 800)
-        .attr("height", 800)
+        .attr("height", 48)
         .attr("xmlns", "http://www.w3.org/2000/svg")
-        .attr("viewbox", "0 0 800 800")
+        .attr("viewbox", "0 0 800 48")
 
     const Title = NewChip
         .append("svg:text")
             .attr("x", 0)
-            .attr("y", 24+FontSize/2)
+            .attr("y", 21+FontSize/2)
             .text(Chip[tempUUID]["ChipName"])
             .attr("fill", "white")
             .attr("text-anchor", "middle")
