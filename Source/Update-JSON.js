@@ -278,8 +278,10 @@ function TranslateChipData(){
     for(const [uuid, chipd] of entries) {
         // Order: List<> removal -> Param checker
         var ThisChipModel = "Default"
-        if (chipd["ReadonlyPaletteName"] == "Comment"){
+        if (chipd["ReadonlyPaletteName"] == "Comment" || chipd["ReadonlyPaletteName"].toLowerCase().includes("variable")){
             ThisChipModel = "Variable"
+        } else if (chipd["ReadonlyPaletteName"].toLowerCase().includes("constant")) {
+            ThisChipModel = "Constant"
         }
         const thischip = NewChips[uuid] = {
             ChipName: chipd["ReadonlyChipName"],

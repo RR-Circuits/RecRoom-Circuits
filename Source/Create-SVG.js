@@ -264,6 +264,49 @@ function GenerateVar (tempUUID, JSObject) {
     return (Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
 }
 
+function GenerateConst (tempUUID, JSObject) {
+    const Template = new jsdom.JSDOM('<body></body>')
+    const NewChip = d3.select(Template.window.document.body).append("svg")
+        .attr("width", 800)
+        .attr("height", 800)
+        .attr("xmlns", "http://www.w3.org/2000/svg")
+        .attr("viewbox", "0 0 800 800")
+
+    const Title = NewChip
+        .append("svg:text")
+            .attr("x", 0)
+            .attr("y", 24+FontSize/2)
+            .text(Chip[tempUUID]["ChipName"])
+            .attr("fill", "white")
+            .attr("text-anchor", "middle")
+            .attr("font-size", "18px")
+            .attr("class", "uwuntu")
+
+    const TextWidth = GetStringWidth(Title.text())
+    const ChipLen = Math.max(TextWidth + 70, 70)
+    const OuterShell = NewChip.append("rect")
+        .attr("x", chipxoffset)
+        .attr("y", 0)
+        .attr("width", ChipLen)
+        .attr("height", 48)
+        .attr("fill", "#525152")
+        .attr("rx", 10)
+
+    const InnerShell = NewChip.append("rect")
+        .attr("x", chipxoffset + ChipLen - 14)
+        .attr("y", (48-21)/2)
+        .attr("width", 14)
+        .attr("height", 21)
+        .attr("fill", "#3F3F3F")
+
+    const OutPort = Chip[tempUUID]["Functions"][0]["Outputs"][0]
+    AppendPort(NewChip, false, OutPort["DataType"], [chipxoffset + ChipLen, (48-21)/2 + 3], "", OutPort["IsList"])
+    
+    Title.raise()
+    Title.attr("x", ChipLen/2 + chipxoffset)
+    return (Template.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", ""))
+}
+
 function GenerateSVG (uid, jsob) {
     Chip = jsob
     switch(Chip[uid]["Model"]){
@@ -271,8 +314,11 @@ function GenerateSVG (uid, jsob) {
             return GenerateRegular(uid, jsob)
 
         case "Variable":
-            return GenerateVar(uid, jsob);
+            return GenerateVar(uid, jsob)
         
+        case "Constant":
+            return GenerateConst(uid, jsob)
+
         default:
             break;
     }
