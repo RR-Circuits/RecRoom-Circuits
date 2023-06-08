@@ -75,6 +75,7 @@ jobs:
           accountId: '${{ secrets.CLD_FLR_ID }}'
           projectName: 'circuits'
           directory: './build'
+          workingDirectory: './Circuits'
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: '${{ secrets.GITHUB_TOKEN }}'
           # Optional: Switch what branch you are publishing to.
