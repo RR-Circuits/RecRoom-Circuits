@@ -44,7 +44,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "actions-user"
           git add Circuits/docs
-          git commit -m "Generated markdown and svg - based on ${{ github.sha || 'manual run #${{ github.run_number }}' }}"
+          git commit -m "Generated markdown and svg - based on ${{ github.sha }}"
           git push
   deploy:
     name: 'Deploy'
