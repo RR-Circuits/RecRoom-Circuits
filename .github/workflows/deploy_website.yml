@@ -64,7 +64,9 @@ jobs:
           cache: npm
       - name: 'Build'
         working-directory: './Circuits'
-        run: 'npm run build'
+        run: |
+          npm ci
+          npm run build
       - name: 'Deploy to Cloudflare Pages'
         uses: cloudflare/pages-action@v1.5.0
         with:
@@ -76,6 +78,4 @@ jobs:
           gitHubToken: '${{ secrets.GITHUB_TOKEN }}'
           # Optional: Switch what branch you are publishing to.
           # By default this will be the branch which triggered this workflow
-          branch: 'main'
-          # Optional: Change the working directory
-          #workingDirectory: './Circuits'
+          #branch: 'main' commented this out as a test
