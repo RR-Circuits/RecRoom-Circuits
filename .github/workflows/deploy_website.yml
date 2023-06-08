@@ -58,7 +58,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v3
       - name: 'Deploy to Cloudflare Pages'
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/pages-action@v1.5.0
         with:
           apiToken: '${{ secrets.CLD_FLR_TKN }}'
           accountId: '${{ secrets.CLD_FLR_ID }}'
@@ -70,4 +70,4 @@ jobs:
           # By default this will be the branch which triggered this workflow
           branch: 'main'
           # Optional: Change the working directory
-          workingDirectory: my-site
+          workingDirectory: './Circuits'
