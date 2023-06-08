@@ -65,6 +65,7 @@ jobs:
       - name: 'Build'
         working-directory: './Circuits'
         run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
           npm ci
           npm run build
       - name: 'Deploy to Cloudflare Pages'
