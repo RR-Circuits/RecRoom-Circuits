@@ -57,13 +57,20 @@ jobs:
     steps:
       - name: 'Checkout'
         uses: actions/checkout@v3
+      - name: 'Setup Node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - name: 'Build'
+        run: 'npm run build'
       - name: 'Deploy to Cloudflare Pages'
         uses: cloudflare/pages-action@v1.5.0
         with:
           apiToken: '${{ secrets.CLD_FLR_TKN }}'
           accountId: '${{ secrets.CLD_FLR_ID }}'
           projectName: 'circuits'
-          directory: './Circuits'
+          directory: './build'
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: '${{ secrets.GITHUB_TOKEN }}'
           # Optional: Switch what branch you are publishing to.
