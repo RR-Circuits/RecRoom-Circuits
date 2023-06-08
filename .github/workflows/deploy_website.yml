@@ -4,12 +4,12 @@ on:
     inputs:
       just-deploy:
         description: 'Just deploy (overrides skip)'
-        type: boolean
+        type: 'boolean'
         required: true
         default: false
       skip-deploy:
         description: 'Skip deploy'
-        type: boolean
+        type: 'boolean'
         required: true
         default: false
   push:
@@ -21,47 +21,47 @@ on:
 jobs:
   generate:
     name: 'Generate chip markdown'
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-latest'
     if: '${{ !inputs.just-deploy }}'
     permissions:
       contents: 'write'
     steps:
       - name: 'Checkout'
-        uses: actions/checkout@v3
+        uses: 'actions/checkout@v3'
       - name: 'Setup Node'
-        uses: actions/setup-node@v3
+        uses: 'actions/setup-node@v3'
         with:
           node-version: 18
-          cache: npm
+          cache: 'npm'
       - name: 'Run script'
         working-directory: './Source'
         run: |
           npm ci
           npm run generate
       - name: 'Commit and push'
+        continue-on-error: true
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "actions-user"
-          git add Circuits/docs/documentation/chips
-          git add Circuits/docs/guides
-          git commit -m "Generated markdown and svg (based on ${{ github.sha || 'manual run #${{ github.run_number }}' }})"
+          git add Circuits/docs
+          git commit -m "Generated markdown and svg - based on ${{ github.sha || 'manual run #${{ github.run_number }}' }}"
           git push
   deploy:
     name: 'Deploy'
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-latest'
     needs: 'generate'
-    if: '${{ always() && !cancelled() && (!inputs.skip-deploy || inputs.just-deploy) }}'
+    if: '${{ success() && (!inputs.skip-deploy || inputs.just-deploy) }}'
     permissions:
       contents: 'read'
       deployments: 'write'
     steps:
       - name: 'Checkout'
-        uses: actions/checkout@v3
+        uses: 'actions/checkout@v3'
       - name: 'Setup Node'
-        uses: actions/setup-node@v3
+        uses: 'actions/setup-node@v3'
         with:
           node-version: 18
-          cache: npm
+          cache: 'npm'
       - name: 'Build'
         working-directory: './Circuits'
         run: |
@@ -69,7 +69,7 @@ jobs:
           npm ci
           npm run build
       - name: 'Deploy to Cloudflare Pages'
-        uses: cloudflare/pages-action@v1.5.0
+        uses: 'cloudflare/pages-action@v1.5.0'
         with:
           apiToken: '${{ secrets.CLD_FLR_TKN }}'
           accountId: '${{ secrets.CLD_FLR_ID }}'
@@ -78,6 +78,3 @@ jobs:
           workingDirectory: './Circuits'
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: '${{ secrets.GITHUB_TOKEN }}'
-          # Optional: Switch what branch you are publishing to.
-          # By default this will be the branch which triggered this workflow
-          #branch: 'main' commented this out as a test
