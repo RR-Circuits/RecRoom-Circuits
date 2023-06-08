@@ -63,6 +63,7 @@ jobs:
           node-version: 18
           cache: npm
       - name: 'Build'
+        working-directory: './Circuits'
         run: 'npm run build'
       - name: 'Deploy to Cloudflare Pages'
         uses: cloudflare/pages-action@v1.5.0
