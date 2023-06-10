@@ -3,14 +3,51 @@
 This requires knowlege of basic Circuits an player defntion borads
 :::
 
-First you will need an Player defntion borad
+First you will need an Player defntion borad.
 
-Next you will need to edit into the borad and than add thise chips
+Next you will need to edit into the borad and than add thise chips.
 1. int varible
 1. Event reaveire
 1. subtract
 
-We will be using rec room's projectie hit event to create this
+We will be using rec room's projectie hit player event to regstire when the player is hit.
 
-next configer the Event resivers's event to `projectie hit`
-and configer the int vairable and rename it to `health`
+next configer the Event resivers's event to `projectie hit player`.
+![]
+and configer the int vairable and rename it to `health` and set the value to what ever you want (this will most likely be the max health)
+now hit submint.
+
+Next we will take away health evry time the player is hit,
+To do this first wire the Circuits as shown
+![]
+Than wire the eutecute ports as so.
+![]
+
+Now eavry time you hit a player with a projectie it will deal the apropet amount of damege.
+:::tip
+You can add math chips to modfiy the damege comming in!
+:::
+Now let make the players die when thay reach 0 health.
+
+Add an `Less than or equel to` chip and an `if` chip
+and wire it like so
+![]
+Next add and `respawn point respawn player` chip and wire the `then` output to the input on the `respawn point respawn player` chip
+![]
+Like this
+
+Now back over here, add an self chip
+![]
+Now wire the self chip output to the Player port on the `Respawn point respawn player` chip.
+![]
+Like this
+Now to reset the player heath, clone the health vairable we created erlier and set the input port to 100.
+than drag the vairable next to the `Respawn point respawn player`
+![]
+like this
+now wire the exct port on the `respawn point respawn player to the health vairable extue port.
+Now when your health gets to 0 you respawn!
+:::tip
+If you want to add an way to see the health use your other knowlege of showing info to the player? Don't know yet
+Well follow this non existing guide to lern how to show the player info!
+:::
