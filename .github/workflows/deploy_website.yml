@@ -18,11 +18,22 @@ on:
     paths:
       - 'Guides/**'
       - 'ExtraInfo/**'
+  pull_request:
+    types:
+      - 'opened'
+      - 'reopened'
+      - 'synchronize'
+      - 'ready_for_review'
+    branches:
+      - 'main'
+    paths:
+      - 'Guides/**'
+      - 'ExtraInfo/**'
 jobs:
   generate:
     name: 'Generate chip markdown'
     runs-on: 'ubuntu-latest'
-    if: '${{ !inputs.just-deploy }}'
+    if: '${{ !inputs.just-deploy || (github.event_name == "pull_request" && !github.event.pull_request.draft) }}'
     permissions:
       contents: 'write'
     steps:
@@ -48,10 +59,10 @@ jobs:
           git commit -m "Generated markdown and svg - based on ${{ github.sha }}"
           git push
   deploy:
-    name: 'Deploy'
+    name: 'Deploy (Production)'
     runs-on: 'ubuntu-latest'
     needs: 'generate'
-    if: '${{ !failure() && (!inputs.skip-deploy || inputs.just-deploy) }}'
+    if: '${{ !failure() && github.event_name != "pull_request" && (!inputs.skip-deploy || inputs.just-deploy) }}'
     permissions:
       contents: 'read'
       deployments: 'write'
@@ -80,3 +91,23 @@ jobs:
           workingDirectory: './Circuits'
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: '${{ secrets.GITHUB_TOKEN }}'
+  test-deploy:
+    name: 'Deploy (Preview)'
+    runs-on: 'ubuntu-latest'
+    needs: 'generate'
+    if: '${{ github.event_name == "pull_request" && !github.event.pull_request.draft }}'
+    steps:
+      - name: 'Checkout'
+        uses: 'actions/checkout@v3'
+      - name: 'Setup Node'
+        uses: 'actions/setup-node@v3'
+        with:
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: './Circuits'
+      - name: 'Build'
+        working-directory: './Circuits'
+        run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
+          npm ci
+          npm run build
