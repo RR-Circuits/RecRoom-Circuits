@@ -36,6 +36,8 @@ jobs:
     if: '${{ !inputs.just-deploy || (github.event_name == "pull_request" && !github.event.pull_request.draft) }}'
     permissions:
       contents: 'write'
+    outputs:
+      commit-sha: '${{ steps.commit-push.outputs.commit-sha }}'
     steps:
       - name: 'Checkout'
         uses: 'actions/checkout@v3'
@@ -51,6 +53,7 @@ jobs:
           npm ci
           npm run generate
       - name: 'Commit and push'
+        id: 'commit-push'
         continue-on-error: true
         run: |
           git config --local user.email "action@github.com"
@@ -58,6 +61,7 @@ jobs:
           git add Circuits/docs
           git commit -m "Generated markdown and svg - based on ${{ github.sha }}"
           git push
+          echo "commit-sha=$(git log --format='%H' -1)" >> "$GITHUB_OUTPUT"
   deploy:
     name: 'Deploy (Production)'
     runs-on: 'ubuntu-latest'
@@ -69,6 +73,8 @@ jobs:
     steps:
       - name: 'Checkout'
         uses: 'actions/checkout@v3'
+        with:
+          ref: '${{ needs.generate.outputs.commit-sha || github.sha }}'
       - name: 'Setup Node'
         uses: 'actions/setup-node@v3'
         with:
@@ -99,6 +105,8 @@ jobs:
     steps:
       - name: 'Checkout'
         uses: 'actions/checkout@v3'
+        with:
+          ref: '${{ needs.generate.outputs.commit-sha }}'
       - name: 'Setup Node'
         uses: 'actions/setup-node@v3'
         with:
