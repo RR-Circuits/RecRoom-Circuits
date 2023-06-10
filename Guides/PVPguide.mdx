@@ -1,6 +1,4 @@
-# Making a background music player
-In this guide, we will teach you how to make a playlist in RecRoom!
-
+# Making a PVP health system
 :::note
 
 These guides assume that you know how to navigate menus, wire chips, ect.
@@ -8,27 +6,67 @@ If this is not the case, please look up another tutorial.
 
 :::
 
-First we want to spawn a [List Create](../../docs/documentation/Chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07) and a few [Audio Samples](../../docs/documentation/Chips/2cb45825-f385-414f-9a65-2425963fa720). Wire the sounds to the [List Create](../../docs/documentation/Chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07).
+First you will need a [Player Definition Board](../../docs/documentation/Chips/4c9e7840-0721-4d1c-b334-167f79d3bf40).
+
+Next, you will need to edit into the board and add the following chips:
+1. [int Variable](../../docs/documentation/Chips/33224907-68ff-4102-802e-7c3eed481d37)
+1. [Event Receiver](../../docs/documentation/Chips/8b533ccb-643a-491d-982c-94417ce99954)
+1. [Subtract](../../docs/documentation/Chips/1fbb364c-1af0-44bb-a82b-905caeb6819a)
+
+We will be using the `Projectile Hit Player` event to register when the player is hit. This is a built-in event.
+
+Next, configure the [Event Receiver's](../../docs/documentation/Chips/8b533ccb-643a-491d-982c-94417ce99954) event to `Projectile Hit Player`.
+![](https://i.imgur.com/6IH4e3j.png)
+
+Configure the [int Variable](../../docs/documentation/Chips/33224907-68ff-4102-802e-7c3eed481d37) and rename it to `Health`, hit submit and set the value to whatever you want (this should be the max health).
+You can change the name to something else, but to make it clear that it's a health variable, we will be using `Health`.
+
+Next, we will take away health every time the player is hit.
+To do this, first wire the Circuits as shown below:
+
+![](https://i.imgur.com/q7bybgD.png)
+
+Then wire the `Exec` ports as so:
+
+![](https://i.imgur.com/cIqCEIp.png)
+
+Now every time you hit a player with a projectile, it will deal the appropriate amount of damage.
+:::tip
+You can add [math](../../docs/tags/math) chips to modify the damage coming in!
+:::
+Now let's make it so the players die when they reach 0 health.
+
+Add a [Less or Equal](../../docs/documentation/Chips/a027073f-9189-457f-a53d-8562e8829daf) and an [If](../../docs/documentation/Chips/7adc6ab1-fcab-4746-aec6-006352e29cdc) chip
+and wire it like so:
+
+![](https://i.imgur.com/R8Zjxpz.png)
+
+Next, add a [Respawn Point Respawn Player](../../docs/documentation/Chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9) chip and wire the `then` output of the [If](../../docs/documentation/Chips/7adc6ab1-fcab-4746-aec6-006352e29cdc) to the [Respawn Point Respawn Player](../../docs/documentation/Chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9) input.
+
+![](https://i.imgur.com/n52PZpm.png)
+
+Now back over here, add a [Self](../../docs/documentation/Chips/3d7d40d6-885a-4fa5-bbaa-b19057291ddb) chip
+
+![](https://i.imgur.com/bwpqaWT.png)
+
+Now wire the [Self](../../docs/documentation/Chips/3d7d40d6-885a-4fa5-bbaa-b19057291ddb) output to the Player port on the [Respawn Point Respawn Player](../../docs/documentation/Chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9) chip.
+
+Now to reset the player heath, clone the health variable we created earlier and set the input port to 100 (or your desired max health).
+:::info
+Variables with the same name **and** datatype will sync with each other.
+:::
+Then, drag the variable next to the [Respawn Point Respawn Player](../../docs/documentation/Chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9)
+
+
+Now wire the `Exec` port on the [Respawn Point Respawn Player](../../docs/documentation/Chips/350cda38-d7c5-4319-bb15-a06f49bbb0b9) to the health variable input.
+Now when your health gets to 0, you respawn!
+The Circuits should look similar to this:
+
+![](https://i.imgur.com/qGxq7dm.png)
+
+Congrats! You made a PVP health system!
 
 :::tip
-
-Configure the [List Create](../../docs/documentation/Chips/542d3256-0d51-4c33-a2a1-fbc44b7e1f07) to add inputs so you can wire more samples!
-
+A guide on how to use the [Player World UI Constant](../../docs/documentation/Chips/ff2d1f81-d76c-456f-acf0-af1861822681) will come soon.
+This will be useful for displaying the player's health!
 :::
-
-Next, we want to spawn in an [Event Receiver](../../docs/documentation/Chips/8b533ccb-643a-491d-982c-94417ce99954). Once spawned in, configure it, and select `Player Joined`.
-![](https://i.ibb.co/KyGS4rK/tutorial-Music2.png)
-
-Next, spawn in an [If Local Player Should Run](../../docs/documentation/Chips/6d69bee8-0d77-4d5f-bf35-9794eaaabe81). Wire it like so.
-![](https://i.ibb.co/GRkCDTm/tutorial-Music3.png)
-
-Next, spawn in a [Random From List](../../docs/documentation/Chips/d253cef6-dd99-4357-b98a-e09a0c23bad7) Chip. Wire it like so.
-![](https://i.ibb.co/fX0yW8b/tutorial-Music4.png)
-
-Next, spawn in an `Audio Player`. Configure it and scroll down to Synced.
-![](https://i.ibb.co/6Hvy7MR/tutorial-Music6.png)
-
-Make sure it is toggled off. Next, spawn in a delay chip, and wire the rest like so 
-![](https://i.ibb.co/fYdwptf/tutorial-Music5.png)
-
-Now when a player joins the room, there is a playlist of audio playing in the background.
