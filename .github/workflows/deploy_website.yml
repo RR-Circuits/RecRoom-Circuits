@@ -33,6 +33,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          cache-dependency-path: './Source'
       - name: 'Run script'
         working-directory: './Source'
         run: |
@@ -62,6 +63,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          cache-dependency-path: './Circuits'
       - name: 'Build'
         working-directory: './Circuits'
         run: |
