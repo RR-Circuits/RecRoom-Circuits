@@ -84,7 +84,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/FunnPunn/RecRoom-Circuits',
+            href: 'https://github.com/RR-Circuits/RecRoom-Circuits',
             label: 'GitHub',
             position: 'right',
           },
@@ -124,7 +124,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/FunnPunn/RecRoom-Circuits',
+                href: 'https://github.com/RR-Circuits/RecRoom-Circuits',
               },
             ],
           },
