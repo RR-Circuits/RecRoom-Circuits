@@ -18,16 +18,15 @@ Next you will need to edit into the borad and than add thise chips.
 We will be using rec room's projectie hit player event to regstire when the player is hit.
 
 next configer the Event resivers's event to `projectie hit player`.
-![imageGoseHere]
+![](https://i.imgur.com/6IH4e3j.png)
 and configer the int vairable and rename it to `health` and set the value to what ever you want (this will most likely be the max health)
-![img]
 now hit submint.
 
 Next we will take away health evry time the player is hit,
 To do this first wire the Circuits as shown
-![image]
+![](https://i.imgur.com/q7bybgD.png)
 Than wire the eutecute ports as so.
-![image]
+![](https://i.imgur.com/cIqCEIp.png)
 
 Now eavry time you hit a player with a projectie it will deal the apropet amount of damege.
 :::tip
@@ -37,22 +36,23 @@ Now let make the players die when thay reach 0 health.
 
 Add an `Less than or equel to` chip and an `if` chip
 and wire it like so
-![image]
+![](https://i.imgur.com/R8Zjxpz.png)
 Next add and `respawn point respawn player` chip and wire the `then` output to the input on the `respawn point respawn player` chip
-![image]
+![](https://i.imgur.com/n52PZpm.png)
 Like this
 
 Now back over here, add an self chip
-![image]
+![](https://i.imgur.com/bwpqaWT.png)
 Now wire the self chip output to the Player port on the `Respawn point respawn player` chip.
-![image]
-Like this
+
 Now to reset the player heath, clone the health vairable we created erlier and set the input port to 100.
 than drag the vairable next to the `Respawn point respawn player`
-![image]
-like this
+
+
 now wire the exct port on the `respawn point respawn player to the health vairable extue port.
 Now when your health gets to 0 you respawn!
+the Circuits shold look like this know 
+![](https://i.imgur.com/qGxq7dm.png)
 :::tip
 If you want to add an way to see the health use your other knowlege of showing info to the player? Don't know yet
 Well follow this non existing guide to lern how to show the player info!
