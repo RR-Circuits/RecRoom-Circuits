@@ -59,7 +59,7 @@ jobs:
           git config --local user.name "actions-user"
           git add Circuits/docs
           git commit -m "Generated markdown and svg - based on ${{ github.sha }}"
-          git push 
+          git push
           echo "commit-sha=$(git log --format='%H' -1)" >> "$GITHUB_OUTPUT"
   deploy:
     name: 'Deploy (Production)'
