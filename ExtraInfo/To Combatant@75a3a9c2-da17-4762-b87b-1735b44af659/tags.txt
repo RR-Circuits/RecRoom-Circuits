@@ -1,1 +1,1 @@
-Chip
+Object,Combatant,Conversion

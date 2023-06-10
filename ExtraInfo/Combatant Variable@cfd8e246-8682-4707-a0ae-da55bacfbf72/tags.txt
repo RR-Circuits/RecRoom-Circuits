@@ -1,1 +1,1 @@
-Chip
+Variable,Object,Object,Combatant

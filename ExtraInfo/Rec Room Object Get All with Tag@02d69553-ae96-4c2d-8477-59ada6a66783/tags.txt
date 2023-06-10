@@ -1,1 +1,1 @@
-Chip
+Object,Rec Room Object,Tag

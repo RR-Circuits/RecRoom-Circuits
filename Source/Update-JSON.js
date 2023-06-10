@@ -1,4 +1,5 @@
 const fs = require("fs-extra")
+const { join } = require("path")
 const { exit } = require("process")
 const https = require('follow-redirects').https
 var SVGGen = ""
@@ -183,12 +184,13 @@ function PrepareFiles() {
                     if (err) console.log("error");
                 })
                 fs.writeFileSync(DirPath.concat("/extrainfo.mdx"), ExtraInfoTemplate, { flag: "wx" })
-                fs.writeFileSync(DirPath.concat("/tags.txt"), "Chip", { flag: "wx" })
+                
                // fs.writeFileSync(__dirname + '/../ExtraInfo/'.concat(contents["ChipName"].replace("<", "[").replace(">", "]"), "@", uuid, ".md"), ExtraInfoTemplate, { flag: "wx" })
             } catch (error) {
                 
             }
         }
+        fs.writeFileSync(DirPath.concat("/tags.txt"), contents["Tags"].join(","))
 
         var NewChipFile = ChipTemplate
         var InputsStr = "| Input Name | Input Type |\n|-----------|-----------|"
@@ -280,8 +282,12 @@ function TranslateChipData(){
         var ThisChipModel = "Default"
         if (chipd["ReadonlyPaletteName"] == "Comment" || chipd["ReadonlyPaletteName"].toLowerCase().includes("variable")){
             ThisChipModel = "Variable"
-        } else if (chipd["ReadonlyPaletteName"].toLowerCase().includes("constant")) {
+        } else if (chipd["ReadonlyPaletteName"].toLowerCase().includes("constant") || chipd["ReadonlyPaletteName"] == "Player World UI") {
             ThisChipModel = "Constant"
+        }
+        let t = [] 
+        for (const pth of chipd["NodeFilters"]) {
+            t = t.concat(pth["FilterPath"])
         }
         const thischip = NewChips[uuid] = {
             ChipName: chipd["ReadonlyChipName"],
@@ -292,7 +298,9 @@ function TranslateChipData(){
             //
             IsBeta: chipd["IsBetaChip"],
             TrollingRisk: chipd["IsTrollingRisk"],
-            DeprecationStage: chipd["DeprecationStage"]
+            IsRoleAssignmentRisk: chipd["IsRoleAssignmentRisk"],
+            DeprecationStage: chipd["DeprecationStage"],
+            Tags: t
         }
         for(const NodeDesc of chipd["NodeDescs"]){
             const TempPortAssign = {}

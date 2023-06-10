@@ -1,1 +1,1 @@
-Chip
+Logic,Boolean Function

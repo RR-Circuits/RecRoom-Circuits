@@ -1,1 +1,1 @@
-Chip
+Variable,Object,Player,Variable

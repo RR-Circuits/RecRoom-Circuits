@@ -1,1 +1,1 @@
-Chip
+Commonly Used,Logic,Ternary Operator

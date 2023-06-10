@@ -1,1 +1,1 @@
-Chip
+Player,Economy,Currency,Economy,Currency

@@ -1,1 +1,1 @@
-Chip, Component
+Object,Welcome Mat,Game Features,Room Flow

@@ -1,1 +1,1 @@
-Chip, AI
+Variable,Object,Object,AI
