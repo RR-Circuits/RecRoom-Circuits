@@ -9,9 +9,17 @@ Maintained by Funn Punn and joksulainen
 
 \* automated creation finished, still need community efforts
 
+## Before contributing
+
+I cannot express the importance of making a new branch to make your changes in instead of directly committing to the main branch in the forked repository enough.
+It will save you so many headaches caused by merge conflicts from changes to the main branch.
+For the sake of all of our sanity, please make your changes in a branch that isn't the main branch and use that to make a pull request instead.
+
+\- joksulainen
+
 ## How to add extra info to chip files?
 
-1. Fork the repository and preferably make a new branch.
+1. Fork the repository if you haven't already.
 1. Go to the `ExtraInfo` folder under the root directory.
 1. Find your chip. You can search by name or UUID.
 1. Edit the contained markdown. Conform to the formatting found in the file, we will correct any mistakes manually by adding commits to your pull request if allowed.
@@ -23,7 +31,7 @@ This process is almost identical to the ExtraInfo one.
 
 1. Fork the repository if you haven't already.
 1. Go to the `Guides` folder under the root directory.
-1. Make a new `.mdx` file. Add your markdown content there. Please use a format similar to the other guides. (if they exist)
+1. Make a new `.mdx` file. Add your markdown content there. Please use a format similar to the other guides if any.
 1. Commit your changes and submit a pull request. we'll do the rest.
 
 ## Tips:
