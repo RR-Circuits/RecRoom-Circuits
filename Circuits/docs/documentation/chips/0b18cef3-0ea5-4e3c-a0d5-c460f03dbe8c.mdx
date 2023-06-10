@@ -54,7 +54,7 @@ import EsbSvg from "./assets/0b18cef3-0ea5-4e3c-a0d5-c460f03dbe8c.svg";
 
 ### Uses
 
-None so far!
+Low cost random elements from a list _(see Issues)_
 
 ### Tips
 
@@ -62,4 +62,7 @@ None so far!
 
 ### Issues
 
-None so far!
+_Oh boy this one is a doozy!_
+
+This chip would work by changing its output on each call, so to receive an element did not require an exc, however two sequenced chips would not receive the same output if the chip was not origionally executed.<br>
+The Exc pin on this chip does practically nothing other than lock the output for a single tick. This meant that the output was not saved between ticks unlike any other chip.<br>

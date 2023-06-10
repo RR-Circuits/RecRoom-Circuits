@@ -51,12 +51,13 @@ import EsbSvg from "./assets/0a6f6078-8075-43c7-bbb2-32b63ae48e92.svg";
 
 ### Uses
 
-None so far!
+Can be used to make an object or player face in a certain direction, for example, emulating a Cv1 'Look At' Gizmo, or a rotator. 
 
 ### Tips
 
-None so far!
+Always check if the local player is the objects authority when handling object rotation, and setup the pivot of the object correctly before using so the object faces the correct direction _(this is the blue pin on the pivot)_.
+It is also suggested that for fluid motions you use 60hz on the authority player, or alternatively use a rotator for 2D motion.
 
 ### Issues
 
-None so far!
+When setting the rotation of a player, it may also effect position.
