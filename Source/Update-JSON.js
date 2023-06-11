@@ -1,10 +1,11 @@
+const { error } = require("console")
 const fs = require("fs-extra")
 const { join } = require("path")
 const { exit } = require("process")
 const https = require('follow-redirects').https
 var SVGGen = ""
 
-const TotalSteps = 6
+const TotalSteps = 5
 var CurrentStep = 0
 
 const GuidesCat = {
@@ -202,12 +203,12 @@ function PrepareFiles() {
                 let newstr = ""
                 if(prt["IsUnion"] === true) {
                     var joined = prt["DataType"].join(" , ")
-                    newstr = "Union(".concat(joined, ")")
+                    newstr = "Any (".concat(joined, ")")
                 } else {
                     newstr = prt["DataType"]
                 }
                 if (prt["IsList"]) {
-                    newstr = "List[".concat(newstr, "]")
+                    newstr = "List&lt".concat(newstr, "&gt")
                 }
                 if (prt["Name"] == "") {
                     prt["Name"] = "*No name.*"
@@ -237,9 +238,10 @@ function PrepareFiles() {
         }
         
         NewChipFile = NewChipFile
-        .replace("._chipname", contents["PaletteName"].replace("<", "[").replace(">", "]"))
+        .replace("._chipname", contents["PaletteName"]/*.replace("<", "[").replace(">", "]")*/)
         .replace("._istroll", BoolToYesNo(contents["TrollingRisk"]))
         .replace("._isbeta", BoolToYesNo(contents["IsBeta"]))
+        .replace("._isrole", BoolToYesNo(contents["IsRoleAssignmentRisk"]))
         .replace("._uuid1", uuid).replace("._uuid2", uuid).replace("._uuid3", uuid)
         .replace("._inputs", InputsStr)
         .replace("._outputs", OutputsStr)
@@ -261,7 +263,7 @@ function PrepareFiles() {
                 break;
         }
         if(contents["Description"] !== "") {
-            NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "[").replace(">", "]"))
+            NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "&lt").replace(">", "&gt"))
         } else NewChipFile = NewChipFile.replace("._chipdesc", "*No description.*")
 
         fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".mdx"), NewChipFile);
@@ -394,23 +396,39 @@ function RestOfUpdate(){
     OldJSON_Clone = JSON.parse(oldJSON_raw)["Nodes"]
     entries = Object.entries(OldJSON_Clone)
     
-    AddStep("Updating ports.json...")
-    RetrievePorts();
-    fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
+    try {
+        AddStep("Updating ports.json...")
+        RetrievePorts();
+        fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
 
-    AddStep("Translating chips...")
-    TranslateChipData();
-    fs.writeFileSync("Generated/chips.json", JSON.stringify(NewChips, null, 4))
+        AddStep("Translating chips...")
+        TranslateChipData();
+        fs.writeFileSync("Generated/chips.json", JSON.stringify(NewChips, null, 4))
+    }
+    catch (err) {
+        console.error(err)
+        console.log("Something went wrong! Can't skip important steps!")
+        exit(1)
+    }
+    try {
+        SVGGen = require("./Create-SVG")
+        AddStep("Preparing page files...")
+        PrepareFiles();
+    }
+    catch (err) {
+        console.error(err)
+        console.log("Couldn't create doc files!")
+    }
+    try {
+        AddStep("Copying docs...")
+        PrepareDocs();
+    }
+    catch (err) {
+        console.error(err)
+        console.log("Unable to clone docs!")
+    }
 
-    AddStep("Generating info.txt...")
-    fs.writeFileSync("Generated/info.txt", "Generated on " + new Date(Date.now()).toDateString())
     
-    SVGGen = require("./Create-SVG")
-    AddStep("Preparing page files...")
-    PrepareFiles();
-
-    AddStep("Copying docs...")
-    PrepareDocs();
 
     console.log("Finished!")
     exit(0)

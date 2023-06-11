@@ -1,9 +1,8 @@
 ---
 sidebar_position: 551
 tags: [Player,Economy,Consumable,Economy,Consumable,Player,Economy,Room Key,Economy,RoomKey]
+title: 'Show Purchase Prompt'
 ---
-
-# Show Purchase Prompt
 
 Show player a purchase prompt for a Room Key or Room Consumable. If called too many times sequentially, the purchase prompt will appear as a Watch notification, instead of as a popup.
 
@@ -20,7 +19,7 @@ import EsbSvg from "./assets/7a8d9550-41fa-42a3-8d52-0fc7e6ac3213.svg";
 | Input Name | Input Type |
 |-----------|-----------|
 | *No name.* | exec |
-| In-Room Purchasable | Union(room key , consumable) |
+| In-Room Purchasable | Any (room key , consumable) |
 | Player | player |
 
 | Output Name | Output Type |
@@ -40,6 +39,10 @@ import EsbSvg from "./assets/7a8d9550-41fa-42a3-8d52-0fc7e6ac3213.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>

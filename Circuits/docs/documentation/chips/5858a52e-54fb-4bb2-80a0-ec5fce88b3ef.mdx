@@ -1,9 +1,8 @@
 ---
 sidebar_position: 9
 tags: [Object,AI]
+title: 'AI Has Line of Sight To Target'
 ---
-
-# AI Has Line of Sight To Target
 
 Outputs if the input AI has line of sight to the input target.
 
@@ -20,7 +19,7 @@ import EsbSvg from "./assets/5858a52e-54fb-4bb2-80a0-ec5fce88b3ef.svg";
 | Input Name | Input Type |
 |-----------|-----------|
 | AI | ai |
-| Target | Union(ai , combatant , rec room object , patrol point , player , vector3) |
+| Target | Any (ai , combatant , rec room object , patrol point , player , vector3) |
 
 | Output Name | Output Type |
 |-----------|-----------|
@@ -39,6 +38,10 @@ import EsbSvg from "./assets/5858a52e-54fb-4bb2-80a0-ec5fce88b3ef.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>

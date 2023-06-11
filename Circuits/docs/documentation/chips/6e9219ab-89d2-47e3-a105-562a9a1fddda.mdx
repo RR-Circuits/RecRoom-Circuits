@@ -1,9 +1,8 @@
 ---
 sidebar_position: 293
 tags: [Math,Scalar,Math,Vector,Math,Quaternion]
+title: 'Lerp Unclamped'
 ---
-
-# Lerp Unclamped
 
 Computes a linear interpolation. The interpolant is not clamped. When lerping between Colors, the interpolant is still constrained to values which stay within the set of real colors.
 
@@ -19,8 +18,8 @@ import EsbSvg from "./assets/6e9219ab-89d2-47e3-a105-562a9a1fddda.svg";
 
 | Input Name | Input Type |
 |-----------|-----------|
-| Start | Union(float , quaternion , vector3 , color) |
-| End | Union(float , quaternion , vector3 , color) |
+| Start | Any (float , quaternion , vector3 , color) |
+| End | Any (float , quaternion , vector3 , color) |
 | Progress | float |
 
 | Output Name | Output Type |
@@ -40,6 +39,10 @@ import EsbSvg from "./assets/6e9219ab-89d2-47e3-a105-562a9a1fddda.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>

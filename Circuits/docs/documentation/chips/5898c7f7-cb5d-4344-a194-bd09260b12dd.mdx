@@ -1,9 +1,8 @@
 ---
 sidebar_position: 484
 tags: [Player,Physics,Object,Physics]
+title: 'Respawn (Deprecated)'
 ---
-
-# Respawn (Deprecated)
 
 Sets the position and rotation of the target player or object. Players will rotate about the vertical axis only. Will fail in the following cases: If the target object is currently held, selected/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.
 
@@ -20,9 +19,9 @@ import EsbSvg from "./assets/5898c7f7-cb5d-4344-a194-bd09260b12dd.svg";
 | Input Name | Input Type |
 |-----------|-----------|
 | *No name.* | exec |
-| Target | Union(player , rec room object) |
+| Target | Any (player , rec room object) |
 | Position | vector3 |
-| Rotation | Union(vector3 , quaternion) |
+| Rotation | Any (vector3 , quaternion) |
 | Spawn Radius | float |
 | Clear Velocity | bool |
 | Use Rez Effects | bool |
@@ -45,6 +44,10 @@ import EsbSvg from "./assets/5898c7f7-cb5d-4344-a194-bd09260b12dd.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>

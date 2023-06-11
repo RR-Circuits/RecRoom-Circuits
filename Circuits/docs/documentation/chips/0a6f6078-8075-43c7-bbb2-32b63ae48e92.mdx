@@ -1,9 +1,8 @@
 ---
 sidebar_position: 540
 tags: [Player,Physics,Object,Physics]
+title: 'Set Rotation'
 ---
-
-# Set Rotation
 
 Sets the rotation of the target player or object. Players will rotate about the vertical axis only. Will fail in the following cases: If the target object is currently held, select/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.
 
@@ -16,8 +15,8 @@ import EsbSvg from "./assets/0a6f6078-8075-43c7-bbb2-32b63ae48e92.svg";
 | Input Name | Input Type |
 |-----------|-----------|
 | *No name.* | exec |
-| Target | Union(player , rec room object) |
-| Rotation | Union(vector3 , quaternion) |
+| Target | Any (player , rec room object) |
+| Rotation | Any (vector3 , quaternion) |
 
 | Output Name | Output Type |
 |-----------|-----------|
@@ -37,6 +36,10 @@ import EsbSvg from "./assets/0a6f6078-8075-43c7-bbb2-32b63ae48e92.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>

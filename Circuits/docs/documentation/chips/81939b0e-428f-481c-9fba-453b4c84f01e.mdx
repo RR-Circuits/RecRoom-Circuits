@@ -1,9 +1,8 @@
 ---
 sidebar_position: 6
 tags: [Object,Rec Room Object,Tag,Player,Tag]
+title: 'Add Tags'
 ---
-
-# Add Tags
 
 Adds tags to the input object or player.
 
@@ -16,8 +15,8 @@ import EsbSvg from "./assets/81939b0e-428f-481c-9fba-453b4c84f01e.svg";
 | Input Name | Input Type |
 |-----------|-----------|
 | *No name.* | exec |
-| Target | Union(player , rec room object) |
-| Tags | List[string] |
+| Target | Any (player , rec room object) |
+| Tags | List&ltstring&gt |
 
 | Output Name | Output Type |
 |-----------|-----------|
@@ -36,6 +35,10 @@ import EsbSvg from "./assets/81939b0e-428f-481c-9fba-453b4c84f01e.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>

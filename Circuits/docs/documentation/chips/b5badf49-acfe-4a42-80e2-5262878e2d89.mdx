@@ -1,9 +1,8 @@
 ---
 sidebar_position: 10
 tags: [Object,AI]
+title: 'AI Look At'
 ---
-
-# AI Look At
 
 Command an AI to look at the input target. If you want the AI to look in a passed in vector as a direction, set the “Look Target Is Direction” parameter to True. To make an AI stop looking, use the AI Stop Looking node.
 
@@ -21,7 +20,7 @@ import EsbSvg from "./assets/b5badf49-acfe-4a42-80e2-5262878e2d89.svg";
 |-----------|-----------|
 | *No name.* | exec |
 | AI | ai |
-| Look Target | Union(ai , combatant , rec room object , patrol point , player , vector3) |
+| Look Target | Any (ai , combatant , rec room object , patrol point , player , vector3) |
 | Look Target is Direction | bool |
 
 | Output Name | Output Type |
@@ -41,6 +40,10 @@ import EsbSvg from "./assets/b5badf49-acfe-4a42-80e2-5262878e2d89.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>

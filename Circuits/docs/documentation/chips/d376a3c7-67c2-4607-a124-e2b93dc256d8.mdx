@@ -1,9 +1,8 @@
 ---
 sidebar_position: 421
 tags: [Player,UI]
+title: 'Player Prompt Multiple Choice'
 ---
-
-# Player Prompt Multiple Choice
 
 Sends a watch notification to the specified player containing the prompt title and body, along with each of the answer choices on its own line. Once this watch notification is opened, the player can choose a response and hit "ok," triggering the On Prompt Complete event. Since there is a delay between sending a notification and receiving the response in which other responses may be received, the Player output can be used to disambiguate multiple responses
 
@@ -19,7 +18,7 @@ import EsbSvg from "./assets/d376a3c7-67c2-4607-a124-e2b93dc256d8.svg";
 | Player | player |
 | Prompt Title | string |
 | Prompt Body | string |
-| Answer Choices | List[string] |
+| Answer Choices | List&ltstring&gt |
 
 | Output Name | Output Type |
 |-----------|-----------|
@@ -43,6 +42,10 @@ import EsbSvg from "./assets/d376a3c7-67c2-4607-a124-e2b93dc256d8.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>

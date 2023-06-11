@@ -1,9 +1,8 @@
 ---
 sidebar_position: 434
 tags: [Player]
+title: 'Play Handle Haptics'
 ---
-
-# Play Handle Haptics
 
 Plays haptic feedback through a held Handle object Duration is an integer in milliseconds between 1 and 500 Intensity is a float value from 0 to 1  At this time, haptics are only supported on VR. 
 
@@ -20,7 +19,7 @@ import EsbSvg from "./assets/da6980ad-92eb-4ce8-a643-291e2bf82bc7.svg";
 | Input Name | Input Type |
 |-----------|-----------|
 | Play | exec |
-| Handle | Union(trigger handle , gun handle) |
+| Handle | Any (trigger handle , gun handle) |
 | Duration (ms) | int |
 | Intensity | float |
 
@@ -41,6 +40,10 @@ import EsbSvg from "./assets/da6980ad-92eb-4ce8-a643-291e2bf82bc7.svg";
         </tr>
         <tr>
           <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
           <th>❌</th>
         </tr>
         <tr>
