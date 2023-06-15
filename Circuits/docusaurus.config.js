@@ -58,10 +58,19 @@ const config = {
       }),
     ],
   ],
-
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'SAKJY3CCPM',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '9f4a711957da351271094828e8e0eea2',
+  
+        indexName: 'circuits',
+      },
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
