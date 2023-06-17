@@ -110,7 +110,7 @@ const template = {
 }
 
 // Extract the data types from this JSON and put it in ports.json
-function RetrievePorts(){
+async function RetrievePorts(){
     for(const chip of Object.values(OldJSON)){
         for(const nodedesc of chip["NodeDescs"]){
             let HasParams = false
@@ -156,7 +156,7 @@ function CheckHasFileName(arr, checkr) {
     return [false]
 }
 
-function PrepareFiles() {
+async function PrepareFiles() {
     const chps_rw = fs.readFileSync("Generated/chips.json", "utf-8")
     const chps = JSON.parse(chps_rw)
     const entries = Object.entries(chps)
@@ -269,7 +269,7 @@ function PrepareFiles() {
         fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".mdx"), NewChipFile);
 
         const Untouchedver = JSON.parse(fs.readFileSync("Generated/chips.json", "utf-8"))
-        const returnedsvg = SVGGen.Generate(uuid, Untouchedver)
+        const returnedsvg = await SVGGen.Generate(uuid, Untouchedver)
 
         fs.mkdirSync(__dirname + "/../Circuits/docs/documentation/chips/assets/", {recursive: true})
         fs.writeFileSync(__dirname + "/../Circuits/docs/documentation/chips/assets/".concat(uuid, ".svg"), returnedsvg)
@@ -278,7 +278,7 @@ function PrepareFiles() {
     }
 }
 
-function TranslateChipData(){
+async function TranslateChipData(){
     for(const [uuid, chipd] of entries) {
         // Order: List<> removal -> Param checker
         var ThisChipModel = "Default"
@@ -370,7 +370,7 @@ function TranslateChipData(){
     }
 }
 
-function PrepareDocs() {
+async function PrepareDocs() {
     try {
         fs.mkdirSync(__dirname + "/../Guides/")
     }
@@ -390,7 +390,7 @@ function PrepareDocs() {
     }
 }
 
-function RestOfUpdate(){
+async function RestOfUpdate(){
     oldJSON_raw = fs.readFileSync(DownloadFile, "utf-8")
     OldJSON = JSON.parse(oldJSON_raw)["Nodes"]
     OldJSON_Clone = JSON.parse(oldJSON_raw)["Nodes"]
@@ -398,11 +398,11 @@ function RestOfUpdate(){
     
     try {
         AddStep("Updating ports.json...")
-        RetrievePorts();
+        await RetrievePorts();
         fs.writeFileSync("Generated/ports.json", JSON.stringify(PortTypes, null, 4))
 
         AddStep("Translating chips...")
-        TranslateChipData();
+        await TranslateChipData();
         fs.writeFileSync("Generated/chips.json", JSON.stringify(NewChips, null, 4))
     }
     catch (err) {
@@ -413,7 +413,7 @@ function RestOfUpdate(){
     try {
         SVGGen = require("./Create-SVG")
         AddStep("Preparing page files...")
-        PrepareFiles();
+        await PrepareFiles();
     }
     catch (err) {
         console.error(err)
@@ -421,7 +421,7 @@ function RestOfUpdate(){
     }
     try {
         AddStep("Copying docs...")
-        PrepareDocs();
+        await PrepareDocs();
     }
     catch (err) {
         console.error(err)
