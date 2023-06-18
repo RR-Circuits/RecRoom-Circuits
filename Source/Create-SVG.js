@@ -7,7 +7,7 @@ const process = require("process")
 
 var Chip = ""
 var Ports = ""
-var exportpath = null
+var exportpath = undefined
 //Padding
 const PortHeight = 19
 const MinimalPadding = 111
@@ -346,6 +346,7 @@ async function GenerateSVG (uid, jsob, ports) {
     var FinalReturn = DomElement.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", "")
 
     if(exportpath !== undefined ?? null){
+        console.log(typeof(exportpath))
         ChipSVG.append("defs").append("style")
         .html(`
         @font-face {
@@ -419,7 +420,7 @@ font-family: "Ubuntu";
             fs.writeFileSync(exportpath, png)
         }
         catch (err){
-            console.log(err)
+            
         }
     }
 
