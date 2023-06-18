@@ -268,8 +268,8 @@ async function PrepareFiles() {
 
         fs.writeFileSync(__dirname + '/../Circuits/docs/documentation/chips/'.concat(uuid, ".mdx"), NewChipFile);
 
-        const Untouchedver = JSON.parse(fs.readFileSync("Generated/chips.json", "utf-8"))
-        const returnedsvg = await SVGGen.Generate(uuid, Untouchedver)
+        
+        const returnedsvg = await SVGGen.Generate(uuid, require("./Generated/chips.json"), require("./Generated/ports.json"))
 
         fs.mkdirSync(__dirname + "/../Circuits/docs/documentation/chips/assets/", {recursive: true})
         fs.writeFileSync(__dirname + "/../Circuits/docs/documentation/chips/assets/".concat(uuid, ".svg"), returnedsvg)

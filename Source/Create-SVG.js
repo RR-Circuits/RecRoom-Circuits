@@ -3,9 +3,11 @@ const d3 = require("d3")
 const jsdom = require("jsdom")
 const StringWidth = require("string-pixel-width")
 const {svg2png} = require("svg-png-converter")
+const process = require("process")
+
 var Chip = ""
 var Ports = ""
-
+var exportpath = null
 //Padding
 const PortHeight = 19
 const MinimalPadding = 111
@@ -313,11 +315,11 @@ function GenerateConst (tempUUID, JSObject) {
 
 }
 
-async function GenerateSVG (uid, jsob, exportpath, portspath) {
+async function GenerateSVG (uid, jsob, ports) {
 
     Chip = jsob
     let returnval = ""
-    Ports = portspath ?? require("./Generated/ports.json")
+    Ports = ports
     switch(Chip[uid]["Model"]){
         case "Default": 
             returnval = GenerateRegular(uid, jsob)
@@ -425,4 +427,10 @@ font-family: "Ubuntu";
 }
 module.exports ={
     Generate: GenerateSVG
+}
+if(require.main === module){
+    const args = process.argv
+    console.log(args)
+    exportpath = args[3]
+    GenerateSVG(args[2], require(args[4]), require(args[5]))
 }
