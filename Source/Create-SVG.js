@@ -346,7 +346,6 @@ async function GenerateSVG (uid, jsob, ports) {
     var FinalReturn = DomElement.window.document.documentElement.innerHTML.replace("<head></head>", "").replace("<body>", "").replace("</body>", "")
 
     if(exportpath !== undefined ?? null){
-        console.log(typeof(exportpath))
         ChipSVG.append("defs").append("style")
         .html(`
         @font-face {
@@ -431,7 +430,6 @@ module.exports ={
 }
 if(require.main === module){
     const args = process.argv
-    console.log(args)
     exportpath = args[3]
     GenerateSVG(args[2], require(args[4]), require(args[5]))
 }
