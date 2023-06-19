@@ -278,7 +278,7 @@ async function PrepareFiles() {
     }
 }
 
-async function TranslateChipData(){
+async function TranslateChipData(cut){
     for(const [uuid, chipd] of entries) {
         // Order: List<> removal -> Param checker
         var ThisChipModel = "Default"
@@ -305,6 +305,7 @@ async function TranslateChipData(){
             Tags: t
         }
         for(const NodeDesc of chipd["NodeDescs"]){
+            delete NodeDesc["Name"]
             const TempPortAssign = {}
             if(Object.keys(NodeDesc["ReadonlyTypeParams"]).length > 0){
                 for(let [ParamKey, ParamValue] of Object.entries(NodeDesc["ReadonlyTypeParams"])) {
@@ -338,6 +339,7 @@ async function TranslateChipData(){
                 port["IsUnion"] = IsUnion
                 port["IsList"] = IsList
                 delete port["ReadonlyType"]
+                delete port["Description"]
             }
             for(const port of NodeDesc["Outputs"]) {
                 let IsList;
@@ -363,6 +365,7 @@ async function TranslateChipData(){
                 port["IsUnion"] = IsUnion
                 port["IsList"] = IsList
                 delete port["ReadonlyType"]
+                delete port["Description"]
             }
             delete NodeDesc["ReadonlyTypeParams"]
         }
