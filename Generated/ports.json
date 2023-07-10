@@ -114,6 +114,11 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
+    "objective marker": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
     "costume": {
         "HasDefaultValue": false,
         "Model": "Data",
@@ -124,7 +129,7 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
-    "hud element": {
+    "hud constant": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
@@ -145,6 +150,11 @@
         "Color": "#F5C51F"
     },
     "fog": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "hud element": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"

@@ -1923,7 +1923,7 @@
         "PaletteName": "Award Consumable",
         "Description": "Award a room consumable to a player. Multiple award room consumable requests from the same client are sent in bulk with a ten-second cooldown. The Success port will be TRUE if the consumable was entirely, or in part, awarded to the player. If the consumable could not be awarded, the Success port will be FALSE. Use the Log Output toggle in the configuration settings to see more information about why a failure occurred. Logging output may impact room performance and should be toggled off when not in use.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -2057,7 +2057,7 @@
         "PaletteName": "Award Room Key",
         "Description": "Unlocks a room key for the target player. Multiple award room key requests from the same client are sent in bulk with a one-second cooldown.\nThe Success port will be TRUE if the key was successfully unlocked for the player or if the player previously owned the key. If the key could not be awarded the Success port will be FALSE.\nUse the Log Output toggle in the configuration settings to see more information about why a failure occurred. Logging output may impact room performance and should be toggled off when not in use.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -3593,7 +3593,7 @@
         "PaletteName": "Color To HSV",
         "Description": "Return hue, saturation, and value from the given color.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -3672,7 +3672,7 @@
         "PaletteName": "Color To RGB",
         "Description": "Return red, green, and blue from the given color.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -4215,6 +4215,36 @@
                     {
                         "Name": "",
                         "DataType": "destination room",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "9ffb119b-dadc-4e50-af19-9bfd335a34ef": {
+        "ChipName": "Objective Marker",
+        "PaletteName": "Objective Marker Constant",
+        "Description": "Objective Marker Constant defines the default appearance of an Objective Marker. Use with Objective Marker Set Enabled, Objective Marker Set Position, and the other Objective Marker chips.",
+        "Model": "Constant",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Constant",
+            "Objective Marker",
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "objective marker",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -4994,7 +5024,7 @@
                     },
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     },
@@ -6124,7 +6154,7 @@
         "PaletteName": "Explosion Emitter Get Firing Player",
         "Description": "Returns the player set by the Explosion Emitter Set Firing Player chip.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -6284,7 +6314,7 @@
         "PaletteName": "Explosion Emitter Set Firing Player",
         "Description": "Sets the firing player of the target Explosion Emitter. If none is set, the component will use the authority player.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -6711,6 +6741,34 @@
             }
         ]
     },
+    "4a3c3d38-f1a4-493b-977f-5444ab2d404b": {
+        "ChipName": "Game HUD Element",
+        "PaletteName": "Game HUD Element Constant",
+        "Description": "",
+        "Model": "Constant",
+        "IsBeta": false,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "HUD"
+        ],
+        "Functions": [
+            {
+                "Inputs": [],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "hud element",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "3f4346b1-bc6f-4aca-9650-d43cbd4acc5b": {
         "ChipName": "Get All Players",
         "PaletteName": "Get All Players",
@@ -6743,7 +6801,7 @@
         "PaletteName": "Get Angular Velocity",
         "Description": "Returns the angular velocity in degrees per second of a Rec Room Object.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -7259,8 +7317,8 @@
         ]
     },
     "119d2860-e05c-4140-ba5f-c24139b78652": {
-        "ChipName": "Get HUD Element Color",
-        "PaletteName": "Get HUD Element Color",
+        "ChipName": "Get Game HUD Element Color",
+        "PaletteName": "Get Game HUD Element Color",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -7277,7 +7335,7 @@
                 "Inputs": [
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -7294,8 +7352,8 @@
         ]
     },
     "98ef89de-7a1b-4043-8071-b5cda41030cd": {
-        "ChipName": "Get HUD Element Label",
-        "PaletteName": "Get HUD Element Label",
+        "ChipName": "Get Game HUD Element Label",
+        "PaletteName": "Get Game HUD Element Label",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -7312,7 +7370,7 @@
                 "Inputs": [
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -7329,8 +7387,8 @@
         ]
     },
     "f59d4537-e8b4-4d19-b29f-d5203ce562af": {
-        "ChipName": "Get HUD Element Max Value",
-        "PaletteName": "Get HUD Element Max Value",
+        "ChipName": "Get Game HUD Element Max Value",
+        "PaletteName": "Get Game HUD Element Max Value",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -7347,7 +7405,7 @@
                 "Inputs": [
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -7364,8 +7422,8 @@
         ]
     },
     "d9cbf25f-01c6-468f-8607-d1dd8317bb2f": {
-        "ChipName": "Get HUD Element Value",
-        "PaletteName": "Get HUD Element Value",
+        "ChipName": "Get Game HUD Element Value",
+        "PaletteName": "Get Game HUD Element Value",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -7382,7 +7440,7 @@
                 "Inputs": [
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -7437,7 +7495,7 @@
         "PaletteName": "Get Loading Players",
         "Description": "Returns the number of players that are currently loading into the room.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -7520,7 +7578,7 @@
         "PaletteName": "Get Local Camera Position",
         "Description": "Gets the position of your avatar's view, output as a Vector3.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -10532,34 +10590,6 @@
             }
         ]
     },
-    "4a3c3d38-f1a4-493b-977f-5444ab2d404b": {
-        "ChipName": "HUD Element",
-        "PaletteName": "HUD Element Constant",
-        "Description": "",
-        "Model": "Constant",
-        "IsBeta": false,
-        "TrollingRisk": false,
-        "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
-        "Tags": [
-            "Player",
-            "UI",
-            "HUD"
-        ],
-        "Functions": [
-            {
-                "Inputs": [],
-                "Outputs": [
-                    {
-                        "Name": "",
-                        "DataType": "hud element",
-                        "IsUnion": false,
-                        "IsList": false
-                    }
-                ]
-            }
-        ]
-    },
     "a4f8a9a1-fd7b-4702-8345-93ae4d57f333": {
         "ChipName": "If Value",
         "PaletteName": "If Value",
@@ -10600,6 +10630,64 @@
                     {
                         "Name": "Result",
                         "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "f64272d9-4aca-4170-8dee-bb711d97921c": {
+        "ChipName": "If Has Tag",
+        "PaletteName": "If Has Tag",
+        "Description": "Runs Has Tag if the input object or player has the input tag, otherwise runs Does Not Have Tag",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Rec Room Object",
+            "Tag",
+            "Player",
+            "Tag"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": [
+                            "player",
+                            "rec room object"
+                        ],
+                        "IsUnion": true,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Tag",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Has Tag",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Does Not Have Tag",
+                        "DataType": "exec",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -10730,6 +10818,58 @@
             }
         ]
     },
+    "502d09f5-85ce-45fc-b6a1-3a3eecce8562": {
+        "ChipName": "If Player Has Role",
+        "PaletteName": "If Player Has Role",
+        "Description": "Runs Has Role if the input player has the input role, otherwise runs Does Not Have Role.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Role"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Role",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Has Role",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Does Not Have Role",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "c7643011-f320-4155-89b8-d693730c1935": {
         "ChipName": "If Player Is Local",
         "PaletteName": "If Player Is Local",
@@ -10767,6 +10907,103 @@
                     },
                     {
                         "Name": "Is Not Local",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "c1049bfc-902d-4a1a-8b28-1a80b6f26588": {
+        "ChipName": "If Player Is Valid And Local",
+        "PaletteName": "If Player Is Valid And Local",
+        "Description": "If the input player is invalid, this runs Is Not Valid. If the input player is valid but not the local player, this runs Is Valid And Not Local. If the input player is both valid and the local player, this runs Is Valid And Local. Players can be invalid if a variable is never set or if a player has left the room.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Networking",
+            "Utilities"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Is Valid And Local",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Is Not Valid",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Is Valid And Not Local",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "ec2ceb32-db91-4f65-8b0a-b66d7f2a7f2d": {
+        "ChipName": "If Player Is Valid",
+        "PaletteName": "If Player Is Valid",
+        "Description": "Runs Is Valid if the input player is not null, otherwise runs Is Not Valid. Players can be not valid if a variable is never set or if a player has left the room.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Utilities"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Is Valid",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Is Not Valid",
                         "DataType": "exec",
                         "IsUnion": false,
                         "IsList": false
@@ -10967,10 +11204,71 @@
             }
         ]
     },
+    "af660f62-d086-4731-ab9d-9a8e8a25c77e": {
+        "ChipName": "Instance Get Max Players",
+        "PaletteName": "Instance Get Max Players",
+        "Description": "Returns the maximum number of players that can fit in this room, as set in subroom settings.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Room Instance"
+        ],
+        "Functions": [
+            {
+                "Inputs": [],
+                "Outputs": [
+                    {
+                        "Name": "Max Players",
+                        "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "90e2d8e3-6cdc-4b52-b7e9-529c98e5ee09": {
+        "ChipName": "Interaction Volume Get Hold Time",
+        "PaletteName": "Interaction Volume Get Hold Time",
+        "Description": "Gets the required hold time for the target Interaction Volume.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Interaction Volume"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "interaction volume",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Hold Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "0c351297-db4d-43e7-81a3-95dc5ddde401": {
         "ChipName": "Interaction Volume Get Interaction Prompt",
         "PaletteName": "Interaction Volume Get Interaction Prompt",
-        "Description": "Gets the interaction promt of an Interaction Volume.",
+        "Description": "Gets the interaction prompt of an Interaction Volume.",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -11038,15 +11336,13 @@
     "4cdfcf23-e5dc-4b81-a500-189dba609d0f": {
         "ChipName": "Interaction Volume Get Normalized Hold Progress",
         "PaletteName": "Interaction Volume Get Normalized Hold Progress",
-        "Description": "Gets normalized hold progress for Interaction Volume V2",
+        "Description": "Gets the normalized hold progress for the target Interaction Volume.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "Object",
-            "Interaction Volume V2",
             "Object",
             "Interaction Volume"
         ],
@@ -11071,10 +11367,56 @@
             }
         ]
     },
+    "47546f8a-f7b9-4b8a-a4a6-1298f130f65c": {
+        "ChipName": "Interaction Volume Set Hold Time",
+        "PaletteName": "Interaction Volume Set Hold Time",
+        "Description": "Sets the required hold time for the target Interaction Volume.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Interaction Volume"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "interaction volume",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Hold Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "380d8467-bdfa-4724-a62c-1955831f994a": {
         "ChipName": "Interaction Volume Set Interaction Prompt",
         "PaletteName": "Interaction Volume Set Interaction Prompt",
-        "Description": "Sets the interaction promt of an Interaction Volume.",
+        "Description": "Sets the interaction prompt of an Interaction Volume.",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -11166,15 +11508,13 @@
     "714654bc-7266-4088-8efe-287bdca164fd": {
         "ChipName": "Interaction Volume Set Normalized Hold Progress",
         "PaletteName": "Interaction Volume Set Normalized Hold Progress",
-        "Description": "Sets normalized hold progress for Interaction Volume V2",
+        "Description": "Sets the normalized hold progress for the target Interaction Volume.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "Object",
-            "Interaction Volume V2",
             "Object",
             "Interaction Volume"
         ],
@@ -11299,7 +11639,7 @@
         "PaletteName": "Inverse Lerp",
         "Description": "Computes an inverse linear interpolation. The output is clamped between 0 and 1.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -11359,7 +11699,7 @@
         "PaletteName": "Inverse Lerp Unclamped",
         "Description": "Computes an inverse linear interpolation. The output is not clamped.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -11575,8 +11915,8 @@
         ]
     },
     "f24d537e-da9e-47bf-8764-fba6eeefb043": {
-        "ChipName": "Get Is Event Instance",
-        "PaletteName": "Get Is Event Instance",
+        "ChipName": "Instance Get Is Event",
+        "PaletteName": "Instance Get Is Event",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -11584,14 +11924,15 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "Utilities"
+            "Game Features",
+            "Room Instance"
         ],
         "Functions": [
             {
                 "Inputs": [],
                 "Outputs": [
                     {
-                        "Name": "Is Event Instance",
+                        "Name": "Is Event",
                         "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
@@ -11601,8 +11942,8 @@
         ]
     },
     "aa263220-c6aa-4789-b09c-c73d7fa144fd": {
-        "ChipName": "Get Is Private Instance",
-        "PaletteName": "Get Is Private Instance",
+        "ChipName": "Instance Get Is Private",
+        "PaletteName": "Instance Get Is Private",
         "Description": "Returns True if the current room instance is private.",
         "Model": "Default",
         "IsBeta": false,
@@ -11610,14 +11951,15 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "Utilities"
+            "Game Features",
+            "Room Instance"
         ],
         "Functions": [
             {
                 "Inputs": [],
                 "Outputs": [
                     {
-                        "Name": "Is Private Instance",
+                        "Name": "Is Private",
                         "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
@@ -11969,7 +12311,7 @@
         "PaletteName": "Lerp Unclamped",
         "Description": "Computes a linear interpolation. The interpolant is not clamped. When lerping between Colors, the interpolant is still constrained to values which stay within the set of real colors.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -13998,7 +14340,7 @@
         "PaletteName": "List Remove Item (All)",
         "Description": "Removes all instances of item from list.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -14044,7 +14386,7 @@
         "PaletteName": "List Remove Item (First)",
         "Description": "Removes the first instance of the item in the list, and returns the index where it was found (-1 if not present)",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -14506,7 +14848,7 @@
         "PaletteName": "Local Player Gaze Direction",
         "Description": "Outputs the direction of Local Player Gaze.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -14533,7 +14875,7 @@
         "PaletteName": "Local Player Gaze Origin",
         "Description": "Outputs the origin of Local Player Gaze.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -14600,7 +14942,7 @@
         "PaletteName": "Log Error",
         "Description": "Logs the given error message to the logging tab of your palette.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -15079,6 +15421,735 @@
             }
         ]
     },
+    "7c9d1838-0b70-4a77-8cec-b67758a9095e": {
+        "ChipName": "Objective Marker Get Color",
+        "PaletteName": "Objective Marker Get Color",
+        "Description": "Objective Marker Get Color returns the current color of target Objective Marker for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Color",
+                        "DataType": "color",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "a4ab4e75-1031-4f68-9631-ef31f131c708": {
+        "ChipName": "Objective Marker Get Current Distance",
+        "PaletteName": "Objective Marker Get Current Distance",
+        "Description": "Objective Marker Get Current Distance returns the current distance of the local player from the target Objective Marker, regardless of whether the distance indicator is enabled.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Distance",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "6bca2a96-0f30-438e-89d8-aa77ffce2b1c": {
+        "ChipName": "Objective Marker Get Distance Enabled",
+        "PaletteName": "Objective Marker Get Distance Enabled",
+        "Description": "Objective Marker Get Distance Is Enabled returns whether or not the target Objective Marker’s distance indicator is visible for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "67f3297e-f498-4e87-a170-5f42b59b0b3a": {
+        "ChipName": "Objective Marker Get Enabled",
+        "PaletteName": "Objective Marker Get Enabled",
+        "Description": "Objective Marker Get Enabled returns whether or not the target Objective Marker is enabled for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "79b28dea-36c7-4c4d-b523-7461667851a2": {
+        "ChipName": "Objective Marker Get Label Enabled",
+        "PaletteName": "Objective Marker Get Label Enabled",
+        "Description": "Objective Marker Get Label Is Enabled returns whether or not the target Objective Marker’s text label is visible for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "38569dac-4cbc-487c-9ca6-14e2cc0fbf05": {
+        "ChipName": "Objective Marker Get Label",
+        "PaletteName": "Objective Marker Get Label",
+        "Description": "Objective Marker Get Label returns the current text label of target Objective Marker for the local player as a string.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Label",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "0a6b285e-cfb2-4112-88c3-ebe2ba3269a5": {
+        "ChipName": "Objective Marker Get Position",
+        "PaletteName": "Objective Marker Get Position",
+        "Description": "Objective Marker Get Position returns target Objective Marker’s current position for the local player as a vector",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Position",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "6fe14d02-0382-4f94-a6ef-f3d414015e95": {
+        "ChipName": "Objective Marker Get Fade Threshold",
+        "PaletteName": "Objective Marker Get Fade Threshold",
+        "Description": "Objective Marker Get Fade Threshold returns the current fade threshold of the target Objective Marker for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Fade Threshold",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "0a9761e3-44df-4ede-a1dd-6a8f4eb6a7c1": {
+        "ChipName": "Objective Marker Get Target Object",
+        "PaletteName": "Objective Marker Get Target Object",
+        "Description": "Objective Marker Get Target Object returns the object targeted by target Objective Marker, if it’s tracking an object. If target Objective Marker is not tracking an object, returns Invalid Object.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Object",
+                        "DataType": "rec room object",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "f008de51-c5bb-4107-84e8-18a2d5b648bd": {
+        "ChipName": "Objective Marker Get Target Player",
+        "PaletteName": "Objective Marker Get Target Player",
+        "Description": "Objective Marker Get Target Player returns the player targeted by target Objective Marker, if it’s tracking a player. If target Objective Marker is not tracking a player, returns Invalid Player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "9b701044-a1dc-4d74-830e-f0843b0c7056": {
+        "ChipName": "Objective Marker Set Color",
+        "PaletteName": "Objective Marker Set Color",
+        "Description": "Objective Marker Set Color sets target Objective Marker to the specified color for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Color",
+                        "DataType": "color",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "891ffa52-7430-4ffd-b26d-d067580eae22": {
+        "ChipName": "Objective Marker Set Distance Enabled",
+        "PaletteName": "Objective Marker Set Distance Enabled",
+        "Description": "Objective Marker Set Distance Enabled enables or disables the visibility of the target Objective Marker’s distance indicator for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "8bc5eda2-94f1-4bae-879c-50f246155922": {
+        "ChipName": "Objective Marker Set Enabled",
+        "PaletteName": "Objective Marker Set Enabled",
+        "Description": "Objective Marker Set Enabled enables or disables the target Objective Marker for the local player. Use with Objective Marker constant.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "d836b2c6-5cd1-43ac-878e-ea886932031d": {
+        "ChipName": "Objective Marker Set Label Enabled",
+        "PaletteName": "Objective Marker Set Label Enabled",
+        "Description": "Objective Marker Set Label Enabled enables or disables the visibility of the target Objective Marker’s text label for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "cc288016-09cf-4371-951c-082bd5adbd37": {
+        "ChipName": "Objective Marker Set Label",
+        "PaletteName": "Objective Marker Set Label",
+        "Description": "Objective Marker Set Label sets the text label of target Objective Marker to the specified string for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Label",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "89599e52-1537-4696-91ea-fca1eb0ba26a": {
+        "ChipName": "Objective Marker Set Position",
+        "PaletteName": "Objective Marker Set Position",
+        "Description": "Objective Marker Set Position sets the position of target Objective Marker to a position vector for the local player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Position",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "66e3efeb-c1df-45f2-ba9b-c261f938c80f": {
+        "ChipName": "Objective Marker Set Fade Threshold",
+        "PaletteName": "Objective Marker Set Fade Threshold",
+        "Description": "Objective Marker Set Fade Threshold sets the fade threshold of the target Objective Marker for the local player. This threshold is the distance (in meters) at which the marker has fully faded from sight as a player approaches it. For finer control over the fade duration, configure the Objective Marker constant.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Proximity",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "bb7c408a-1fad-4612-a637-0b1a365baa1c": {
+        "ChipName": "Objective Marker Attach To Player Or Object",
+        "PaletteName": "Objective Marker Attach To Player Or Object",
+        "Description": "Objective Marker Attach To Player Or Object sets the position of target Objective Marker to the position of an object or a player, for the local player. Marker will track target object or player until position is set again. If a tracked player leaves the room, the marker will remain at the last tracked position.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player Or Object",
+                        "DataType": [
+                            "player",
+                            "rec room object"
+                        ],
+                        "IsUnion": true,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "df6cdb0c-24d7-447d-b29b-3979e51fb865": {
         "ChipName": "Unequip Object",
         "PaletteName": "Unequip Object",
@@ -15165,7 +16236,7 @@
         "PaletteName": "Overlap Box",
         "Description": "Get information about all the objects/players within a box defined by its center, extents, and orientation. (position, distance, direction, etc.)",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -15835,7 +16906,7 @@
         "PaletteName": "Play Audio At Position",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -15945,7 +17016,7 @@
         "PaletteName": "Player Body Orientation",
         "Description": "Outputs the rotation of a Player's body.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -15979,7 +17050,7 @@
         "PaletteName": "Player Body Position",
         "Description": "Outputs the postion of a Player's body in world space.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -16320,7 +17391,9 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Player",
-            "Physics"
+            "Physics",
+            "Player",
+            "Locomotion"
         ],
         "Functions": [
             {
@@ -16531,7 +17604,7 @@
         "PaletteName": "Player Head Forward Vector",
         "Description": "Outputs the forward vector of a Player's head.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -16565,7 +17638,7 @@
         "PaletteName": "Player Head Height",
         "Description": "Outputs the height of a Player's head.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -16599,7 +17672,7 @@
         "PaletteName": "Player Head Orientation",
         "Description": "Outputs the rotation of a Player's head.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -16633,7 +17706,7 @@
         "PaletteName": "Player Head Position",
         "Description": "Outputs the position of a Player's head in world space.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -16667,7 +17740,7 @@
         "PaletteName": "Player Head Up Vector",
         "Description": "Outputs the up vector of a Player's head.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -16701,7 +17774,7 @@
         "PaletteName": "Player Head Velocity",
         "Description": "Outputs the velocity of a Player's head.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -16874,7 +17947,7 @@
         "PaletteName": "Player Is Room Host",
         "Description": "Outputs True if the input Player is one of the current room's hosts.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -16908,7 +17981,7 @@
         "PaletteName": "Player Is Room Mod",
         "Description": "Outputs True if the input Player is one of the current room's moderators.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -18096,7 +19169,7 @@
         "PaletteName": "Projectile Launcher Get Firing Player",
         "Description": "Returns the player set by the Projectile Launcher Set Firing Player chip.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -18232,7 +19305,7 @@
         "PaletteName": "Projectile Launcher Get Rec Room Object Damage",
         "Description": "Returns the damage value that projectiles from the target launcher will do when hitting Rec Room Objects.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -18641,7 +19714,7 @@
         "PaletteName": "Projectile Launcher Set Rec Room Object Damage",
         "Description": "Sets the damage value that projectiles from the target launcher will do when hitting Rec Room Objects.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -19735,7 +20808,7 @@
         "PaletteName": "Recalculate Room Authority",
         "Description": "Recalcualtes and updates the current room authority based on parameters such as their network connection and platform.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -20365,11 +21438,14 @@
         "PaletteName": "Room Get Matchmaking State",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
-        "Tags": [],
+        "Tags": [
+            "Game Features",
+            "Room Instance"
+        ],
         "Functions": [
             {
                 "Inputs": [],
@@ -20423,11 +21499,14 @@
         "PaletteName": "Room Set Matchmaking State",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
-        "Tags": [],
+        "Tags": [
+            "Game Features",
+            "Room Instance"
+        ],
         "Functions": [
             {
                 "Inputs": [
@@ -20604,7 +21683,7 @@
         "PaletteName": "Root",
         "Description": "Calculate the root of a given value, with the default root being 2 (meaning the square root).",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -21516,8 +22595,8 @@
         ]
     },
     "47f61ea8-aab2-4b0e-8d59-351c0047d853": {
-        "ChipName": "Set HUD Element Color",
-        "PaletteName": "Set HUD Element Color",
+        "ChipName": "Set Game HUD Element Color",
+        "PaletteName": "Set Game HUD Element Color",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -21540,7 +22619,7 @@
                     },
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     },
@@ -21562,10 +22641,10 @@
             }
         ]
     },
-    "04fb09fa-5be2-491b-9d16-d5b21083f528": {
-        "ChipName": "Set HUD Element Label",
-        "PaletteName": "Set HUD Element Label",
-        "Description": "",
+    "31295d8e-f416-4c44-b0bd-2eda32200365": {
+        "ChipName": "Game HUD Element Set All Values",
+        "PaletteName": "Game HUD Element Set All Values",
+        "Description": "Override all Game HUD Element properties using default values from Game HUD Element Constant input",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -21588,6 +22667,47 @@
                     {
                         "Name": "Target",
                         "DataType": "hud element",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "04fb09fa-5be2-491b-9d16-d5b21083f528": {
+        "ChipName": "Set Game HUD Element Label",
+        "PaletteName": "Set Game HUD Element Label",
+        "Description": "",
+        "Model": "Default",
+        "IsBeta": false,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "HUD"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     },
@@ -21610,8 +22730,8 @@
         ]
     },
     "f258d689-3341-4383-a8f1-73ab7b2f37a1": {
-        "ChipName": "Set HUD Element Max Value",
-        "PaletteName": "Set HUD Element Max Value",
+        "ChipName": "Set Game HUD Element Max Value",
+        "PaletteName": "Set Game HUD Element Max Value",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -21634,7 +22754,7 @@
                     },
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     },
@@ -21657,8 +22777,8 @@
         ]
     },
     "61efbc78-9ddf-42bb-814a-3758a34f5faf": {
-        "ChipName": "Set HUD Element Value",
-        "PaletteName": "Set HUD Element Value",
+        "ChipName": "Set Game HUD Element Value",
+        "PaletteName": "Set Game HUD Element Value",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -21681,7 +22801,7 @@
                     },
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     },
@@ -22886,8 +24006,8 @@
         ]
     },
     "2231d8fa-fa63-4952-8ba4-a8258ffb2f9b": {
-        "ChipName": "Set HUD Element Label Enabled",
-        "PaletteName": "Set HUD Element Label Enabled",
+        "ChipName": "Set Game HUD Element Label Enabled",
+        "PaletteName": "Set Game HUD Element Label Enabled",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -22910,7 +24030,7 @@
                     },
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     },
@@ -22933,8 +24053,8 @@
         ]
     },
     "a980fe11-65d0-4ae2-bd4c-6405cfc01ce0": {
-        "ChipName": "Set HUD Element Value Text Enabled",
-        "PaletteName": "Set HUD Element Value Text Enabled",
+        "ChipName": "Set Game HUD Element Value Text Enabled",
+        "PaletteName": "Set Game HUD Element Value Text Enabled",
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
@@ -22957,7 +24077,7 @@
                     },
                     {
                         "Name": "Target",
-                        "DataType": "hud element",
+                        "DataType": "hud constant",
                         "IsUnion": false,
                         "IsList": false
                     },
@@ -23030,7 +24150,7 @@
         "PaletteName": "Show Purchase Prompt",
         "Description": "Show player a purchase prompt for a Room Key or Room Consumable. If called too many times sequentially, the purchase prompt will appear as a Watch notification, instead of as a popup.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -24251,7 +25371,7 @@
         "PaletteName": "String Replace",
         "Description": "Replaces all instances of pattern within string with replacement.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -24374,7 +25494,7 @@
         "PaletteName": "String Split Whitespace",
         "Description": "Outputs a list of strings which split up by whitespace.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -24512,7 +25632,7 @@
         "PaletteName": "String Trim",
         "Description": "Outputs the string with leading and trailing whitespace removed.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -26306,7 +27426,7 @@
         "PaletteName": "Trigger Handle Get Control Prompt",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -26374,7 +27494,7 @@
         "PaletteName": "Trigger Handle Set Control Prompt",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -26874,7 +27994,7 @@
         "PaletteName": "Vector3 Inverse Transform",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -27045,7 +28165,7 @@
         "PaletteName": "Vector3 Transform",
         "Description": "",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -27329,6 +28449,40 @@
                     {
                         "Name": "SetEnabled",
                         "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "6db8f573-5300-4aa0-bbfa-b5f01533069a": {
+        "ChipName": "Xor",
+        "PaletteName": "Xor",
+        "Description": "",
+        "Model": "Default",
+        "IsBeta": false,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Logic",
+            "Boolean Function"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Input",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Result",
+                        "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
                     }
