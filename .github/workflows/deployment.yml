@@ -54,12 +54,12 @@ jobs:
       - name: 'Commit and push'
         id: 'commit-push'
         #continue-on-error: true
+        #cp ./Source/Generated/info.txt ./Generated/ is this even generated?
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "actions-user"
           cp ./Source/Generated/chips.json ./Generated/
           cp ./Source/Generated/ports.json ./Generated/
-          #cp ./Source/Generated/info.txt ./Generated/ is this even generated?
           git add Generated
           git add Circuits/docs
           git commit -m "Generated markdown and svg - based on ${{ github.sha }}"
