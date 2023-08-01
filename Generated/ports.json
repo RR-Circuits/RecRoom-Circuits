@@ -84,6 +84,11 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
+    "room currency": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
     "room key": {
         "HasDefaultValue": false,
         "Model": "Data",
@@ -209,6 +214,11 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
+    "swing handle": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
     "projectile launcher": {
         "HasDefaultValue": false,
         "Model": "Data",
@@ -260,6 +270,11 @@
         "Color": "#F5C51F"
     },
     "toggle button": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "touchpad": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"

@@ -1985,6 +1985,79 @@
             }
         ]
     },
+    "9ad9cfa5-da73-4bc6-b53e-e2fdc265998f": {
+        "ChipName": "Award Currency (New)",
+        "PaletteName": "Award Currency (New)",
+        "Description": "Award some amount to the Player's balance of the given room currency.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Economy",
+            "Currency",
+            "Economy",
+            "Currency"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Run",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Currency",
+                        "DataType": "room currency",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Amount",
+                        "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Run",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "On Award Currency Complete",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Success",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Total Balance",
+                        "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "03461631-734f-491b-ab86-6bdf66947556": {
         "ChipName": "Award Currency",
         "PaletteName": "Award Currency",
@@ -4222,6 +4295,53 @@
             }
         ]
     },
+    "2aa2fe68-18bf-4f63-9ed9-2fc237b60df9": {
+        "ChipName": "List<Objective Marker> Variable",
+        "PaletteName": "List<Objective Marker> Variable",
+        "Description": "Reads or writes a variable in the current scope based on the name.",
+        "Model": "Variable",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Variable",
+            "List",
+            "Objective Marker"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "",
+                        "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
     "9ffb119b-dadc-4e50-af19-9bfd335a34ef": {
         "ChipName": "Objective Marker",
         "PaletteName": "Objective Marker Constant",
@@ -4245,6 +4365,37 @@
                     {
                         "Name": "",
                         "DataType": "objective marker",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "7e843432-afde-41c1-9bc1-194112d91226": {
+        "ChipName": "Room Currency",
+        "PaletteName": "Room Currency Constant",
+        "Description": "",
+        "Model": "Constant",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Economy",
+            "Room Currency",
+            "Economy",
+            "Room Currency",
+            "Constant"
+        ],
+        "Functions": [
+            {
+                "Inputs": [],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "room currency",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -6855,6 +7006,73 @@
             }
         ]
     },
+    "01659b8a-db44-4b5e-9a58-c366dcfff666": {
+        "ChipName": "Get Currency Balance (New)",
+        "PaletteName": "Get Currency Balance (New)",
+        "Description": "Returns the given player's balance of the given room currency.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Economy",
+            "Currency",
+            "Economy",
+            "Currency"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Run",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Currency",
+                        "DataType": "room currency",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Run",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "On Get Balance Complete",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Success",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Total Balance",
+                        "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "a4b0c860-e7f0-4abf-ad7c-9be1805c3d01": {
         "ChipName": "Get Currency Balance",
         "PaletteName": "Get Currency Balance",
@@ -7902,7 +8120,7 @@
     "12cf9781-1e1b-4e59-a783-c7214b66be8a": {
         "ChipName": "Leaderboard Get Player Stat",
         "PaletteName": "Leaderboard Get Player Stat",
-        "Description": "Get leaderboard stat for the given player on stat channel 1, 2 or 3.",
+        "Description": "Get the leaderboard stat for the given player on the given stat channel.",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -15317,6 +15535,49 @@
             }
         ]
     },
+    "ebacb9b5-adb0-4f5b-94c4-973e89d30a65": {
+        "ChipName": "NavMesh Sample Position",
+        "PaletteName": "NavMesh Sample Position",
+        "Description": "",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "SourcePosition",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "MaxDistance",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "IsValid",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "HitPosition",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "06f8732b-b1cb-4b79-815e-5b389c1dd78f": {
         "ChipName": "Noise",
         "PaletteName": "Noise",
@@ -18984,7 +19245,8 @@
                         "Name": "Handle",
                         "DataType": [
                             "trigger handle",
-                            "gun handle"
+                            "gun handle",
+                            "swing handle"
                         ],
                         "IsUnion": true,
                         "IsList": false
@@ -21067,7 +21329,7 @@
         "Description": "Resets the Room.",
         "Model": "Default",
         "IsBeta": false,
-        "TrollingRisk": false,
+        "TrollingRisk": true,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
@@ -21093,7 +21355,7 @@
         "Description": "Sets the position and rotation of the target player or object. Players will rotate about the vertical axis only. Will fail in the following cases: If the target object is currently held, selected/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.",
         "Model": "Default",
         "IsBeta": false,
-        "TrollingRisk": false,
+        "TrollingRisk": true,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Deprecated",
         "Tags": [
@@ -21177,7 +21439,7 @@
         "Description": "Sets the position and rotation of the target player or object. Players will rotate about the vertical axis only. Will fail in the following cases: If the target object is currently held, selected/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.",
         "Model": "Default",
         "IsBeta": false,
-        "TrollingRisk": false,
+        "TrollingRisk": true,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
@@ -22826,7 +23088,7 @@
     "57a1553a-ba24-4422-903a-e610a03e7994": {
         "ChipName": "Leaderboard Set Local Player Stat",
         "PaletteName": "Leaderboard Set Local Player Stat",
-        "Description": "Set leaderboard stat for the local player on stat channel 1, 2 or 3.",
+        "Description": "Set the leaderboard stat for the local player on the given stat channel.",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -24179,7 +24441,8 @@
                         "Name": "In-Room Purchasable",
                         "DataType": [
                             "room key",
-                            "consumable"
+                            "consumable",
+                            "room currency"
                         ],
                         "IsUnion": true,
                         "IsList": false
@@ -24895,7 +25158,7 @@
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
-        "TrollingRisk": false,
+        "TrollingRisk": true,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
@@ -24953,7 +25216,7 @@
         "Description": "",
         "Model": "Default",
         "IsBeta": false,
-        "TrollingRisk": false,
+        "TrollingRisk": true,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
@@ -27094,6 +27357,212 @@
                     {
                         "Name": "Result",
                         "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "b83d2e2f-61e8-4490-8a81-d38c88fff8d1": {
+        "ChipName": "Touchpad Component Get Active Touch",
+        "PaletteName": "Touchpad Component Get Active Touch",
+        "Description": "Get the active touch position from the local player's interaction",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Touchpad Component"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "touchpad",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Is Touch Active",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Touch Position",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "World Position",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "32aa1ef2-a230-430b-9809-19c114b1fe44": {
+        "ChipName": "Touchpad Component Get Interaction Label",
+        "PaletteName": "Touchpad Component Get Interaction Label",
+        "Description": "Sets the interaction label (used by Screen players)",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Touchpad Component"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "touchpad",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Label",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "64ca9ac0-04a8-4460-afe5-64a927f1ca4a": {
+        "ChipName": "Touchpad Component Get Is Enabled",
+        "PaletteName": "Touchpad Component Get Is Enabled",
+        "Description": "Sets if the Touchpad can be interacted with or output touch events",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Touchpad Component"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "touchpad",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "IsEnabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "41643ef3-6003-43d5-9bc7-d520e7aa5fcf": {
+        "ChipName": "Touchpad Component Set Interaction Label",
+        "PaletteName": "Touchpad Component Set Interaction Label",
+        "Description": "Gets the interaction label (used by Screen players)",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Touchpad Component"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "touchpad",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Label",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "1f27359f-71ca-4827-ab17-5acbdb027837": {
+        "ChipName": "Touchpad Component Set Is Enabled",
+        "PaletteName": "Touchpad Component Set Is Enabled",
+        "Description": "Gets if the Touchpad can be interacted with or output touch events",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Touchpad Component"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "touchpad",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
                         "IsUnion": false,
                         "IsList": false
                     }
