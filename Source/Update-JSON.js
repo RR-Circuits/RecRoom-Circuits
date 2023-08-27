@@ -407,6 +407,7 @@ async function RestOfUpdate(){
         AddStep("Translating chips...")
         await TranslateChipData();
         fs.writeFileSync("Generated/chips.json", JSON.stringify(NewChips, null, 4))
+        fs.writeFileSync("Generated/generated.txt", Date.now().toString())
     }
     catch (err) {
         console.error(err)
