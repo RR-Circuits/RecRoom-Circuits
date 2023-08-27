@@ -2,3 +2,5 @@
 .env
 node_modules/
 Source/Generated
+Pipfile
+Pipfile.lock
