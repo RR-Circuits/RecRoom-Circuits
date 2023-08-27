@@ -3,8 +3,12 @@ from cairosvg import svg2png
 import sys
 import json
 import xml.etree.ElementTree as ET
-
 fontSize = titleSize = 18
+
+inlineFont = """
+.ubuntu {
+font-family: "Ubuntu", sans-serif;
+}"""
 
 # chip values
 portHeight = 19
@@ -102,16 +106,16 @@ def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isLis
                 })
             currentPortHeight = 15
     Anchor = "start"
-    portOffset = 38
+    portOffset = 16
     if not isInput:
         Anchor = "end"
         portOffset = -16
     portText = ET.SubElement(svgObject, "text", {
         "x": str(posX + portOffset),
-        "y": str(posY + 12.5),
+        "y": str(posY + 14),
         "fill": "white",
         "text-anchor": Anchor,
-        "font-size": "medium",
+        "font-size": f"{fontSize}px",
         "class": "ubuntu"
     })
     portText.text = portName
@@ -279,6 +283,7 @@ def Generate(UUID: str, returnPNGBytes: bool):
     global chipXOffset
     chipXOffset = 72
     svg = ET.Element("svg", xmlns="http://www.w3.org/2000/svg", width="800", height="800", viewbox="0 0 800 800")
+    ET.SubElement(ET.SubElement(svg, "defs"), "style").text = inlineFont
     returnval = ""
     chipToGenerate = myChips[UUID]
     match chipToGenerate["Model"]:
@@ -291,7 +296,7 @@ def Generate(UUID: str, returnPNGBytes: bool):
         case _:
             ""
     if returnPNGBytes:
-        return svg2png(bytestring=returnval)
+        return svg2png(bytestring=returnval,scale=2)
     else:
         return returnval
 
