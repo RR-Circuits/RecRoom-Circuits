@@ -4,12 +4,12 @@ import json
 chips = {}
 ports = {}
 
-with open("Generated/chips.json", encoding="utf8") as chipsfile, open("Generated/ports.json") as portsfile:
+with open("Generated/chips.json", encoding="utf8") as chipsfile, open("Generated/ports.json", encoding="utf8") as portsfile:
     chips = json.load(chipsfile)
     ports = json.load(portsfile)
 
 
 Create_SVG.setup(chips, ports)
-returns = Create_SVG.Generate("0ccb153c-dd08-4f22-80fd-9d8c5940928c", True, True)
+returns = Create_SVG.Generate("ff2d1f81-d76c-456f-acf0-af1861822681", True)
 with open("Generated/OutSVG.png", "wb") as file:
     file.write(returns)
