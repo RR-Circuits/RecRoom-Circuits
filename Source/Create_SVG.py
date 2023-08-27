@@ -1,9 +1,10 @@
 from PIL import ImageFont
+from cairosvg import svg2png
 import sys
 import json
 import xml.etree.ElementTree as ET
 
-fontSize = 18
+fontSize = titleSize = 18
 
 # chip values
 portHeight = 19
@@ -77,15 +78,16 @@ inlineFont = """
 .ubuntu {
 font-family: "Ubuntu";
 }"""
-#
 
-#
 myChips = {}
 myPorts = {}
 outputTarget = None
 #
 
 def getStringWidth(string: str, size: int):
+    """
+    Gets the width of a string in pixels, using the ubuntu font and the given size.
+    """
     font = ImageFont.truetype("Ubuntu.ttf", size)
     return font.getlength(string)
 def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isList: bool, portName: str, posX: int | float, posY: int | float) -> int | float:
@@ -176,7 +178,7 @@ def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isLis
     return currentPortHeight
 
 def generateExec(svgObject: ET.Element, chip: dict) -> ET.Element:
-    topBarWidth = getStringWidth(chip["ChipName"], fontSize) + 57 * 2
+    topBarWidth = getStringWidth(chip["ChipName"], titleSize) + 57 * 2
     x = topBarWidth / 2 + chipXOffset
     y = (topHeight + fontSize/1.5)/2
     bottom = ET.SubElement(svgObject, "path", fill="#818081")
@@ -226,7 +228,7 @@ def generateExec(svgObject: ET.Element, chip: dict) -> ET.Element:
         title = ET.SubElement(svgObject, "text", {
             "text-anchor": "middle",
             "fill": "white",
-            "font-size": "18px",
+            "font-size": f"{titleSize}px",
             "x": str(chipLength/2 + chipXOffset),
             "y": str(y),
             "class": "ubuntu"
@@ -235,8 +237,9 @@ def generateExec(svgObject: ET.Element, chip: dict) -> ET.Element:
         return svgObject
     
 def generateConst(svgObject: ET.Element, chip: dict) -> ET.Element:
+    chipXOffset = 0
     svgObject.set("height", "48")
-    textWidth = getStringWidth(chip["ChipName"], fontSize)
+    textWidth = getStringWidth(chip["ChipName"], titleSize)
     chipLength = textWidth + 70
 
     outerShell = ET.SubElement(svgObject, "rect", {
@@ -261,14 +264,16 @@ def generateConst(svgObject: ET.Element, chip: dict) -> ET.Element:
         "y": str(21 + fontSize / 2),
         "fill": "white",
         "text-anchor": "middle",
-        "font-size": "18px",
+        "font-size": f"{titleSize}px",
         "class": "ubuntu"
     })
+    svgObject.set("viewbox", f"0 0 {chipLength + 22} 48")
+    svgObject.set("width", str(chipLength + 22))
     title.text = chip["ChipName"]
 
     return svgObject
 def generateVariableLike(svgObject: ET.Element, chip: dict) -> ET.Element:
-    textWidth = getStringWidth(chip["ChipName"], fontSize) + 22
+    textWidth = getStringWidth(chip["ChipName"], titleSize) + 22
     chipLength = max(textWidth + 50, 51)
 
     outerShell = ET.SubElement(svgObject, "rect", {
@@ -308,18 +313,31 @@ def generateVariableLike(svgObject: ET.Element, chip: dict) -> ET.Element:
             "y": str(35 + fontSize / 2),
             "text-anchor": "middle",
             "fill": "white",
-            "font-size": "18px",
+            "font-size": f"{titleSize}px",
             "class": "ubuntu"
         })
     title.text = chip["ChipName"]
+
+    svgObject.set("viewbox", f"0 0 {chipLength + 2 * chipXOffset} 76")
+    svgObject.set("width", str(chipLength + 2 * chipXOffset))
+    svgObject.set("height", "76")
     
     return svgObject
 
 def setup(chipsDict: dict, portsDict: dict):
+    """
+    Setup is required when using this script as a module.
+    ChipsDict: A dictionary of chips.
+    portsDict: A dictionary of port data.
+    """
+    global myChips
+    global myPorts
     myChips = chipsDict
     myPorts = portsDict
 
-def Generate(UUID: str, shouldUseInlineFonts):
+def Generate(UUID: str, shouldUseInlineFonts: bool, returnPNGBytes: bool):
+    global chipXOffset
+    chipXOffset = 72
     svg = ET.Element("svg", xmlns="http://www.w3.org/2000/svg", width="800", height="800", viewbox="0 0 800 800")
     if shouldUseInlineFonts:
         ET.SubElement(ET.SubElement(svg, "defs"), "style").text = inlineFont
@@ -334,6 +352,8 @@ def Generate(UUID: str, shouldUseInlineFonts):
             returnval = ET.tostring(generateConst(svg, chipToGenerate))
         case _:
             ""
+    if returnPNGBytes:
+        svg2png(bytestring=returnval)
     return returnval
 
 if __name__ == "__main__":
@@ -342,8 +362,8 @@ if __name__ == "__main__":
         uuid = sys.argv[1]
         outputTarget = sys.argv[4]
         with open(sys.argv[2], encoding="utf8") as chips, open(sys.argv[3], encoding="utf8") as ports:
-            myChips = json.loads(chips.read())
-            myPorts = json.loads(ports.read())
+            myChips = json.load(chips)
+            myPorts = json.load(ports)
         
         with open(outputTarget, "wb") as outputFile:
             outputFile.write(Generate(uuid, False))
