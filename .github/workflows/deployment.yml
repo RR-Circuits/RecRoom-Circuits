@@ -63,6 +63,7 @@ jobs:
           cp ./Source/Generated/ports.json ./Generated/
           git add Generated
           git add Circuits/docs
+          git add ExtraInfo
           git commit -m "Generated markdown and svg - based on ${{ github.sha }}"
           git push
           echo "commit-sha=$(git log --format='%H' -1)" >> "$GITHUB_OUTPUT"
