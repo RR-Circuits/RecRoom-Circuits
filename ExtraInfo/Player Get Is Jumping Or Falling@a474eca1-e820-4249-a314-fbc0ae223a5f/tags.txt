@@ -1,1 +1,1 @@
-Player,Physics
+Player,Physics,Player,Locomotion
