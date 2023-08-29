@@ -146,13 +146,13 @@ def generateExec(svgObject: ET.Element, chip: dict) -> ET.Element:
     x = topBarWidth / 2 + chipXOffset
     y = (topHeight + fontSize/1.5)/2
     bottom = ET.SubElement(svgObject, "path", fill="#818081")
-    
+    totalInputSpacing = 0
+    totalOutputSpacing = 0
+    largestInputText = 0
+    largestOutputText = 0
     if len(chip["Functions"]) > 0:
+        print("hi")
         funcs = chip["Functions"][0]
-        totalInputSpacing = 0
-        totalOutputSpacing = 0
-        largestInputText = 0
-        largestOutputText = 0
 
         inSpacing = outSpacing = topHeight + paddingFromTop
         if len(funcs["Inputs"]) > 0:
@@ -176,20 +176,20 @@ def generateExec(svgObject: ET.Element, chip: dict) -> ET.Element:
             currentPortHeight = appendPort(svgObject, False, port["DataType"], port["IsList"], port["Name"], chipXOffset + max(minimalPadding, topBarWidth), outSpacing)
             outSpacing = outSpacing + currentPortHeight + verticalPadding
         
-        newPathHeight = paddingFromTop + paddingFromBottom + max(totalInputSpacing, totalOutputSpacing)
-        chipLength = max(minimalPadding, topBarWidth, largestInputText + largestOutputText + horizontalPortPadding)
+    newPathHeight = paddingFromTop + paddingFromBottom + max(totalInputSpacing, totalOutputSpacing)
+    chipLength = max(minimalPadding, topBarWidth, largestInputText + largestOutputText + horizontalPortPadding)
 
-        bottom.set("d", f"M{chipXOffset}, {topHeight} v{newPathHeight - 10} q0,10,10,10 h{chipLength - 20} q10,0,10,-10 v{-newPathHeight + 10} h{chipLength}")
+    bottom.set("d", f"M{chipXOffset}, {topHeight} v{newPathHeight - 10} q0,10,10,10 h{chipLength - 20} q10,0,10,-10 v{-newPathHeight + 10} h{chipLength}")
         
-        svgObject.set("width", str(chipLength + 2 * chipXOffset))
-        svgObject.set("height", str(41 + newPathHeight))
-        svgObject.set("viewbox", f"0 0 {chipLength + 2 * chipXOffset} {41 + newPathHeight}")
+    svgObject.set("width", str(chipLength + 2 * chipXOffset))
+    svgObject.set("height", str(41 + newPathHeight))
+    svgObject.set("viewbox", f"0 0 {chipLength + 2 * chipXOffset} {41 + newPathHeight}")
         
-        top = ET.SubElement(svgObject, "path")
-        top.set("d", f"M{chipXOffset}, {topHeight} v-31 q0,-10,10,-10 h{chipLength - 20} q10,0,10,10 v31 h-{chipLength}")
-        top.set("fill", "#525152")
+    top = ET.SubElement(svgObject, "path")
+    top.set("d", f"M{chipXOffset}, {topHeight} v-31 q0,-10,10,-10 h{chipLength - 20} q10,0,10,10 v31 h-{chipLength}")
+    top.set("fill", "#525152")
 
-        title = ET.SubElement(svgObject, "text", {
+    title = ET.SubElement(svgObject, "text", {
             "text-anchor": "middle",
             "fill": "white",
             "font-size": f"{titleSize}px",
@@ -197,8 +197,8 @@ def generateExec(svgObject: ET.Element, chip: dict) -> ET.Element:
             "y": str(y),
             "class": "ubuntu"
         })
-        title.text = chip["ChipName"]
-        return svgObject
+    title.text = chip["ChipName"]
+    return svgObject
 
 def generateConst(svgObject: ET.Element, chip: dict) -> ET.Element:
     chipXOffset = 0
@@ -360,6 +360,7 @@ def generateReceiver(svgObject: ET.Element, chip: dict) -> ET.Element:
     svgObject.set("height", str(shellHeight))
     svgObject.set("viewbox", f"0 0 {largestPortTextSize + 30 + darkShellWidth + 78} {shellHeight}")
     return svgObject
+
 def generateSender(svgObject: ET.Element, chip: dict) -> ET.Element:
     textWidth = 0
 
@@ -458,6 +459,7 @@ def generateSender(svgObject: ET.Element, chip: dict) -> ET.Element:
     svgObject.set("height", str(targetShellHeight))
 
     return svgObject
+
 def generateDefinition(svgObject: ET.Element, chip: dict):
     outerShell = ET.SubElement(svgObject, "rect", fill="#525152", rx="10")
     innerShell = ET.SubElement(svgObject, "rect", fill="#818081", rx="10")
@@ -482,7 +484,7 @@ def generateDefinition(svgObject: ET.Element, chip: dict):
         returnedPortHeight = appendPort(svgObject, True, port["DataType"], port["IsList"], port["Name"], 50, newPortPlacement + offsetFromTop, False)
         newPortPlacement = newPortPlacement + returnedPortHeight + verticalPadding
     
-    innerShellWidth = max(chipXOffset + largestPortText, titleSize)
+    innerShellWidth = max(chipXOffset + largestPortText, textWidth)
 
     innerShell.set("x", "21")
     innerShell.set("y", "41")
@@ -520,20 +522,35 @@ def generate_svg(UUID: str, returnPNGBytes: bool) -> bytes:
     svg = ET.Element("svg", xmlns="http://www.w3.org/2000/svg", width="800", height="800", viewbox="0 0 800 800")
     ET.SubElement(ET.SubElement(svg, "defs"), "style").text = inlineFont
     returnval = None
-    chipToGenerate = myChips[UUID]
-    match chipToGenerate["Model"]:
-        case "Default":
-            returnval = ET.tostring(generateExec(svg, chipToGenerate))
-        case "Variable":
-            returnval = ET.tostring(generateVariableLike(svg, chipToGenerate))
-        case "Constant":
-            returnval = ET.tostring(generateConst(svg, chipToGenerate))
-        case "Receiver":
-            returnval = ET.tostring(generateReceiver(svg, chipToGenerate))
-        case "Sender":
-            returnval = ET.tostring(generateSender(svg, chipToGenerate))
-        case "Definition":
-            returnval = ET.tostring(generateDefinition(svg, chipToGenerate))
+    try:
+        chipToGenerate = myChips[UUID]
+        match chipToGenerate["Model"]:
+            case "Default":
+                returnval = ET.tostring(generateExec(svg, chipToGenerate))
+            case "Variable":
+                returnval = ET.tostring(generateVariableLike(svg, chipToGenerate))
+            case "Constant":
+                returnval = ET.tostring(generateConst(svg, chipToGenerate))
+            case "Receiver":
+                returnval = ET.tostring(generateReceiver(svg, chipToGenerate))
+            case "Sender":
+                returnval = ET.tostring(generateSender(svg, chipToGenerate))
+            case "Definition":
+                returnval = ET.tostring(generateDefinition(svg, chipToGenerate))
+            case _:
+                print("WARN: Chip model is unknown and an Exec will be returned. Expect strange results.")
+                returnval = ET.tostring(generateExec(svg, chipToGenerate))
+    except Exception as ex:
+        print("An error occurred during chip generation!", ex)
+        returnval = ET.tostring(generateVariableLike(svg, {
+            "ChipName": "Couldn't generate image.",
+            "Functions": [
+                {
+                    "Inputs": [],
+                    "Outputs": []
+                }
+            ]
+        }))
 
     if returnPNGBytes:
         return svg2png(bytestring=returnval, scale=2)
