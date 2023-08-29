@@ -35,12 +35,14 @@ def getStringWidth(string: str, size: int):
     font = ImageFont.truetype("fonts/Ubuntu.ttf", size)
     return font.getlength(string)
 
-def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isList: bool, portName: str, posX: int | float, posY: int | float, canHaveDefaultValue: bool | None = None) -> int | float:
+def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isList: bool, portName: str, posX: int | float, posY: int | float, canHaveDefaultValue: bool | None = True) -> int | float:
     color = ""
     model = ""
     hasDefaultValue = False
     portOffset = 5
     currentPortHeight = 0
+    portFontSize = 10
+
     if isinstance(portType, list):
         color = "#F6EEE8"
         model = "Data"
@@ -108,6 +110,23 @@ def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isLis
             currentPortHeight = 15
     Anchor = "start"
     portOffset = 16
+    if isList:
+        listText = ET.SubElement(svgObject, "text", {
+            "x": str(posX),
+            "y": str(posY + 1),
+            "fill": "white",
+            "font-size": f"{portFontSize}px",
+            "font-weight": "bold",
+            "class": "ubuntu"
+        })
+        listTextItem = ET.SubElement(listText, "tspan", {
+            "x": str(posX - (5.5 if isInput else 3.5)),
+            "dy": f"{portFontSize}",
+            "class": "ubuntu",
+            "style": "fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"
+        })
+        
+        listTextItem.text = "[ ]"
     if not isInput:
         Anchor = "end"
         portOffset = -16
@@ -352,7 +371,8 @@ def generateSender(svgObject: ET.Element, chip: dict) -> ET.Element:
         "y": "0",
         "fill": "white",
         "font-size": f"{titleSize}px",
-        "text-anchor": "middle"
+        "text-anchor": "middle",
+        "class": "ubuntu"
     })
     baseLightShell1Width = 28
     minLightShell2Width = 60
@@ -434,6 +454,54 @@ def generateSender(svgObject: ET.Element, chip: dict) -> ET.Element:
         "stroke-linejoin": "round"
     })
 
+    svgObject.set("width", str(2 * chipXOffset + targetLightShell1Width + targetDarkShellWidth + targetLightShell2Width))
+    svgObject.set("height", str(targetShellHeight))
+
+    return svgObject
+def generateDefinition(svgObject: ET.Element, chip: dict):
+    outerShell = ET.SubElement(svgObject, "rect", fill="#525152", rx="10")
+    innerShell = ET.SubElement(svgObject, "rect", fill="#818081", rx="10")
+    title = ET.SubElement(svgObject, "text", {
+        "x": "0",
+        "y": "0",
+        "fill": "white",
+        "font-size": f"{titleSize}px",
+        "text-anchor": "middle",
+        "class": "ubuntu"
+    })
+
+    textWidth = getStringWidth(chip["ChipName"], titleSize)
+
+    largestPortText = 0
+    newPortPlacement = 0
+    offsetFromTop = 52
+
+    for port in chip["Functions"][0]["Inputs"]:
+        nameWidth = getStringWidth(port["Name"], fontSize)
+        largestPortText = nameWidth if nameWidth > largestPortText else largestPortText
+        returnedPortHeight = appendPort(svgObject, True, port["DataType"], port["IsList"], port["Name"], 50, newPortPlacement + offsetFromTop, False)
+        newPortPlacement = newPortPlacement + returnedPortHeight + verticalPadding
+    
+    innerShellWidth = max(chipXOffset + largestPortText, titleSize)
+
+    innerShell.set("x", "21")
+    innerShell.set("y", "41")
+    innerShell.set("width", str(innerShellWidth))
+    innerShell.set("height", str(newPortPlacement - verticalPadding + 11*2))
+
+    outerShell.set("x", "0")
+    outerShell.set("y", "0"),
+    outerShell.set("width", str(innerShellWidth + 44))
+    outerShell.set("height", str(newPortPlacement - verticalPadding + 84))
+
+    title.set("x", str((innerShellWidth + 44)/2))
+    title.set("y", str(40/2 + titleSize/2))
+    title.text = chip["ChipName"]
+    
+    svgObject.set("width", str(innerShellWidth + 44))
+    svgObject.set("height", str(newPortPlacement - verticalPadding + 84))
+    svgObject.set("viewbox", f"0 0 {innerShellWidth + 44} {newPortPlacement - verticalPadding + 84}")
+
     return svgObject
 
 def setup_svg_generator(chipsDict: dict, portsDict: dict):
@@ -464,6 +532,8 @@ def generate_svg(UUID: str, returnPNGBytes: bool) -> bytes:
             returnval = ET.tostring(generateReceiver(svg, chipToGenerate))
         case "Sender":
             returnval = ET.tostring(generateSender(svg, chipToGenerate))
+        case "Definition":
+            returnval = ET.tostring(generateDefinition(svg, chipToGenerate))
 
     if returnPNGBytes:
         return svg2png(bytestring=returnval, scale=2)
