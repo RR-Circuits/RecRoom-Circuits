@@ -4,7 +4,7 @@ from cairosvg import svg2png
 import sys
 import json
 import xml.etree.ElementTree as ET
-import traceback
+
 fontSize = titleSize = 18
 
 inlineFont = ".ubuntu {font-family: 'Ubuntu', sans-serif;}"
@@ -555,5 +555,5 @@ if __name__ == "__main__":
 
     except Exception as ex:
         print("An error occured!")
-        print(traceback.format_exc())
+        print(ex)
         exit(1)
