@@ -1,3 +1,4 @@
+# Script made by FunnPunn, so annoy him if this doesn't feel like working
 from PIL import ImageFont
 from cairosvg import svg2png
 import sys
@@ -14,6 +15,8 @@ minimalPadding = 111
 verticalPadding = 6
 horizontalPortPadding = 2
 topHeight = 41
+
+minimalReceiverHeight = 66
 
 paddingFromTop = 8
 paddingFromBottom = 4
@@ -32,7 +35,7 @@ def getStringWidth(string: str, size: int):
     font = ImageFont.truetype("fonts/Ubuntu.ttf", size)
     return font.getlength(string)
 
-def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isList: bool, portName: str, posX: int | float, posY: int | float) -> int | float:
+def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isList: bool, portName: str, posX: int | float, posY: int | float, canHaveDefaultValue: bool | None = None) -> int | float:
     color = ""
     model = ""
     hasDefaultValue = False
@@ -56,7 +59,7 @@ def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isLis
             port.set("fill", color)
             currentPortHeight = 18
         case "Data":
-            if hasDefaultValue and not isList and isInput:
+            if hasDefaultValue and not isList and isInput and (canHaveDefaultValue == True or canHaveDefaultValue == None):
                 rectGroup = ET.SubElement(svgObject, "g")
                 ET.SubElement(rectGroup, "rect", {
                     "x": str(posX - 12),
@@ -267,6 +270,172 @@ def generateVariableLike(svgObject: ET.Element, chip: dict) -> ET.Element:
     
     return svgObject
 
+def generateReceiver(svgObject: ET.Element, chip: dict) -> ET.Element:
+    chipXOffset = 0
+    textWidth = 0
+
+    darkShell = ET.SubElement(svgObject, "path", fill="#525152")
+    lightShell = ET.SubElement(svgObject, "path", fill="#818081")
+    darkShellWidth = max(textWidth - 25, 177.23)
+
+    for line in chip["ChipName"].split("\n"):
+        textWidth = getStringWidth(line, titleSize) if textWidth < getStringWidth(line, titleSize) else textWidth
+    
+    iconCircle = ET.SubElement(svgObject, "circle", {
+        "cx": str(chipXOffset + 7.5),
+        "cy": "35.5",
+        "r": "2.5",
+        "fill": "#F6EEE8"
+    })
+    iconRing1 = ET.SubElement(svgObject, "path", {
+        "d": f"M{chipXOffset + 11.5},28.5c3.483,3.5,3.483,10.5,0,14",
+        "stroke": "#F6EEE8",
+        "fill-opacity": "0",
+        "stroke-width": "3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+    })
+    iconRing2 = ET.SubElement(svgObject, "path", {
+        "d": f"M{chipXOffset + 17.1125},25.5c3.483,3.5,3.483,16.5,0,20",
+        "stroke": "#F6EEE8",
+        "fill-opacity": "0",
+        "stroke-width": "3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+    })
+    largestPortTextSize = 0
+    newPortPlacement = 12
+
+    for port in chip["Functions"][0]["Outputs"]:
+        if getStringWidth(port["Name"], fontSize) > largestPortTextSize:
+            largestPortTextSize = getStringWidth(port["Name"], fontSize)
+
+    for port in chip["Functions"][0]["Outputs"]:
+        returnedHeight = appendPort(svgObject, False, port["DataType"], port["IsList"], port["Name"], chipXOffset + darkShellWidth + largestPortTextSize + 43, newPortPlacement)
+        newPortPlacement = newPortPlacement + returnedHeight + verticalPadding
+
+    shellHeight = max(minimalReceiverHeight, newPortPlacement)
+    darkShell.set(
+        "d", f"M{chipXOffset}, 10 q0,-10,10,-10 h{darkShellWidth} v{shellHeight} h-{darkShellWidth} q-10,0,-10,-10 v-{shellHeight-20}"
+    )
+    lightShell.set(
+        "d", f"M{chipXOffset + darkShellWidth + 5}, 0 h{largestPortTextSize + 30} q10,0,10,10 v{shellHeight-20} q0,10,-10,10 h-{largestPortTextSize + 30} v-{shellHeight}"
+    )
+    titleBox = ET.SubElement(svgObject, "text", {
+            "x": str(52 + chipXOffset + textWidth/2),
+            "y": "5",
+            "text-anchor": "middle",
+            "fill": "white",
+            "font-size": f"{titleSize}px",
+            "class": "ubuntu"
+        })
+
+    for line in chip["ChipName"].split("\n"):
+        titleText = ET.SubElement(titleBox, "tspan", {
+            "x": f"{chipXOffset + darkShellWidth/1.7}",
+            "dy": f"{fontSize}px"
+        })
+        titleText.text = line
+
+    svgObject.set("width", str(largestPortTextSize + 30 + darkShellWidth + 78))
+    svgObject.set("height", str(shellHeight))
+    svgObject.set("viewbox", f"0 0 {largestPortTextSize + 30 + darkShellWidth + 78} {shellHeight}")
+    return svgObject
+def generateSender(svgObject: ET.Element, chip: dict) -> ET.Element:
+    textWidth = 0
+
+    darkShell = ET.SubElement(svgObject, "rect", fill="#525152")
+    lightShell1 = ET.SubElement(svgObject, "path", fill="#818081")
+    lightShell2 = ET.SubElement(svgObject, "path", fill="#818081")
+    titleBox = ET.SubElement(svgObject, "text", {
+        "x": "0",
+        "y": "0",
+        "fill": "white",
+        "font-size": f"{titleSize}px",
+        "text-anchor": "middle"
+    })
+    baseLightShell1Width = 28
+    minLightShell2Width = 60
+
+    minShellHeight = 97
+
+    largestInputPortTextSize = 0
+    largestOutputPortTextSize = 0
+
+    newInputPortPlacement = 10
+    newOutputPortPlacement = 10
+
+
+    for port in chip["Functions"][0]["Inputs"]:
+        returnedPortHeight = appendPort(svgObject, True, port["DataType"], port["IsList"], port["Name"], chipXOffset, newInputPortPlacement)
+        newInputPortPlacement = newInputPortPlacement + returnedPortHeight + verticalPadding
+        nameLength = getStringWidth(port["Name"], fontSize)
+        if nameLength > largestInputPortTextSize:
+            largestInputPortTextSize = nameLength
+        
+    targetLightShell1Width = baseLightShell1Width + largestInputPortTextSize
+
+    for line in chip["ChipName"].split("\n"):
+        textWidth = getStringWidth(line, titleSize) if textWidth < getStringWidth(line, titleSize) else textWidth
+    
+    for line in chip["ChipName"].split("\n"):
+        titleText = ET.SubElement(titleBox, "tspan", {
+            "x": f"{chipXOffset + targetLightShell1Width + textWidth / 2 + 70 / 2}",
+            "dy": f"{fontSize}px",
+            "text-anchor": "middle"
+        })
+        titleText.text = line
+
+    targetDarkShellWidth = textWidth + 70
+
+    darkShell.set("x", str(chipXOffset + targetLightShell1Width))
+    darkShell.set("y", "0")
+    darkShell.set("width", str(targetDarkShellWidth))
+
+    for port in chip["Functions"][0]["Outputs"]:
+        currentWidth = getStringWidth(port["Name"], fontSize)
+        largestOutputPortTextSize = currentWidth if currentWidth > largestOutputPortTextSize else largestOutputPortTextSize
+    
+    for port in chip["Functions"][0]["Outputs"]:
+        returnedPortHeight = appendPort(svgObject, False, port["DataType"], port["IsList"], port["Name"], chipXOffset + targetLightShell1Width + targetDarkShellWidth + largestOutputPortTextSize + minLightShell2Width, newOutputPortPlacement)
+        newOutputPortPlacement = newOutputPortPlacement + returnedPortHeight + verticalPadding
+    
+    targetShellHeight = max(minShellHeight, newInputPortPlacement + paddingFromBottom, newOutputPortPlacement + paddingFromBottom)
+    targetLightShell2Width = largestOutputPortTextSize + minLightShell2Width
+
+    darkShell.set("height", str(targetShellHeight))
+    lightShell1.set(
+        "d", f"M{chipXOffset + 10}, 0 h{targetLightShell1Width - 10} v{targetShellHeight} h-{targetLightShell1Width - 10} q-10,0,-10,-10 v-{targetShellHeight - 20} q0,-10,10,-10"
+    )
+    lightShell2.set(
+        "d", f"M{chipXOffset + targetLightShell1Width + targetDarkShellWidth}, 0 h{targetLightShell2Width-10} q10,0,10,10 v{targetShellHeight - 20} q0,10,-10,10 h-{targetLightShell2Width - 10} v-{targetShellHeight}"
+    )
+    
+    iconCircle = ET.SubElement(svgObject, "circle", {
+        "cx": str(chipXOffset + targetLightShell1Width + targetDarkShellWidth + 37.5),
+        "cy": f"{targetShellHeight - paddingFromBottom*5}",
+        "r": "2.5",
+        "fill": "#F6EEE8"
+    })
+    iconRing1 = ET.SubElement(svgObject, "path", {
+        "d": f"M{chipXOffset + targetLightShell1Width + targetDarkShellWidth + 41.5},{targetShellHeight - paddingFromBottom*5 - 7}c3.483,3.5,3.483,10.5,0,14",
+        "stroke": "#F6EEE8",
+        "fill-opacity": "0",
+        "stroke-width": "3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+    })
+    iconRing2 = ET.SubElement(svgObject, "path", {
+        "d": f"M{chipXOffset + targetLightShell1Width + targetDarkShellWidth + 47.1125},{targetShellHeight - paddingFromBottom*5 - 10}c3.483,3.5,3.483,16.5,0,20",
+        "stroke": "#F6EEE8",
+        "fill-opacity": "0",
+        "stroke-width": "3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+    })
+
+    return svgObject
+
 def setup_svg_generator(chipsDict: dict, portsDict: dict):
     """
     Setup is required when using this script as a module.
@@ -291,6 +460,11 @@ def generate_svg(UUID: str, returnPNGBytes: bool) -> bytes:
             returnval = ET.tostring(generateVariableLike(svg, chipToGenerate))
         case "Constant":
             returnval = ET.tostring(generateConst(svg, chipToGenerate))
+        case "Receiver":
+            returnval = ET.tostring(generateReceiver(svg, chipToGenerate))
+        case "Sender":
+            returnval = ET.tostring(generateSender(svg, chipToGenerate))
+
     if returnPNGBytes:
         return svg2png(bytestring=returnval, scale=2)
     else:
