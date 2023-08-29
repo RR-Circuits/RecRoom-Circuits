@@ -7,7 +7,7 @@ with open("Generated/chips.json", encoding="utf8") as chips, open("Generated/por
     chip = json.load(chips)
     port = json.load(ports)
     Create_SVG.setup_svg_generator(chip, port)
-uuid = ""
+uuid = "test_chip"
 returned = Create_SVG.generate_svg(uuid, False)
 
 with open("Generated/newtest.svg", "wb") as file:
