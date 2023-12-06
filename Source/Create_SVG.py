@@ -1,6 +1,6 @@
 # Script made by FunnPunn, so annoy him if this doesn't feel like working
 from PIL import ImageFont
-from cairosvg import svg2png
+#from cairosvg import svg2png [moved]
 import sys
 import json
 import xml.etree.ElementTree as ET
@@ -554,6 +554,7 @@ def generate_svg(UUID: str, returnPNGBytes: bool) -> bytes:
         }))
 
     if returnPNGBytes:
+        from cairosvg import svg2png
         return svg2png(bytestring=returnval, scale=2)
     else:
         return returnval
