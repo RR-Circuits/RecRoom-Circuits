@@ -44,6 +44,11 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
+    "inventory item": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
     "vector3": {
         "HasDefaultValue": false,
         "Model": "Data",
@@ -75,6 +80,11 @@
         "Color": "#F5C51F"
     },
     "quaternion": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "animation controller": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
@@ -114,7 +124,17 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
+    "collision detection volume": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
     "destination room": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "equipment slot": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
@@ -124,7 +144,22 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
+    "reward": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "room offer": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
     "costume": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "dialogueui": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
@@ -160,6 +195,16 @@
         "Color": "#F5C51F"
     },
     "hud element": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "state": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "grabber": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
@@ -224,6 +269,11 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
+    "room level hud": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
     "skydome": {
         "HasDefaultValue": false,
         "Model": "Data",
@@ -235,6 +285,11 @@
         "Color": "#F5C51F"
     },
     "sfx": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "list<reward>": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"

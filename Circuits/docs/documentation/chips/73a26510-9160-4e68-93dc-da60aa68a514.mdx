@@ -1,0 +1,70 @@
+---
+sidebar_position: 611
+tags: [Physics,Player,Physics,Object,Physics]
+title: 'Request Velocity Set Over Duration'
+---
+
+Sets the velocity of the input target, similar to Velocity Set, but reapplies every physics tick until either the input duration has elapsed, the authority of the input target has changed, or another impulsing CV2 chip has been executed against the same input target.
+
+:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::
+
+import EsbSvg from "./assets/73a26510-9160-4e68-93dc-da60aa68a514.svg";
+
+<EsbSvg />
+
+| Input Name | Input Type |
+|-----------|-----------|
+| Request Set Velocity | exec |
+| Object | Any (player , rec room object) |
+| Multiplier | float |
+| Velocity (m/s) | vector3 |
+| Duration (s) | float |
+
+| Output Name | Output Type |
+|-----------|-----------|
+| *No name.* | exec |
+
+
+<details>
+  <summary>Properties</summary>
+  <div>
+    <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Is beta required?</th>
+          <th>✅</th>
+        </tr>
+        <tr>
+          <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Chip UUID</th>
+          <th>73a26510-9160-4e68-93dc-da60aa68a514</th>
+        </tr>
+      </thead>
+    </table>
+    </div>
+  </div>
+</details>
+
+### Uses
+
+None so far!
+
+### Tips
+
+None so far!
+
+### Issues
+
+None so far!

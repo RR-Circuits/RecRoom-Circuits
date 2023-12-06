@@ -1,0 +1,75 @@
+---
+sidebar_position: 149
+tags: [circuits,object,dialogue UI]
+title: 'Dialogue UI Set Button State'
+---
+
+Set the visibility and text of up to four buttons on the target Dialogue UI for the local player. Text will truncate after 512 characters. Buttons are automatically interactive when enabled. Each button will fire a Button Pressed event in the Dialogue UI’s board scope when pressed. Button visibility is dependent on the Dialogue UI being enabled.
+
+:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::
+
+import EsbSvg from "./assets/f4772dae-d4e3-489c-8943-8fe88160ab5c.svg";
+
+<EsbSvg />
+
+| Input Name | Input Type |
+|-----------|-----------|
+| *No name.* | exec |
+| Target | dialogueui |
+| Button 1 Enabled | bool |
+| Button 1 Text | string |
+| Button 2 Enabled | bool |
+| Button 2 Text | string |
+| Button 3 Enabled | bool |
+| Button 3 Text | string |
+| Button 4 Enabled | bool |
+| Button 4 Text | string |
+
+| Output Name | Output Type |
+|-----------|-----------|
+| *No name.* | exec |
+
+
+<details>
+  <summary>Properties</summary>
+  <div>
+    <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Is beta required?</th>
+          <th>✅</th>
+        </tr>
+        <tr>
+          <th>Is this chip a trolling risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
+          <th>❌</th>
+        </tr>
+        <tr>
+          <th>Chip UUID</th>
+          <th>f4772dae-d4e3-489c-8943-8fe88160ab5c</th>
+        </tr>
+      </thead>
+    </table>
+    </div>
+  </div>
+</details>
+
+### Uses
+
+None so far!
+
+### Tips
+
+None so far!
+
+### Issues
+
+None so far!
