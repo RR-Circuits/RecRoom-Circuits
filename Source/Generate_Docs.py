@@ -9,6 +9,23 @@ templatePath = "templates"
 extraInfoTemplateText = ""
 chipTemplateText = ""
 
+deprecatednMsg = """:::danger DEPRECATED
+
+This chip has been deprecated. Please move to a different chip.
+
+:::"""
+deprecatingMsg = """:::danger DEPRECATED
+
+This chip has been deprecated. Please move to a different chip.
+
+:::"""
+
+betaMsg = """:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::"""
+
 chips = {}
 
 with open(chipsLocation, "rt", encoding="UTF-8") as f, open(""):
