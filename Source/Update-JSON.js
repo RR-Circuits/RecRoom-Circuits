@@ -213,7 +213,7 @@ async function PrepareFiles() {
                 if (prt["Name"] == "") {
                     prt["Name"] = "*No name.*"
                 }
-                InputsStr = InputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr))
+                InputsStr = InputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr.replace("<", "&lt").replace(">", "&gt")))
             }
 
             for(const prt of func["Outputs"]) {
