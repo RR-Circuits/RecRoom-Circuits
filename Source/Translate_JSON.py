@@ -135,6 +135,8 @@ def translateChip(jsonSourceb: dict) -> dict:
             "Description": chip["Description"],
             "Model": thisChipModel,
             "IsBeta": chip["IsBetaChip"],
+            "RoomsV1": chip["IsValidInRoom1"],
+            "RoomsV2": chip["IsValidInRoom2"],
             "TrollingRisk": chip["IsTrollingRisk"],
             "IsRoleAssignmentRisk": chip["IsRoleAssignmentRisk"],
             "DeprecationStage": chip["DeprecationStage"],

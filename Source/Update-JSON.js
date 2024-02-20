@@ -40,6 +40,18 @@ This chip requires beta content to be enabled in the room. You can access the se
 
 :::`
 
+const RoomsV2_Only = `:::caution BETA
+
+This chip is exclusive to Rooms V2. It will not show up in Rooms V1.
+
+:::`
+
+const RoomsV2_NoSupport = `:::caution BETA
+
+This chip is unavailable in Rooms V2.
+
+:::`
+
 var Currentindex = 1
 
 function AddStep(prnt) {
@@ -213,7 +225,7 @@ async function PrepareFiles() {
                 if (prt["Name"] == "") {
                     prt["Name"] = "*No name.*"
                 }
-                InputsStr = InputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr))
+                InputsStr = InputsStr.concat("\n", prtstr.replace("._name", prt["Name"]).replace("._type", newstr.replace("<", "&lt").replace(">", "&gt")))
             }
 
             for(const prt of func["Outputs"]) {
@@ -253,7 +265,9 @@ async function PrepareFiles() {
             case "Deprecated":
                 NewChipFile = NewChipFile.replace("._depr", DeprMsg)
                 break;
-        
+            case "Deprecating":
+                NewChipFile = NewChipFile.replace("._depr", DeprMsg)
+                break;
             default:
                 if (contents["IsBeta"]) {
                     NewChipFile = NewChipFile.replace("._depr", BetaMsg)
@@ -261,6 +275,13 @@ async function PrepareFiles() {
                     NewChipFile = NewChipFile.replace("._depr", "")
                 }
                 break;
+        }
+        if (contents["RoomsV1"] && !contents["RoomsV2"]) {
+            NewChipFile = NewChipFile.replace("._roomvr", RoomsV2_NoSupport)
+        } else if (contents["RoomsV2"] && !contents["RoomsV1"]) {
+            NewChipFile = NewChipFile.replace("._roomvr", RoomsV2_Only)
+        } else {
+            NewChipFile = NewChipFile.replace("._roomvr", "")
         }
         if(contents["Description"] !== "") {
             NewChipFile = NewChipFile.replace("._chipdesc", contents["Description"].replace("<", "&lt").replace(">", "&gt"))
@@ -299,6 +320,8 @@ async function TranslateChipData(cut){
             Model: ThisChipModel,
             //
             IsBeta: chipd["IsBetaChip"],
+            RoomsV1: chipd["IsValidInRoom1"],
+            RoomsV2: chipd["IsValidInRoom2"],
             TrollingRisk: chipd["IsTrollingRisk"],
             IsRoleAssignmentRisk: chipd["IsRoleAssignmentRisk"],
             DeprecationStage: chipd["DeprecationStage"],

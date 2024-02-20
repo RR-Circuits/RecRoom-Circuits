@@ -1,1 +1,1 @@
-circuits,object,dialogue UI
+Object,Dialogue UI

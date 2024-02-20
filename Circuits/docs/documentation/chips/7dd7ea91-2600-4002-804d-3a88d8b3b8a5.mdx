@@ -1,14 +1,24 @@
 ---
-sidebar_position: 505
+sidebar_position: 546
 tags: [Player,Properties,Audio]
 title: 'Player Get Voice Rolloff Distance'
 ---
 
-Returns the voice rolloff distance for a given player
+Returns the voice rolloff distance for the target player, as reckoned by the local player.
+
+If the local player has set an override for the target player's voice rolloff distance, the "Has Local Override" bool returns true, and the overridden value is returned.
+
+Otherwise, the synced value of that player's voice rolloff distance is returned, and the bool returns false.
 
 :::caution BETA
 
 This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::
+
+:::caution BETA
+
+This chip is exclusive to Rooms V2. It will not show up in Rooms V1.
 
 :::
 
@@ -23,6 +33,7 @@ import EsbSvg from "./assets/7dd7ea91-2600-4002-804d-3a88d8b3b8a5.svg";
 | Output Name | Output Type |
 |-----------|-----------|
 | Voice Rolloff Distance (m) | float |
+| Has Local Override | bool |
 
 
 <details>
