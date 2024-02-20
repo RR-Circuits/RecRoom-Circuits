@@ -199,6 +199,11 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
+    "recnet image": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
     "state": {
         "HasDefaultValue": false,
         "Model": "Data",
@@ -215,6 +220,11 @@
         "Color": "#F5C51F"
     },
     "gun handle": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "handle": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
@@ -254,16 +264,6 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
-    "trigger handle": {
-        "HasDefaultValue": false,
-        "Model": "Data",
-        "Color": "#F5C51F"
-    },
-    "swing handle": {
-        "HasDefaultValue": false,
-        "Model": "Data",
-        "Color": "#F5C51F"
-    },
     "projectile launcher": {
         "HasDefaultValue": false,
         "Model": "Data",
@@ -275,6 +275,16 @@
         "Color": "#F5C51F"
     },
     "skydome": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "sun": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "sun direction": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
@@ -304,12 +314,7 @@
         "Model": "Data",
         "Color": "#F5C51F"
     },
-    "sun": {
-        "HasDefaultValue": false,
-        "Model": "Data",
-        "Color": "#F5C51F"
-    },
-    "sun direction": {
+    "swing handle": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
@@ -335,6 +340,11 @@
         "Color": "#F5C51F"
     },
     "motion trail": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F5C51F"
+    },
+    "trigger handle": {
         "HasDefaultValue": false,
         "Model": "Data",
         "Color": "#F5C51F"
