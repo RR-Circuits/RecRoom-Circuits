@@ -40,13 +40,13 @@ This chip requires beta content to be enabled in the room. You can access the se
 
 :::`
 
-const RoomsV2_Only = `:::caution BETA
+const RoomsV2_Only = `:::caution ROOMS V2 ONLY
 
 This chip is exclusive to Rooms V2. It will not show up in Rooms V1.
 
 :::`
 
-const RoomsV2_NoSupport = `:::caution BETA
+const RoomsV2_NoSupport = `:::caution ROOMS V1 ONLY
 
 This chip is unavailable in Rooms V2.
 
