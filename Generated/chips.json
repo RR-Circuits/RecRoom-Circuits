@@ -1346,7 +1346,7 @@
         "PaletteName": "Animation Get Speed",
         "Description": "Returns the normalized speed of the given Animation Controller.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -1414,7 +1414,7 @@
         "PaletteName": "Animation Get Is Playing",
         "Description": "Returns whether or not the Animation Controller is currently playing.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -1448,7 +1448,7 @@
         "PaletteName": "Animation Pause",
         "Description": "Pauses the Animation Controller. The Animation Controller resumes at the same moment next time play is activated.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -1488,7 +1488,7 @@
         "PaletteName": "Animation Play",
         "Description": "Tells the Animation Controller to play its animation using the Playback Mode set in the Animation Controller's configuration menu.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -1528,7 +1528,7 @@
         "PaletteName": "Animation Set Frame",
         "Description": "Sets the Animation Controller's animation to a specific frame number.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -1574,7 +1574,7 @@
         "PaletteName": "Animation Set Speed",
         "Description": "Sets the Animation Controller's play speed. Default value is 1. Negative values play the animation in reverse.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -1666,7 +1666,7 @@
         "PaletteName": "Animation Stop",
         "Description": "Stops the Animation Controller. The Animation Controller restarts from the beginning next time play is activated.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -2453,11 +2453,11 @@
         ]
     },
     "9ad9cfa5-da73-4bc6-b53e-e2fdc265998f": {
-        "ChipName": "Award Currency (New)",
-        "PaletteName": "Award Currency (New)",
+        "ChipName": "Award Currency",
+        "PaletteName": "Award Currency",
         "Description": "Award some amount to the Player's balance of the given room currency.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -2533,7 +2533,7 @@
         "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Player",
             "Economy",
@@ -2665,7 +2665,9 @@
         "Tags": [
             "Game Features",
             "Moods",
-            "Constant"
+            "Background Objects",
+            "Constant",
+            "Moods"
         ],
         "Functions": [
             {
@@ -5012,7 +5014,7 @@
         "PaletteName": "Room Currency Constant",
         "Description": "",
         "Model": "Constant",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -5932,9 +5934,8 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -5973,9 +5974,8 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -6008,9 +6008,8 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -6043,9 +6042,8 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -6078,9 +6076,8 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -6167,9 +6164,8 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -6213,16 +6209,15 @@
     "a348af16-bd74-4da6-a3e1-1bf1e2456eba": {
         "ChipName": "Dialogue UI Set Is Enabled",
         "PaletteName": "Dialogue UI Set Is Enabled",
-        "Description": "Toggles whether or not the target Dialogue UI is enabled for the local player.\r",
+        "Description": "Toggles whether or not the target Dialogue UI is enabled for the local player.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -6267,9 +6262,8 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -6314,9 +6308,8 @@
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
         "Tags": [
-            "circuits",
-            "object",
-            "dialogue UI"
+            "Object",
+            "Dialogue UI"
         ],
         "Functions": [
             {
@@ -7984,7 +7977,9 @@
         "Tags": [
             "Game Features",
             "Moods",
-            "Constant"
+            "Fog",
+            "Constant",
+            "Moods"
         ],
         "Functions": [
             {
@@ -8011,7 +8006,8 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Game Features",
-            "Moods"
+            "Moods",
+            "Fog"
         ],
         "Functions": [
             {
@@ -8310,11 +8306,11 @@
         ]
     },
     "01659b8a-db44-4b5e-9a58-c366dcfff666": {
-        "ChipName": "Get Currency Balance (New)",
-        "PaletteName": "Get Currency Balance (New)",
+        "ChipName": "Get Currency Balance",
+        "PaletteName": "Get Currency Balance",
         "Description": "Returns the given player's balance of the given room currency.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -8384,7 +8380,7 @@
         "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Player",
             "Economy",
@@ -8872,6 +8868,41 @@
             }
         ]
     },
+    "a970b2bd-0224-4b1e-9839-111315b28986": {
+        "ChipName": "Get HUD Element Enabled",
+        "PaletteName": "Get HUD Element Enabled",
+        "Description": "Returns true if the local player has a HUD element of the given type currently enabled.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI",
+            "HUD"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "hud constant",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "98ef89de-7a1b-4043-8071-b5cda41030cd": {
         "ChipName": "Get Game HUD Element Label",
         "PaletteName": "Get Game HUD Element Label",
@@ -9041,7 +9072,7 @@
     "93ad7158-81eb-453c-b3db-222b9630ae0e": {
         "ChipName": "Inventory Item Get Definition",
         "PaletteName": "Inventory Item Get Definition",
-        "Description": "Gets the friendly name and description of the given inventory item.",
+        "Description": "Gets the friendly name, description, and image of the given inventory item.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
@@ -9080,6 +9111,82 @@
                     {
                         "Name": "SupportsUseAction",
                         "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Image",
+                        "DataType": "recnet image",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "f54582a2-90b1-4be4-a6c0-0d688b4f8067": {
+        "ChipName": "Get Inventory Item From Name",
+        "PaletteName": "Get Inventory Item From Name",
+        "Description": "Gets the Inventory Item that matches the provided friendly name",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Economy",
+            "Inventory Item"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Name",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Inventory Item",
+                        "DataType": "inventory item",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "aaa5f89c-abb4-42ef-a300-6a3acf528ea4": {
+        "ChipName": "Inventory Item Get Image",
+        "PaletteName": "Inventory Item Get Image",
+        "Description": "Gets the image of the given inventory item",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Economy",
+            "Inventory Item"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Inventory Item",
+                        "DataType": "inventory item",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Image",
+                        "DataType": "recnet image",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -10660,7 +10767,7 @@
         "PaletteName": "Go To State",
         "Description": "Transitions to the given state in the current state machine.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -10896,7 +11003,7 @@
         "PaletteName": "Graph Get Is Active",
         "Description": "Returns true if the current circuit graph is active. When inactive, circuit events will not run.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -11677,7 +11784,7 @@
         "IsBeta": true,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Object",
             "Gun Handle"
@@ -11805,6 +11912,40 @@
                 "Outputs": [
                     {
                         "Name": "Can Reload",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "bb9b601a-b501-434d-9df7-1b66c393fd8c": {
+        "ChipName": "Gun Handle Get Continuous Fire",
+        "PaletteName": "Gun Handle Get Continuous Fire",
+        "Description": "Returns whether the given gun handle will fire continuously.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Gun Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "gun handle",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Continuous Fire",
                         "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
@@ -12031,7 +12172,7 @@
         "IsBeta": true,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Object",
             "Gun Handle"
@@ -12123,7 +12264,7 @@
         "IsBeta": true,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Object",
             "Gun Handle"
@@ -12191,6 +12332,52 @@
                     },
                     {
                         "Name": "Can Reload",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "d539bb9a-5e64-43df-a8f9-16839ede0027": {
+        "ChipName": "Gun Handle Set Continuous Fire",
+        "PaletteName": "Gun Handle Set Continuous Fire",
+        "Description": "Sets whether the given gun handle will fire continuously.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Gun Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "gun handle",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Continuous Fire",
                         "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
@@ -12378,6 +12565,166 @@
                         "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "9af47a88-a066-4923-928d-50a8ff99eaaa": {
+        "ChipName": "Handle Get Control Prompt",
+        "PaletteName": "Handle Get Control Prompt",
+        "Description": "Gets the primary action label on the target handle type object",
+        "Model": "Default",
+        "IsBeta": false,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "handle",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Control Prompt",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "37545ad5-40c3-49c0-9c32-1c4ccdd27f83": {
+        "ChipName": "Handle Get Player Filter Tags",
+        "PaletteName": "Handle Get Player Filter Tags",
+        "Description": "Gets the tags that a handle is using in its Tag Filter. The Tag Filter must be enabled in the handle's configure menu for this to work.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "handle",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Value",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
+    "7900ebde-9abd-4f84-b471-94c69bae2a65": {
+        "ChipName": "Handle Set Control Prompt",
+        "PaletteName": "Handle Set Control Prompt",
+        "Description": "Sets the primary action label on the target handle type object",
+        "Model": "Default",
+        "IsBeta": false,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "handle",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Control Prompt",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "fa0d31e8-149d-4554-9994-894cb3d79f3d": {
+        "ChipName": "Handle Set Player Filter Tags",
+        "PaletteName": "Handle Set Player Filter Tags",
+        "Description": "Sets the tags that a handle is using in its Tag Filter. The Tag Filter must be enabled in the handle's configure menu for this to work.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "handle",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Value",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": true
                     }
                 ],
                 "Outputs": [
@@ -12913,7 +13260,7 @@
         "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Physics",
             "Player",
@@ -12970,11 +13317,11 @@
         ]
     },
     "f94206bd-1903-492f-85fc-07f8f756b9f5": {
-        "ChipName": "Velocity Add (New)",
-        "PaletteName": "Velocity Add (New)",
+        "ChipName": "Velocity Add",
+        "PaletteName": "Velocity Add",
         "Description": "Adds velocity to the input target. The input velocity will be multiplied by the magnitude of the vector provided in the input direction.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -13212,6 +13559,33 @@
                     {
                         "Name": "",
                         "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "e05bd0b5-bbcd-46d2-827c-063020bd9f1b": {
+        "ChipName": "Instance Get Lifetime",
+        "PaletteName": "Instance Get Lifetime",
+        "Description": "Returns the number of seconds since the current room instance was created.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Room Instance"
+        ],
+        "Functions": [
+            {
+                "Inputs": [],
+                "Outputs": [
+                    {
+                        "Name": "Lifetime",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -13932,7 +14306,7 @@
     "f24d537e-da9e-47bf-8764-fba6eeefb043": {
         "ChipName": "Instance Get Is Event",
         "PaletteName": "Instance Get Is Event",
-        "Description": "",
+        "Description": "Returns true when the current room instance is a player run event.",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -13948,6 +14322,33 @@
                 "Outputs": [
                     {
                         "Name": "Is Event",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "bcaa0819-f788-49ed-91d5-767484c48dea": {
+        "ChipName": "Instance Get Is Multi-Instance Event",
+        "PaletteName": "Instance Get Is Multi-Instance Event",
+        "Description": "Returns true when the current room instance is part of a multi-instance event.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Room Instance"
+        ],
+        "Functions": [
+            {
+                "Inputs": [],
+                "Outputs": [
+                    {
+                        "Name": "Is Multi-Instance Event",
                         "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
@@ -15348,6 +15749,58 @@
             }
         ]
     },
+    "a107765d-643e-4b61-b144-7b8f4712f143": {
+        "ChipName": "List Add If Not Contains",
+        "PaletteName": "List Add If Not Contains",
+        "Description": "Adds a new element to the end of the target list containing the input value, but only if the element isn't already in the list.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "List",
+            "Core"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": true
+                    },
+                    {
+                        "Name": "Item",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Success",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "f716c3f3-0c7c-42a4-bf55-12b7e1cd9040": {
         "ChipName": "List Add",
         "PaletteName": "List Add",
@@ -15466,6 +15919,108 @@
             }
         ]
     },
+    "2333a01b-6b6f-43c0-b7c3-ea89df868a10": {
+        "ChipName": "List Except",
+        "PaletteName": "List Except",
+        "Description": "Get a list of all elements that appear in the first list but not in the other lists.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "List",
+            "Core"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Value",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Output",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
+    "ddee857a-4be4-47a8-9dd7-782c02d5d1f6": {
+        "ChipName": "List Intersect",
+        "PaletteName": "List Intersect",
+        "Description": "Get a list of the elements that appear in every input list.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "List",
+            "Core"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Value",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Output",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
+    "304c312c-f3bd-460b-b54a-90ba343f2a7c": {
+        "ChipName": "List Union",
+        "PaletteName": "List Union",
+        "Description": "Combine lists together into one list and remove any duplicate elements.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "List",
+            "Core"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Value",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Output",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
     "e0ef8c83-e5a6-4272-a102-07bfc0a40fd5": {
         "ChipName": "List<bool> Variable",
         "PaletteName": "List<bool> Variable",
@@ -15527,7 +16082,7 @@
         "PaletteName": "List Clear",
         "Description": "Removes all elements from a list",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -15823,6 +16378,40 @@
                     {
                         "Name": "",
                         "DataType": "destination room",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
+    "7f15baa5-f804-4754-9cec-d1fe76a458b1": {
+        "ChipName": "List Distinct",
+        "PaletteName": "List Distinct",
+        "Description": "Outputs a copy of the input list containing only its unique elements.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "List",
+            "Core"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "List",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Result",
+                        "DataType": "any",
                         "IsUnion": false,
                         "IsList": true
                     }
@@ -17224,6 +17813,524 @@
             }
         ]
     },
+    "b179742a-bdd8-47b5-b439-6cdd5cf9484a": {
+        "ChipName": "Locomotion Request Clamber",
+        "PaletteName": "Locomotion Request Clamber",
+        "Description": "Request that the local player perform a clamber or a mantle. Custom Locomotion must be enabled in the active Player Definition Board.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Ledge Position",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Wall Normal",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Wall Object",
+                        "DataType": "rec room object",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Mantle",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Duration",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Post Clamber Velocity Multiplier",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "668d3245-34e3-4619-9881-eb8b49d2d638": {
+        "ChipName": "Locomotion Request Crouch",
+        "PaletteName": "Locomotion Request Crouch",
+        "Description": "Request that the local player crouch.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": true,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "584c70a5-5bd1-448c-9dfa-45a0461481ef": {
+        "ChipName": "Locomotion Request Jump Cutoff",
+        "PaletteName": "Locomotion Request Jump Cutoff",
+        "Description": "Request that the local player's jump is cancelled or shortened.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": true,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "33149283-60d0-4564-b989-db074573e857": {
+        "ChipName": "Locomotion Request Jump",
+        "PaletteName": "Locomotion Request Jump",
+        "Description": "Request that the local player jumps.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": true,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Max Jump Height",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Direction",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "3bff6eb2-3c82-4081-83e8-52032b1e28db": {
+        "ChipName": "Locomotion Request Prone",
+        "PaletteName": "Locomotion Request Prone",
+        "Description": "Request that the local player becomes prone.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": true,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "ae507f57-8840-493d-9014-38c6beb19e58": {
+        "ChipName": "Locomotion Request Slide",
+        "PaletteName": "Locomotion Request Slide",
+        "Description": "Used for custom locomotion in order to request starting a slide.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": true,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Slide Speed",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Min Slide Speed",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Slide With Gravity",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "72e44053-7f7d-44f8-a45e-0d8eab06b13a": {
+        "ChipName": "Locomotion Request Sprint Start",
+        "PaletteName": "Locomotion Request Sprint Start",
+        "Description": "Used for custom locomotion in order to request starting a sprint. ",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "804ac85f-1cd7-4da6-b81b-739971cfc387": {
+        "ChipName": "Locomotion Request Sprint Stop",
+        "PaletteName": "Locomotion Request Sprint Stop",
+        "Description": "Request that the local player's sprint stops.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": true,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "b6169557-e604-47bf-b11b-939f53daf6e9": {
+        "ChipName": "Locomotion Request Stand",
+        "PaletteName": "Locomotion Request Stand",
+        "Description": "Requests that the local player stand.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": true,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "0eead8ce-398b-4b0b-b16f-bad7be1bc11b": {
+        "ChipName": "Locomotion Request Steering",
+        "PaletteName": "Locomotion Request Steering",
+        "Description": "Request that the local player is steered in the given direction, at the given speed.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": true,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Direction",
+                        "DataType": "vector3",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Normalized Speed",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Max Steering Speed",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Acceleration Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "13989690-57a9-432f-b79d-9e8a33c9888b": {
+        "ChipName": "Locomotion Request Wall Run",
+        "PaletteName": "Locomotion Request Wall Run",
+        "Description": "Request that the local player begin to wall run. Not affected by CanWallRun directly. If you want that property to impact this request you should check it yourself.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion",
+            "Wall Run"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Max Speed",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Max Duration (seconds)",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Gravity Multiplier",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "cc6e247e-8bce-481c-b68e-e2449a5cb1fd": {
+        "ChipName": "Locomotion Request Wall Run Stop",
+        "PaletteName": "Locomotion Request Wall Run Stop",
+        "Description": "Request that the local player stop wall running. Not affected by CanWallRun directly. If you want that property to impact this request you should check it yourself.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion",
+            "Wall Run"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "28a105ab-a947-4493-a51d-ced76a9601ee": {
         "ChipName": "Logarithm",
         "PaletteName": "Logarithm",
@@ -17491,12 +18598,12 @@
             }
         ]
     },
-    "fe462e79-9e9f-4234-b594-7b6c0a69329b": {
+    "60da34d9-7e21-4cb6-a279-f083634c2979": {
         "ChipName": "Modulo",
         "PaletteName": "Modulo",
-        "Description": "Outputs the remainder of the first value is divided by the second.",
+        "Description": "Outputs the modulo of the first value when divided by the second.",
         "Model": "Default",
-        "IsBeta": false,
+        "IsBeta": true,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -17706,6 +18813,47 @@
                 "Outputs": [
                     {
                         "Name": "Result",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "98a46410-ddd1-46b8-a99e-0642f75a0861": {
+        "ChipName": "Not Equals",
+        "PaletteName": "Not Equals",
+        "Description": "Compares the input values and outputs True if they are different. False if they are the same.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Logic",
+            "Comparison",
+            "Commonly Used"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Value",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Value",
+                        "DataType": "any",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Equals",
                         "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
@@ -18748,6 +19896,45 @@
             }
         ]
     },
+    "836b64ad-0fd2-4936-bc1f-d25098df8b1d": {
+        "ChipName": "Parse Time",
+        "PaletteName": "Parse Time",
+        "Description": "Parses the input date and time and returns the corresponding universal seconds. The chip will automatically try to find the correct format of the input data.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Time"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Time",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Universal Seconds",
+                        "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Success",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "5e25f40a-2b8c-4327-a89c-7a749838da7d": {
         "ChipName": "Parse Float",
         "PaletteName": "Parse Float",
@@ -19292,6 +20479,56 @@
             }
         ]
     },
+    "3ac91358-d131-4e01-95e0-a24d309886c1": {
+        "ChipName": "Player Add Aim Assist Tag",
+        "PaletteName": "Player Add Aim Assist Tag",
+        "Description": "Adds a tag to the list of player tags that the provided player can target with aim assist.\nBy default, this list contains the #player tag.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "AimAssist",
+            "Object",
+            "Gun Handle",
+            "Object",
+            "Swing Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Tag",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "7b725036-4996-441d-ac54-91ac2c23d6b3": {
         "ChipName": "Player Add Role",
         "PaletteName": "Player Add Role",
@@ -19523,6 +20760,47 @@
             }
         ]
     },
+    "1e33670b-5362-48d1-8f28-38df16e1b4c5": {
+        "ChipName": "Local Player Clear Player Voice Rolloff Override",
+        "PaletteName": "Local Player Clear Player Voice Rolloff Override",
+        "Description": "Clears the local player's override of target player's voice rolloff distance.\n\nThe local player's reckoning of the target player's voice rolloff returns to being based on that player's voice rolloff distance property.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Audio"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "4c9e7840-0721-4d1c-b334-167f79d3bf40": {
         "ChipName": "Player Definition Board",
         "PaletteName": "Player Definition Board",
@@ -19732,6 +21010,56 @@
             }
         ]
     },
+    "5d6461e3-c6e0-40eb-8032-8595b6d9b0dc": {
+        "ChipName": "Player Get Aim Assist Tags",
+        "PaletteName": "Player Get Aim Assist Tags",
+        "Description": "Gets the list of player tags that the provided player can target with aim assist.\nBy default, this list contains the #player tag.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "AimAssist",
+            "Object",
+            "Gun Handle",
+            "Object",
+            "Swing Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Tags",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
     "8286a047-19a2-4ad0-bdec-833f35adf4f2": {
         "ChipName": "Player Get All with Tag",
         "PaletteName": "Player Get All with Tag",
@@ -19766,10 +21094,10 @@
             }
         ]
     },
-    "52fcfdc0-5f37-4c4c-892a-f61ba6ebf686": {
-        "ChipName": "Player Get Can Teleport",
-        "PaletteName": "Player Get Can Teleport",
-        "Description": "Returns whether a given player is allowed to teleport.\n\nNote: The value of this property is independent of a player's platform. (This value can be true for screens players.)",
+    "ae54528b-eaf4-4247-a49e-29b9acbaf1b5": {
+        "ChipName": "Player Get Wall Run Enabled",
+        "PaletteName": "Player Get Wall Run Enabled",
+        "Description": "Gets the whether the player can Wall Run. Enforced via circuits.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
@@ -19779,10 +21107,10 @@
             "Player",
             "Properties",
             "Locomotion",
-            "Teleport",
+            "Wall Run",
             "Player",
             "Locomotion",
-            "Teleport"
+            "Wall Run"
         ],
         "Functions": [
             {
@@ -19796,7 +21124,7 @@
                 ],
                 "Outputs": [
                     {
-                        "Name": "Can Teleport",
+                        "Name": "Wall Run Enabled",
                         "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
@@ -19872,6 +21200,45 @@
                     {
                         "Name": "Crouch Input Enabled",
                         "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "c7e7881d-24aa-4308-af34-386daa6a9e12": {
+        "ChipName": "Player Get Crouch Speed",
+        "PaletteName": "Player Get Crouch Speed",
+        "Description": "Returns the crouch speed for a given player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Walk",
+            "Player",
+            "Locomotion",
+            "Walk"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Crouch Speed (m/s)",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -20232,6 +21599,39 @@
             }
         ]
     },
+    "d5a7f0e5-b0ab-4b6d-82d2-cdecade30009": {
+        "ChipName": "Player Get Is Custom Footstep Audio Enabled",
+        "PaletteName": "Player Get Is Custom Footstep Audio Enabled",
+        "Description": "",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Enabled",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "4db35e9d-3a1d-4823-a011-7f94e028a3e7": {
         "ChipName": "Player Get Is Grounded",
         "PaletteName": "Player Get Is Grounded",
@@ -20471,6 +21871,80 @@
             }
         ]
     },
+    "52fcfdc0-5f37-4c4c-892a-f61ba6ebf686": {
+        "ChipName": "Player Get Can Teleport",
+        "PaletteName": "Player Get Can Teleport",
+        "Description": "Returns whether a given player is allowed to teleport.\n\nNote: The value of this property is independent of a player's platform. (This value can be true for screens players.)",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Teleport",
+            "Player",
+            "Locomotion",
+            "Teleport"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Can Teleport",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "5078db49-c621-4491-af58-3d37973c613c": {
+        "ChipName": "Player Get Is WallRunning",
+        "PaletteName": "Player Get Is WallRunning",
+        "Description": "Returns whether the given player is wall running.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion",
+            "Wall Run"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Is Wall Running",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "42dbf319-8d57-41d2-921f-f3f707e6ad81": {
         "ChipName": "Player Get Jump Height",
         "PaletteName": "Player Get Jump Height",
@@ -20552,12 +22026,12 @@
     "1eb70662-4a75-4120-9713-11dbbeedc740": {
         "ChipName": "Player Get Normalized Steering Speed",
         "PaletteName": "Player Get Normalized Steering Speed",
-        "Description": "Returns the normalized (zero to one) steering speed requested by the player. This value represents how fast a player is wanting to move relative to their max speed.",
+        "Description": "(DEPRECATED: Use PlayerGetSteeringSpeed / GetWalkSpeed) Returns the steering speed requested by the player, squared, and normalized by the square of the default walk speed.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Player",
             "Locomotion"
@@ -20575,6 +22049,80 @@
                 "Outputs": [
                     {
                         "Name": "Normalized Steering Speed",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "502c4b6c-47b6-4370-a1e0-9cab18b1af35": {
+        "ChipName": "Player Get Players In Radio Channel",
+        "PaletteName": "Player Get Players In Radio Channel",
+        "Description": "Returns a list of players that are set to the given radio channel.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Audio",
+            "Radio Channel"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Channel",
+                        "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Players",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
+    "4d0f09da-4784-4b35-bf66-cdf818ea1a29": {
+        "ChipName": "Player Get Prone Speed",
+        "PaletteName": "Player Get Prone Speed",
+        "Description": "Returns the prone speed for a given player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Walk",
+            "Player",
+            "Locomotion",
+            "Walk"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Prone Speed (m/s)",
                         "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
@@ -20719,6 +22267,45 @@
             }
         ]
     },
+    "87a7028f-cdde-4660-ade6-666509e137f8": {
+        "ChipName": "Player Get Slide Speed",
+        "PaletteName": "Player Get Slide Speed",
+        "Description": "Returns the slide speed for a given player.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Walk",
+            "Player",
+            "Locomotion",
+            "Walk"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Slide Speed (m/s)",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "0b931a90-b24c-4be8-8503-efeea655c660": {
         "ChipName": "Player Get Sprint Input Enabled",
         "PaletteName": "Player Get Sprint Input Enabled",
@@ -20831,6 +22418,40 @@
             }
         ]
     },
+    "348bc4c8-3b3b-4c44-8c49-4f782e5c8039": {
+        "ChipName": "Player Get Steering Speed",
+        "PaletteName": "Player Get Steering Speed",
+        "Description": "Returns the steering speed requested by the player. This value represents how fast a player is wanting to move in world units.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Locomotion"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Steering Speed",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "aa63bd19-b0a1-441f-8d69-71591d9007b9": {
         "ChipName": "Player Get Teleport Delay",
         "PaletteName": "Player Get Teleport Delay",
@@ -20912,7 +22533,7 @@
     "7dd7ea91-2600-4002-804d-3a88d8b3b8a5": {
         "ChipName": "Player Get Voice Rolloff Distance",
         "PaletteName": "Player Get Voice Rolloff Distance",
-        "Description": "Returns the voice rolloff distance for a given player",
+        "Description": "Returns the voice rolloff distance for the target player, as reckoned by the local player.\n\nIf the local player has set an override for the target player's voice rolloff distance, the \"Has Local Override\" bool returns true, and the overridden value is returned.\n\nOtherwise, the synced value of that player's voice rolloff distance is returned, and the bool returns false.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
@@ -20937,6 +22558,12 @@
                     {
                         "Name": "Voice Rolloff Distance (m)",
                         "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Has Local Override",
+                        "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -21049,6 +22676,67 @@
                     {
                         "Name": "XP",
                         "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "d1261f45-8ee7-4d5e-8916-50c2e511ad84": {
+        "ChipName": "Player Has Purchased Room Offer",
+        "PaletteName": "Player Has Purchased Room Offer",
+        "Description": "",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Economy",
+            "Room Offer",
+            "Economy",
+            "Room Offer"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Run",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Room Offer",
+                        "DataType": "room offer",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Run",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "On Player Has Purchased Room Offer Complete",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player Has Purchased Room Offer",
+                        "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -21473,9 +23161,43 @@
             }
         ]
     },
+    "7ff6c70e-d2df-4a57-980f-7bc8036e6e5d": {
+        "ChipName": "Player Get Is Room Contributor",
+        "PaletteName": "Player Get Is Room Contributor",
+        "Description": "Outputs True if the input Player is one of the current room's contributors.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Permissions"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Result",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "6f4324c5-4c7a-4243-97d0-58f027996534": {
-        "ChipName": "Player Is Room Host",
-        "PaletteName": "Player Is Room Host",
+        "ChipName": "Player Get Is Room Host",
+        "PaletteName": "Player Get Is Room Host",
         "Description": "Outputs True if the input Player is one of the current room's hosts.",
         "Model": "Default",
         "IsBeta": false,
@@ -21484,7 +23206,7 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Player",
-            "Utilities"
+            "Permissions"
         ],
         "Functions": [
             {
@@ -21508,8 +23230,8 @@
         ]
     },
     "8f9b0921-a92b-4d01-a4d5-a8d2e6fc6ca0": {
-        "ChipName": "Player Is Room Mod",
-        "PaletteName": "Player Is Room Mod",
+        "ChipName": "Player Get Is Room Mod",
+        "PaletteName": "Player Get Is Room Mod",
         "Description": "Outputs True if the input Player is one of the current room's moderators.",
         "Model": "Default",
         "IsBeta": false,
@@ -21518,7 +23240,7 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Player",
-            "Utilities"
+            "Permissions"
         ],
         "Functions": [
             {
@@ -21552,7 +23274,7 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Player",
-            "Utilities"
+            "Permissions"
         ],
         "Functions": [
             {
@@ -21841,6 +23563,53 @@
             }
         ]
     },
+    "bb4ff641-2267-45e0-9e07-fc480b04f478": {
+        "ChipName": "Local Player Override Player Voice Rolloff",
+        "PaletteName": "Local Player Override Player Voice Rolloff",
+        "Description": "Override the voice rolloff distance of the target player as heard by the local player.\n\nOther players' perception of the target player's voice rolloff will be unaffected.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Audio"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Voice Rolloff Distance (m)",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "68cc97a7-440a-450a-bf7f-b25091629c32": {
         "ChipName": "Player Owns Inventory Item",
         "PaletteName": "Player Owns Inventory Item",
@@ -22051,6 +23820,56 @@
             }
         ]
     },
+    "03d08e3c-b639-43ca-9443-dee4b160ad0e": {
+        "ChipName": "Player Remove Aim Assist Tag",
+        "PaletteName": "Player Remove Aim Assist Tag",
+        "Description": "Removes a tag from the list of player tags that the provided player can target with aim assist.\nBy default, this list contains the #player tag.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "AimAssist",
+            "Object",
+            "Gun Handle",
+            "Object",
+            "Swing Handle"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Tag",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "eb605a54-315e-495e-b051-8d113c32ed7c": {
         "ChipName": "Remove Player From Radio Channel",
         "PaletteName": "Remove Player From Radio Channel",
@@ -22143,7 +23962,7 @@
         "PaletteName": "Player Reset Name Color",
         "Description": "Resets the color of the given player's name tag to the default color.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -22350,10 +24169,10 @@
             }
         ]
     },
-    "de2df219-9d85-4778-a9a3-255d912596a2": {
-        "ChipName": "Player Set Can Teleport",
-        "PaletteName": "Player Set Can Teleport",
-        "Description": "Sets whether a given player is allowed to teleport.\n\nNote: Setting this to false does not prevent VR players from being in Teleport mode. It only prevents them from performing a teleport.",
+    "19883a68-58b5-480e-a5cd-97a526e08fdd": {
+        "ChipName": "Player Set Aim Assist Tags",
+        "PaletteName": "Player Set Aim Assist Tags",
+        "Description": "Sets the list of player tags that the provided player can target with aim assist.\nBy default, this list contains the #player tag.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
@@ -22361,12 +24180,11 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Player",
-            "Properties",
-            "Locomotion",
-            "Teleport",
-            "Player",
-            "Locomotion",
-            "Teleport"
+            "AimAssist",
+            "Object",
+            "Gun Handle",
+            "Object",
+            "Swing Handle"
         ],
         "Functions": [
             {
@@ -22384,7 +24202,58 @@
                         "IsList": false
                     },
                     {
-                        "Name": "Can Teleport",
+                        "Name": "Tags",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "8470f76b-a4c5-4b79-9651-5af1b9ed8b78": {
+        "ChipName": "Player Set Wall Run Enabled",
+        "PaletteName": "Player Set Wall Run Enabled",
+        "Description": "Sets the whether the player can Wall Run. Enforced via circuits.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Wall Run",
+            "Player",
+            "Locomotion",
+            "Wall Run"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Wall Run Enabled",
                         "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
@@ -22437,6 +24306,57 @@
                     {
                         "Name": "Crouch Input Enabled",
                         "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "0a83ea9a-7796-4f77-940e-1bb6593b1ac2": {
+        "ChipName": "Player Set Crouch Speed",
+        "PaletteName": "Player Set Crouch Speed",
+        "Description": "Sets the crouch speed for a given player",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Walk",
+            "Player",
+            "Locomotion",
+            "Walk"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Crouch Speed (m/s)",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -22658,6 +24578,57 @@
             }
         ]
     },
+    "de2df219-9d85-4778-a9a3-255d912596a2": {
+        "ChipName": "Player Set Can Teleport",
+        "PaletteName": "Player Set Can Teleport",
+        "Description": "Sets whether a given player is allowed to teleport.\n\nNote: Setting this to false does not prevent VR players from being in Teleport mode. It only prevents them from performing a teleport.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Teleport",
+            "Player",
+            "Locomotion",
+            "Teleport"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Can Teleport",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "5dae4912-b714-4cbe-91ab-c736b517d0d6": {
         "ChipName": "Player Set Jump Height",
         "PaletteName": "Player Set Jump Height",
@@ -22760,6 +24731,57 @@
             }
         ]
     },
+    "f7f503b5-58df-42b2-ab69-3d7f3b0f4a5d": {
+        "ChipName": "Player Set Prone Speed",
+        "PaletteName": "Player Set Prone Speed",
+        "Description": "Sets the prone speed for a given player",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Walk",
+            "Player",
+            "Locomotion",
+            "Walk"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Prone Speed (m/s)",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "231d05ba-8577-4d1e-888d-115e657dd525": {
         "ChipName": "Player Set Radio Channel",
         "PaletteName": "Player Set Radio Channel",
@@ -22792,6 +24814,57 @@
                     {
                         "Name": "Channel",
                         "DataType": "int",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "e4f3a06c-b997-4186-a4a3-f435713a910b": {
+        "ChipName": "Player Set Slide Speed",
+        "PaletteName": "Player Set Slide Speed",
+        "Description": "Sets the slide speed for a given player",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Properties",
+            "Locomotion",
+            "Walk",
+            "Player",
+            "Locomotion",
+            "Walk"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Slide Speed (m/s)",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -23014,7 +25087,7 @@
     "7fd128dd-189b-4454-9824-5f482f8f5ce6": {
         "ChipName": "Player Set Voice Rolloff Distance",
         "PaletteName": "Player Set Voice Rolloff Distance",
-        "Description": "Sets the voice rolloff distance for a given player. Beyond this distance, they cannot be heard.",
+        "Description": "Sets the voice rolloff distance for a given player as heard by all other players.\n\nBeyond this distance, the target player cannot be heard.",
         "Model": "Default",
         "IsBeta": true,
         "TrollingRisk": false,
@@ -23153,6 +25226,41 @@
                     {
                         "Name": "",
                         "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "f28a5263-76d9-4bba-97f2-2654ae04ce61": {
+        "ChipName": "Share Camera Get Is Spawned",
+        "PaletteName": "Share Camera Get Is Spawned",
+        "Description": "Gets whether the target player has their Share Camera spawned",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Equipment",
+            "Share Camera"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Is Spawned",
+                        "DataType": "bool",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -23497,12 +25605,8 @@
                     },
                     {
                         "Name": "Handle",
-                        "DataType": [
-                            "trigger handle",
-                            "gun handle",
-                            "swing handle"
-                        ],
-                        "IsUnion": true,
+                        "DataType": "handle",
+                        "IsUnion": false,
                         "IsList": false
                     },
                     {
@@ -25387,6 +27491,46 @@
             }
         ]
     },
+    "fe462e79-9e9f-4234-b594-7b6c0a69329b": {
+        "ChipName": "Remainder",
+        "PaletteName": "Remainder",
+        "Description": "Outputs the remainder of the first value when divided by the second.",
+        "Model": "Default",
+        "IsBeta": false,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Math",
+            "Scalar"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Value",
+                        "DataType": [
+                            "int",
+                            "float"
+                        ],
+                        "IsUnion": true,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Remainder",
+                        "DataType": [
+                            "int",
+                            "float"
+                        ],
+                        "IsUnion": true,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "736abfd6-5a44-4c74-9fc2-663adf6cbbdf": {
         "ChipName": "Inventory Item Remove",
         "PaletteName": "Inventory Item Remove",
@@ -25983,6 +28127,59 @@
             }
         ]
     },
+    "b890f7ef-5126-401c-8d66-794e9b1bc2a5": {
+        "ChipName": "Room Background Objects Clear Player Override",
+        "PaletteName": "Room Background Objects Clear Player Override",
+        "Description": "Clears the given player's local room background objects state override.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Background Objects"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "f16741ca-778f-44de-99e6-6a948c7aecfb": {
         "ChipName": "Room Background Objects Modify",
         "PaletteName": "Room Background Objects Modify",
@@ -25994,7 +28191,8 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Game Features",
-            "Moods"
+            "Moods",
+            "Background Objects"
         ],
         "Functions": [
             {
@@ -26035,6 +28233,118 @@
             }
         ]
     },
+    "79b90cab-14e3-4a90-8975-163506809c7e": {
+        "ChipName": "Room Background Objects Modify",
+        "PaletteName": "Room Background Objects Modify",
+        "Description": "Changes the room's shared background objects state to the given configuration.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Background Objects"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Background Objects",
+                        "DataType": "background objects",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "8ee487c2-9351-4f3b-9497-1e633d606f20": {
+        "ChipName": "Room Background Objects Player Override",
+        "PaletteName": "Room Background Objects Player Override",
+        "Description": "Overrides the given player's room background objects state to the given configuration. This will take precedent over the room's shared background objects state.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Background Objects"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Background Objects",
+                        "DataType": "background objects",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "56c10ead-6198-4b13-b6de-d1df9080341b": {
         "ChipName": "Room Background Objects Reset",
         "PaletteName": "Room Background Objects Reset",
@@ -26046,7 +28356,8 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Game Features",
-            "Moods"
+            "Moods",
+            "Background Objects"
         ],
         "Functions": [
             {
@@ -26054,6 +28365,218 @@
                     {
                         "Name": "Modify",
                         "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "71b85a8d-cda7-481f-a795-156bd8318d95": {
+        "ChipName": "Room Background Objects Reset",
+        "PaletteName": "Room Background Objects Reset",
+        "Description": "Resets the room's shared background objects state to the room default.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Background Objects"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "415b92fb-53a3-4036-97ee-75146dcfd637": {
+        "ChipName": "Room Fog Clear Player Override",
+        "PaletteName": "Room Fog Clear Player Override",
+        "Description": "Clears the given player's local room fog state override.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Fog"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "2f9b5697-b309-474b-ad4d-361d17278f15": {
+        "ChipName": "Room Fog Modify",
+        "PaletteName": "Room Fog Modify",
+        "Description": "Changes the room's shared fog state to the given configuration.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Fog"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Fog",
+                        "DataType": "fog",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "be4008ad-3f28-4a62-9b30-f479eb7c0542": {
+        "ChipName": "Room Fog Player Override",
+        "PaletteName": "Room Fog Player Override",
+        "Description": "Overrides the given player's room fog state to the given configuration. This will take precedent over the room's shared fog state.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Fog"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Fog",
+                        "DataType": "fog",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -26086,7 +28609,8 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Game Features",
-            "Moods"
+            "Moods",
+            "Fog"
         ],
         "Functions": [
             {
@@ -26094,6 +28618,53 @@
                     {
                         "Name": "Modify",
                         "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "8d447921-57aa-471c-9628-857071fc4a10": {
+        "ChipName": "Room Fog Reset",
+        "PaletteName": "Room Fog Reset",
+        "Description": "Resets the room's shared fog state to the room default.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Fog"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -26258,6 +28829,59 @@
             }
         ]
     },
+    "de67b647-5c82-4875-a6c4-051768c27c32": {
+        "ChipName": "Room Skydome Clear Player Override",
+        "PaletteName": "Room Skydome Clear Player Override",
+        "Description": "Clears the given player's local room skydome state override.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Skydome"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "511e85c5-a359-49f1-a83c-a0550e98fe8e": {
         "ChipName": "Room Skydome Modify",
         "PaletteName": "Room Skydome Modify",
@@ -26269,7 +28893,8 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Game Features",
-            "Moods"
+            "Moods",
+            "Skydome"
         ],
         "Functions": [
             {
@@ -26310,6 +28935,118 @@
             }
         ]
     },
+    "fa6ebcdd-7551-4f05-91ca-101b2679cc0c": {
+        "ChipName": "Room Skydome Modify",
+        "PaletteName": "Room Skydome Modify",
+        "Description": "Changes the room's shared skydome state to the given configuration.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Skydome"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Skydome",
+                        "DataType": "skydome",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "f204d79b-fbd2-4b19-a4bf-b7eabe927bed": {
+        "ChipName": "Room Skydome Player Override",
+        "PaletteName": "Room Skydome Player Override",
+        "Description": "Overrides the given player's room skydome state to the given configuration. This will take precedent over the room's shared skydome state.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Skydome"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Skydome",
+                        "DataType": "skydome",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "b17f7045-6fa5-4fc5-84d5-def4f78d4f45": {
         "ChipName": "Room Skydome Reset",
         "PaletteName": "Room Skydome Reset",
@@ -26321,7 +29058,8 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Game Features",
-            "Moods"
+            "Moods",
+            "Skydome"
         ],
         "Functions": [
             {
@@ -26329,6 +29067,230 @@
                     {
                         "Name": "Modify",
                         "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "79581488-2095-4ccd-a597-e3ed4d172105": {
+        "ChipName": "Room Skydome Reset",
+        "PaletteName": "Room Skydome Reset",
+        "Description": "Resets the room's shared skydome state to the room default.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Skydome"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "c3c56056-ae0a-4576-a907-84c78a8cd3bf": {
+        "ChipName": "Room Sun Clear Player Override",
+        "PaletteName": "Room Sun Clear Player Override",
+        "Description": "Clears the given player's local room sun state override.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Sun"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "ecf6491d-782c-47b8-bb3e-b751de0f348f": {
+        "ChipName": "Room Sun Modify",
+        "PaletteName": "Room Sun Modify",
+        "Description": "Changes the room's shared sun state to the given configuration.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Sun"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Sun",
+                        "DataType": "sun",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Sun Direction",
+                        "DataType": "sun direction",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "6601dc45-6a5d-4a4d-986a-c3f265de9971": {
+        "ChipName": "Room Sun Player Override",
+        "PaletteName": "Room Sun Player Override",
+        "Description": "Overrides the given player's room sun state to the given configuration. This will take precedent over the room's shared sun state.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Sun"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Sun",
+                        "DataType": "sun",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Sun Direction",
+                        "DataType": "sun direction",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -26361,7 +29323,8 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Game Features",
-            "Moods"
+            "Moods",
+            "Sun"
         ],
         "Functions": [
             {
@@ -26369,6 +29332,53 @@
                     {
                         "Name": "Modify",
                         "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Finished",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "f62876ea-8c18-4566-ae4e-224d39fdcd89": {
+        "ChipName": "Room Sun Reset",
+        "PaletteName": "Room Sun Reset",
+        "Description": "Resets the room's shared sun state to the room default.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Game Features",
+            "Moods",
+            "Sun"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Blend Time",
+                        "DataType": "float",
                         "IsUnion": false,
                         "IsList": false
                     }
@@ -28717,6 +31727,59 @@
             }
         ]
     },
+    "2d9b5795-efca-48a6-9270-d1804ec69bb4": {
+        "ChipName": "Equip Share Camera",
+        "PaletteName": "Equip Share Camera",
+        "Description": "Equips Share Camera to a player's dominant hand if the player is not already holding the Share Camera.\nReturns success if the target player is already holding their Share Camera in either hand.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "Equipment",
+            "Share Camera"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Force Equip",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Success",
+                        "DataType": "bool",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "2231d8fa-fa63-4952-8ba4-a8258ffb2f9b": {
         "ChipName": "Set Game HUD Element Label Enabled",
         "PaletteName": "Set Game HUD Element Label Enabled",
@@ -29022,6 +32085,64 @@
             }
         ]
     },
+    "829b5788-efe0-4df4-91de-75c267ed3d57": {
+        "ChipName": "Show Banner Notification",
+        "PaletteName": "Show Banner Notification",
+        "Description": "Shows a player a banner notification. Appearance can be customized in the config menu!",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Player",
+            "UI"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Player",
+                        "DataType": "player",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Title",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Main Text",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Duration",
+                        "DataType": "float",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
     "3d713e71-2729-4819-819c-bcbe6fb8d400": {
         "ChipName": "Show Reward Notification",
         "PaletteName": "Show Reward Notification",
@@ -29126,7 +32247,9 @@
         "Tags": [
             "Game Features",
             "Moods",
-            "Constant"
+            "Skydome",
+            "Constant",
+            "Moods"
         ],
         "Functions": [
             {
@@ -29202,7 +32325,7 @@
         "PaletteName": "Smooth Damp",
         "Description": "Moves a vector towards a target, with velocity based damping",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -30051,7 +33174,7 @@
         "PaletteName": "State Constant",
         "Description": "A constant representing a state in a state machine.",
         "Model": "Constant",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -30078,7 +33201,7 @@
         "PaletteName": "State Machine",
         "Description": "Manage state transitions by editing into this chip and populating it with connected State chips.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -30093,7 +33216,7 @@
         "PaletteName": "State",
         "Description": "Place this chip inside a State Machine chip to represent a state.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -31438,7 +34561,9 @@
         "Tags": [
             "Game Features",
             "Moods",
-            "Constant"
+            "Sun",
+            "Constant",
+            "Moods"
         ],
         "Functions": [
             {
@@ -31465,7 +34590,8 @@
         "DeprecationStage": "Active",
         "Tags": [
             "Game Features",
-            "Moods"
+            "Moods",
+            "Sun"
         ],
         "Functions": [
             {
@@ -32681,7 +35807,7 @@
         "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Object",
             "Trigger Handle"
@@ -32749,7 +35875,7 @@
         "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
-        "DeprecationStage": "Active",
+        "DeprecationStage": "Deprecated",
         "Tags": [
             "Object",
             "Trigger Handle"
@@ -32822,9 +35948,9 @@
         ]
     },
     "8f42f9b7-87fb-4f4b-9160-a45baf269650": {
-        "ChipName": "Trigger Volume Get Filter Tags",
-        "PaletteName": "Trigger Volume Get Filter Tags",
-        "Description": "Gets the tags that are being used as a filter for a Trigger Volume.",
+        "ChipName": "Trigger Volume Get Object Filter Tags",
+        "PaletteName": "Trigger Volume Get Object Filter Tags",
+        "Description": "Gets the tags that are being used as the object filter for a Trigger Volume.",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -32846,7 +35972,7 @@
                 ],
                 "Outputs": [
                     {
-                        "Name": "Value",
+                        "Name": "Tags",
                         "DataType": "string",
                         "IsUnion": false,
                         "IsList": true
@@ -32957,6 +36083,40 @@
             }
         ]
     },
+    "7c71350c-67fe-4e57-953b-0b4230a77878": {
+        "ChipName": "Trigger Volume Get Player Filter Tags",
+        "PaletteName": "Trigger Volume Get Player Filter Tags",
+        "Description": "Gets the tags that are being used as the player filter for a Trigger Volume.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Trigger Volume"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "Target",
+                        "DataType": "trigger volume",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "Tags",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ]
+            }
+        ]
+    },
     "4c23af85-e05c-4be7-a708-c2f0cc67ebec": {
         "ChipName": "Trigger Volume Get Players",
         "PaletteName": "Trigger Volume Get Players",
@@ -33038,9 +36198,9 @@
         ]
     },
     "6668fd38-076e-4d03-b9a1-02eca5edd0b7": {
-        "ChipName": "Trigger Volume Set Filter Tags",
-        "PaletteName": "Trigger Volume Set Filter Tags",
-        "Description": "Sets the tags that are being used as a filter for a Trigger Volume. An object is considered by the Trigger Volume, if it has any of the tags in this list.",
+        "ChipName": "Trigger Volume Set Object Filter Tags",
+        "PaletteName": "Trigger Volume Set Object Filter Tags",
+        "Description": "Sets the tags that are being used as the object filter for a Trigger Volume. An object is considered by the Trigger Volume, if it has any of the tags in this list.",
         "Model": "Default",
         "IsBeta": false,
         "TrollingRisk": false,
@@ -33066,7 +36226,53 @@
                         "IsList": false
                     },
                     {
-                        "Name": "Value",
+                        "Name": "Tags",
+                        "DataType": "string",
+                        "IsUnion": false,
+                        "IsList": true
+                    }
+                ],
+                "Outputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    }
+                ]
+            }
+        ]
+    },
+    "e53a6e31-af8f-4579-87ba-7e2e49991b04": {
+        "ChipName": "Trigger Volume Set Player Filter Tags",
+        "PaletteName": "Trigger Volume Set Player Filter Tags",
+        "Description": "Sets the tags that are being used as the player filter for a Trigger  Volume. A player is considered by the Trigger Volume, if they have any of the tags in this list.",
+        "Model": "Default",
+        "IsBeta": true,
+        "TrollingRisk": false,
+        "IsRoleAssignmentRisk": false,
+        "DeprecationStage": "Active",
+        "Tags": [
+            "Object",
+            "Trigger Volume"
+        ],
+        "Functions": [
+            {
+                "Inputs": [
+                    {
+                        "Name": "",
+                        "DataType": "exec",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Target",
+                        "DataType": "trigger volume",
+                        "IsUnion": false,
+                        "IsList": false
+                    },
+                    {
+                        "Name": "Tags",
                         "DataType": "string",
                         "IsUnion": false,
                         "IsList": true
@@ -33209,7 +36415,7 @@
         "PaletteName": "Vector3 Clamp Magnitude",
         "Description": "Clamps a vector's magnitude to a given max length.\nVector is unchanged if magnitude is already less.\nMax length cannot be negative.",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -33249,7 +36455,7 @@
         "PaletteName": "Vector3 Closest Point On Plane",
         "Description": "Gets the point on the plane that is closest to a given position",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -33455,7 +36661,7 @@
         "PaletteName": "Vector3 Move Towards",
         "Description": "Moves a vector towards target, not moving more than max delta distance at a time",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -33583,7 +36789,7 @@
         "PaletteName": "Vector3 Project",
         "Description": "Projects a vector onto a normal",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",
@@ -33623,7 +36829,7 @@
         "PaletteName": "Vector3 Project On Plane",
         "Description": "Projects a vector onto a plane",
         "Model": "Default",
-        "IsBeta": true,
+        "IsBeta": false,
         "TrollingRisk": false,
         "IsRoleAssignmentRisk": false,
         "DeprecationStage": "Active",

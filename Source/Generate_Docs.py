@@ -22,8 +22,29 @@ mdxTemplates = { # template file paths are put in a dictionary, will be replaced
     "Chips": "templates/chip.mdx"
 }
 
+<<<<<<< HEAD
 ChipWarnings = {
     "Deprecated": """:::danger DEPRECATED
+=======
+deprecatednMsg = """:::danger DEPRECATED
+
+This chip has been deprecated. Please move to a different chip.
+
+:::"""
+deprecatingMsg = """:::danger DEPRECATED
+
+This chip has been deprecated. Please move to a different chip.
+
+:::"""
+
+betaMsg = """:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::"""
+
+chips = {}
+>>>>>>> a06e824fd512df8631037114bfb9550efa2a7758
 
 This chip has been deprecated. Please move to a different chip.
 
