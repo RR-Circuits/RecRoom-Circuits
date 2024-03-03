@@ -54,8 +54,8 @@ jobs:
       - name: 'Run scripts'
         run: |
           cd Source/
-          python Translate_JSON.py ./source_data.json ./Generated/chips.json ./Generated/ports.json
-          python Generate_Docs.py
+          pipenv run python Translate_JSON.py ./source_data.json ./Generated/chips.json ./Generated/ports.json
+          pipenv run python Generate_Docs.py
           cd ..
       - name: 'Commit and push'
         id: 'commit-push'
