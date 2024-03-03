@@ -1,0 +1,64 @@
+---
+sidebar_position: 55
+tags: [Player,Economy,Consumable,Economy,Consumable]
+title: 'Award Consumable'
+---
+
+Award a room consumable to a player. Multiple award room consumable requests from the same client are sent in bulk with a ten-second cooldown. The Success port will be TRUE if the consumable was entirely, or in part, awarded to the player. If the consumable could not be awarded, the Success port will be FALSE. Use the Log Output toggle in the configuration settings to see more information about why a failure occurred. Logging output may impact room performance and should be toggled off when not in use.
+
+:::caution ROOMS V1 ONLY
+    
+This chip does not exist in Rooms V2.
+
+:::
+
+
+<IChip uuid="9ceb3e5a-2030-4034-98a4-dc2809828b63" />
+
+| Input Name | Input Type |
+|-----------|-----------|
+| *No name.* | exec |
+| Consumable | consumable |
+| Player | player |
+| Quantity | int |
+
+| Output Name | Output Type |
+|-----------|-----------|
+| *No name.* | exec |
+| On Award Consumable Complete | exec |
+| Success | bool |
+
+
+<details>
+  <summary>Properties</summary>
+  <div>
+    <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Room availability:</th>
+          <th>Rooms V1 only</th>
+        </tr>
+        <tr>
+          <th>Is beta required?</th>
+          <th>No</th>
+        </tr>
+        <tr>
+          <th>Is this chip a trolling risk?</th>
+          <th>No</th>
+        </tr>
+        <tr>
+          <th>Is this chip a role assignment risk?</th>
+          <th>No</th>
+        </tr>
+        <tr>
+          <th>Chip UUID</th>
+          <th>9ceb3e5a-2030-4034-98a4-dc2809828b63</th>
+        </tr>
+      </thead>
+    </table>
+    </div>
+  </div>
+</details>
+
+._extrainfo

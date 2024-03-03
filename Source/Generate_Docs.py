@@ -2,6 +2,8 @@ import json
 import xml.etree.ElementTree as ET
 import os
 
+currentChipIndex = 1 # used for positioning
+
 clearDocs = True
 docsPath = "../DebugPages" # docs are stored here
 
@@ -61,6 +63,9 @@ for templateName, templatePath in mdxTemplates.items(): # dict values are being 
 
 # print(mdxTemplates["Chips"])
 
+def YesNo(state: bool):
+    return "Yes" if state else "No"
+
 def initializeExtraInfo(uuid: str, chip: dict) -> str:
     chipDirPath = chip["PaletteName"].replace("<", "[").replace(">", "]") + "@" + uuid
     completePath = extraInfoPath + "/" + chipDirPath
@@ -81,17 +86,76 @@ def initializeExtraInfo(uuid: str, chip: dict) -> str:
         newTagsFile.write(",".join(chip["Tags"]))
     return completePath
 
-def GenerateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
+def formatPort(port: dict) -> str:
+    outString = ""
+    if port["IsUnion"]:
+        outString = f'Any ({", ".join(port["DataType"])})'
+    else:
+        outString = port["DataType"]
+    if port["IsList"]:
+        outString = f"List<{outString}>"
+    
+    outString = outString.replace("<", "&lt").replace(">", "&gt") # avoid JSX parsing attempts
+    return outString
+
+def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
+    newDocString = mdxTemplates["Chips"]
+    chipWarns = []
+    avail = "Available everywhere"
+
+    ### HEADERS
+    newDocString = newDocString.replace("._sidebarpos", str(currentChipIndex))
+    newDocString = newDocString.replace("._tags", ",".join(chip["Tags"]))
+
+    newDocString = newDocString.replace("._chipname", chip["PaletteName"])
+    newDocString = newDocString.replace("._chipdesc", chip["Description"])
+
+    ### PORTS
+    inTable = "| Input Name | Input Type |\n|-----------|-----------|"
+    outTable = "| Output Name | Output Type |\n|-----------|-----------|"
+
+    for func in chip["Functions"]:
+        for port in func["Inputs"]:
+            inTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
+        for port in func["Outputs"]:
+            outTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
+
+    newDocString = newDocString.replace("._inputs", inTable).replace("._outputs", outTable)
+    ### PORTS END
+
+    ### WARNS
+    newDocString = newDocString.replace("._uuid", uuid)
+    if chip["IsBeta"]:
+        chipWarns.append(ChipWarnings["BetaOnly"])
+    if chip["RoomsV1"]:
+        if not chip["RoomsV2"]:
+            chipWarns.append(ChipWarnings["RoomsV1Only"])
+            avail = "Rooms V1 only"
+    elif chip["RoomsV2"]:
+        chipWarns.append(ChipWarnings["RoomsV2Only"])
+        avail = "Rooms V2 only"
+
+    chipWarns = "\n".join(chipWarns)
+
+    newDocString = newDocString.replace("._warns", chipWarns).replace("._avail", avail)
+    ### PROPERTIES
+    newDocString = newDocString.replace("._istroll", YesNo(chip["TrollingRisk"]))
+    newDocString = newDocString.replace("._isbeta", YesNo(chip["IsBeta"]))
+    newDocString = newDocString.replace("._isrole", YesNo(chip["IsRoleAssignmentRisk"]))
     
     with open(f"{docsPath}/{uuid}.mdx", "wt") as docFile:
-        ""
+        docFile.write(newDocString)
 
 def Generate():
     global extraInfoDirs
+    global currentChipIndex
+    
     os.makedirs(extraInfoPath, exist_ok=True)
     extraInfoDirs = os.listdir(extraInfoPath)
 
     for chip_uuid, chip_content in chips.items():
         fldr = initializeExtraInfo(chip_uuid, chip_content)
-        GenerateDocFiles(chip_uuid, chip_content, fldr)
+        generateDocFiles(chip_uuid, chip_content, fldr)
+        currentChipIndex += 1
+
 Generate()
