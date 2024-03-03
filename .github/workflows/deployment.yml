@@ -34,17 +34,24 @@ jobs:
           repository: '${{ github.repository }}'
           ref: 'main'
           ssh-key: '${{ secrets.BR_BYPASS }}'
-      - name: 'Setup Node'
-        uses: 'actions/setup-node@v3'
+      - name: 'Setup Python'
+        uses: 'actions/setup-python@v5'
         with:
-          node-version: 18
-          cache: 'npm'
-          cache-dependency-path: './Source'
-      - name: 'Run script'
-        working-directory: './Source'
+          python-version: '3.10'
+          cache: 'pipenv'
+          cache-dependency-path: './Source/Pipfile.lock'
+      - name: 'Install pipenv and setup environment'
         run: |
-          npm ci
-          npm run generate
+          cd Source/
+          curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+          pipenv install
+          cd ..
+      - name: 'Run scripts'
+        run: |
+          cd Source/
+          python Translate_JSON.py
+          python Generate_Docs.py
+          cd ..
       - name: 'Commit and push'
         id: 'commit-push'
         continue-on-error: true
