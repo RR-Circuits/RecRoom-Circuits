@@ -1,6 +1,8 @@
 import json
 import sys
 import copy
+import pathlib
+import os
 
 portTemplate = {
     "HasDefaultValue": False,
@@ -223,6 +225,10 @@ if __name__ == "__main__":
         oldJSON = json.load(jsonSourceFile)
     
     chps, prts = ExtractChipJSON(oldJSON)
+    
+    generated_path = pathlib.Path("./Generated/")
+    if not generated_path.exists():
+        os.mkdir(generated_path)
 
     with open(outputChipsTarget, "wt") as chipsFile, open(outputPortsTarget, "wt") as portsFile:
         json.dump(chps, chipsFile, indent=4)
