@@ -39,6 +39,11 @@
         "Model": "Data",
         "Color": "#F6EEE8"
     },
+    "(t0, t1)": {
+        "HasDefaultValue": false,
+        "Model": "Data",
+        "Color": "#F6EEE8"
+    },
     "consumable": {
         "HasDefaultValue": false,
         "Model": "Data",
