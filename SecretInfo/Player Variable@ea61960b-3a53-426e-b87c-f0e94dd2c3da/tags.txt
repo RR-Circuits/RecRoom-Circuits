@@ -1,1 +1,0 @@
-Variable,Object,Player,Variable

@@ -1,14 +1,17 @@
 import json
 import xml.etree.ElementTree as ET
 import os
+import Create_SVG
 
 currentChipIndex = 1 # used for positioning
 
 clearDocs = True
-docsPath = "../DebugPages" # docs are stored here
+docsPath = "../Circuits/docs/documentation/chips" # docs are stored here
+svgPath = "../Circuits/src/static/img/chip"
 
 chipsLocation = "Generated/chips.json" # chip json location
-extraInfoPath = "../SecretInfo"
+portsLocation = "Generated/ports.json"
+extraInfoPath = "../ExtraInfo"
 
 mdxTemplates = { # template file paths are put in a dictionary, will be replaced by the contents of the file
     "ExtraInfo": "templates/extrainfo.mdx",
@@ -52,10 +55,13 @@ tags: [Guide]
 """
 
 chips = {} # json loaded chips
+portDefs = {}
+
 extraInfoDirs = []
 
-with open(chipsLocation, "rt", encoding="UTF-8") as f:
-    chips = json.load(f)
+with open(chipsLocation, "rt", encoding="UTF-8") as chps_f, open(portsLocation, "rt", encoding="UTF-8") as prts_f:
+    chips = json.load(chps_f)
+    portDefs = json.load(prts_f)
 
 for templateName, templatePath in mdxTemplates.items(): # dict values are being replaced here
     with open(templatePath, "rt") as templFile:
@@ -65,6 +71,9 @@ for templateName, templatePath in mdxTemplates.items(): # dict values are being 
 
 def YesNo(state: bool):
     return "Yes" if state else "No"
+
+def NoParse(string: str):
+    return string.replace("<", "&lt").replace(">", "&gt")
 
 def initializeExtraInfo(uuid: str, chip: dict) -> str:
     chipDirPath = chip["PaletteName"].replace("<", "[").replace(">", "]") + "@" + uuid
@@ -94,8 +103,6 @@ def formatPort(port: dict) -> str:
         outString = port["DataType"]
     if port["IsList"]:
         outString = f"List<{outString}>"
-    
-    outString = outString.replace("<", "&lt").replace(">", "&gt") # avoid JSX parsing attempts
     return outString
 
 def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
@@ -108,7 +115,7 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
     newDocString = newDocString.replace("._tags", ",".join(chip["Tags"]))
 
     newDocString = newDocString.replace("._chipname", chip["PaletteName"])
-    newDocString = newDocString.replace("._chipdesc", chip["Description"])
+    newDocString = newDocString.replace("._chipdesc", NoParse(chip["Description"]))
 
     ### PORTS
     inTable = "| Input Name | Input Type |\n|-----------|-----------|"
@@ -120,7 +127,7 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
         for port in func["Outputs"]:
             outTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
 
-    newDocString = newDocString.replace("._inputs", inTable).replace("._outputs", outTable)
+    newDocString = newDocString.replace("._inputs", NoParse(inTable)).replace("._outputs", NoParse(outTable))
     ### PORTS END
 
     ### WARNS
@@ -146,16 +153,24 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
     with open(f"{docsPath}/{uuid}.mdx", "wt") as docFile:
         docFile.write(newDocString)
 
+def generateSVGs(uuid: str, chip: dict):
+    newSVG = Create_SVG.generate_svg(uuid, False)
+
+    with open(f"{svgPath}/{uuid}.svg") as SVGOutputFile:
+        SVGOutputFile.write(newSVG)
+
 def Generate():
     global extraInfoDirs
     global currentChipIndex
-    
+
     os.makedirs(extraInfoPath, exist_ok=True)
     extraInfoDirs = os.listdir(extraInfoPath)
 
     for chip_uuid, chip_content in chips.items():
         fldr = initializeExtraInfo(chip_uuid, chip_content)
         generateDocFiles(chip_uuid, chip_content, fldr)
+
         currentChipIndex += 1
 
+Create_SVG.setup_svg_generator(chips, portDefs)
 Generate()

@@ -1,1 +1,0 @@
-Player,Economy,Consumable,Economy,Consumable,Constant

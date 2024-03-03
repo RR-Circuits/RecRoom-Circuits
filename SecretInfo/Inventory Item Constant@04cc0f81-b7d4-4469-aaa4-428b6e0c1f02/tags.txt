@@ -1,1 +1,0 @@
-Player,Economy,Inventory Item,Economy,Inventory Item,Constant

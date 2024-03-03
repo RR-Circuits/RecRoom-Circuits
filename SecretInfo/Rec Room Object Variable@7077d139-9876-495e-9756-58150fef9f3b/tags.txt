@@ -1,1 +1,0 @@
-Variable,Object,Object,Rec Room Object
