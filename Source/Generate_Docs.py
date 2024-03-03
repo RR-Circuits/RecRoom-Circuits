@@ -1,3 +1,4 @@
+import argparse
 import json
 import shutil
 import os
@@ -195,5 +196,6 @@ def Generate():
     
     moveGuides()
 
-Create_SVG.setup_svg_generator(chips, portDefs)
-Generate()
+if __name__ == "__main__":
+    Create_SVG.setup_svg_generator(chips, portDefs)
+    Generate()
