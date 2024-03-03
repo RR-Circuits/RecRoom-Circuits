@@ -1,14 +1,17 @@
 import json
-import xml.etree.ElementTree as ET
+import shutil
 import os
 import Create_SVG
 
 currentChipIndex = 1 # used for positioning
 
 clearDocs = True
-docsPath = "../Circuits/docs/documentation/chips" # docs are stored here
-svgPath = "../Circuits/src/static/img/chip"
 
+docsPath = "../Circuits/docs/documentation/chips" # docs are stored here
+svgPath = "../Circuits/docs/documentation/chips/assets"
+guidePath = "../Circuits/docs/guides"
+
+guidesLocation = "../Guides"
 chipsLocation = "Generated/chips.json" # chip json location
 portsLocation = "Generated/ports.json"
 extraInfoPath = "../ExtraInfo"
@@ -110,6 +113,11 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
     chipWarns = []
     avail = "Available everywhere"
 
+    extraChipInfo = ""
+
+    with open(extraInfoFolder + "/extrainfo.mdx") as extraFile:
+        extraChipInfo = extraFile.read()
+
     ### HEADERS
     newDocString = newDocString.replace("._sidebarpos", str(currentChipIndex))
     newDocString = newDocString.replace("._tags", ",".join(chip["Tags"]))
@@ -149,6 +157,8 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
     newDocString = newDocString.replace("._istroll", YesNo(chip["TrollingRisk"]))
     newDocString = newDocString.replace("._isbeta", YesNo(chip["IsBeta"]))
     newDocString = newDocString.replace("._isrole", YesNo(chip["IsRoleAssignmentRisk"]))
+
+    newDocString = newDocString.replace("._extrainfo", extraChipInfo)
     
     with open(f"{docsPath}/{uuid}.mdx", "wt") as docFile:
         docFile.write(newDocString)
@@ -156,8 +166,19 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
 def generateSVGs(uuid: str, chip: dict):
     newSVG = Create_SVG.generate_svg(uuid, False)
 
-    with open(f"{svgPath}/{uuid}.svg") as SVGOutputFile:
+    with open(f"{svgPath}/{uuid}.svg", "wb") as SVGOutputFile:
         SVGOutputFile.write(newSVG)
+
+def moveGuides():
+    for possibleGuide in os.listdir(guidePath):
+        if ".mdx" in possibleGuide:
+            os.remove(f"{guidePath}/{possibleGuide}")
+
+    for guideDir in os.listdir(guidesLocation):
+        guideDirPath = f"{guidesLocation}/{guideDir}"
+        if os.path.isdir(guideDirPath):
+            shutil.copy(f"{guideDirPath}/doc.mdx", f"{guidePath}/{guideDir}.mdx")
+            shutil.copytree(f"{guideDirPath}/assets", f"{guidePath}/assets", dirs_exist_ok=True)
 
 def Generate():
     global extraInfoDirs
@@ -169,8 +190,10 @@ def Generate():
     for chip_uuid, chip_content in chips.items():
         fldr = initializeExtraInfo(chip_uuid, chip_content)
         generateDocFiles(chip_uuid, chip_content, fldr)
-
+        generateSVGs(chip_uuid, chip_content)
         currentChipIndex += 1
+    
+    moveGuides()
 
 Create_SVG.setup_svg_generator(chips, portDefs)
 Generate()

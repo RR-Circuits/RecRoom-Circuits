@@ -76,6 +76,11 @@ autoAssignModels = [
         "pattern": "strict"
     },
     {
+        "key": "data table",
+        "result": "Definition",
+        "pattern": "strict"
+    },
+    {
         "key": "constant",
         "result": "Constant",
         "pattern": "includes"
@@ -221,4 +226,4 @@ if __name__ == "__main__":
 
     with open(outputChipsTarget, "wt") as chipsFile, open(outputPortsTarget, "wt") as portsFile:
         json.dump(chps, chipsFile, indent=4)
-        json.dump(chps, portsFile, indent=4)
+        json.dump(prts, portsFile, indent=4)
