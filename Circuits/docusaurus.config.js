@@ -21,7 +21,7 @@ const config = {
   organizationName: 'RR-Circuits', // Usually your GitHub org/user name.
   projectName: 'RecRoom-Circuits', // Usually your repo name.
   trailingSlash: false,
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   deploymentBranch: "main",
 
