@@ -73,7 +73,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-          cache-dependency-path: './Circuits'
+          cache-dependency-path: './Circuits/package-lock.json'
       - name: 'Build'
         working-directory: './Circuits'
         run: |
