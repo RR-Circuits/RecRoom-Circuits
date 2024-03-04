@@ -7,9 +7,9 @@ currentChipIndex = 1 # used for positioning
 
 clearDocs = True
 
-docsPath = "../Circuits/docs/documentation/chips" # docs are stored here
-svgPath = "../Circuits/docs/documentation/chips/assets"
-guidePath = "../Circuits/docs/guides"
+docsPath = "../Circuits/docs/chips" # docs are stored here
+svgPath = "../Circuits/docs/chips/assets"
+guidePath = "../Circuits/guides"
 
 guidesLocation = "../Guides"
 chipsLocation = "Generated/chips.json" # chip json location

@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'FunnPunn', // Usually your GitHub org/user name.
+  organizationName: 'RR-Circuits', // Usually your GitHub org/user name.
   projectName: 'RecRoom-Circuits', // Usually your repo name.
   trailingSlash: false,
   onBrokenLinks: 'throw',
@@ -40,17 +40,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,7 +50,17 @@ const config = {
       }),
     ],
   ],
-  
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'guides',
+        path: 'guides',
+        routeBasePath: 'guides',
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ]
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -86,12 +88,12 @@ const config = {
         },
         items: [
           {
-            href: '/docs/category/documentation',
+            href: '/docs',
             label: 'Docs',
             position: 'left',
           },
           {
-            href: '/docs/category/guides',
+            href: '/guides',
             label: 'Guides',
             position: 'left',
           },
@@ -110,11 +112,11 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/category/documentation',
+                to: '/docs',
               },
               {
                 label: 'Guides',
-                to: '/docs/category/guides',
+                to: '/guides',
               },
             ],
           },
