@@ -9,5 +9,5 @@ export default function IChip({uuid, redirect}) {
     } else {
         returnVal = <img src={useBaseUrl(`/img/chip/${uuid}.svg`)} />
     }
-    return (<><br/>{returnVal}<br/></>)
+    return (<><div>{returnVal}</div></>)
 }

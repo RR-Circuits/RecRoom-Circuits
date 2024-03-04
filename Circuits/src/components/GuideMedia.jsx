@@ -1,7 +1,7 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-export default function GuideMedia({fileName, fileType, width, height}) {
+export default function GuideMedia({fileName, fileType, width, height, useURL}) {
     let Width = typeof(width == String) ? width : "100%"
     let Height = typeof(height == String) ? height : "100%"
 
@@ -13,7 +13,13 @@ export default function GuideMedia({fileName, fileType, width, height}) {
         lastElement = CurrPage.pop()
     }
 
-    const fileURL = useBaseUrl(`/guides/${lastElement}/${fileName}`)
+    let fileURL = null
+
+    if (useURL) {
+        fileURL = fileName
+    } else {
+        fileURL = useBaseUrl(`/guides/${lastElement}/${fileName}`)
+    }
 
     let returnValue = (<p>ERR: Asset not found</p>)
     switch (fileType) {
@@ -33,5 +39,5 @@ export default function GuideMedia({fileName, fileType, width, height}) {
             break;
     }
 
-    return (<><br/>{returnValue}<br/></>)
+    return (<><div style={{marginTop: "auto", marginBottom: "auto"}}>{returnValue}</div></>)
 }
