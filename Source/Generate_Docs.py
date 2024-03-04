@@ -2,14 +2,16 @@ import json
 import shutil
 import os
 import Create_SVG
+from distutils.dir_util import copy_tree
 
 currentChipIndex = 1 # used for positioning
 
 clearDocs = True
 
 docsPath = "../Circuits/docs/chips" # docs are stored here
-svgPath = "../Circuits/docs/chips/assets"
+svgPath = "../Circuits/static/img/chip"
 guidePath = "../Circuits/guides"
+guideAssetPath = "../Circuits/static/guides"
 
 guidesLocation = "../Guides"
 chipsLocation = "Generated/chips.json" # chip json location
@@ -178,7 +180,7 @@ def moveGuides():
         guideDirPath = f"{guidesLocation}/{guideDir}"
         if os.path.isdir(guideDirPath):
             shutil.copy(f"{guideDirPath}/doc.mdx", f"{guidePath}/{guideDir}.mdx")
-            shutil.copytree(f"{guideDirPath}/assets", f"{guidePath}/assets", dirs_exist_ok=True)
+            copy_tree(f"{guideDirPath}/assets", f"{guideAssetPath}/{guideDir}")
 
 def Generate():
     global extraInfoDirs
