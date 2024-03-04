@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default function GuideMedia({fileName, fileType, width, height, useURL}) {
     let Width = typeof(width == String) ? width : "100%"
@@ -40,5 +41,7 @@ export default function GuideMedia({fileName, fileType, width, height, useURL}) 
             break;
     }
 
-    return (<><div style={{marginTop: "auto", marginBottom: "auto"}}>{returnValue}</div></>)
+    return (<><BrowserOnly>{
+        () => <div>{returnValue}</div>
+    }</BrowserOnly></>)
 }
