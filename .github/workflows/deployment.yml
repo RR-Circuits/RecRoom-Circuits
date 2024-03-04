@@ -1,4 +1,4 @@
-name: 'Deploy website'
+name: 'Production deployment'
 on:
   workflow_dispatch:
     inputs:
