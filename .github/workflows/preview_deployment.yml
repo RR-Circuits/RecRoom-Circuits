@@ -1,31 +1,20 @@
-name: 'Deploy website'
+name: 'Preview deployment'
 on:
-  workflow_dispatch:
-    inputs:
-      just-deploy:
-        description: 'Just deploy (overrides skip)'
-        type: 'boolean'
-        required: true
-        default: false
-      skip-deploy:
-        description: 'Skip deploy'
-        type: 'boolean'
-        required: true
-        default: false
-  push:
+  pull_request:
+    types: ['opened', 'reopened', 'synchronize', 'ready_for_review']
     branches:
       - 'main'
     paths:
       - 'Guides/**'
       - 'ExtraInfo/**'
 concurrency:
-  group: 'production'
+  group: 'preview-${{ github.ref_name }}'
   cancel-in-progress: true
 jobs:
   generate:
     name: 'Generate chip markdown'
     runs-on: 'ubuntu-latest'
-    if: ${{ !inputs.just-deploy }}
+    if: '${{ !github.event.pull_request.draft }}'
     permissions:
       contents: 'write'
     outputs:
@@ -33,8 +22,6 @@ jobs:
     steps:
       - name: 'Checkout'
         uses: 'actions/checkout@v4'
-        with:
-          ssh-key: '${{ secrets.BR_BYPASS }}'
       - name: 'Setup Python'
         uses: 'actions/setup-python@v5'
         with:
@@ -69,13 +56,13 @@ jobs:
           git push
           echo "commit-sha=$(git log --format='%H' -1)" >> "$GITHUB_OUTPUT"
   deploy:
-    name: 'Deploy (Production)'
+    name: 'Deploy (Preview)'
     runs-on: 'ubuntu-latest'
     needs: 'generate'
-    if: ${{ !failure() && (!inputs.skip-deploy || inputs.just-deploy) }}
+    if: ${{ !failure() && !github.event.pull_request.draft }}
     permissions:
       contents: 'read'
-      deployments: 'write'
+      #deployments: 'write'
     steps:
       - name: 'Checkout'
         uses: 'actions/checkout@v4'
@@ -86,7 +73,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-          cache-dependency-path: './Circuits/package-lock.json'
+          cache-dependency-path: './Circuits'
       - name: 'Build'
         working-directory: './Circuits'
         run: |
@@ -99,7 +86,7 @@ jobs:
           apiToken: '${{ secrets.CLD_FLR_TKN }}'
           accountId: '${{ secrets.CLD_FLR_ID }}'
           projectName: 'circuits'
-          branch: 'main'
+          branch: '${{ github.ref_name }}'
           directory: './build'
           workingDirectory: './Circuits'
-          gitHubToken: '${{ secrets.GITHUB_TOKEN }}'
+          #gitHubToken: ''
