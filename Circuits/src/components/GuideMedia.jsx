@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import {useLocation} from '@docusaurus/router';
 
 export default function GuideMedia({fileName, fileType, width, height, useURL}) {
     let Width = typeof(width == String) ? width : "100%"
     let Height = typeof(height == String) ? height : "100%"
 
     fileType = fileType.toLowerCase()
-    let CurrPage = window.location.href.split("/")
+    let CurrPage = useLocation().pathname.split("/")
     let lastElement = CurrPage.pop()
 
     if (lastElement == "") {
@@ -41,7 +41,5 @@ export default function GuideMedia({fileName, fileType, width, height, useURL}) 
             break;
     }
 
-    return (<><BrowserOnly>{
-        () => <div>{returnValue}</div>
-    }</BrowserOnly></>)
+    return (<><div>{returnValue}</div></>)
 }
