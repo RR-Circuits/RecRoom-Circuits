@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CV2 Docs',
+  title: 'Circuits Docs',
   tagline: 'For the community, by the community.',
   favicon: 'img/favicon.ico',
 
@@ -67,10 +67,10 @@ const config = {
       algolia: {
         // The application ID provided by Algolia
         appId: 'SAKJY3CCPM',
-  
+
         // Public API key: it is safe to commit it
         apiKey: '9f4a711957da351271094828e8e0eea2',
-  
+
         indexName: 'circuits',
       },
       colorMode: {
@@ -139,7 +139,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CV2 Community | Built with Docusaurus`,
+        copyright: `Copyright © ${new Date().getFullYear()} Circuits Community | Built with Docusaurus`,
       },
       prism: {
         theme: lightCodeTheme,
