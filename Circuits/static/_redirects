@@ -1,0 +1,2 @@
+/docs/documentation/* /docs/:splat
+/docs/guides/* /guides/:splat
