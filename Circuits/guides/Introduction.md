@@ -15,12 +15,12 @@ Tags still have to be closed with a `/`, though!
 :::"""
 
 ## Components
-There are currently 2 custom components you can use:
-- `<IChip>`
-- `<GuideMedia>`
+There are currently 2 custom components/tags you can use:
+- `IChip`
+- `GuideMedia`
 
 ### IChip
-The `<IChip>` component will return the image of a chip from a given `uuid`.
+The `IChip` component will return the image of a chip from a given `uuid`.
 If you add the `redirect` attribute, the image will hold a link that brings you to the doc page of the chip.
 
 ```jsx title="Guides/YourGuide/doc.mdx"
@@ -29,7 +29,7 @@ If you add the `redirect` attribute, the image will hold a link that brings you 
 ```
 
 ### GuideMedia
-The `<GuideMedia>` component has 2 required attributes: `fileName` and `fileType`.
+The `GuideMedia` component has 2 required attributes: `fileName` and `fileType`.
 `fileName` will be the file name of a file in `Guides/YourGuide/assets`.
 `fileType` is the type of media that the site needs to use.
 Available options are:
