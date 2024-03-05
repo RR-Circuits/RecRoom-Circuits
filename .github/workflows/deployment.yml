@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   generate:
-    name: 'Generate chip markdown'
+    name: 'Generate markdown'
     runs-on: 'ubuntu-latest'
     if: ${{ !inputs.just-deploy }}
     permissions:
@@ -62,8 +62,9 @@ jobs:
           cp ./Source/Generated/ports.json ./Generated/
           git add Generated
           git add Circuits/docs
+          git add Circuits/guides
           git add ExtraInfo
-          git commit -m "[no ci] Generated markdown and svg - based on ${{ github.sha }}"
+          git commit -m "[no ci] Generated docs and guides based on ${{ github.sha }}"
           git push
           echo "commit-sha=$(git log --format='%H' -1)" >> "$GITHUB_OUTPUT"
   deploy:

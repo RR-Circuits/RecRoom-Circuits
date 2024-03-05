@@ -1,7 +1,7 @@
 name: 'Preview deployment'
 on:
   pull_request:
-    types: ['opened', 'reopened', 'synchronize', 'ready_for_review']
+    types: ['opened', 'reopened', 'ready_for_review']
     branches:
       - 'main'
     paths:
@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   generate:
-    name: 'Generate chip markdown'
+    name: 'Generate markdown'
     runs-on: 'ubuntu-latest'
     if: '${{ !github.event.pull_request.draft }}'
     permissions:
@@ -33,24 +33,23 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
           pipenv install
-      - name: 'Download source JSON file and run scripts'
+      - name: 'Copy required files and run generation script'
         working-directory: './Source'
         run: |
-          curl https://raw.githubusercontent.com/tyleo-rec/CircuitsV2Resources/master/misc/circuitsv2.json -o source_data.json
-          pipenv run python Translate_JSON.py ./source_data.json ./Generated/chips.json ./Generated/ports.json
+          mkdir Generated
+          cp ../Generated/chips.json ./Generated/
+          cp ../Generated/ports.json ./Generated/
           pipenv run python Generate_Docs.py
       - name: 'Commit and push'
         id: 'commit-push'
-        continue-on-error: true
+        #continue-on-error: true
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "actions-user"
-          cp ./Source/Generated/chips.json ./Generated/
-          cp ./Source/Generated/ports.json ./Generated/
-          git add Generated
           git add Circuits/docs
+          git add Circuits/guides
           git add ExtraInfo
-          git commit -m "[no ci] Generated markdown and svg - based on ${{ github.sha }}"
+          git commit -m "[no ci] Generated preview docs and guides based on ${{ github.sha }}"
           git push
           echo "commit-sha=$(git log --format='%H' -1)" >> "$GITHUB_OUTPUT"
   deploy:
