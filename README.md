@@ -3,9 +3,9 @@ Maintained by Funn Punn and joksulainen
 
 | Task                  | Progress |
 |-----------------------|----------|
-| Implement Chip JSON   | ✅        |
-| Create Chip Docs      | ✅\*      |
-| Create Circuit Guides | 🚧        |
+| Implement Chip JSON   | ✅       |
+| Create Chip Docs      | ✅\*     |
+| Create Circuit Guides | 🚧       |
 
 \* automated creation finished, still need community efforts
 
@@ -13,7 +13,7 @@ Maintained by Funn Punn and joksulainen
 
 You can find out details on how to contribute [here](https://github.com/RR-Circuits/RecRoom-Circuits/blob/main/CONTRIBUTING.md).
 
-## Tips:
+## Tips
 
 Docusaurus works with markdown files, but it also has a few plugins.
 This means that you can create note, tip, info, danger and caution boxes to display meaningful notes.
@@ -43,6 +43,6 @@ You can also test the new pages by going to `Circuits` and running `npm run star
 
 ### Credits
 
-- joksulainen - went through 7 stages of life in one day, just to make the most important stuff work
-- Funn Punn - did a thing, I guess
-- CV2 community - used this (actually I'm not sure)
+- joksulainen - went through 7 stages of life in one day, just to make the most important stuff work aka the automation wizard (and idiot)
+- Funn Punn - did the vast majority of things
+- Circuits community - for using this resource and contributing guides and extra information for chips

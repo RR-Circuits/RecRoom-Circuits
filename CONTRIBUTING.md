@@ -19,6 +19,6 @@ For the sake of all of our sanity, please make your changes in a branch that isn
 1. Fork the repository and make a new branch if you haven't already.
 1. Go to the `Guides` directory under the root directory.
 1. Make a new directory that contains a `doc.mdx` file and `assets` directory. You can look at other guides to get a handle on the structure of the directory.
-1. Make your guide in the `doc.mdx` file and put any images and other assets in the `assets` directory. These assets can be embedded into the guide with the `<GuideMedia fileName="" type="image|audio|video" />` tag.    
-    - Read the [introduction page for guides](https://circuits.pages.dev/guides/) for more details about available tags.
+1. Make your guide in the `doc.mdx` file and put any images and other assets in the `assets` directory. These assets can be embedded into the guide with the `GuideMedia` component.
+    - Read the [introduction page for guides](https://circuits.pages.dev/guides/) for more details about available components and the attributes they use.
 1. Commit your changes and submit a pull request, we'll do the rest.
