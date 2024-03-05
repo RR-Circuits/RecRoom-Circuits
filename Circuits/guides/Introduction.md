@@ -10,6 +10,7 @@ Docs and guides are parsed using MDX. This means that you can use markdown, as w
 """:::caution JSX is not HTML
 
 They might look very similar, but the JSX syntax is different from HTML. This means that you can't just pop a <p> tag in a guide without generating errors.
+Tags still have to be closed with a `/`, though!
 
 :::"""
 
@@ -46,4 +47,5 @@ Examples:
 ```jsx title="Guides/YourGuide/doc.mdx"
 <GuideMedia fileName="Tutor1.png" fileType="image" /> // an image without a specified size
 <GuideMedia fileName="FullTutorial.mp4" fileType="video" width="50%" height="50%"/> // a video, displayed at half its regular size
+<GuideMedia fileName="https://foo.bar/Sample.mp3" fileType="audio" useURL/> // an online audio file, referenced by a URL
 ```
