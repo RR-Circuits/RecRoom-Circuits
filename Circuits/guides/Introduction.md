@@ -9,7 +9,7 @@ sidebar_position: 0
 Docs and guides are parsed using MDX. This means that you can use markdown, as well as JSX! (please don't define your own components here though)
 """:::caution JSX is not HTML
 
-They might look very similar, but the JSX syntax is different from HTML. This means that you can't just pop a <p> tag in a guide without generating errors.
+They might look very similar, but the JSX syntax is different from HTML. This means that you can't just pop a `<p>` tag in a guide without generating errors.
 Tags still have to be closed with a `/`, though!
 
 :::"""
