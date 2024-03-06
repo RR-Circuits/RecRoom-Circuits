@@ -1,5 +1,6 @@
 import json
 import shutil
+import xml.etree.ElementTree as ET
 import os
 import Create_SVG
 from distutils.dir_util import copy_tree
@@ -127,17 +128,43 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
     newDocString = newDocString.replace("._chipname", chip["PaletteName"])
     newDocString = newDocString.replace("._chipdesc", NoParse(chip["Description"]))
 
+    treeItemCount = 0
+
+    table = ET.Element("table")
+    tableHead = ET.SubElement(table, "thead")
+    tableHeadRow = ET.SubElement(tableHead, "tr")
+
+    ET.SubElement(tableHeadRow, "th").text = "Inputs"
+    ET.SubElement(tableHeadRow, "th").text = "Outputs"
+
+    tableBody = ET.SubElement(table, "tbody")
+
+    tableItems = []
+
     ### PORTS
     inTable = "| Input Name | Input Type |\n|-----------|-----------|"
     outTable = "| Output Name | Output Type |\n|-----------|-----------|"
 
     for func in chip["Functions"]:
-        for port in func["Inputs"]:
-            inTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
-        for port in func["Outputs"]:
-            outTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
+        longestRow = func["Inputs"]
+        if len(func["Inputs"]) < len(func["Outputs"]):
+            longestRow = func["Outputs"]
+        for _ in longestRow:
+            tRow = ET.SubElement(tableBody, "tr")
+            tableItems.append(ET.SubElement(tRow, "td"))
+            tableItems.append(ET.SubElement(tRow, "td"))
+        
+        
+        for idx, port in enumerate(func["Inputs"]):
+            portCell = tableItems[idx * 2]
+            portCell.text = NoParse(f"{formatPort(port)} | {port['Name'] if not port['Name'] == '' else '*No name.*'}")
+            #inTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
+        for idx, port in enumerate(func["Outputs"]):
+            portCell = tableItems[(idx * 2) + 1]
+            portCell.text = NoParse(f"{formatPort(port)} | {port['Name'] if not port['Name'] == '' else '*No name.*'}")
+            #outTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
 
-    newDocString = newDocString.replace("._inputs", NoParse(inTable)).replace("._outputs", NoParse(outTable))
+    newDocString = newDocString.replace("._ports", ET.tostring(table, encoding="unicode"))
     ### PORTS END
 
     ### WARNS
