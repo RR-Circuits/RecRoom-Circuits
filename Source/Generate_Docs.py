@@ -78,7 +78,7 @@ def YesNo(state: bool):
     return "Yes" if state else "No"
 
 def NoParse(string: str):
-    return string.replace("<", "&lt").replace(">", "&gt").replace("{", "&#123").replace("}", "&#125")
+    return string.replace("<", "\<").replace(">", "\>").replace("{", "\{").replace("}", "\}")
 
 def initializeExtraInfo(uuid: str, chip: dict) -> str:
     chipDirPath = chip["PaletteName"].replace("<", "[").replace(">", "]") + "@" + uuid
