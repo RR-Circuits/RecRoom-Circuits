@@ -61,9 +61,9 @@ jobs:
           cp ./Source/Generated/chips.json ./Generated/
           cp ./Source/Generated/ports.json ./Generated/
           git add Generated
-          git add Circuits/docs
-          git add Circuits/guides
-          git add ExtraInfo
+          git add Circuits/docs/**
+          git add Circuits/guides/**
+          git add ExtraInfo/**
           git commit -m "[no ci] Generated docs and guides based on ${{ github.sha }}"
           git push
           echo "commit-sha=$(git log --format='%H' -1)" >> "$GITHUB_OUTPUT"
