@@ -172,15 +172,24 @@ def generateSVGs(uuid: str, chip: dict):
         SVGOutputFile.write(newSVG)
 
 def moveGuides():
+    # clear out existing guides
     for possibleGuide in os.listdir(guidePath):
-        if ".mdx" in possibleGuide:
+        if possibleGuide.endswith(".mdx"):
             os.remove(f"{guidePath}/{possibleGuide}")
-
+    
+    # todo: we should clear out the assets folder as well
+    
+    # iterate through all the guides
     for guideDir in os.listdir(guidesLocation):
         guideDirPath = f"{guidesLocation}/{guideDir}"
-        if os.path.isdir(guideDirPath):
-            shutil.copy(f"{guideDirPath}/doc.mdx", f"{guidePath}/{guideDir}.mdx")
-            copy_tree(f"{guideDirPath}/assets", f"{guideAssetPath}/{guideDir}")
+        # check directory existence, copy guide if it does
+        if not os.path.isdir(guideDirPath): continue
+        shutil.copy(f"{guideDirPath}/doc.mdx", f"{guidePath}/{guideDir}.mdx")
+        
+        # check for the existence of the assets directory
+        # if it does then copy it, otherwise continue to next guide
+        if not os.path.isdir(f"{guideDirPath}/assets"): continue
+        copy_tree(f"{guideDirPath}/assets", f"{guideAssetPath}/{guideDir}")
 
 def Generate():
     global extraInfoDirs

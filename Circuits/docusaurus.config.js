@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const {themes} = require('prism-react-renderer');
+const { themes } = require('prism-react-renderer');
 
 const lightCodeTheme = themes.github
 const darkCodeTheme = themes.dracula
@@ -83,7 +83,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.png',
       navbar: {
-        title: 'Circuit Docs',
+        title: 'Circuits Docs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
