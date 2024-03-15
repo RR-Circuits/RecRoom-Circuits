@@ -17,7 +17,32 @@
 }
 
 .buttons {
+  float: left;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buttons a {
+  background-color: #818081;
+  border: 6px #525152 solid;
+  color: white;
+}
+
+.buttons a:hover {
+  background-color: #636363;
+}
+
+.IntroductionBanner {
+  margin: auto;
+}
+
+.IntroductionBannerText {
+  float: left;
+}
+
+img {
+  float: left;
+  margin-top: -2px;
 }

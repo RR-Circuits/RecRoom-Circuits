@@ -8,7 +8,7 @@ const darkCodeTheme = themes.dracula
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Circuits Docs',
+  title: 'Circuit Docs',
   tagline: 'For the community, by the community.',
   favicon: 'img/favicon.ico',
 
@@ -83,7 +83,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.png',
       navbar: {
-        title: 'Circuits Docs',
+        title: 'Circuit Docs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',

@@ -19,7 +19,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #f58019;
+  --ifm-color-primary: #319ce4;
   --ifm-color-primary-dark: #f57119;
   --ifm-color-primary-darker: #f55419;
   --ifm-color-primary-darkest: #f53319;
@@ -33,4 +33,16 @@
 
 .uwuntu {
   font-family: "Ubuntu";
+}
+
+.hero {
+  display: inline-block;
+}
+
+.wavebox {
+  --mask:
+    radial-gradient(143.11px at 50% calc(100% - 192px),#000 99%,#0000 101%) calc(50% - 128px) 0/256px 100%,
+    radial-gradient(143.11px at 50% calc(100% + 128px),#0000 99%,#000 101%) 50% calc(100% - 64px)/256px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }

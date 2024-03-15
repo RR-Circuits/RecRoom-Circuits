@@ -56,13 +56,17 @@ def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isLis
     match model:
         case "Exec":
             posXrep = posX + portOffset + (2 if not isInput else 0)
-            port = ET.SubElement(svgObject, "path")
+            port = ET.SubElement(svgObject, "path", {
+                "class": f"{'input' if isInput else 'output'} exec"
+            })
             port.set("d", f"M{posXrep},{posY}h-16.465c-0.552,0,-1,0.448,-1,1v16c0,0.552,0.448,1,1,1h16.465c0.334,0,0.647,-0.167,0.832,-0.445l5.333,-8c0.224,-0.336,0.224,-0.774,0,-1.11l-5.333,-8c-0.185,-0.278,-0.498,-0.445,-0.832,-0.445z")
             port.set("fill", color)
             currentPortHeight = 18
         case "Data":
             if hasDefaultValue and not isList and isInput and (canHaveDefaultValue == True or canHaveDefaultValue == None):
-                rectGroup = ET.SubElement(svgObject, "g")
+                rectGroup = ET.SubElement(svgObject, "g", {
+                    "class": f"{'input' if isInput else 'output'} data {portType} {'list' if isList else 'nolist'} default",
+                })
                 ET.SubElement(rectGroup, "rect", {
                     "x": str(posX - 12),
                     "y": str(posY),
@@ -100,6 +104,7 @@ def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isLis
                 })
             else:
                 ET.SubElement(svgObject, "rect", {
+                    "class": f"{'input' if isInput else 'output'} data {portType} {'list' if isList else 'nolist'} nodefault",
                     "x": str(posX - (12 if isInput else 10)),
                     "y": str(posY),
                     "width": "22",
@@ -107,6 +112,7 @@ def appendPort(svgObject: ET.Element, isInput: bool, portType: str | list, isLis
                     "rx": "1",
                     "fill": color
                 })
+            
             currentPortHeight = 15
     Anchor = "start"
     portOffset = 16

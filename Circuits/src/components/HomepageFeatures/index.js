@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 
 const FeatureList = [
-  {
+  /*{
     title: 'Circuit Docs v1.5 preview',
     Svg: require('@site/static/img/logo.svg').default,
     description: (
@@ -11,7 +11,7 @@ const FeatureList = [
         New layout coming soon!
       </>
     ),
-  },
+  },*/
 ];
 
 function Feature({Svg, title, description}) {
