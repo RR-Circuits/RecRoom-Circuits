@@ -151,7 +151,10 @@ def generateExec(svgObject: ET.Element, chip: dict) -> ET.Element:
     topBarWidth = getStringWidth(chip["ChipName"], titleSize) + 57 * 2
     x = topBarWidth / 2 + chipXOffset
     y = (topHeight + fontSize/1.5)/2
-    bottom = ET.SubElement(svgObject, "path", fill="#818081")
+    bottom = ET.SubElement(svgObject, "path", {
+        "fill": "#818081",
+        "class": "grabBase"
+    })
     totalInputSpacing = 0
     totalOutputSpacing = 0
     largestInputText = 0
@@ -409,7 +412,7 @@ def generateSender(svgObject: ET.Element, chip: dict) -> ET.Element:
     for line in chip["ChipName"].split("\n"):
         titleText = ET.SubElement(titleBox, "tspan", {
             "x": f"{chipXOffset + targetLightShell1Width + textWidth / 2 + 70 / 2}",
-            "dy": f"{fontSize}px",
+            "dy": f"{fontSize + 4}px",
             "text-anchor": "middle"
         })
         titleText.text = line
