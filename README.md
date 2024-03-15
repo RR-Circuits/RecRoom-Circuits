@@ -5,9 +5,10 @@ Maintained by Funn Punn and joksulainen
 |-----------------------|----------|
 | Implement Chip JSON   | ✅       |
 | Create Chip Docs      | ✅\*     |
-| Create Circuit Guides | 🚧       |
+| Create Circuit Guides | ✅\*     |
+| Make a chip grapher   | 🚧       |
 
-\* automated creation finished, still need community efforts
+\* Still need community efforts
 
 ## Contributing
 
