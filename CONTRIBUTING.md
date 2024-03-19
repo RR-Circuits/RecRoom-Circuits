@@ -22,3 +22,7 @@ For the sake of all of our sanity, please make your changes in a branch that isn
 1. Make your guide in the `doc.mdx` file and put any images and other assets in the `assets` directory. These assets can be embedded into the guide with the `GuideMedia` component.
     - Read the [introduction page for guides](https://circuits.pages.dev/guides/) for more details about available components and the attributes they use.
 1. Commit your changes and submit a pull request, we'll do the rest.
+
+## Any documentation on how to make documentation?
+
+Yes! This site is made with [docusaurus](https://docusaurus.io/). You can find more info there.
