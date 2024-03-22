@@ -58,9 +58,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "actions-user"
-          cp ./Source/Generated/chips.json ./Generated/
-          cp ./Source/Generated/ports.json ./Generated/
-          git add Generated
+          git add Source/Generated/ports.json Source/Generated/chips.json
           git add Circuits/docs/**
           git add Circuits/guides/**
           git add ExtraInfo/**

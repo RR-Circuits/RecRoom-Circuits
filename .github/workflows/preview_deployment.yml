@@ -33,12 +33,9 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
           pipenv install
-      - name: 'Copy required files and run generation script'
+      - name: 'Run generation script'
         working-directory: './Source'
         run: |
-          mkdir Generated
-          cp ../Generated/chips.json ./Generated/
-          cp ../Generated/ports.json ./Generated/
           pipenv run python Generate_Docs.py
       - name: 'Commit and push'
         id: 'commit-push'
