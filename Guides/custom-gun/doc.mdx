@@ -1,0 +1,54 @@
+# Making a Custom Gun
+:::note
+
+This tutorial uses custom projectile objects, not the projectile lancher.
+For a tutorial on that, look for a tutorial on that instead.
+
+:::
+
+Create a model representing the bullet. This can be anything, but for now we'll just use a simple yellow line.
+Configure the bullet, and set the physics mode to `Physical`. Give it a tag of whatever you want, but I'll use `Bullet`.
+Go to the very bottom of the config menu, and turn on `Can Modify with Circuits`.
+Without this, it won't work and will throw an error when we get to the circuits.
+
+<GuideMedia fileName="ModifyCircuits.png" fileType="image" />
+
+Spawn a Trigger Handle, and then spawn these chips:
+1. [Rec Room Object Get First With Tag](/docs/chips/43ff2d3c-c3aa-45bc-a7b7-01587c8a61f6)
+2. [Set Transform](/docs/chips/6873f341-1ae8-4ddd-9f8c-892a977ef974)
+3. [Velocity Set](/docs/chips/ea00c655-56ff-4406-8d65-b8399e6d0169)
+
+Set the `Tag` input on the [Rec Room Object Get First With Tag](/docs/chips/43ff2d3c-c3aa-45bc-a7b7-01587c8a61f6) chip to the tag defined earlier. In this case, `Bullet`.
+After this, connect the output to the `Target` inputs on the other two chips. It should look like this.
+
+<GuideMedia fileName="Progress1.png" fileType="image" />
+
+After this, spawn these chips:
+1. [Add](/docs/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c)
+2. [Get Forward Vector](/docs/chips/4536e1df-1138-4a2c-9117-475bb3f38eae)
+3. [Get Position](/docs/chips/5f6a8ee8-8a87-4da2-851f-fda89cc62344)
+
+Connect the [Get Forward Vector](/docs/chips/4536e1df-1138-4a2c-9117-475bb3f38eae) chips inputs to be connected to the yellow output at the top of the Trigger Handle board.
+After that, circle the outputs of the two chips into the [Add](/docs/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c) chip. It should look like this.
+
+<GuideMedia fileName="Progress2.png" fileType="image" />
+
+Connect the output of the [Add](/docs/chips/0ccb153c-dd08-4f22-80fd-9d8c5940928c) chip and connect it to the `Position` input on the [Set Transform](/docs/chips/6873f341-1ae8-4ddd-9f8c-892a977ef974) chip.
+Describing this, it gets the position of the gun, and sets the position of the bullet to it. However, the forward vector is the rotation of it, so it adds that to the position, making it slightly in front of the gun itself. This way, it should look like it comes out of the front of the gun. 
+Connect the output of the [Get Forward Vector](/docs/chips/4536e1df-1138-4a2c-9117-475bb3f38eae) chip to the `Rotation` input of the [Set Transform](/docs/chips/6873f341-1ae8-4ddd-9f8c-892a977ef974) chip.
+
+After this, set the `Velocity (m/s)` input of the [Velocity Set](/docs/chips/ea00c655-56ff-4406-8d65-b8399e6d0169) chip to the output of the [Get Forward Vector](/docs/chips/4536e1df-1138-4a2c-9117-475bb3f38eae) chip.
+
+:::tip
+
+You can use the [Vector3 Scale](/docs/chips/87aa17b1-7760-4b07-8c44-a2d530590597) chip to increase/decrease the speed of the bullet!
+
+:::
+
+Connecting all the `Exec` ports together should give you a result like this!
+
+<GuideMedia fileName="Progress3.png" fileType="image" />
+
+If you pick up the trigger handle, and activate it, the bullet should come out of the tip of the trigger handle, and then move forward!
+
+Congratulations! You've made a custom gun!
