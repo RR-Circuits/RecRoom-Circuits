@@ -60,6 +60,7 @@ jobs:
           git config --local user.name "actions-user"
           git add Circuits/docs/**
           git add Circuits/guides/**
+          git add Circuits/static/guides/**
           git add ExtraInfo/**
           git commit -m "[no ci] Generated docs and guides based on ${{ github.sha }}"
           git push
