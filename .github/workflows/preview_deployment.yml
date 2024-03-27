@@ -33,10 +33,12 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
           pipenv install
-      - name: 'Run generation script'
+      - name: 'Download source JSON file and run scripts'
         working-directory: './Source'
         run: |
-          pipenv run python Generate_Docs.py
+            curl https://raw.githubusercontent.com/tyleo-rec/CircuitsV2Resources/master/misc/circuitsv2.json -o source_data.json
+            pipenv run python Translate_JSON.py ./source_data.json ./Generated/chips.json ./Generated/ports.json
+            pipenv run python Generate_Docs.py
       - name: 'Commit and push'
         id: 'commit-push'
         #continue-on-error: true
