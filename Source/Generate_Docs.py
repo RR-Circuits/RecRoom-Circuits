@@ -169,6 +169,10 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
 
     ### WARNS
     newDocString = newDocString.replace("._uuid", uuid)
+    if chip["DeprecationStage"] == "Deprecated":
+        chipWarns.append(ChipWarnings["Deprecated"])
+    elif chip["DeprecationStage"] == "Deprecating":
+        chipWarns.append(ChipWarnings["Deprecating"])
     if chip["IsBeta"]:
         chipWarns.append(ChipWarnings["BetaOnly"])
     if chip["RoomsV1"]:
