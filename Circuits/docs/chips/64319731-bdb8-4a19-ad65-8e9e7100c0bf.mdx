@@ -1,0 +1,62 @@
+---
+sidebar_position: 768
+tags: [Player,Physics,Object,Physics]
+title: 'Set Rotation in Reference Object Space'
+image: /img/chip/64319731-bdb8-4a19-ad65-8e9e7100c0bf.svg
+---
+
+Sets the rotation of the target player or object in the coordinate space defined by the reference object. Fails if the target object is marked as static (as all child objects are by default) or if it or its parent is selected/frozen by the maker pen. Will also fail on players that are seated. 
+
+:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::
+
+<IChip uuid="64319731-bdb8-4a19-ad65-8e9e7100c0bf"/>
+
+<table><thead><tr><th>Inputs</th><th>Outputs</th></tr></thead><tbody><tr><td>exec | Run</td><td>exec | Run</td></tr><tr><td>Any (player, rec room object) | Target</td><td>bool | Success</td></tr><tr><td>Any (vector3, quaternion) | Rotation</td><td /></tr><tr><td>Any (player, rec room object) | Reference Object</td><td /></tr></tbody></table>
+
+<details>
+  <summary>Properties</summary>
+  <div>
+    <div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Is beta required?</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Is chip a trolling risk?</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Is chip a role assignment risk?</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Chip UUID</td>
+          <td>64319731-bdb8-4a19-ad65-8e9e7100c0bf</td>
+        </tr>
+        <tr>
+          <td>Room availability</td>
+          <td>Available everywhere</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</details>
+
+### Uses
+
+None so far!
+
+### Tips
+
+None so far!
+
+### Issues
+
+None so far!

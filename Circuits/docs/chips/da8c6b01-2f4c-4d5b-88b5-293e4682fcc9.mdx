@@ -1,0 +1,62 @@
+---
+sidebar_position: 595
+tags: [Player,UI]
+title: 'Player Prompt Text'
+image: /img/chip/da8c6b01-2f4c-4d5b-88b5-293e4682fcc9.svg
+---
+
+Sends a prompt to the specified player where they can input text, which is then returned by this chip's output. This prompt appears in the watch and can either bring the watch up automatically, or trigger a watch notification and show up when the player next opens their watch. To use a watch notification, disable the Immediate setting on the chip with the configure tool.
+
+:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::
+
+<IChip uuid="da8c6b01-2f4c-4d5b-88b5-293e4682fcc9"/>
+
+<table><thead><tr><th>Inputs</th><th>Outputs</th></tr></thead><tbody><tr><td>exec | *No name.*</td><td>exec | Run</td></tr><tr><td>player | Player</td><td>exec | On Prompt Complete</td></tr><tr><td>string | Prompt Title</td><td>bool | Success</td></tr><tr><td>string | Prompt Body</td><td>player | Receiving Player</td></tr><tr><td /><td>string | Response</td></tr></tbody></table>
+
+<details>
+  <summary>Properties</summary>
+  <div>
+    <div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Is beta required?</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Is chip a trolling risk?</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Is chip a role assignment risk?</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Chip UUID</td>
+          <td>da8c6b01-2f4c-4d5b-88b5-293e4682fcc9</td>
+        </tr>
+        <tr>
+          <td>Room availability</td>
+          <td>Available everywhere</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</details>
+
+### Uses
+
+None so far!
+
+### Tips
+
+None so far!
+
+### Issues
+
+None so far!

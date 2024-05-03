@@ -1,17 +1,12 @@
 ---
-sidebar_position: 576
+sidebar_position: 594
 tags: [Player,UI]
 title: 'Player Prompt Multiple Choice'
 image: /img/chip/d376a3c7-67c2-4607-a124-e2b93dc256d8.svg
 ---
 
-Sends a watch notification to the specified player containing the prompt title and body, along with each of the answer choices on its own line. Once this watch notification is opened, the player can choose a response and hit "ok," triggering the On Prompt Complete event. Since there is a delay between sending a notification and receiving the response in which other responses may be received, the Player output can be used to disambiguate multiple responses
+Sends a prompt to the specified player containing the prompt title and body, along with each of the answer choices on its own line. The player can choose a response and hit "ok," triggering the On Prompt Complete event. Since there is a delay between sending a prompt and receiving the response in which other responses may be received, the Player output can be used to disambiguate multiple responses. This prompt appears in the watch and can either bring the watch up automatically, or trigger a watch notification and show up when the player next opens their watch. To use a watch notification, disable the Immediate setting on the chip with the configure tool.
 
-:::caution ROOMS V1 ONLY
-    
-This chip does not exist in Rooms V2.
-
-:::
 
 
 <IChip uuid="d376a3c7-67c2-4607-a124-e2b93dc256d8"/>
@@ -42,7 +37,7 @@ This chip does not exist in Rooms V2.
         </tr>
         <tr>
           <td>Room availability</td>
-          <td>Rooms V1 only</td>
+          <td>Available everywhere</td>
         </tr>
       </tbody>
     </table>
