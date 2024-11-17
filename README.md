@@ -4,12 +4,12 @@ Maintained by Funn Punn and joksulainen
 | Task                  | Progress |
 |-----------------------|----------|
 | Implement Chip JSON   | ✅       |
-| Create Chip Docs      | ✅\*     |
-| Create Circuit Guides | ✅\*     |
+| Create Chip Docs      | 🚧\*\*     |
+| Create Circuit Guides | 🚧\*\*     |
 | Make a chip grapher   | 🚧       |
 
-\* Still need community efforts
 
+\*\* Currently being reworked. An older version might be available right now.
 ## Contributing
 
 You can find out details on how to contribute [here](https://github.com/RR-Circuits/RecRoom-Circuits/blob/main/CONTRIBUTING.md).
