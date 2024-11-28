@@ -87,7 +87,7 @@ def initializeExtraInfo(uuid: str, chip: dict) -> str:
     for index, folderName in enumerate(extraInfoDirs):
         if uuid in folderName:
             if folderName != chipDirPath:
-                os.rename(extraInfoPath + "/" + folderName, completePath)
+                os.rename(extraInfoPath + "/" + folderName, completePath) # won't work on windows for stupid reasons
             
             with open(completePath + "/tags.txt", "wt") as newTagsFile:
                 newTagsFile.write(",".join(chip["Tags"]))

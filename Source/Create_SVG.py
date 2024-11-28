@@ -551,7 +551,7 @@ def generate_svg(UUID: str, returnPNGBytes: bool) -> bytes:
                 print("WARN: Chip model is unknown and an Exec will be returned. Expect strange results.")
                 returnval = ET.tostring(generateExec(svg, chipToGenerate))
     except Exception as ex:
-        print("An error occurred during chip generation!", ex)
+        print(f"An error occurred during chip generation! {UUID}", ex)
         returnval = ET.tostring(generateVariableLike(svg, {
             "ChipName": "Couldn't generate image.",
             "Functions": [

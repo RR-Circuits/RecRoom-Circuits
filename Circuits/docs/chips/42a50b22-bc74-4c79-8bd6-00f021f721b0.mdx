@@ -1,0 +1,64 @@
+---
+sidebar_position: 497
+tags: [Game Features,AI,Pathfinder,Utilities]
+title: 'NavMesh Can Path Between'
+image: /img/chip/42a50b22-bc74-4c79-8bd6-00f021f721b0.svg
+---
+
+Checks if a path exists between two positions using the NavMesh. 
+
+Use "Max Distance" to indicate how far away from the NavMesh the positions can be. Lower values increase precision and can cause valid paths to register false if the target positions are not close enough to the NavMesh, while higher values decrease precision and can return a false positive if the margin is wide enough to include points that are not near the NavMesh.
+
+:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::
+
+<IChip uuid="42a50b22-bc74-4c79-8bd6-00f021f721b0"/>
+
+<table><thead><tr><th>Inputs</th><th>Outputs</th></tr></thead><tbody><tr><td>exec | *No name.*</td><td>exec | *No name.*</td></tr><tr><td>vector3 | Start Position</td><td>bool | Path Exists</td></tr><tr><td>vector3 | End Position</td><td /></tr><tr><td>float | Max Distance</td><td /></tr></tbody></table>
+
+<details>
+  <summary>Properties</summary>
+  <div>
+    <div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Is beta required?</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Is chip a trolling risk?</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Is chip a role assignment risk?</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Chip UUID</td>
+          <td>42a50b22-bc74-4c79-8bd6-00f021f721b0</td>
+        </tr>
+        <tr>
+          <td>Room availability</td>
+          <td>Available everywhere</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</details>
+
+### Uses
+
+None so far!
+
+### Tips
+
+None so far!
+
+### Issues
+
+None so far!

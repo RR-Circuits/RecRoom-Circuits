@@ -155,7 +155,7 @@ def translateChip(jsonSourceb: dict) -> dict:
             "Tags": tags
         }
         for nodeDesc in chip["NodeDescs"]:
-            del nodeDesc["Name"]
+            #del nodeDesc["Name"]
             tempPortAssign = {}
             if len(nodeDesc["ReadonlyTypeParams"]) > 0:
                 for paramKey, paramValue in nodeDesc["ReadonlyTypeParams"].items():
@@ -224,6 +224,7 @@ if __name__ == "__main__":
     jsonSource = sys.argv[1]
     outputChipsTarget = sys.argv[2]
     outputPortsTarget = sys.argv[3]
+
     oldJSON = {}
 
     with open(jsonSource, encoding="utf8") as jsonSourceFile:
@@ -236,5 +237,5 @@ if __name__ == "__main__":
         os.mkdir(generated_path)
 
     with open(outputChipsTarget, "wt") as chipsFile, open(outputPortsTarget, "wt") as portsFile:
-        json.dump(chps, chipsFile, indent=4)
-        json.dump(prts, portsFile, indent=4)
+        json.dump(chps, chipsFile, indent=(4 if len(sys.argv) > 4 else None))
+        json.dump(prts, portsFile, indent=(4 if len(sys.argv) > 4 else None))

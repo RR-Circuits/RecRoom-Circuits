@@ -1,11 +1,12 @@
 ---
-sidebar_position: 453
+sidebar_position: 483
 tags: [Player,Locomotion,Wall Run]
 title: 'Locomotion Request Wall Run'
 image: /img/chip/13989690-57a9-432f-b79d-9e8a33c9888b.svg
 ---
 
-Request that the local player begin to wall run. Not affected by CanWallRun directly. If you want that property to impact this request you should check it yourself.
+Request that the local player begin to wall run. Only works if called via an exec line from the WallRunReady event.  
+Not affected by CanWallRun. If you want that property to impact this request you should check it yourself.
 
 :::caution BETA
 
@@ -21,7 +22,7 @@ This chip is exclusive to Rooms V2. It will not show up in Rooms V1.
 
 <IChip uuid="13989690-57a9-432f-b79d-9e8a33c9888b"/>
 
-<table><thead><tr><th>Inputs</th><th>Outputs</th></tr></thead><tbody><tr><td>exec | *No name.*</td><td>exec | *No name.*</td></tr><tr><td>float | Max Speed</td><td /></tr><tr><td>float | Max Duration (seconds)</td><td /></tr><tr><td>float | Gravity Multiplier</td><td /></tr></tbody></table>
+<table><thead><tr><th>Inputs</th><th>Outputs</th></tr></thead><tbody><tr><td>exec | *No name.*</td><td>exec | *No name.*</td></tr><tr><td>float | Gravity Multiplier</td><td /></tr></tbody></table>
 
 <details>
   <summary>Properties</summary>
