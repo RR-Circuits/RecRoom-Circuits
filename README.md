@@ -19,29 +19,6 @@ You can find out details on how to contribute [here](https://github.com/RR-Circu
 Docusaurus works with markdown files, but it also has a few plugins.
 This means that you can create note, tip, info, danger and caution boxes to display meaningful notes.
 
-```md
-:::note
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::danger
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::tip
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-```
-
-You can also test the new pages by going to `Circuits` and running `npm run start -- --host 0.0.0.0`. (after installing the `docusaurus` module, of course).
-
-
 ### Credits
 
 - joksulainen - went through 7 stages of life in one day, just to make the most important stuff work aka the automation wizard (and idiot)

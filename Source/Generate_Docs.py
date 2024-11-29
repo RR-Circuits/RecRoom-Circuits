@@ -3,6 +3,7 @@ import shutil
 import xml.etree.ElementTree as ET
 import os
 import Create_SVG
+import argparse
 from distutils.dir_util import copy_tree
 
 currentChipIndex = 1 # used for positioning
@@ -79,7 +80,11 @@ def YesNo(state: bool):
     return "Yes" if state else "No"
 
 def NoParse(string: str):
-    return string.replace("<", "\<").replace(">", "\>").replace("{", "\{").replace("}", "\}")
+    return string.replace("<", "\\<").replace(">", "\\>").replace("{", "\\{").replace("}", "\\}")
+
+def writeTags(compPath: str, chip: dict):
+    with open(compPath + "/tags.txt", "wt") as newTagsFile:
+        newTagsFile.write(",".join(chip["Tags"]))
 
 def initializeExtraInfo(uuid: str, chip: dict) -> str:
     chipDirPath = chip["PaletteName"].replace("<", "[").replace(">", "]") + "@" + uuid
@@ -87,18 +92,22 @@ def initializeExtraInfo(uuid: str, chip: dict) -> str:
     for index, folderName in enumerate(extraInfoDirs):
         if uuid in folderName:
             if folderName != chipDirPath:
-                os.rename(extraInfoPath + "/" + folderName, completePath) # won't work on windows for stupid reasons
+                if os.path.isdir(completePath):
+                    print(f"{completePath} already exists and will be overwritten.")
+                    shutil.rmtree(completePath)
+                os.rename(extraInfoPath + "/" + folderName, completePath)
             
             with open(completePath + "/tags.txt", "wt") as newTagsFile:
                 newTagsFile.write(",".join(chip["Tags"]))
 
             del extraInfoDirs[index]
+            writeTags(completePath, chip)
             return completePath
     
     os.mkdir(completePath)
-    with open(completePath + "/extrainfo.mdx", "wt") as newEIFile, open(completePath + "/tags.txt", "wt") as newTagsFile:
+    writeTags(completePath, chip)
+    with open(completePath + "/extrainfo.mdx", "wt") as newEIFile:
         newEIFile.write(mdxTemplates["ExtraInfo"])
-        newTagsFile.write(",".join(chip["Tags"]))
     return completePath
 
 def formatPort(port: dict) -> str:

@@ -1,0 +1,70 @@
+---
+sidebar_position: 730
+tags: [Object,Replicator]
+title: 'Replicator Spawn Next Object'
+image: /img/chip/fc467906-eb16-4d6f-9c51-e5bd0fbcd492.svg
+---
+
+Spawns a copy of the object assigned to the target replicator at the position and orientation specified. If “Assign to Player” is true, the resulting object will be assigned to the specified player such that no other players can interact with it, and the object will be automatically returned when that player leaves the room. 
+
+When the object is spawned, On Spawn Complete will fire and pass through an object reference. If it fails, such as when the limit of objects has been hit, the object reference will be invalid and the Success bool will be false.
+
+:::caution BETA
+
+This chip requires beta content to be enabled in the room. You can access the setting in "This Room -> Settings".
+
+:::
+:::caution ROOMS V2 ONLY
+
+This chip is exclusive to Rooms V2. It will not show up in Rooms V1.
+
+:::
+
+
+<IChip uuid="fc467906-eb16-4d6f-9c51-e5bd0fbcd492"/>
+
+<table><thead><tr><th>Inputs</th><th>Outputs</th></tr></thead><tbody><tr><td>exec | *No name.*</td><td>exec | *No name.*</td></tr><tr><td>replicator | Target</td><td>exec | On Spawn Complete</td></tr><tr><td>vector3 | Position</td><td>rec room object | Object</td></tr><tr><td>quaternion | Orientation</td><td>bool | Success</td></tr><tr><td>bool | Assign to Player</td><td /></tr><tr><td>player | Player</td><td /></tr></tbody></table>
+
+<details>
+  <summary>Properties</summary>
+  <div>
+    <div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Is beta required?</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Is chip a trolling risk?</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Is chip a role assignment risk?</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Chip UUID</td>
+          <td>fc467906-eb16-4d6f-9c51-e5bd0fbcd492</td>
+        </tr>
+        <tr>
+          <td>Room availability</td>
+          <td>Rooms V2 only</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</details>
+
+### Uses
+
+None so far!
+
+### Tips
+
+None so far!
+
+### Issues
+
+None so far!

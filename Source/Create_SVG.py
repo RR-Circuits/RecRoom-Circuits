@@ -4,6 +4,7 @@ from cairosvg import svg2png
 import sys
 import json
 import xml.etree.ElementTree as ET
+import argparse
 
 import traceback # please remove
 
@@ -570,19 +571,19 @@ def generate_svg(UUID: str, returnPNGBytes: bool) -> bytes:
         return returnval
 
 if __name__ == "__main__":
-    try:
-        # 1: uuid, 2: chips path, 3: ports path, 4: output target
-        uuid = sys.argv[1]
-        outputTarget = sys.argv[4]
-        with open(sys.argv[2], encoding="utf-8") as chips, open(sys.argv[3], encoding="utf-8") as ports:
-            myChips = json.load(chips)
-            myPorts = json.load(ports)
-        
-        with open(outputTarget, "wb") as outputFile:
-            outputFile.write(generate_svg(uuid, False))
-        
+    parser = argparse.ArgumentParser()
 
-    except Exception as ex:
-        print("An error occured!")
-        print(ex)
-        exit(1)
+    parser.add_argument("uuid")
+    parser.add_argument("chipspath")
+    parser.add_argument("portspath")
+    parser.add_argument("imagetarget")
+    parser.add_argument("-b", "--bitmap", action="store_true")
+
+    args = parser.parse_args()
+
+    with open(args.chipspath, encoding="utf-8") as chips, open(args.portspath, encoding="utf-8") as ports:
+        myChips = json.load(chips)
+        myPorts = json.load(ports)
+        
+    with open(args.imagetarget, "wb") as outputFile:
+        outputFile.write(generate_svg(args.uuid, args.bitmap))

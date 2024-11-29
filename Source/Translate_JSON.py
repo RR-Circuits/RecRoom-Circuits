@@ -3,6 +3,7 @@ import sys
 import copy
 import pathlib
 import os
+import argparse
 
 portTemplate = {
     "HasDefaultValue": False,
@@ -216,21 +217,27 @@ def ExtractChipJSON(jsonSrc: dict) -> ():
     return (translateChip(chipClone), getPorts(portsClone))
 
 if __name__ == "__main__":
-    jsonSource = sys.argv[1]
-    outputChipsTarget = sys.argv[2]
-    outputPortsTarget = sys.argv[3]
+    parser = argparse.ArgumentParser()
+    
+    parser.add_argument("source", help="the source JSON file path, in the circuitsv2 format")
+    parser.add_argument("chipstarget", help="the path where the chips JSON will be placed")
+    parser.add_argument("portstarget", help="the path where the ports JSON will be placed")
+
+    parser.add_argument("-b", "--beautify", help="make the output files more readable", action="store_true")
+
+    args = parser.parse_args()
 
     oldJSON = {}
 
-    with open(jsonSource, encoding="utf8") as jsonSourceFile:
+    with open(args.source, encoding="utf8") as jsonSourceFile:
         oldJSON = json.load(jsonSourceFile)
     
     chps, prts = ExtractChipJSON(oldJSON)
     
-    generated_path = pathlib.Path("./Generated/")
-    if not generated_path.exists():
-        os.mkdir(generated_path)
+    #generated_path = pathlib.Path("./Generated/")
+    #if not generated_path.exists():
+    #    os.mkdir(generated_path)
 
-    with open(outputChipsTarget, "wt") as chipsFile, open(outputPortsTarget, "wt") as portsFile:
-        json.dump(chps, chipsFile, indent=(4 if len(sys.argv) > 4 else None))
-        json.dump(prts, portsFile, indent=(4 if len(sys.argv) > 4 else None))
+    with open(args.chipstarget, "wt") as chipsFile, open(args.portstarget, "wt") as portsFile:
+        json.dump(chps, chipsFile, indent=(4 if len(args.beautify) > 4 else None))
+        json.dump(prts, portsFile, indent=(4 if len(args.beautify) > 4 else None))
