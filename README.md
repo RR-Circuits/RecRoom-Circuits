@@ -39,9 +39,6 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 ```
 
-You can also test the new pages by going to `Circuits` and running `npm run start -- --host 0.0.0.0`. (after installing the `docusaurus` module, of course).
-
-
 ### Credits
 
 - joksulainen - went through 7 stages of life in one day, just to make the most important stuff work aka the automation wizard (and idiot)
