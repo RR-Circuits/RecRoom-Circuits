@@ -5,6 +5,8 @@ import sys
 import json
 import xml.etree.ElementTree as ET
 
+import traceback # please remove
+
 fontSize = titleSize = 18
 
 inlineFont = ".ubuntu {font-family: 'Ubuntu', sans-serif;}"
@@ -551,7 +553,7 @@ def generate_svg(UUID: str, returnPNGBytes: bool) -> bytes:
                 print("WARN: Chip model is unknown and an Exec will be returned. Expect strange results.")
                 returnval = ET.tostring(generateExec(svg, chipToGenerate))
     except Exception as ex:
-        print(f"An error occurred during chip generation! {UUID}", ex)
+        print(traceback.format_exc())
         returnval = ET.tostring(generateVariableLike(svg, {
             "ChipName": "Couldn't generate image.",
             "Functions": [

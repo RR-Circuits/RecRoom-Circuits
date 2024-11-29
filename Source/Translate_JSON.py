@@ -88,11 +88,6 @@ autoAssignModels = [
         "pattern": "includes"
     },
     {
-        "key": "data table",
-        "result": "Constant",
-        "pattern": "strict"
-    },
-    {
         "key": "variable",
         "result": "Variable",
         "pattern": "includes"
