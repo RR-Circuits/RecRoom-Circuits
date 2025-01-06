@@ -100,6 +100,73 @@ autoAssignModels = [
     }
 ]
 
+autoAssignPorts = [
+    {
+        "key": "if",
+        "result": "DoubleStruckArrow",
+        "pattern": "strict"
+    },
+    {
+        "key": "if value",
+        "result": "DoubleStruckArrow",
+        "pattern": "strict"
+    },
+
+    {
+        "key": "value integer switch",
+        "result": "DataSwitch",
+        "pattern": "strict"
+    },
+    {
+        "key": "value string switch",
+        "result": "DataSwitch",
+        "pattern": "strict"
+    },
+    {
+        "key": "execution integer switch",
+        "result": "ExecSwitch",
+        "pattern": "strict"
+    },
+    {
+        "key": "execution string switch",
+        "result": "ExecSwitch",
+        "pattern": "strict"
+    },
+
+    {
+        "key": "not",
+        "result": "Exclamation",
+        "pattern": "strict"
+    },
+    {
+        "key": "and",
+        "result": "DoubleAmpersand",
+        "pattern": "strict"
+    },
+    {
+        "key": "or",
+        "result": "DoubleLines",
+        "pattern": "strict"
+    },
+
+    {
+        "key": "for",
+        "result": "Loop",
+        "pattern": "strict"
+    },
+    {
+        "key": "for each",
+        "result": "Loop",
+        "pattern": "strict"
+    },
+
+    {
+        "key": "local player",
+        "result": "Player",
+        "pattern": "includes"
+    },
+]
+
 def getPorts(jsonSourcet: dict) -> dict:
     for UUID, chip in jsonSourcet["Nodes"].items():
         for nodedesc in chip["NodeDescs"]:
@@ -124,16 +191,21 @@ def getPorts(jsonSourcet: dict) -> dict:
                         portTypes[port["ReadonlyType"].lower()] = portTemplate
     return portTypes
 
+def getResultingData(key: str, pattern_group: dict, default: any):
+    for check in pattern_group:
+        match check["pattern"]:
+            case "strict":
+                if key == check["key"]: return check["result"]
+            case "includes":
+                if check["key"] in key: return check["result"]
+    return default
+
 def translateChip(jsonSourceb: dict) -> dict:
     newDict = {}
     for uuid, chip in jsonSourceb["Nodes"].items():
-        thisChipModel = "Default"
-        for check in autoAssignModels:
-            match check["pattern"]:
-                case "strict":
-                    if chip["ReadonlyPaletteName"].lower() == check["key"]: thisChipModel = check["result"]
-                case "includes":
-                    if check["key"] in chip["ReadonlyPaletteName"].lower(): thisChipModel = check["result"]
+        thisChipModel = getResultingData(chip["ReadonlyPaletteName"].lower(), autoAssignModels, "Default")
+        thisChipIcon = getResultingData(chip["ReadonlyPaletteName"].lower(), autoAssignPorts, "None")
+
         tags = []
         for nodeFilter in chip["NodeFilters"]:
             tags = tags + nodeFilter["FilterPath"]
@@ -142,9 +214,11 @@ def translateChip(jsonSourceb: dict) -> dict:
             "PaletteName": chip["ReadonlyPaletteName"],
             "Description": chip["Description"],
             "Model": thisChipModel,
+            "Icon": thisChipIcon,
             "IsBeta": chip["IsBetaChip"],
             "RoomsV1": chip["IsValidInRoom1"],
             "RoomsV2": chip["IsValidInRoom2"],
+            "IsDevOnly": False,
             "TrollingRisk": chip["IsTrollingRisk"],
             "IsRoleAssignmentRisk": chip["IsRoleAssignmentRisk"],
             "DeprecationStage": chip["DeprecationStage"],
@@ -222,8 +296,10 @@ if __name__ == "__main__":
     parser.add_argument("source", help="the source JSON file path, in the circuitsv2 format")
     parser.add_argument("chipstarget", help="the path where the chips JSON will be placed")
     parser.add_argument("portstarget", help="the path where the ports JSON will be placed")
+    # parser.add_argument("iconstarget", help="the icons JSON will be placed here")
 
     parser.add_argument("-b", "--beautify", help="make the output files more readable", action="store_true")
+    parser.add_argument("-d", "--devchips", help="allow developer only chips to be parsed", type=bool)
 
     args = parser.parse_args()
 
@@ -239,5 +315,5 @@ if __name__ == "__main__":
     #    os.mkdir(generated_path)
 
     with open(args.chipstarget, "wt") as chipsFile, open(args.portstarget, "wt") as portsFile:
-        json.dump(chps, chipsFile, indent=(4 if len(args.beautify) > 4 else None))
-        json.dump(prts, portsFile, indent=(4 if len(args.beautify) > 4 else None))
+        json.dump(chps, chipsFile, indent=(4 if args.beautify else None))
+        json.dump(prts, portsFile, indent=(4 if args.beautify else None))

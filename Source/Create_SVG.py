@@ -519,7 +519,7 @@ def generateDefinition(svgObject: ET.Element, chip: dict):
 
     return svgObject
 
-def setup_svg_generator(chipsDict: dict, portsDict: dict):
+def setup_svg_generator(chipsDict: dict, portsDict: dict, iconsDict: dict):
     """
     Setup is required when using this script as a module.
     `chipsDict`: A dictionary of chips.
@@ -528,6 +528,7 @@ def setup_svg_generator(chipsDict: dict, portsDict: dict):
     global myChips, myPorts
     myChips = chipsDict
     myPorts = portsDict
+    myIcons = iconsDict
 
 def generate_svg(UUID: str, returnPNGBytes: bool) -> bytes:
     global chipXOffset

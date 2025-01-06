@@ -141,6 +141,7 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
 
     table = ET.Element("table")
     tableHead = ET.SubElement(table, "thead")
+    
     tableHeadRow = ET.SubElement(tableHead, "tr")
 
     ET.SubElement(tableHeadRow, "th").text = "Inputs"
@@ -166,11 +167,11 @@ def generateDocFiles(uuid: str, chip: dict, extraInfoFolder: str):
         
         for idx, port in enumerate(func["Inputs"]):
             portCell = tableItems[idx * 2]
-            portCell.text = NoParse(f"{formatPort(port)} | {port['Name'] if not port['Name'] == '' else '*No name.*'}")
+            portCell.text = f"{NoParse(formatPort(port))} | {NoParse(port['Name'] if not port['Name'] == '' else '*No name.*')}"
             #inTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
         for idx, port in enumerate(func["Outputs"]):
             portCell = tableItems[(idx * 2) + 1]
-            portCell.text = NoParse(f"{formatPort(port)} | {port['Name'] if not port['Name'] == '' else '*No name.*'}")
+            portCell.text = f"{NoParse(formatPort(port))} | {NoParse(port['Name'] if not port['Name'] == '' else '*No name.*')}"
             #outTable += f"\n| {port['Name'] if not port['Name'] == '' else '*No name.*'} | {formatPort(port)} |"
 
     newDocString = newDocString.replace("._ports", ET.tostring(table, encoding="unicode"))
@@ -220,16 +221,16 @@ def moveGuides():
     # todo: we should clear out the assets folder as well
     
     # iterate through all the guides
-    for guideDir in os.listdir(guidesLocation):
-        guideDirPath = f"{guidesLocation}/{guideDir}"
+    for guide_dir in os.listdir(guidesLocation):
+        guideDirPath = f"{guidesLocation}/{guide_dir}"
         # check directory existence, copy guide if it does
         if not os.path.isdir(guideDirPath): continue
-        shutil.copy(f"{guideDirPath}/doc.mdx", f"{guidePath}/{guideDir}.mdx")
+        shutil.copy(f"{guideDirPath}/doc.mdx", f"{guidePath}/{guide_dir}.mdx")
         
         # check for the existence of the assets directory
         # if it does then copy it, otherwise continue to next guide
         if not os.path.isdir(f"{guideDirPath}/assets"): continue
-        copy_tree(f"{guideDirPath}/assets", f"{guideAssetPath}/{guideDir}")
+        copy_tree(f"{guideDirPath}/assets", f"{guideAssetPath}/{guide_dir}")
 
 def Generate():
     global extraInfoDirs
@@ -239,6 +240,7 @@ def Generate():
     extraInfoDirs = os.listdir(extraInfoPath)
 
     for chip_uuid, chip_content in chips.items():
+        if (chip_content["IsDevOnly"]): continue
         fldr = initializeExtraInfo(chip_uuid, chip_content)
         generateDocFiles(chip_uuid, chip_content, fldr)
         generateSVGs(chip_uuid, chip_content)
