@@ -11,3 +11,7 @@ wheels/
 
 # Additional stuff
 Generated/
+
+# pipenv
+Pipfile
+Pipfile.lock
