@@ -1,0 +1,8 @@
+[project]
+name = "recroom-circuits-site-gen"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "cairosvg==2.7.1",
+    "pillow==10.2.0",
+]
