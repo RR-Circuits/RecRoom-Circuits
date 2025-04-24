@@ -17,19 +17,18 @@ jobs:
         uses: 'actions/setup-python@v5'
         with:
           python-version: '3.10'
-          cache: 'pipenv'
-          cache-dependency-path: './Source/Pipfile.lock'
-      - name: 'Install pipenv and setup environment'
+          cache: 'pip'
+          cache-dependency-path: './Source/requirements.txt'
+      - name: 'Setup environment'
         working-directory: './Source'
         run: |
-          curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
-          pipenv install
+          pip install -r requirements.txt
       - name: 'Download source JSON file and run Python scripts'
         working-directory: './Source'
         run: |
           curl https://raw.githubusercontent.com/tyleo-rec/CircuitsV2Resources/master/misc/circuitsv2.json -o source_data.json
-          pipenv run python Translate_JSON.py ./source_data.json ./Generated/chips.json ./Generated/ports.json
-          pipenv run python Generate_Docs.py
+          python Translate_JSON.py ./source_data.json ./Generated/chips.json ./Generated/ports.json
+          python Generate_Docs.py
       - name: 'Setup Node'
         uses: 'actions/setup-node@v4'
         with:
