@@ -1,5 +1,2 @@
 .vscode
 .env
-node_modules/
-Source/Generated
-__pycache__
