@@ -33,8 +33,6 @@ jobs:
     steps:
       - name: 'Checkout'
         uses: 'actions/checkout@v4'
-        with:
-          ssh-key: '${{ secrets.BR_BYPASS }}'
       - name: 'Setup Python'
         uses: 'actions/setup-python@v5'
         with:
