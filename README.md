@@ -1,4 +1,7 @@
 # Rec Room Circuits
+
+This project is deprecated and will no longer be worked on due to Rec Room shutting down on June 1st 2026. Everything related to this project will be kept as is for continued use.
+
 Maintained by Funn Punn and joksulainen
 
 | Task                  | Progress |
